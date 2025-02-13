@@ -23,7 +23,7 @@
 			subtitle: "&6未知疆域, 古奥术法, 致命威胁, 而您不过是渴望得见天日的弱小凡人..."
 			tasks: [{
 				id: "6794282C309E7A41"
-				title: "Начнём"
+				title: "启程"
 				type: "checkmark"
 			}]
 			title: "Journey to Dawn"
@@ -50,7 +50,7 @@
 			subtitle: "Лишь тот, кто Семью проклятьями обременён, сможет испытать всю боль мира сего"
 			tasks: [{
 				id: "190D7AC5A46B6765"
-				title: "Рискнёшь?"
+				title: "敢试试吗?"
 				type: "checkmark"
 			}]
 			title: "Настоящий Hardcore"
@@ -75,7 +75,7 @@
 			subtitle: "Отныне это не квестбук, а журнал"
 			tasks: [{
 				id: "310BA01E8AFA48F9"
-				title: "Ясно"
+				title: "理所当然"
 				type: "checkmark"
 			}]
 			title: "Что по квестам?"
