@@ -1,0 +1,1837 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "forbidden_arcanus:aurum_sapling"
+	id: "49DF5E67DBDC92F1"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3E8DB5EDA1483C85"]
+description: [
+"草叶沙沙 鸟鸣啁啾 树冠随风摇曳 &6阳光...&r 终于重见天日 终于回到故土 这一路艰险...我成功了 &o我...回家了...&r"
+""
+"{@pagebreak}"
+"不仅如此 似乎...&6记忆复苏了&r 往事如潮水涌入脑海 我曾是都城普通市民 在艺术馆工作 偶尔街头表演 那灾难日 我立于中央广场 诡异绿光笼罩万物 坠落虚空感袭来 随后- &6苏醒&r 在暗黑花园 重返故土何其欣喜... &o但这真是家园吗？..&r"
+""
+"{@pagebreak}"
+"草木虽盛 却...&o传送坐标无误&r 此地应是&6萨尔托甘&r 玛埃玛拉都城北境小镇 如今文明痕迹荡然无存 意味着&6穿越至未来&r 遥远未来 为何？那绿光究竟... &o看来冒险尚未终结&r"
+]
+			hide: true
+			icon: "minecraft:grass_block"
+			id: "66D554CF50F18D2D"
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "dimdungeons:block_gold_portal"
+					id: "5B25D47E0EB65DA1"
+title: "重返主世界" 
+					type: "dimension"
+				}
+				{
+					id: "608107011899A5AE"
+title: "归乡" 
+					type: "checkmark"
+				}
+			]
+title: "主世界" 
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66D554CF50F18D2D"]
+description: ["或许不合时宜 但我意识到&o浪费了世间至宝...&r 怀疑能否&6再制催化精华 其具自愈特性 故&6破碎后&r 将重塑新生"] 
+			hide: true
+			id: "18DF01EE5A26945A"
+			tasks: [{
+				id: "3C12FAF7C19D4B93"
+				item: "kubejs:fractured_catalyst"
+				type: "item"
+			}]
+title: "碎而不灭" 
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18DF01EE5A26945A"]
+description: ["&o稍有误判&r &6催化精华重塑&r 需基础资源 获取不难 关键要&o保留原始精华&r 奇异熔炉可轻松破除外壳"] 
+			hide: true
+			id: "5FAC12FC98340D07"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46045E48313EDFF1"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				count: 2L
+				id: "40F4BCDE21597194"
+				item: "kubejs:catalytic_essence"
+				type: "item"
+			}]
+title: "精华复制" 
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+description: ["初醒暗林时 怀中护符具&6双重特性:&r 提供增益 死亡时物品存于镜像空间 &o幸未殒命 未曾得见&r 欲用&6催化精华&r 锻造更强护符"] 
+			hide: true
+			id: "33DE7B4F040D040B"
+			tasks: [{
+				id: "6988B028E9391122"
+				item: {
+					Count: 1b
+					id: "enigmaticlegacy:ascension_amulet"
+					tag: { }
+				}
+				type: "item"
+			}]
+title: "虚妄之力" 
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+description: ["&6源力魔法&r 缺陷在于需符文铭刻 &o仿佛离了符文便不识己术&r 尝试&6破除限制&r &o催化精华浸染典籍&r 可免符文之缚"] 
+			hide: true
+			id: "7C95CA3AEFC8E233"
+			tasks: [{
+				id: "75631D33EF781686"
+				item: "ars_nouveau:creative_spell_book"
+				type: "item"
+			}]
+title: "源启真知" 
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+description: ["&6烈焰燃烧室&r 着实恼人 基础燃料尚易 但&6超频经验&r与蒸汽引擎&6需超高温&r 该认真应对了 &6催化精华&r 可永续供能"] 
+			hide: true
+			id: "6FBB161D6BFD5C69"
+			tasks: [{
+				id: "61006B4046CA67E8"
+				item: "create:creative_blaze_cake"
+				type: "item"
+			}]
+title: "现实燃料" 
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+description: ["&6抗癫药片&r 效力微弱 需研制&6瞬时清神药剂&r 催化精华赋能&o 切实可行&r"] 
+			hide: true
+			id: "14FE7D6998AF7493"
+			tasks: [{
+				id: "76A3CF45CB49BD77"
+				item: "kubejs:oversanity_pill"
+				type: "item"
+			}]
+title: "澄明心智" 
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+description: ["存储终有尽 纵五次升级 空间仍有限 欲创&6无限扩容&r 想象-单格存万石"] 
+			hide: true
+			id: "330719C9F03EBD5A"
+			tasks: [{
+				id: "0E7AB91F3AD8D03B"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+title: "永恒之匣" 
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["66D554CF50F18D2D"]
+description: ["虽归故里 旧计不可忘 &o险些遗漏&r &6钢材&r 自下界积存至今 终可大展身手 先造&6核心机组&r 为钢构体系奠基"] 
+			hide: true
+			id: "5AC45B279D196084"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A64EAC2A14490BA"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "293950D98BD9B3FD"
+				item: "createindustry:steel_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AC45B279D196084"]
+description: ["重归故土 &o资源更丰&r 其一乃&6原油&r 灾变前15年现世 今已普及 &6钢制扫描仪&r 可作石油勘探装置"] 
+			hide: true
+			icon: "createindustry:surface_scanner"
+			id: "18C10B78B36ED133"
+			tasks: [
+				{
+					id: "6ED3E76FC9047FBB"
+					item: "createindustry:surface_scanner"
+					type: "item"
+				}
+				{
+					icon: "create:goggles"
+					id: "016BC397A5C8B1B0"
+					observe_type: 0
+					timer: 0L
+title: "查看油田" 
+					to_observe: "createindustry:oil_deposit"
+					type: "observation"
+				}
+			]
+title: "石油勘探" 
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18C10B78B36ED133"]
+description: ["&6油井&r 成功架设 铺设管道即可采油 旧世&6抽油机&r 形似槌具 今终明其理 &o备钢之时已至&r"] 
+			hide: true
+			icon: "createindustry:pumpjack_base"
+			id: "4C5AD6038C3042B3"
+			tasks: [
+				{
+					count: 16L
+					id: "66F5A2AEC4326D2E"
+					item: "createindustry:industrial_pipe"
+					type: "item"
+				}
+				{
+					id: "63D8FC9B760646B5"
+					item: "createindustry:pumpjack_base"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "10DA8FD5C1FF8DDE"
+					item: "createindustry:steel_truss"
+					type: "item"
+				}
+				{
+					id: "6A633D23A44C338D"
+					item: "createindustry:machine_input"
+					type: "item"
+				}
+				{
+					id: "0251460239A69117"
+					item: "createindustry:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "0EB29F3EAED2A5DB"
+					item: "createindustry:pumpjack_hammer_holder"
+					type: "item"
+				}
+			]
+title: "原油开采" 
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C5AD6038C3042B3"]
+description: ["&o见证奇迹...&r 漆黑如墨的液体 即将成为新宝藏"] 
+			hide: true
+			id: "5D4C728536C3D869"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D6BE72B9FA2436F"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "63400767BFB298BF"
+				item: "createindustry:crude_oil_fluid_bucket"
+				type: "item"
+			}]
+title: "黑金" 
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D4C728536C3D869"]
+description: ["&o科学时刻...&r 原油乃植物腐化产物 即&6各类烃化合物&r 分离之法唯&6分馏&r 按沸点分组 跃跃欲试"] 
+			hide: true
+			icon: "createindustry:steel_distillation_controller"
+			id: "10BF24A35790635A"
+			tasks: [
+				{
+					id: "2A20C9AA3EAA2E76"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "74C270A723C75359"
+					item: "createindustry:steel_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "11865E9DAA31D454"
+					item: "createindustry:steel_distillation_controller"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "34AEFE4034662143"
+					item: "createindustry:steel_distillation_output"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4F429B10FBAE8113"
+					item: "createindustry:industrial_pipe"
+					type: "item"
+				}
+			]
+title: "分馏工艺" 
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["10BF24A35790635A"]
+description: ["原油可析&6五组分:&r 液化气/汽油/石脑油/煤油/柴油/重油 前四者可为燃料 各需&6专属引擎&r 然目前制造未果"] 
+			hide: true
+			id: "0FAAD9117D5B4486"
+			tasks: [
+				{
+					id: "2FAFB4252C7B0512"
+					item: "createindustry:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "700016FD3ACFA776"
+					item: "createindustry:kerosene_bucket"
+					type: "item"
+				}
+				{
+					id: "10EAB22347A6B02A"
+					item: "createindustry:diesel_bucket"
+					type: "item"
+				}
+			]
+title: "多元燃料" 
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10BF24A35790635A"]
+description: ["原油五组分中 &6石脑油&r 黏度特殊 或可精炼增值"] 
+			hide: true
+			id: "5E5F403FB1914924"
+			tasks: [{
+				id: "211AE5C9E4056976"
+				item: "createindustry:heavy_oil_bucket"
+				type: "item"
+			}]
+title: "重油精制" 
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["10BF24A35790635A"]
+description: ["原油五组分中 &6石脑油&r 可制轻质固材-塑料"] 
+			hide: true
+			id: "1680DB328145F245"
+			tasks: [{
+				id: "1BF517A87E955330"
+				item: "createindustry:naphtha_bucket"
+				type: "item"
+			}]
+title: "石脑油应用" 
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["371387601E9C69C8"]
+description: ["主目标虽达 余油需处置 &6分馏引擎&r 理想之选 然无&6润滑剂&r 高负荷易损 精炼重油得&6机油&r 正合其用"] 
+			hide: true
+			id: "67F2B3EBA9FFC04E"
+			tasks: [{
+				id: "35D2EB71F5732FD8"
+				item: "createindustry:lubrication_oil_bucket"
+				type: "item"
+			}]
+title: "润滑革命" 
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["67F2B3EBA9FFC04E"]
+description: ["万物皆有基 &6动力机组&r 钢构精密之础"] 
+			hide: true
+			id: "6E9390213D6AFFC5"
+			tasks: [{
+				id: "1BC1E09E3C64EF1A"
+				item: "createindustry:engine_base"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6E9390213D6AFFC5"
+				"0FAAD9117D5B4486"
+			]
+description: ["&o引擎时代降临&r 各型&6万匹马力&r 燃料取之不尽 结合末地科技 &o工厂系统永续运转&r"] 
+			hide: true
+			icon: "createindustry:gasoline_engine"
+			id: "69DE2B756AD8F445"
+			tasks: [
+				{
+					id: "5B1475E8FFEEB729"
+					item: "createindustry:lpg_engine"
+					type: "item"
+				}
+				{
+					id: "52B9BE046800154A"
+					item: "createindustry:gasoline_engine"
+					type: "item"
+				}
+				{
+					id: "08326D4697201578"
+					item: "createindustry:turbine_engine"
+					type: "item"
+				}
+				{
+					id: "47FD3EFD996DBABE"
+					item: "createindustry:diesel_engine"
+					type: "item"
+				}
+			]
+title: "引擎轰鸣" 
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1680DB328145F245"
+				"5E5F403FB1914924"
+			]
+			dependency_requirement: "one_completed"
+description: ["大型钢塔&6二次分馏&r 效费比低 铸铁制&6微型分馏&r 更省燃料"] 
+			hide: true
+			icon: "createindustry:cast_iron_distillation_controller"
+			id: "371387601E9C69C8"
+			tasks: [
+				{
+					id: "4B8C93FB1C1C6B77"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "055D75B6144E3127"
+					item: "createindustry:cast_iron_distillation_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6CF0041133A0109E"
+					item: "createindustry:cast_iron_distillation_output"
+					type: "item"
+				}
+			]
+title: "精馏塔" 
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["371387601E9C69C8"]
+description: ["&o终达目标&r &6乙烯/丙烯&r 混合即成液态塑料 易&6压塑成型&r 此材兼具轻质强韧 世所罕见"] 
+			hide: true
+			id: "54C269DA5BC84114"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20860543E1DD4E50"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3745D12921A0D466"
+				item: "createindustry:plastic_sheet"
+				type: "item"
+			}]
+title: "塑料纪元" 
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["66D554CF50F18D2D"]
+description: ["归乡启示 &6奥秘魔法&r 较源力更晦涩 基于秘晶/灵银/&6暗岩&r 秘晶已有 该探&6地心暗脉&r"] 
+			hide: true
+			id: "053EC878E2EAD3DA"
+			tasks: [{
+				id: "38F2C97370B9BE4C"
+				item: "forbidden_arcanus:darkstone"
+				type: "item"
+			}]
+title: "地心寻踪" 
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["053EC878E2EAD3DA"]
+description: ["记忆复苏有利 &6祭坛构筑&r 需暗岩法阵 中央置&6锻造台&r 为奥法核心"] 
+			hide: true
+			icon: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+			id: "793E5CF80DB3BE8E"
+			tasks: [
+				{
+					count: 48L
+					id: "0A185FFB6CC1AF36"
+					item: "forbidden_arcanus:polished_darkstone"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4D22E7640096BAAB"
+					item: "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "56FAC0ECDDFEBC8A"
+					item: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "4811D657F5ADEFD6"
+					item: "forbidden_arcanus:hephaestus_forge"
+					type: "item"
+				}
+			]
+title: "祭坛筹备" 
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["793E5CF80DB3BE8E"]
+description: ["&o计算无误&r 祭坛成型 待设&6奥法基座- 灵质/经验/魂火/血祭&r 经验易得 &6嗜血匕首&r 可采生灵精血"] 
+			hide: true
+			icon: "forbidden_arcanus:hephaestus_forge"
+			id: "1E885E171E4F151F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2677736E82E1DDC8"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "710EDE63C06CAB8C"
+					item: "forbidden_arcanus:darkstone_pedestal"
+					type: "item"
+				}
+				{
+					id: "1401B315A720E03C"
+					item: {
+						Count: 1b
+						id: "forbidden_arcanus:mystical_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7EE8B06E6644F0DC"
+					item: "forbidden_arcanus:test_tube"
+					type: "item"
+				}
+			]
+title: "赫菲斯托斯祭坛" 
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["053EC878E2EAD3DA"]
+description: ["洞窟探险忆起另一秘宝 星辉石 此石能逆转物质至本源态 胜于下界合金 探寻开始..."] 
+			hide: true
+			icon: "forbidden_arcanus:stella_arcanum"
+			id: "3303249CD7361126"
+			tasks: [{
+				icon: "create:goggles"
+				id: "727B27307307C7A9"
+				observe_type: 0
+				timer: 0L
+title: "查看星界石" 
+				to_observe: "forbidden_arcanus:stella_arcanum"
+				type: "observation"
+			}]
+title: "地心遗珍" 
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3303249CD7361126"]
+description: ["&o在此&r 真正的&6远古矿脉...&r 穿越时空反成优势 星辉石需漫长时间凝结 小心采掘 &o传闻易爆&r"] 
+			hide: true
+			id: "13C8769805BF7BD8"
+			shape: "circle"
+			tasks: [{
+				id: "694ECB8D9B1F9EB3"
+				item: "forbidden_arcanus:stellarite_piece"
+				type: "item"
+			}]
+title: "星辉结晶" 
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["793E5CF80DB3BE8E"]
+description: ["忆及祭坛&6经验供给&r 想起街头术士... 其创&6黑洞&r 吞噬经验瓶形成&6晶化经验球&r 今终悟诀窍：&6腐粉与暗物质融合&r"] 
+			hide: true
+			icon: "forbidden_arcanus:dark_matter"
+			id: "727C72CC27A7AAAA"
+			tasks: [
+				{
+					id: "4AFBFCEA1BBBDA57"
+					item: "forbidden_arcanus:dark_matter"
+					type: "item"
+				}
+				{
+					id: "172B5D6A82A918AC"
+					item: "forbidden_arcanus:corrupti_dust"
+					type: "item"
+				}
+				{
+					icon: "create:goggles"
+					id: "086E364E0B9A6681"
+					observe_type: 0
+					timer: 0L
+title: "查看黑洞装置" 
+					to_observe: "forbidden_arcanus:black_hole"
+					type: "observation"
+				}
+			]
+title: "虚空奇点" 
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["727C72CC27A7AAAA"]
+			hide: true
+			id: "6846A877E1FFFADD"
+			tasks: [{
+				id: "10124A57AD1D04DF"
+				item: "forbidden_arcanus:xpetrified_orb"
+				type: "item"
+			}]
+title: "经验晶核" 
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"13C8769805BF7BD8"
+				"6846A877E1FFFADD"
+				"1E885E171E4F151F"
+			]
+description: ["祭坛杰作-&6永恒星核&r 不仅修复装备 更使物品&6永不磨损&r 然吾另有所图..."] 
+			hide: true
+			id: "087A7B8E488DCB0A"
+			tasks: [{
+				id: "49C71B7795CFD1C1"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+description: ["祭坛杰作-&6震地棱镜&r 附魔工具可&9x9范围作业&r 然吾另有所图..."] 
+			hide: true
+			id: "034E8B05906B20F1"
+			tasks: [{
+				id: "64E076DCC6CF83CC"
+				item: "forbidden_arcanus:terrastomp_prism"
+				type: "item"
+			}]
+title: "大地脉动" 
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+description: ["祭坛杰作-&6熔铸棱镜&r 触物即熔 然吾另有所图..."] 
+			hide: true
+			id: "3763D3FEBA1AF202"
+			tasks: [{
+				id: "7AEC03E31AFAEE5E"
+				item: "forbidden_arcanus:smelter_prism"
+				type: "item"
+			}]
+title: "熔火之心" 
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+description: ["祭坛杰作-&6磁力合剂&r 靴附吸引万物之能 然吾另有所图..."] 
+			hide: true
+			id: "62411C5F188A83BF"
+			tasks: [{
+				id: "1845DE0C5ABF436B"
+				item: "forbidden_arcanus:ferrognetic_mixture"
+				type: "item"
+			}]
+title: "万象引斥" 
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+description: ["另一试剂&6奥瑞尔&r 或寻于新城遗迹 然自制更佳 &6秘晶柱阵&r 可凝此质入瓶"] 
+			hide: true
+			icon: "forbidden_arcanus:arcane_crystal_obelisk"
+			id: "1A7A36F95D08F976"
+			tasks: [
+				{
+					id: "372926645D708E1C"
+					item: "forbidden_arcanus:arcane_polished_darkstone"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0F1BAFA416525E5F"
+					item: "forbidden_arcanus:arcane_crystal_block"
+					type: "item"
+				}
+				{
+					id: "5AFCF5F3EB6B7EE6"
+					item: "forbidden_arcanus:mundabitur_dust"
+					type: "item"
+				}
+			]
+title: "奥能灌注" 
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1E885E171E4F151F"
+				"54C269DA5BC84114"
+			]
+description: ["初归途创&6纸符术&r 后多次改良 然...&o遗漏关键&r 今悟需&6奥法合金&r 增强术式威能"] 
+			hide: true
+			id: "49DF92E69F1C64C1"
+			tasks: [{
+				id: "00C4E64FE27B3A5D"
+				item: "irons_spellbooks:arcane_ingot"
+				type: "item"
+			}]
+title: "奥术合金" 
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3303249CD7361126"]
+description: ["探寻星辉石时 &6深入地下&r 闻异响&o\"咯-咯-咯\"&r 玛埃玛拉灭绝后 村民或成主宰 疑有&6地下废都&r"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "28ACFA895DC20E4A"
+			tasks: [{
+				icon: "minecraft:reinforced_deepslate"
+				id: "0D7D0B810E9135EF"
+				structure: "minecraft:ancient_city"
+title: "探寻古城" 
+				type: "structure"
+			}]
+title: "远古都城" 
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EACFF704945F1F7"]
+description: ["&o终有所获...&r &6回响碎片&r 蕴声波之力 然探寻时&o异香弥漫...&r 岩缝生&6未知异果&r 需溯源"] 
+			hide: true
+			icon: "quark:ancient_fruit"
+			id: "1B898089AF8FC245"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "157914951E7CB45A"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "1B5352D5B1DC836F"
+					item: "quark:ancient_sapling"
+					type: "item"
+				}
+				{
+					id: "7CCBDC67CF1CA615"
+					item: "quark:ancient_fruit"
+					type: "item"
+				}
+			]
+title: "太古珍馐" 
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["28ACFA895DC20E4A"]
+description: [
+"&o天启之地...&r 古城废墟中 &6无名守卫&r游荡 植株&6声波感应&r 唤此巨像追击"
+"{@pagebreak}"
+"战斗无益 &o非生灵实体&r 植株可无限召唤 且战力骇人... 游荡必有因 或镇守&6稀世秘宝&r"
+]
+			hide: true
+			id: "3EACFF704945F1F7"
+			tasks: [{
+				id: "25656EF23FD8FAEC"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+title: "往昔回响" 
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B898089AF8FC245"]
+description: ["哈 新主世界的奇观永无止境 &o经验魔树？&r 闻所未闻"] 
+			hide: true
+			id: "7DD9F11124834E4B"
+			tasks: [{
+				id: "4EB333603885E662"
+				item: "irons_spellbooks:ancient_knowledge_fragment"
+				type: "item"
+			}]
+title: "惊世残章" 
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"3EACFF704945F1F7"
+				"1EC6D76079A83A07"
+			]
+description: [
+"&6狂想罗盘&r 启发更大胆构想：寻找非强力咒术 而是&6琥珀晶&r 玛埃玛拉时期晶石 &o可统合意识 永世封存&r 然寻之不易"
+""
+"{@pagebreak}"
+"琥珀晶曾镶嵌特制靴中 授予&o伟人- 学者/大法师/统帅&r 着此靴可&6地脉通识&r 纵使晶碎为尘 &6知识永存&r 此特性正合吾需 或可&6解绿光之谜&r"
+]
+			hide: true
+			id: "0AB2BC579AD8DBE2"
+			tasks: [{
+				id: "0B2B9690F4B33CDD"
+				item: "kubejs:unawakened_compass_blank"
+				type: "item"
+			}]
+title: "晶胚" 
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0AB2BC579AD8DBE2"]
+description: ["罗盘终成 待&6激活晶胚&r 此乃寻获琥珀晶&o唯一希望&r 虽古建筑应受晶力庇护 然知晶者&6寥若晨星&r 若无此导向 &o踏破铁鞋亦枉然&r"] 
+			hide: true
+			id: "2EE713A41EDACE1B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18C8FDA33D92ED34"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2493EF9F989F3793"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+title: "探索者至宝" 
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A7A36F95D08F976"]
+description: ["&o失策矣&r 奥瑞尔无法直采 需&6方尖碑阵&r 替代基座蓄能 制瓶更耗&6秘尘&r"] 
+			hide: true
+			icon: "forbidden_arcanus:aureal_bottle"
+			id: "0A62D02F9CCF2B75"
+			tasks: [
+				{
+					id: "149712E81FBA71EB"
+					item: "forbidden_arcanus:arcane_crystal_obelisk"
+					type: "item"
+				}
+				{
+					id: "146EA2AB97EE17B0"
+					item: "forbidden_arcanus:aureal_bottle"
+					type: "item"
+				}
+			]
+title: "奥能瓶" 
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0A62D02F9CCF2B75"
+				"54C269DA5BC84114"
+			]
+description: ["第三要素：&l魂火&r 常见却需&6摄魂器&r捕获 塑料制器正宜 暗魂罕现亡灵殒处 凡魂游荡魂沙谷 而&6奥能瓶&r可淬炼精魂"] 
+			hide: true
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:soul_extractor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "61F9D1B817F27B08"
+			tasks: [
+				{
+					id: "4A77A3BE0A408BCE"
+					item: "forbidden_arcanus:splash_aureal_bottle"
+					type: "item"
+				}
+				{
+					id: "7C0B98C1162008BF"
+					item: {
+						Count: 1b
+						id: "forbidden_arcanus:soul_extractor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+title: "缚灵者" 
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["61F9D1B817F27B08"]
+description: ["淬魂首步&6凡魂为基&r 魂沙谷虽可见 然&o幻影居多&r 试以&6变异尘&r 化虚为实"] 
+			hide: true
+			icon: "quark:soul_bead"
+			id: "14A47E9839858710"
+			tasks: [
+				{
+					icon: "create:goggles"
+					id: "116796EF2067407B"
+					observe_type: 5
+					timer: 0L
+title: "查看幻影" 
+					to_observe: "quark:wraith"
+					type: "observation"
+				}
+				{
+					id: "4C5CE57BE84092A9"
+					item: "twilightforest:transformation_powder"
+					type: "item"
+				}
+			]
+title: "游魂" 
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["14A47E9839858710"]
+description: ["&6奥能瓶投魂&r 即可淬得精魂 摄魂器终章 此举虽利己 亦&o解魂灵永世飘零之苦&r"] 
+			hide: true
+			id: "1FCDC29D3E04BCE5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1504FB0CD37349F5"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "418A776ABA26BF53"
+				item: "forbidden_arcanus:enchanted_soul"
+				type: "item"
+			}]
+title: "魂之升华" 
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["290DE1D0DEE89585"]
+description: ["此乃&6暗黑花园传送门&r 古时研究初启 &o门枢琥珀晶碎片&r 护其免时蚀 暗园竟具&6抗时腐之能？&r"] 
+			hide: true
+			id: "11BF792756BBB0BB"
+			invisible: true
+			tasks: [{
+				id: "1EAD042F0CB473DE"
+				item: "kubejs:amberia_shard_1"
+				type: "item"
+			}]
+title: "初晶碎片" 
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B5836F1022F5145"]
+description: ["&o双论皆验&r 此非传送门 乃&6次元裂隙&r 空间渗流被晶框禁锢 昔有法师研其&6附魔效应&r 然&o凡躯难承辐射&r"] 
+			hide: true
+			id: "7A8FF619DDB461FE"
+			invisible: true
+			tasks: [{
+				id: "2BF295AFA287C369"
+				item: "kubejs:amberia_shard_2"
+				type: "item"
+			}]
+title: "次晶碎片" 
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["026D3C11E246E166"]
+description: ["天...玛埃玛拉竟试建&6精灵直通门&r 彼族&6自绝于世&r 幸&o工程未竣&r"] 
+			hide: true
+			id: "6056CFBF11662CC1"
+			invisible: true
+			tasks: [{
+				id: "649B1DEB6C693C7C"
+				item: "kubejs:amberia_shard_5"
+				type: "item"
+			}]
+title: "叁晶碎片" 
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5CE208604D926104"]
+description: ["惊现&6冰封巨熊&r 琥珀晶止其生命进程 &o永恒囚禁&r 然...何以选熊？&6科研对象？&r"] 
+			hide: true
+			id: "3765089A3C34CE72"
+			invisible: true
+			tasks: [{
+				id: "194BEFEB106B913D"
+				item: "kubejs:amberia_shard_6"
+				type: "item"
+			}]
+title: "肆晶碎片" 
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["753C8BA6E42B620F"]
+description: ["&o非凡仓库&r 实为&6神器工坊&r 匠师穷究兵刃极致 藏品含&6末影钢/遗忘金属/灵银&r 然终悟&6玻璃圣剑&r 乃冷兵之巅"] 
+			hide: true
+			id: "0FC1A2E20FC69566"
+			invisible: true
+			tasks: [{
+				id: "447B4F261413456F"
+				item: "kubejs:amberia_shard_7"
+				type: "item"
+			}]
+title: "伍晶碎片" 
+			x: -7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2996BD2D30BDE99C"]
+description: ["&o血晶之谜&r 愿此琥珀非属&m那位...&r&6 罢了 既往不咎&r"] 
+			hide: true
+			id: "4801CA3B8BD1666B"
+			invisible: true
+			tasks: [{
+				id: "61A7121393FE3C9A"
+				item: "kubejs:amberia_shard_11"
+				type: "item"
+			}]
+title: "陆晶碎片" 
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0FC1A2E20FC69566"
+				"7A8FF619DDB461FE"
+				"4801CA3B8BD1666B"
+				"11BF792756BBB0BB"
+				"6056CFBF11662CC1"
+				"3765089A3C34CE72"
+			]
+description: [
+"&o晶片集齐&r 可重铸&6完整琥珀晶&r 虽可续寻遗迹 然目标已达 &o复制术已成&r 无需再历艰险 重振&6玛埃玛拉授晶传统&r"
+"{@pagebreak}"
+"昔年&6君王&r 岁末择&o英杰&r 授晶靴使&6地脉通识&r 因形雅称&6天鹅绒搭扣&r 功勋卓著者赐&6四象晶变体&r"
+"{@pagebreak}"
+"吾虽谦逊 然凭功绩 &o自授晶靴&r 未尝不可"
+]
+			hide: true
+			id: "38E87B554783F08C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FFB71711BA80086"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				count: 2L
+				id: "072A5749D7D40F72"
+				item: "kubejs:cluster_of_amberia"
+				type: "item"
+			}]
+title: "玛埃玛拉至宝" 
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2EE713A41EDACE1B"]
+description: ["罗盘&6琥珀感应&r 尚需预热 侦得&6双生门信号&r &o各探其秘&r 寻晶概率五五开"] 
+			hide: true
+			hide_dependency_lines: true
+			icon: "undergarden:depthrock"
+			id: "290DE1D0DEE89585"
+			tasks: [
+				{
+					id: "6001601939B8E2B9"
+					structure: "sg_simple_utilities:undergarden_portal_one"
+title: "探寻暗园一门" 
+					type: "structure"
+				}
+				{
+					id: "02293E12E3AE4A48"
+					structure: "sg_simple_utilities:undergarden_portal_two"
+title: "探寻暗园二门" 
+					type: "structure"
+				}
+			]
+title: "暗界穿行" 
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11BF792756BBB0BB"]
+description: ["琥珀晶现世后 罗盘侦得&6新界门波动&r 信号类&6附魔台&r &o通往何处？&r"] 
+			hide: true
+			icon: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:feather_falling"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "3B5836F1022F5145"
+			tasks: [{
+				id: "7F5F44ED01A0ED06"
+				structure: "sg_simple_utilities:domain_entrance"
+title: "寻界域之门" 
+				type: "structure"
+			}]
+title: "虚空裂隙" 
+			x: -11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A8FF619DDB461FE"]
+description: ["&o再度启程&r"] 
+			hide: true
+			icon: "botania:natura_pylon"
+			id: "026D3C11E246E166"
+			tasks: [{
+				id: "3646F46A457BDCF8"
+				structure: "sg_simple_utilities:elf_temple"
+title: "寻精灵圣殿" 
+				type: "structure"
+			}]
+title: "自然灵光" 
+			x: -11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5CE208604D926104"]
+description: [
+"什...熊仓真相大白"
+""
+"{@pagebreak}"
+"&a恭喜！已发现12处彩蛋 解锁全部可开启第13隐藏彩蛋&r"
+"                               &o&f ——西格玛留&r"
+]
+			hide_dependency_lines: true
+			id: "4FC51D982AB7C92A"
+			invisible: true
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "0110C89A84A5ABA5"
+				item: "alexsmobs:bear_dust"
+				type: "item"
+			}]
+title: "惊愕" 
+			x: 0.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["3765089A3C34CE72"]
+description: ["罗盘指引&6小型建筑&r 虽信号微弱 然内藏&6多重干扰&r 恐有重宝"] 
+			hide: true
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:reinforced_deorum_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "753C8BA6E42B620F"
+			tasks: [{
+				id: "09F1174C2BB599B7"
+				structure: "sg_simple_utilities:swordsmith_workshop"
+title: "寻剑圣工坊" 
+				type: "structure"
+			}]
+title: "锻铁之音" 
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0FC1A2E20FC69566"]
+description: ["终极目标在望 若获&6大块琥珀晶&r &o奔波将毕&r 罗盘现指&6长形建筑&r 疑似纪念碑 &o晶石何存于此？&r"] 
+			hide: true
+			icon: "irons_spellbooks:dragonskin"
+			id: "2996BD2D30BDE99C"
+			tasks: [{
+				id: "024E9971F31DF591"
+				structure: "sg_simple_utilities:ender_dragon_statue"
+title: "寻末影龙像" 
+				type: "structure"
+			}]
+title: "龙吟谜踪" 
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6056CFBF11662CC1"]
+description: ["罗盘精校&6琥珀追踪&r 现指民居 &o尚有活物？&r 琥珀辐射区&6生灵皆殒&r 此乃例外？"] 
+			hide: true
+			icon: "alexsmobs:bear_fur"
+			id: "5CE208604D926104"
+			tasks: [{
+				id: "4F0CD56AEDB40848"
+				structure: "sg_simple_utilities:bear_barn"
+title: "寻熊仓" 
+				type: "structure"
+			}]
+title: "兽息" 
+			x: -8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"034E8B05906B20F1"
+				"3763D3FEBA1AF202"
+				"62411C5F188A83BF"
+				"087A7B8E488DCB0A"
+				"14A47E9839858710"
+			]
+description: ["&6基岩熔炉&r 奥法锻造核心 常态仅优普通炉 &o双料同熔&r 然以&6魂火为引&r 可获资源倍增 甚产&6稀有物质&r &o远胜异形炉&r"] 
+			hide: true
+			icon: "forbidden_arcanus:clibano_core"
+			id: "2A52F58C1AA0D571"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49059347ECF0167E"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					count: 17L
+					id: "3974588296024C0B"
+					item: "forbidden_arcanus:polished_darkstone_bricks"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "444C1F294BE97FA9"
+					item: "forbidden_arcanus:polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "085E84B09A24D52F"
+					item: "forbidden_arcanus:clibano_core"
+					type: "item"
+				}
+			]
+title: "基岩熔炉" 
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7DD9F11124834E4B"]
+description: ["&6凡果效力不足&r 需强效催化&6奥术卷轴&r 或可以&6回响碎片&r 激活知识"] 
+			hide: true
+			id: "02616ED01F9D9BA0"
+			tasks: [{
+				id: "310A685BF0960258"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+title: "奥法卷轴" 
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"1FCDC29D3E04BCE5"
+				"02616ED01F9D9BA0"
+				"2A52F58C1AA0D571"
+			]
+description: ["&6古魔法真谛&r 已获 现需&o他系知识&r 忆及&6和谐卷轴&r 传说可启&6完美音律&r 试制此卷 或有所得"] 
+			hide: true
+			id: "280D2E879130E586"
+			tasks: [{
+				id: "5F1176C804EAA6B9"
+				item: "kubejs:scroll_of_harmony"
+				type: "item"
+			}]
+title: "万物和鸣" 
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"54C269DA5BC84114"
+				"38E87B554783F08C"
+				"62CB629101D9DD61"
+				"5FAC12FC98340D07"
+			]
+description: [
+"&l难以置信...&r 区区&o乐师艺评家&r 竟重现玛埃玛拉至宝 虽感&6违和&r 然重点不在此"
+"{@pagebreak}"
+"当下要务乃铸&6全知法器&r 晶靴知识需转&6四象晶球&r：研习/创造/征伐/秘法 望积累足以启铸"
+]
+			hide: true
+			hide_dependent_lines: true
+			id: "1B9639F30329ABA1"
+			tasks: [{
+				id: "1E845961E45D9EF3"
+				item: {
+					Count: 1b
+					id: "tyafi:oprn_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+description: ["偶然忆起末地见闻 &6粉黄晶簇&r 结构奇异似果冻 &o固态粉状硬度如一&r 突发奇想&6织物镀晶&r 可得极致护甲"] 
+			hide: true
+			id: "62CB629101D9DD61"
+			tasks: [{
+				id: "467F4C469C2A12D3"
+				item: "kubejs:ametrine_fabric"
+				type: "item"
+			}]
+title: "晶化护甲" 
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7EC5B036638700AC"
+				"1B9639F30329ABA1"
+			]
+description: ["传奇旅者获赐&6阿拉丁潜行靴&r 疾速&o脱战勘探两宜&r 暗园门前&6先贤遗靴&r 然&o论跋涉 吾乃当世无双&r"] 
+			hide: true
+			id: "27FCBA13D6DAF236"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EA7B9C2CD892F4A"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "59E5D86BE7B808CD"
+				item: {
+					Count: 1b
+					id: "tyafi:shchz_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "林间疾影" 
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"47805D9581CDB6BC"
+				"1B9639F30329ABA1"
+			]
+description: ["&6蛇纹战靴&r 唤起童年噩梦 昔年&6屠龙者&r 恃此酿血祸 &o今执此靴 战栗难抑&r"] 
+			hide: true
+			id: "21367E4354F4C78A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E495313D0B480B8"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4D51E7F6C50BA3B4"
+				item: {
+					Count: 1b
+					id: "tyafi:kam_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "致命啮痕" 
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"07245F6BBDE078D3"
+				"1B9639F30329ABA1"
+			]
+description: ["匠魂核心&6基建狂魔&r 工厂&6砖砌美学&r 象征效率巅峰 &6砖纹搭扣&r 赐永续耐力 &o无惧艰险&r"] 
+			hide: true
+			id: "75482C22AB896EA0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "78282103BA37C706"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5F52D322448A2897"
+				item: {
+					Count: 1b
+					id: "tyafi:tyhb_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "玻璃心慎入" 
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"49479F24B63D6C9C"
+				"1B9639F30329ABA1"
+			]
+description: ["&o\"万物源海\"&r 古法师信条 &6鳄神之履&r 联通海洋之力 唯大贤者配享 &6海灵核心&r 现世沙中"] 
+			hide: true
+			id: "17E3722C9C9768C7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30FA6C2A04153630"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1ED1502C66F16F25"
+				item: {
+					Count: 1b
+					id: "tyafi:chr_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "噬魂鲨影" 
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5F31CD8088C81010"
+				"30BED2C372E4A3C7"
+				"79E830590471A321"
+				"27FCBA13D6DAF236"
+				"21367E4354F4C78A"
+				"75482C22AB896EA0"
+				"17E3722C9C9768C7"
+				"05B5093679F4BEF9"
+			]
+description: [ 
+"&6琥珀晶靴&r与&6和谐法器&r 竟生共鸣 &o能量交融无斥&r 拟合二者 使&6万界记忆归流&r" 
+"{@pagebreak}" 
+"&o记忆...&r 暗园失忆 林间重历玛埃玛拉史 归乡寻回本我 &o仍未足&r 誓&6复兴文明&r" 
+"{@pagebreak}" 
+"&o&6...不择手段...&r" 
+] 
+			hide: true
+			id: "45D4685A5D6C7F49"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57218499EF5ABF7D"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "498C8BA9AB70E94B"
+				item: "kubejs:elegy_of_memories"
+				type: "item"
+			}]
+title: "寰宇长歌" 
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5EBD7C477C63DBBF"]
+description: ["选用&6生命木&r 跨维特性赋乐器神韵 &o刚烈之音非宜&r 制&l&6古韵竖琴&r 清音悦世"] 
+			hide: true
+			id: "30BED2C372E4A3C7"
+			tasks: [{
+				id: "0C469975E7F45F32"
+				item: "genshinstrument:vintage_lyre"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40F46DC3910FBA2C"]
+description: ["&6古木&r 果不负所望 制&l&6风语竖琴&r 弦动&o清风传响 启悟四方&r"] 
+			hide: true
+			id: "5F31CD8088C81010"
+			tasks: [{
+				id: "2F0B29326AA90246"
+				item: "genshinstrument:windsong_lyre"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65DBF93D12347014"]
+description: ["&6时之木&r 刚柔并济 铸&l&6荒泷震天鼓&r 击节撼石 时波增幅"] 
+			hide: true
+			id: "79E830590471A321"
+			tasks: [{
+				id: "5A86019272BCA28F"
+				item: "genshinstrument:glorious_drum"
+				type: "item"
+			}]
+title: "磐石律动" 
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["729321B29F9F2B35"]
+description: ["&6奥能木&r 清越天成 制&l&6花语诗琴&r 虽形古而韵新"] 
+			hide: true
+			id: "05B5093679F4BEF9"
+			tasks: [{
+				id: "3797B383D61178FA"
+				item: "genshinstrument:floral_zither"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+description: ["极品乐器需&6时之木&r 唯暮光森林可寻 &6时流加速&r 特性升华乐律"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "65DBF93D12347014"
+			tasks: [{
+				id: "3EE80C88A53890CB"
+				item: "twilightforest:time_log"
+				type: "item"
+			}]
+title: "时律核心" 
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+description: ["极品乐器需&6奥能木&r 叶蕴金辉 &o天地至宝岂容错过&r"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "729321B29F9F2B35"
+			tasks: [{
+				id: "3BFE084714490B28"
+				item: "forbidden_arcanus:aurum_log"
+				type: "item"
+			}]
+title: "奥律核心" 
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+description: ["极品乐器需&6生命木&r 联通现世与精灵界 乐基不二之选"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "5EBD7C477C63DBBF"
+			tasks: [{
+				id: "2AC51F6F3EBB84AE"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+title: "生灵核心" 
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+description: ["极品乐器需&6古木&r 古城千年沉淀 &o经验浸润 音魂完满&r"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "40F46DC3910FBA2C"
+			tasks: [{
+				id: "79B30D3CA738FC5E"
+				item: "quark:ancient_log"
+				type: "item"
+			}]
+title: "古律核心" 
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"18C10B78B36ED133"
+			]
+description: ["石油勘探时 海滩信号异常 &6海底秘宝&r 或存 &o藏宝图何在？&r"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "49479F24B63D6C9C"
+			tasks: [{
+				id: "0124C7E7B1D4F081"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+title: "海渊低语" 
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"053EC878E2EAD3DA"
+			]
+description: ["洞窟深处&6矮灵足迹&r 持&6钻石齿轮&r 潜行&o智取机关&r"] 
+			hide: true
+			hide_dependency_lines: true
+			id: "07245F6BBDE078D3"
+			tasks: [{
+				id: "5726C5AD96DE0AEF"
+				item: "quark:diamond_heart"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"1EC6D76079A83A07"
+			]
+description: ["&6狂想罗盘&r 直指&6死灵地宫&r 强烈咒力源 &o何人施术？&r"] 
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:blood_staff"
+				tag: {
+					ISB_spellbook: {
+						activeSpellIndex: 0
+						spellSlots: 5
+						spells: [
+							{
+								level: 6
+								sid: "irons_spellbooks:wither_skull"
+								slot: 0
+							}
+							{
+								level: 6
+								sid: "irons_spellbooks:ray_of_siphoning"
+								slot: 1
+							}
+							{
+								level: 3
+								sid: "irons_spellbooks:blood_step"
+								slot: 2
+							}
+							{
+								level: 6
+								sid: "irons_spellbooks:blood_slash"
+								slot: 3
+							}
+							{
+								level: 6
+								sid: "irons_spellbooks:blaze_storm"
+								slot: 4
+							}
+						]
+					}
+				}
+			}
+			id: "47805D9581CDB6BC"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "irons_spellbooks:blood_staff"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: 0
+							spellSlots: 5
+							spells: [
+								{
+									level: 6
+									sid: "irons_spellbooks:wither_skull"
+									slot: 0
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:ray_of_siphoning"
+									slot: 1
+								}
+								{
+									level: 3
+									sid: "irons_spellbooks:blood_step"
+									slot: 2
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blood_slash"
+									slot: 3
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blaze_storm"
+									slot: 4
+								}
+							]
+						}
+					}
+				}
+				id: "63F3553544B894F7"
+				structure: "irons_spellbooks:catacombs"
+title: "探寻地宫" 
+				type: "structure"
+			}]
+title: "咒术迷宫" 
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"3EACFF704945F1F7"
+			]
+description: ["偶遇&6地牢次元&r 未获&6八大秘宝&r 心结难解 &o关键拼图&r"] 
+			hide: true
+			hide_dependency_lines: true
+			icon: "dimdungeons:item_homeward_pearl"
+			id: "7EC5B036638700AC"
+			tasks: [{
+				advancement: "dimdungeons:dungeons/all_trophies"
+				criterion: ""
+				icon: "twilightforest:filled_magic_map"
+				id: "62DC61BD36E8D964"
+title: "集齐八秘宝" 
+				type: "advancement"
+			}]
+title: "隐藏遗珍" 
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["49DF92E69F1C64C1"]
+description: ["此金属&6奥法双修&r &o祈愿奏效&r"] 
+			hide: true
+			id: "1EC6D76079A83A07"
+			tasks: [{
+				id: "48AF504D1531101A"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:wayward_compass"
+					tag: {
+						isInInventory: 1b
+					}
+				}
+				type: "item"
+			}]
+title: "妙手天成" 
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45D4685A5D6C7F49"]
+description: [ 
+"&a此番非寻常谢幕 &o传奇永不终结&r &a谨致玩家：旧章虽毕 新篇待启..." 
+"{@pagebreak}" 
+"&6...谁说故事已完？未解之谜 静候揭晓...&r" 
+] 
+			hide: true
+			icon: "minecraft:writable_book"
+			id: "0283BA1900F62DFB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1CCD168B09BCDEC3"
+				table_id: 628770822137106154L
+title: "第六模具" 
+				type: "loot"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "4CD12817029985A4"
+title: "后会有期" 
+				type: "checkmark"
+			}]
+title: "冒险永续" 
+			x: 6.5d
+			y: 4.5d
+		}
+	]
+subtitle: ["&9...行者无疆"] 
+title: "&9第六章 晨昏际会" 
+}

@@ -1,0 +1,2137 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create101"
+	group: "54DECDB6D89E76B0"
+	hide_quest_until_deps_visible: true
+	icon: "create:precision_mechanism"
+	id: "100C477F4E63F20A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19849A23828DC968"]
+			description: [
+				"既然我已初步了解&6机械动力,&r 我意识到&o这门学科何其广博...&r 最好在日志中开辟&6独立章节&r 记录所有工程学研究"
+				"{@pagebreak}"
+				"此处不宜记录主观想法 毕竟机械动力是精密科学 &o个人见解恐影响准确性...&r"
+			]
+			hide: true
+			icon: "supplementaries:cog_block"
+			id: "57A7A5C79389A96A"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				icon: "create:wrench"
+				id: "695A0E0BC4B78AEC"
+				title: "机械动力"
+				type: "checkmark"
+			}]
+			title: "研究开端"
+			x: -19.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57A7A5C79389A96A"
+				"17FD1D4D4B7B87F6"
+			]
+			description: ["所有机械的基础材料是&6安山岩合金&r 用于制造&o外壳/传动轴等初始部件&r"]
+			hide: true
+			id: "0F16498769DFB3B0"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "5D2B9139C49F5ABA"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0F16498769DFB3B0"
+				"2040EC6BDB33D808"
+			]
+			description: ["&6传动轴&r 是传递旋转动力的基础部件 可通过延长连接多个装置 &o保持转速不变&r"]
+			hide: true
+			id: "5B36DE3826F26963"
+			tasks: [{
+				id: "2F89C6C2CD322B51"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B36DE3826F26963"]
+			description: ["&6小齿轮&r 向相邻齿轮传递动力&o(改变旋转方向)&r 前方及对角线大齿轮 封装可&6阻断前向传输&r 交替大小齿轮可&6倍速/半速&r &o倍速将加倍系统负载&r"]
+			hide: true
+			id: "3E5E0C768038CDF4"
+			tasks: [{
+				id: "68F2BD699AADA753"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E5E0C768038CDF4"]
+			description: ["&6大齿轮&r 向前方及对角线小齿轮传递动力 封装可&6阻断前向传输&r 侧向安装可&6改变传动平面&r"]
+			hide: true
+			id: "23A9617F183C4EB1"
+			tasks: [{
+				id: "3E2A4428BDE92738"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F95F00ED78FBAB9"]
+			description: [
+				"使用&6转速计&r 查看连接部件的实时转速"
+				"配合红石比较器可&o输出对应红石信号&r"
+			]
+			id: "29917E6196649F5D"
+			shape: "gear"
+			tasks: [{
+				id: "6A5BBAA13F1730F2"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4F95F00ED78FBAB9"]
+			description: ["&6应力计&r 显示系统负载状态 &o监测剩余承载余量&r"]
+			id: "48BE7DAC5082044D"
+			shape: "gear"
+			tasks: [{
+				id: "10CB6FCDDD3E38D4"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			x: -17.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"57A7A5C79389A96A"
+				"5A228233B6383EB6"
+			]
+			description: ["&6工程师护目镜&r 配合扳手使用 可查看转速/负载等&o机械状态信息&r"]
+			hide: true
+			id: "4F95F00ED78FBAB9"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6989058FD488CE64"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24F8BCB6A24AD091"]
+			description: ["&6烈焰蛋糕&r 投入燃烧室可触发超高温模式 &o解锁特殊合成配方&r"]
+			id: "4C77ABCD41383F32"
+			shape: "hexagon"
+			tasks: [{
+				id: "2E9A4E9BFFC10819"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57A7A5C79389A96A"]
+			description: ["手动建造效率低下 需开发&6自动建造系统&r 使用&6蓝图笔&r记录结构数据 通过&6蓝图台&r生成&6空白蓝图&r 最后用&6蓝图炮&r发射建造"]
+			icon: "create:schematic_and_quill"
+			id: "0CF69DBA9573A7B3"
+			tasks: [
+				{
+					id: "0FB1E9BD14FE8EF8"
+					item: "create:schematic_table"
+					type: "item"
+				}
+				{
+					id: "00EF503E42D6DB33"
+					item: "create:schematic_and_quill"
+					type: "item"
+				}
+			]
+			x: -21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CF69DBA9573A7B3"]
+			description: ["结合&6超级胶水&r 可将多个部件粘合为整体 &o实现活塞联动结构&r"]
+			id: "7D67058592EE5958"
+			tasks: [
+				{
+					id: "5D989C876E9B8AA5"
+					item: "create:schematicannon"
+					type: "item"
+				}
+				{
+					id: "28D23F916DC5C92B"
+					item: "create:empty_schematic"
+					type: "item"
+				}
+			]
+			x: -22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57A7A5C79389A96A"]
+			description: ["&6Суперклей&r является неотъемлемой частью подвижных механизмов. Склеив им разные детали, они станут одним целым и их будет &oвозможно двигать разными поршнями и вращателями. &r"]
+			id: "1F58AA51814C7568"
+			shape: "circle"
+			tasks: [{
+				id: "1A9BC10CDDA9FCF2"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -18.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			hide: true
+			id: "7E6A93A86BA569CE"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0619217CE5E6F616"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6红石触点&r 接触时传递信号 &o适用于电梯等移动装置&r"]
+			id: "23ED40EF86DD56B9"
+			shape: "hexagon"
+			tasks: [{
+				id: "51FA8A1F79442136"
+				item: "create:redstone_contact"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6受控拉杆&r 单侧信号激活 反向信号关闭"]
+			id: "08C56563442FE079"
+			shape: "hexagon"
+			tasks: [{
+				id: "55309FB14D3863EF"
+				item: "create:powered_latch"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6受控切换拉杆&r 红石脉冲触发状态切换"]
+			id: "59AE879BA13AD91D"
+			shape: "hexagon"
+			tasks: [{
+				id: "28403D1B7E2000AA"
+				item: "create:powered_toggle_latch"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: [
+				"&6智能侦测器&r 可检测容器内容/传送带物流等 &o触发红石信号&r"
+				"通过&6过滤槽&r 实现&o特定物品/流体识别&r"
+			]
+			hide_details_until_startable: true
+			id: "31765D0D7F5E89E0"
+			shape: "hexagon"
+			tasks: [{
+				id: "21B839A48F6624E4"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6红石发射器&r 无线传输信号 &o可设频率与收发模式&r"]
+			hide_details_until_startable: true
+			id: "3CA8E3CDE5F8DAF7"
+			shape: "hexagon"
+			tasks: [{
+				id: "5A225EA387456EDB"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6阈值开关&r 监控容器填充度 &o达到设定值输出信号&r"]
+			hide_details_until_startable: true
+			id: "449F04B9D2D2482B"
+			shape: "hexagon"
+			tasks: [{
+				id: "7A33058E95606A3B"
+				item: "create:stockpile_switch"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6脉冲延长器&r 自定义&o红石脉冲持续时间&r"]
+			hide_details_until_startable: true
+			id: "13018D7AC52AF359"
+			shape: "hexagon"
+			tasks: [{
+				id: "2527D8F72F6A9B29"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6脉冲中继器&r 延迟发送&o可调间隔脉冲&r"]
+			hide_details_until_startable: true
+			id: "5369A4AC170D1D7E"
+			shape: "hexagon"
+			tasks: [{
+				id: "6AE770081829488C"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6模拟拉杆&r 精确输出&o指定强度红石信号&r"]
+			id: "63E05F3657CF988C"
+			shape: "hexagon"
+			tasks: [{
+				id: "528906C01E7E29B0"
+				item: "create:analog_lever"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0A0AE13901752C67"
+				"2BB48B10E6F38755"
+			]
+			description: [
+				"红石在机械动力中至关重要"
+				""
+				"尽情探索红石工程学的精妙之处"
+			]
+			hide: true
+			icon: "minecraft:redstone"
+			id: "0CED2AC028189316"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6A55F2D80892AD86"
+				type: "checkmark"
+			}]
+			title: "红石系统"
+			x: -3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6收割机&r 自动采集作物 &o连接容器存储产物&r"]
+			id: "139B0F6AB99231C6"
+			shape: "hexagon"
+			tasks: [{
+				id: "61E53C460C52AA73"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6犁地机&r 翻耕土地/弹飞实体 &o连接容器收集掉落物&r"]
+			id: "3C4C4AAB5C69654A"
+			shape: "hexagon"
+			tasks: [{
+				id: "41E1DB2AE3937970"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6钻头&r 自动采掘前方方块 &o需旋转动力或载具带动&r"]
+			id: "4527408738C2E90B"
+			shape: "hexagon"
+			tasks: [{
+				id: "5E78C8F039EAE2DE"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6锯木机&r 砍伐树木/木材加工 &o配置过滤槽控制产出&r"]
+			id: "0C195F18E1D788F9"
+			shape: "hexagon"
+			tasks: [{
+				id: "357575C17D7B214F"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["074604E13C7DC3A2"]
+			description: [
+				"&6黄铜隧道&r 支持过滤与分流管理 多隧道并联形成&6物流网络&r"
+				"侧向传送带实现物品分流 &6独立过滤槽&r支持精确分拣 &o可设置分流比例&r"
+			]
+			hide_details_until_startable: true
+			id: "718533DAD98B751E"
+			shape: "hexagon"
+			tasks: [{
+				count: 2L
+				id: "5DEDEC693ADACE86"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			title: "黄铜隧道"
+			x: -13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3D0CCD96331F994E"]
+			description: ["&6安山岩隧道&r 侧向连接可&o单物品分流&r 多隧道&6协同工作&r"]
+			id: "074604E13C7DC3A2"
+			shape: "hexagon"
+			tasks: [{
+				count: 2L
+				id: "70EAC2E3A25239E5"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			title: "安山岩隧道"
+			x: -13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["61E1F509FC788092"]
+			description: ["&6黄铜闸门&r 支持过滤与&o整组物品传输&r"]
+			hide_details_until_startable: true
+			id: "756394031B1088DF"
+			shape: "hexagon"
+			tasks: [{
+				count: 2L
+				id: "4B039623EA86F5C0"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			title: "黄铜闸门"
+			x: -15.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3D0CCD96331F994E"]
+			description: ["&6安山岩闸门&r 单物品输出/整组输入 &o红石信号控制启停&r"]
+			id: "61E1F509FC788092"
+			shape: "hexagon"
+			tasks: [{
+				count: 2L
+				id: "551FFEE7E9A1DBB7"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			title: "安山岩闸门"
+			x: -15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B36DE3826F26963"]
+			description: ["&6传送带&r 连接传动轴运输物品 &o支持染色与多向铺设&r"]
+			hide: true
+			id: "3D0CCD96331F994E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3622191F1BCC6988"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0F16498769DFB3B0"
+				"3687BB4EC51B93CB"
+			]
+			description: ["&6安山岩外壳&r 基础机械框架 &o用于包裹传动部件&r"]
+			hide: true
+			id: "16DF65A27C527EC4"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2A1E93BA11F8CEEE"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6机械合成器&r 联机构建大型工作台 &o箭头需指向同一合成格&r 空位需&6端口封盖&r避免误入"]
+			icon: "create:mechanical_crafter"
+			id: "3C6FD14B4798B294"
+			shape: "hexagon"
+			tasks: [{
+				id: "1527843F45CE0B56"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: [
+				"&6鼓风机&r 具备&o熔炼/清洗/灌注/烟熏&r功能"
+				"岩浆前置→熔炼"
+				"水前置→清洗"
+				"灵魂火前置→灌注"
+				"普通火前置→烟熏"
+			]
+			id: "0E99CC805F88B787"
+			shape: "hexagon"
+			tasks: [{
+				id: "059E6476E9246AB3"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6弹射器&r 弹射物品至标记位置 &o可调节弹射量&r"]
+			id: "4AD5F58D4CFEB2DF"
+			shape: "hexagon"
+			tasks: [{
+				id: "23B08A64465B3E3F"
+				item: "create:weighted_ejector"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6漏斗&r 连接容器与传送带 &o下方鼓风机可使物品上行&r"]
+			id: "14E50EA7F97274A2"
+			shape: "hexagon"
+			tasks: [{
+				id: "11D904C7CC0B5456"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6智能漏斗&r 支持堆叠数量控制与&o物品过滤&r"]
+			id: "4D9BE80EC1D1F792"
+			shape: "hexagon"
+			tasks: [{
+				id: "3FD804EA8597A0B1"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6便携式存储接口&r 成对使用 &o动态存储同步技术&r"]
+			id: "64ABED7932C787DB"
+			shape: "hexagon"
+			tasks: [{
+				id: "6DE0D0EE606595AE"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["08847873D33F4388"]
+			description: ["&6便携式流体接口&r 成对使用 &o实现移动装置流体传输&r"]
+			id: "2C777980DFC00673"
+			shape: "hexagon"
+			tasks: [{
+				id: "46E5CD0915E6CC44"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A154BE7095012ED"]
+			description: ["&6反转齿轮箱&r 红石信号&o完全阻断动力传输&r"]
+			id: "5AB5DF09F2F68283"
+			shape: "hexagon"
+			tasks: [{
+				id: "1CE13C821E12294A"
+				item: "create:clutch"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A154BE7095012ED"]
+			description: ["&6链条传动箱&r 多向传递动力 &o支持垂直转向&r"]
+			id: "063D0C4E3D5DC067"
+			shape: "hexagon"
+			tasks: [{
+				id: "75C3F80271590A66"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["063D0C4E3D5DC067"]
+			description: ["&6可调链式变速箱&r 红石控制&o2倍加速/半速减速&r"]
+			id: "34AF9F62C1D9F9EE"
+			shape: "hexagon"
+			tasks: [{
+				id: "5F134B8FCE722CB9"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A154BE7095012ED"]
+			description: ["&6反转齿轮箱&r 红石信号&o反转旋转方向&r"]
+			id: "0317829B7FB5EEC2"
+			shape: "hexagon"
+			tasks: [{
+				id: "4E1E81AEEC8FDE7A"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A154BE7095012ED"]
+			description: ["&6序列齿轮箱&r 可编程执行&o机械动作序列&r"]
+			id: "6C63B932DB2BC31D"
+			shape: "pentagon"
+			tasks: [{
+				id: "20ADE2EA110B8C95"
+				item: "create:sequenced_gearshift"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6机械活塞&r 通过&6活塞杆&r扩展行程"]
+			id: "3B8703C3C4518847"
+			shape: "hexagon"
+			tasks: [{
+				id: "405ACE0B16968629"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:mechanical_piston"
+							}
+							{
+								Count: 1b
+								id: "create:sticky_mechanical_piston"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "机械活塞"
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B36DE3826F26963"]
+			description: ["&6变速箱&r 改变传动方向 &o输出反向旋转&r"]
+			hide: true
+			icon: "create:gearbox"
+			id: "7A154BE7095012ED"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3177CD17FFA23A12"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "2C11751CD8687D3C"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+			]
+			title: "变速箱"
+			x: -14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6机械轴承&r 驱动粘合结构的旋转核心"]
+			id: "4AB9A1A1223DD0E4"
+			shape: "hexagon"
+			tasks: [{
+				id: "5F5A214F38350283"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6绞盘&r 升降&o粘合结构&r"]
+			id: "505B5C5846D0E711"
+			shape: "hexagon"
+			tasks: [{
+				id: "261F7AFA6B2A0D54"
+				item: "create:rope_pulley"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6线性底盘&r 多轴联动运输系统 &o红石信号控制动力转向&r"]
+			icon: "create:gantry_carriage"
+			id: "027C0D2BEA2286B4"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "128643413B8B560A"
+					item: "create:gantry_carriage"
+					type: "item"
+				}
+				{
+					id: "22139C81AB775187"
+					item: "create:gantry_shaft"
+					type: "item"
+				}
+			]
+			title: "线性驱动"
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6粉碎轮&r 高效材料处理 &o可自定义外观材质&r"]
+			id: "547B1BC592ABCBA9"
+			shape: "hexagon"
+			tasks: [{
+				count: 2L
+				id: "37E52829DB50C4AD"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "粉碎轮"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6信息显示器&r 联动告示牌/数码管 &o支持实时数据更新&r"]
+			id: "2C0E9B0A0453CF9A"
+			shape: "hexagon"
+			tasks: [{
+				id: "616FE5C5741DB93E"
+				item: "create:display_link"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C0E9B0A0453CF9A"]
+			description: [
+				"&6机械显示屏&r 可缩放信息面板"
+				"使用命名牌/文本板配置内容 &o支持无线信息传输&r"
+			]
+			id: "402A9561ACFC2198"
+			shape: "hexagon"
+			tasks: [{
+				id: "474C6D8D424A79F5"
+				item: "create:display_board"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2C0E9B0A0453CF9A"]
+			description: ["&6气体放电管&r 可显示文字/数字 每面支持2字符 &o电梯系统实用组件&r"]
+			hide_dependency_lines: false
+			id: "4E948759E37C7057"
+			shape: "hexagon"
+			tasks: [{
+				id: "2477564B391BC5EC"
+				item: "create:nixie_tube"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["08847873D33F4388"]
+			description: ["&6流体管道&r 传输流体 使用扳手右键&o查看流体流动&r"]
+			id: "753B48CB539ACA4E"
+			shape: "hexagon"
+			tasks: [{
+				count: 4L
+				id: "1477E575915C2069"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			title: "流体管道"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["753B48CB539ACA4E"]
+			description: ["&6机械泵&r 定向输送流体 &o最大传输距离16格&r 转速影响流速 调整方向需&6旋转泵体&r"]
+			id: "7A7D302E0EFDC7CF"
+			shape: "hexagon"
+			tasks: [{
+				id: "45F22A8BDBAFBF19"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5ACBA63440B75895"]
+			description: ["&6智能流体管&r 配置过滤槽 &o精确控制流体类型&r"]
+			id: "5AF0D3168EB2AB4C"
+			shape: "hexagon"
+			tasks: [{
+				id: "444688590157B116"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["753B48CB539ACA4E"]
+			description: ["&6流体阀门&r 铜制阀门可&6开关控制&r 任意旋转动力均可操作"]
+			id: "5ACBA63440B75895"
+			shape: "hexagon"
+			tasks: [{
+				id: "625003A88D180343"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08847873D33F4388"]
+			description: ["&6浇注器&r 实现物品灌注/倾倒 &o兼容传送带与工作台&r"]
+			id: "50418F41EBF35C53"
+			shape: "hexagon"
+			tasks: [{
+				id: "1A4BEC446CB766C6"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["08847873D33F4388"]
+			description: ["&6软管卷轴&r 抽取环境流体 &o超过10000mb视为无限源&r"]
+			id: "3AE96B65B211C2EF"
+			shape: "hexagon"
+			tasks: [{
+				id: "2E6E346435431A29"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["08847873D33F4388"]
+			description: ["&6流体储罐&r 最大3x3x30规格 &o存储超300万mb流体&r"]
+			id: "6D75E038AE21C2E5"
+			shape: "hexagon"
+			tasks: [{
+				id: "26DAB7B790CE4D48"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0E99CC805F88B787"]
+			description: ["&6喷雾器&r 扩展鼓风机作用范围 &o失去加工功能&r"]
+			id: "47DCCE7116DEBDCA"
+			shape: "hexagon"
+			tasks: [{
+				id: "0166B78C5B1BFAAE"
+				item: "create:nozzle"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"718533DAD98B751E"
+				"756394031B1088DF"
+			]
+			description: ["使用&6属性过滤器&r 按标签分类物品 &o支持黑白名单与嵌套过滤&r"]
+			icon: "create:attribute_filter"
+			id: "050581D9E93C3DE0"
+			shape: "hexagon"
+			tasks: [{
+				id: "5830ACEAA3F92989"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["30C042DACAC78EA6"]
+			description: ["&6转速调节器&r 配合大齿轮实现&o速度与方向调控&r"]
+			id: "69DBFE8C98BEAA9C"
+			shape: "hexagon"
+			tasks: [{
+				id: "6FCB420362704E37"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6钟表机构&r 进阶旋转装置 &o可制作自动报时器&r"]
+			id: "53A9F583ED1CFC6E"
+			shape: "hexagon"
+			tasks: [{
+				id: "47FD476896FABE34"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6矿车装配站&r 红石信号激活 &o粘合结构可打包运输&r 使用扳手&6折叠/展开&r"]
+			id: "20692FCE89969E9F"
+			shape: "hexagon"
+			tasks: [{
+				id: "474BB1E4118A3628"
+				item: "create:cart_assembler"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: [
+				"&6径向底盘&r 侧向粘合无需胶水"
+				""
+				"&6线性底盘&r 正面粘合无需胶水"
+			]
+			icon: "create:linear_chassis"
+			id: "70441032159A90E6"
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 3L
+					id: "39144E45F14CB910"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "32205DE0062B6253"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+			]
+			title: "机械底盘"
+			x: -10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6电梯绞盘&r 多楼层控制系统 &o配合红石触点编程&r"]
+			id: "210AEB6F1963FA47"
+			shape: "hexagon"
+			tasks: [{
+				id: "2049A25B9C4A4E65"
+				item: "create:elevator_pulley"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6链接控制器&r 红石信号发射器 &o可嵌入讲台制作紧凑面板&r"]
+			hide_details_until_startable: true
+			id: "439F2B2537914CC9"
+			shape: "hexagon"
+			tasks: [{
+				id: "4A116AA5689D2E94"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CED2AC028189316"]
+			description: ["&6玫瑰石英红石灯&r 信号触发长亮 &o同区域仅一盏可激活&r"]
+			hide_details_until_startable: true
+			id: "023BA6BDECF97CA1"
+			shape: "hexagon"
+			tasks: [{
+				id: "04D73F4BDC53805D"
+				item: "create:rose_quartz_lamp"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6机械激活器&r 自动化人工作业 &o剪羊毛/挤牛奶/放置方块等&r"]
+			id: "1CBE2976A1FBF35D"
+			shape: "hexagon"
+			tasks: [{
+				id: "5517407568991A3F"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["30C042DACAC78EA6"]
+			description: ["&6机械臂&r 多输入输出物流系统 &o可配置分拣逻辑&r"]
+			id: "0CAA1F2CB7922740"
+			shape: "hexagon"
+			tasks: [{
+				id: "1071247F85A8A1CA"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35CB3E93AD19F975"]
+			description: ["&6烈焰人燃烧室&r 使用幽魂之泪激活 &o多种燃料维持高温&r"]
+			id: "24F8BCB6A24AD091"
+			shape: "hexagon"
+			tasks: [{
+				id: "381FA7D62E04A1A0"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6结构控制器&r 管理移动装置 &o电梯楼层选择界面&r"]
+			id: "45E04EA612546D02"
+			shape: "hexagon"
+			tasks: [{
+				id: "52CF22F380D5B3E8"
+				item: "create:contraption_controls"
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: [
+				"&6粘性底盘&r 需配合移动结构使用"
+				""
+				"红石信号触发时 &o粘附相邻方块同步移动&r"
+			]
+			id: "1C36CBFCA193FE7C"
+			shape: "hexagon"
+			tasks: [{
+				id: "0C6412B571E6C631"
+				item: "create:sticker"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16DF65A27C527EC4"]
+			description: ["&6空燃烧室&r 捕获烈焰人制成功能版 或&o打火石激活为篝火&r"]
+			id: "35CB3E93AD19F975"
+			shape: "hexagon"
+			tasks: [{
+				id: "10FF69DF5920CCF7"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"79C542CA156AB01E"
+				"16DF65A27C527EC4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["&6手摇曲柄&r 手动发电 &o使用消耗饥饿值&r"]
+			id: "31C539FC15F26208"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "40712AAAAE4E5E26"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "手摇曲柄"
+			x: -6.625d
+			y: -2.625d
+		}
+		{
+			dependencies: ["79C542CA156AB01E"]
+			description: [
+				"&6蒸汽锅炉&r 高效动力源 需底部热源与持续供水"
+				"&6*体积:&r 水箱数量"
+				"&6*水量:&r 供水速率"
+				"&6*热量:&r 热源强度"
+			]
+			icon: "create:steam_engine"
+			id: "1A6C36E59385A2D3"
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "688A416F16ECF5B3"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2897D7E593266D9F"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "蒸汽锅炉"
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["79C542CA156AB01E"]
+			description: ["&6风车&r 最小8面帆布 最大2组帆布 &o高效发电装置&r"]
+			icon: "create:white_sail"
+			id: "372818524C1822A0"
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "00BCB0F2EC9CFC05"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "2DC7F4ACCCF7D478"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "风车"
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["79C542CA156AB01E"]
+			description: ["&6水车&r 基础动力源 侧方流水驱动 &o自定义木质外观&r"]
+			hide: false
+			id: "1997E3F261152BC2"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "327D0C5703F81459"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1997E3F261152BC2"]
+			description: ["&6大型水车&r 双倍应力/半速运转 &o需更大安装空间&r"]
+			id: "2A43D53F3C3FA699"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "5B2A3F069A4EBBD0"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"16DF65A27C527EC4"
+				"7400558F19406130"
+			]
+			description: ["解锁&6动能发生器&r 红杉木核心实现&o自持动力系统&r"]
+			hide: true
+			id: "79C542CA156AB01E"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1C85CD4E78E79F5E"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			title: "动能生成"
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57A7A5C79389A96A"]
+			description: ["&6记录板&r 任务管理工具 &o与机械系统双向交互&r"]
+			id: "24912ED9E4920E5A"
+			tasks: [{
+				id: "6196CA10A85E2B0F"
+				item: "create:clipboard"
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -20.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00947F22F3907D15"]
+			description: ["&6印刷机&r 复制附魔书/文本 &o需液态经验与墨水&r"]
+			id: "2537CFB64471951F"
+			tasks: [{
+				id: "2028D30FBEFF751F"
+				item: "create_enchantment_industry:printer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CD28EFB5B86F561"]
+			description: ["&6流体抽离机&r 提取容器流体 &o暂存直至转移&r"]
+			id: "3BC9D3B6BAF2C477"
+			tasks: [{
+				id: "55D7343BDCC09788"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3BC9D3B6BAF2C477"]
+			description: ["&6经验瓶&r 通过抽离机转化为液态经验"]
+			id: "7C80752635A0BAD6"
+			tasks: [{
+				id: "6878EBBFE2D7E61C"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4CD28EFB5B86F561"]
+			description: ["&6祛魔台&r 剥离装备附魔 &o转化经验为液态 支持玩家经验抽取&r"]
+			id: "1B6AA26ACA2BC3DE"
+			tasks: [{
+				id: "09C4C80B340E415E"
+				item: "create_enchantment_industry:disenchanter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B6AA26ACA2BC3DE"]
+			description: ["任意&6附魔物品&r 祛魔后返还原物 &o清除所有附魔&r"]
+			id: "512322517816BBDB"
+			tasks: [{
+				id: "02879C791154EBEC"
+				item: "minecraft:enchanted_book"
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "祛魔系统"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3BC9D3B6BAF2C477"
+				"1B6AA26ACA2BC3DE"
+			]
+			description: ["&6附魔引导器&r 存储附魔配方 烈焰燃烧室加工为&6炽焰附魔台&r"]
+			id: "6E7BCB29DADBF655"
+			tasks: [{
+				id: "43ADCF7B88CC5515"
+				item: "create_enchantment_industry:enchanting_guide"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6E7BCB29DADBF655"]
+			description: ["&6超频经验&r 突破附魔等级限制 &o+1级附魔效果&r"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "create_enchantment_industry:item/hyper_experience_bottle"
+				}
+			}
+			id: "33834ABAB2BEE83A"
+			tasks: [{
+				id: "7197C83F7C5DC49C"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			title: "超频经验"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"08847873D33F4388"
+				"274DC296AA2B64E0"
+			]
+			description: ["获取&6经验碎片&r &o附魔自动化方案构思中&r"]
+			hide: true
+			id: "4CD28EFB5B86F561"
+			progression_mode: "linear"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "经验科技启程"
+			tasks: [{
+				id: "2FA68B741463DE85"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			title: "附魔自动化"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0A0AE13901752C67"]
+			hide: true
+			id: "08847873D33F4388"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7A6527370E4B61AC"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C32982A29A2F269"]
+			description: ["&6机械压路机&r 自动清理/铺设轨道下方方块 &o车载库存管理&r"]
+			id: "69416BCA0EB9380A"
+			shape: "hexagon"
+			tasks: [{
+				id: "05AF40076910585F"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["30C042DACAC78EA6"]
+			description: ["&6延展臂&r 增加操作距离 &o配合铜气罐免耐久消耗&r"]
+			id: "1CC5CCEC80EEDBA1"
+			shape: "hexagon"
+			tasks: [{
+				id: "71BBDDD26D9CE66A"
+				item: {
+					Count: 1b
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57A7A5C79389A96A"]
+			description: ["&6配方蓝图&r 快速复现合成公式 &o单格/四格/九格规格&r"]
+			id: "0EA2E8537E17C0EA"
+			tasks: [{
+				consume_items: false
+				id: "659A2F9BB938C589"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30C042DACAC78EA6"]
+			description: ["&6对称魔杖&r 镜像建造工具 &o三轴对称模式&r"]
+			id: "6E2B46D5F2596E20"
+			shape: "hexagon"
+			tasks: [{
+				id: "0375988F14F88429"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["08936F700A48A4CF"]
+			description: ["&6烹饪指南&r 烈焰燃烧室自动化 &o复现锅炉食谱&r"]
+			id: "4D3706462A81436B"
+			shape: "hexagon"
+			tasks: [{
+				id: "7F8F870FC78C8F9C"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "create_central_kitchen:cooking_guide"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["08847873D33F4388"]
+			description: ["&6机械油炸锅&r 使用食用油高温烹炸 &o需烈焰燃烧室供能&r"]
+			id: "08936F700A48A4CF"
+			shape: "hexagon"
+			tasks: [{
+				id: "31C5AA3BB53CC0AD"
+				item: "create_bic_bit:mechanical_fryer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["41A9E8A3F8800DAF"]
+			description: ["&6虚空装置&r 跨维度链接 &o需引力灯技术支持&r"]
+			hide: true
+			id: "695419D844AECAD3"
+			tasks: [{
+				id: "685F38DC2DE04578"
+				item: "createutilities:graviton_tube"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["695419D844AECAD3"]
+			description: ["&6虚空引擎&r 无线传输动力 &o可设频率与权限&r"]
+			id: "7ED20C71C90B884A"
+			tasks: [{
+				id: "53A96417952FD275"
+				item: "createutilities:void_motor"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["695419D844AECAD3"]
+			description: ["&6虚空存储&r 跨维度物流 &o支持自动化接口&r"]
+			id: "3477756D3A620178"
+			tasks: [{
+				id: "04B218A0DDBA124D"
+				item: "createutilities:void_chest"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["695419D844AECAD3"]
+			description: ["&6虚空储罐&r 跨维度流体传输 &o支持管道连接&r"]
+			id: "467732E33361E20E"
+			tasks: [{
+				id: "2EEBA2BC350683D0"
+				item: "createutilities:void_tank"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"79C542CA156AB01E"
+				"16DF65A27C527EC4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["&6气动阀&r 生成限定角度旋转 &o不兼容工作机械&r"]
+			id: "1FEE39979CFD7BDD"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "088B25F7F60BC5DD"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			title: "气动组件"
+			x: -10.125d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"074604E13C7DC3A2"
+				"61E1F509FC788092"
+			]
+			description: ["使用&6物品过滤器&r 精确分拣 &o支持黑白名单与嵌套逻辑&r"]
+			icon: {
+				Count: 1b
+				id: "create:filter"
+				tag: {
+					Items: { }
+				}
+			}
+			id: "3597C1AAEE69FB80"
+			shape: "hexagon"
+			tasks: [{
+				id: "36D3DA47C19535AC"
+				item: {
+					Count: 1b
+					id: "create:filter"
+					tag: {
+						Items: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A154BE7095012ED"]
+			description: ["&6转角齿轮箱&r 定向动力传输 &o避免干扰其他组件&r"]
+			id: "59F6FD168F3E834D"
+			shape: "hexagon"
+			tasks: [{
+				id: "531CCBDDD3965D5E"
+				item: "createutilities:lshaped_gearbox"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["59F6FD168F3E834D"]
+			description: ["&6六向齿轮箱&r 全向动力输出 解决普通齿轮箱&o端口不足问题&r"]
+			id: "07BA837F3D9E22BD"
+			shape: "hexagon"
+			tasks: [{
+				id: "5C0B48EAABE1765D"
+				item: "createutilities:gearcube"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7E6A93A86BA569CE"]
+			description: ["&6电子管&r 提升机械控制精度 &o新型自动化可能&r"]
+			hide: true
+			id: "4C32982A29A2F269"
+			tasks: [{
+				id: "0175F828C76FEB5E"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7E6A93A86BA569CE"]
+			description: ["&6虚空外壳&r 顶级机械框架 &o虚空钢制动力设备&r"]
+			hide: true
+			id: "41A9E8A3F8800DAF"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "416ECC7B850DCDBF"
+				item: "createutilities:void_casing"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"16DF65A27C527EC4"
+				"01C29B9AC7390D73"
+			]
+			description: ["&6筛矿机&r 核心加工设备 &o网筛类型决定产出&r"]
+			hide: true
+			id: "4FFE13DC3BEF2CD5"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1722722475BECD6F"
+				item: "createsifter:sifter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4FFE13DC3BEF2CD5"
+				"474539CBBA76E3DC"
+			]
+			description: [
+				"&6线网筛&r 可筛:"
+				"&o*沉积物→秸秆/粘土&r"
+				"&o*水浸土壤→水生植物&r"
+				"&o*沙子→骨粉/红石&r"
+			]
+			id: "518602675D6EC1CA"
+			tasks: [{
+				id: "4C46FF7ABE13E635"
+				item: {
+					Count: 1b
+					id: "createsifter:string_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["518602675D6EC1CA"]
+			description: [
+				"&6安山岩网筛&r 可筛:"
+				"&o*深壤→魔法植物&r"
+				"&o*沙砾→金属碎粒/燧石/煤炭&r"
+				"&o*沙子(高产出)&r"
+			]
+			id: "0A0AE13901752C67"
+			tasks: [{
+				id: "00A23028292A995E"
+				item: {
+					Count: 1b
+					id: "createsifter:andesite_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A0AE13901752C67"]
+			description: [
+				"&6锌网筛&r 可筛:"
+				"&o*沉积物→沙砾/月晶/紫晶碎片&r"
+				"&o*沙砾(高产出)→青金石&r"
+				"&o*沙子(高产出)&r"
+			]
+			id: "53D7AF390F3A51DE"
+			tasks: [{
+				id: "2072FC272B160A2F"
+				item: {
+					Count: 1b
+					id: "createsifter:zinc_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53D7AF390F3A51DE"]
+			description: [
+				"&6下界合金网筛&r 可筛:"
+				"&o*灵魂沙→幻翼膜/野人碎块&r"
+				"&o*沙砾(高产出)&r"
+				"&o*沙子(高产出)→荧石粉/火焰粉&r"
+			]
+			id: "6F410EE3084176A1"
+			tasks: [{
+				id: "2931F6693D69919F"
+				item: {
+					Count: 1b
+					id: "createsifter:brass_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E6A93A86BA569CE"]
+			description: ["&6精密机构&r 实现复杂机械传动 &o高阶自动化基础&r"]
+			hide: true
+			id: "30C042DACAC78EA6"
+			shape: "circle"
+			tasks: [{
+				id: "29A7C2D81EB64919"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4CD28EFB5B86F561"]
+			description: ["&6墨水&r 文本记录媒介 &o需专用机械处理&r"]
+			id: "00947F22F3907D15"
+			tasks: [{
+				id: "49547B62C0155FD1"
+				item: "create_enchantment_industry:ink_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0A0AE13901752C67"]
+			description: ["&6锌制填充块&r 模拟完整方块 &o基础三件套: 方块/台阶/楼梯&r"]
+			hide: true
+			icon: "copycats:copycat_block"
+			id: "6AE404191A9B9B30"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6EEC31B508BFFA56"
+					item: "copycats:copycat_block"
+					type: "item"
+				}
+				{
+					id: "7F7672E190CA6F94"
+					item: "copycats:copycat_stairs"
+					type: "item"
+				}
+				{
+					id: "18304DB61829CA33"
+					item: "copycats:copycat_slab"
+					type: "item"
+				}
+			]
+			title: "填充方块"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6AE404191A9B9B30"]
+			description: ["进阶填充块: 门/栅栏/墙等 &o突破原版形状限制&r"]
+			icon: "copycats:copycat_fence"
+			id: "18D632C700B5CB7A"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "17E6AC6072C9044A"
+					item: "copycats:copycat_wall"
+					type: "item"
+				}
+				{
+					id: "5563EE9F7ACB8154"
+					item: "copycats:copycat_fence"
+					type: "item"
+				}
+				{
+					id: "7289FE34F6C48FD8"
+					item: "copycats:copycat_fence_gate"
+					type: "item"
+				}
+				{
+					id: "75BCE15F5CAFEEF8"
+					item: "copycats:copycat_trapdoor"
+					type: "item"
+				}
+				{
+					id: "43FE871FDC088A70"
+					item: "copycats:copycat_ladder"
+					type: "item"
+				}
+			]
+			title: "复合填充块"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6AE404191A9B9B30"]
+			description: ["&6红石填充组件&r 按钮/压力板 &o完全功能复现&r"]
+			icon: "copycats:copycat_light_weighted_pressure_plate"
+			id: "35E4BB8D3CA7A7B9"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "6DCB67E5C5AC9B9B"
+					item: "copycats:copycat_light_weighted_pressure_plate"
+					type: "item"
+				}
+				{
+					id: "1D9EFC63ABCB44AC"
+					item: "copycats:copycat_stone_pressure_plate"
+					type: "item"
+				}
+				{
+					id: "7757B40F05CC4C45"
+					item: "copycats:copycat_heavy_weighted_pressure_plate"
+					type: "item"
+				}
+				{
+					id: "2DC917DBCFA35233"
+					item: "copycats:copycat_wooden_pressure_plate"
+					type: "item"
+				}
+				{
+					id: "7A59097F86DE6E95"
+					item: "copycats:copycat_stone_button"
+					type: "item"
+				}
+				{
+					id: "2338F6B988CFBBFC"
+					item: "copycats:copycat_wooden_button"
+					type: "item"
+				}
+			]
+			title: "红石填充块"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6AE404191A9B9B30"]
+			icon: "copycats:copycat_half_layer"
+			id: "201A3B1611198B77"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "2952388A67A6E006"
+					item: "copycats:copycat_slice"
+					type: "item"
+				}
+				{
+					id: "1EEDE4180B4BE94C"
+					item: "copycats:copycat_vertical_slice"
+					type: "item"
+				}
+				{
+					id: "64539E794BA73EF8"
+					item: "copycats:copycat_half_layer"
+					type: "item"
+				}
+				{
+					id: "70E0E72A8818D61E"
+					item: "copycats:copycat_layer"
+					type: "item"
+				}
+				{
+					id: "61962FE9657CF7ED"
+					item: "copycats:copycat_byte"
+					type: "item"
+				}
+			]
+			title: "连接填充块"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6AE404191A9B9B30"]
+			description: ["特殊填充块分类 &o解决连接兼容问题&r"]
+			icon: "copycats:copycat_beam"
+			id: "69A1034B5DAFDADB"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "00C934AE097B353F"
+					item: "create:copycat_panel"
+					type: "item"
+				}
+				{
+					id: "411CA4AAB7758AD3"
+					item: "copycats:copycat_half_panel"
+					type: "item"
+				}
+				{
+					id: "58B38A3AB473FF52"
+					item: "create:copycat_step"
+					type: "item"
+				}
+				{
+					id: "5951AA500867CF23"
+					item: "copycats:copycat_vertical_step"
+					type: "item"
+				}
+				{
+					id: "1B69A87235005C27"
+					item: "copycats:copycat_beam"
+					type: "item"
+				}
+			]
+			title: "独立填充块"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6AE404191A9B9B30"]
+			description: ["&6异形填充块&r 垂直台阶/幽灵块等 &o创意建筑组件&r"]
+			icon: "copycats:copycat_vertical_stairs"
+			id: "172D696C8653FCE6"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "2AB005E4800985DF"
+					item: "copycats:copycat_ghost_block"
+					type: "item"
+				}
+				{
+					id: "3D83F58451C75DE5"
+					item: "copycats:copycat_vertical_stairs"
+					type: "item"
+				}
+				{
+					id: "767376BF44919D6D"
+					item: "copycats:copycat_board"
+					type: "item"
+				}
+			]
+			title: "特殊填充块"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["172D696C8653FCE6"]
+			description: ["锌制&6斜角结构/填充传动轴&r &o突破建造与机械限制&r"]
+			icon: "copycats:copycat_vertical_slope"
+			id: "416FCB6432E96928"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "6504F7BD5F5C9425"
+					item: "copycats:copycat_slope"
+					type: "item"
+				}
+				{
+					id: "47BDEA16E66C4E77"
+					item: "copycats:copycat_vertical_slope"
+					type: "item"
+				}
+				{
+					id: "15B7AC2B6B1C03B9"
+					item: "copycats:copycat_slope_layer"
+					type: "item"
+				}
+				{
+					id: "316AC667AB16CF0F"
+					item: "copycats:copycat_shaft"
+					type: "item"
+				}
+			]
+			title: "工程填充块"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["57A7A5C79389A96A"]
+			description: ["&6工程师扳手&r 旋转/调整/拆卸 &o无损拆装机械&r"]
+			id: "18AE95CE82F15E8C"
+			tasks: [{
+				id: "4526DFDF36D51471"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -1.5d
+		}
+		{
+			description: ["远距&6区块加载器&r 结合传送门与铸铁 &o模拟玩家存在&r"]
+			id: "4F8AD724DFDE769D"
+			shape: "rsquare"
+			tasks: [{
+				id: "1AFD8772FBDC1291"
+				item: "chunkloaders:single_chunk_loader"
+				type: "item"
+			}]
+			title: "机械加载"
+			x: -19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4F8AD724DFDE769D"
+				"52959C5178F9BD09"
+				"482A3BF8E1F6AF23"
+			]
+			description: ["加载范围&6初始16格&r 钢制升级提升 &o需灵魂熔铸&r"]
+			id: "7BB2EDD352AC4028"
+			shape: "rsquare"
+			tasks: [{
+				id: "036BB34E4F824613"
+				item: "chunkloaders:basic_chunk_loader"
+				type: "item"
+			}]
+			title: "扩展加载"
+			x: -22.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2A52F58C1AA0D571"
+				"5B7598E1B290E65F"
+			]
+			description: ["&6基岩炉&r 强化加载器 &o三倍范围提升&r"]
+			id: "420A186F17D554FD"
+			shape: "rsquare"
+			tasks: [{
+				id: "616552BE67BEE4CD"
+				item: "chunkloaders:ultimate_chunk_loader"
+				type: "item"
+			}]
+			title: "三重加载"
+			x: -19.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7BB2EDD352AC4028"]
+			description: ["&6灵银升级&r 再次扩展范围 &o终极加载方案&r"]
+			id: "5B7598E1B290E65F"
+			shape: "rsquare"
+			tasks: [{
+				id: "1E927A08A39B9A58"
+				item: "chunkloaders:advanced_chunk_loader"
+				type: "item"
+			}]
+			title: "超距加载"
+			x: -22.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0CAA1F2CB7922740"]
+			description: [
+				"惊人的机械舞蹈..."
+				"{@pagebreak}"
+				"&a恭喜！已发现12处彩蛋 解锁全部可开启第13隐藏彩蛋&r"
+				"                               &o&f ——西格玛留&r"
+			]
+			hide_text_until_complete: false
+			id: "74CA7D94A250CA2F"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			tasks: [{
+				advancement: "create:musical_arm"
+				criterion: ""
+				id: "1268940C62FD8C3C"
+				title: "机械之舞"
+				type: "advancement"
+			}]
+			title: "手舞足蹈"
+			x: 5.0d
+			y: 4.0d
+		}
+	]
+	title: "动能科学"
+}

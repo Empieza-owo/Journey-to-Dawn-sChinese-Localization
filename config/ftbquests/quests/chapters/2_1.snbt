@@ -1,0 +1,2130 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_1"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "undergarden:deepturf_block"
+	id: "57F6C36980D57EB7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"啊...什么？发生什么了？脑子里像蒙了层雾...我好像站在&6某个广场上&r，突然闪过诡异的绿光，感觉坠入深渊...然后我就站在这里，手里拿着这本日志。"
+				"我到底经历了什么？&6这是什么地方？&r &o我又是谁？&r"
+			]
+			hide: true
+			icon: "undergarden:shimmerweed"
+			id: "04D4DFBFC863032D"
+			size: 1.5d
+			tasks: [{
+				id: "6866EE0E69F801BB"
+				title: "清醒"
+				type: "checkmark"
+			}]
+			title: "降临"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: [
+				"好吧...&o必须冷静下来&r。关键是不能恐慌。这些问题可以稍后再想。&6现在最重要的是生存&r。"
+				"我没有任何工具。只有一个护身符、火把和这本日志。周围散落着铁器和其他杂物。应该收集起来&6在附近探索更多资源&r，任何东西都可能有用"
+			]
+			hide: true
+			id: "283E72FD11380EAC"
+			tasks: [{
+				id: "0FC1468B36D13B48"
+				item: "undergarden:depthrock_pebble"
+				type: "item"
+			}]
+			title: "人类的第一步..."
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["43CAAE1E6EF0F380"]
+			description: ["有了工作台就能制作&6基础装备&r。我并非力士，任何怪物都能轻易杀死我。要么逃跑，要么战斗，要么建造基地。&o我选第三条路&r"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "56493E6AD4C98A0C"
+			tasks: [
+				{
+					id: "67E5C243D3923D25"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2CD26BE4165250DF"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "179BE8EE4B4CB2C7"
+					item: {
+						Count: 1b
+						id: "minecraft:wooden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "生存者套装"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5FB301F403C40575"]
+			description: [
+				"&6我好害怕&r。这地方太阴森了...持续的怪声、腐尸的嚎叫、黑暗，还有那些一瞥就消失的诡异笑眼...不知该如何生存。"
+				"&o我需要光源，否则真会疯掉&r"
+			]
+			hide: true
+			id: "5BDA56612A1FECD0"
+			tasks: [{
+				id: "4462A77FAE6E3694"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "光明"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5BDA56612A1FECD0"]
+			description: ["&o冷静，冷静...&r需要理性思考。光源固然重要，但还不够。我需要能安抚神经的东西。&6花环&r或许有用？"]
+			hide: true
+			id: "0137EA1E9D9E0963"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F05D1DF90148666"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "56E5BB4AEDF33923"
+				item: {
+					Count: 1b
+					id: "sanitydim:garland"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "万物皆美"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56493E6AD4C98A0C"]
+			description: [
+				"奇怪。这个维度的石头既不能做石镐，也不能烧制。必须设法获取普通圆石..."
+				"或许可以找近似石材的岩层，通过&6淘洗&r去除杂质？"
+				"{@pagebreak}"
+				"改造木制磨盘做成&6滴滤装置&r。用幼苗枝条代替线绳作为滤网，&o或许可行？&r"
+			]
+			hide: true
+			icon: "ftbdripper:dripper"
+			id: "5EDA344AE2BE785D"
+			tasks: [
+				{
+					id: "0FFC1C2ED47C1A20"
+					item: "ftbdripper:dripper"
+					type: "item"
+				}
+				{
+					id: "7F3373245352C0FD"
+					item: {
+						Count: 1b
+						id: "ftbdripper:water_bowl"
+						tag: {
+							Fluid: {
+								Amount: 250
+								FluidName: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "淘洗工艺"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EDA344AE2BE785D"]
+			description: ["&o计划完美奏效&r。使用&6深板岩&r作为原料，注水静置。虽然需要重复多次..."]
+			hide: true
+			id: "254FF07AAFEEE308"
+			tasks: [{
+				id: "1BE1EF32E2CE4194"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "基础资源"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"254FF07AAFEEE308"
+				"1F527B844F580BC5"
+			]
+			description: ["终于得到&6圆石&r！用可燃物（如海带）包裹制成&6简易熔炉&r，应该不成问题"]
+			hide: true
+			id: "0A0E576DC681A939"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "508F7CCB77788F9C"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "46D64003EAA25B87"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "熔炼之道"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A0E576DC681A939"]
+			description: ["熔炼圆石获得&6石头&r，终于能制作像样的镐子。&o等等，这里有矿石吗？&r"]
+			hide: true
+			id: "2BB126C9D8C6FB9F"
+			tasks: [{
+				id: "0DAFA0A116C5D423"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "挖掘工具"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2BB126C9D8C6FB9F"]
+			description: ["幸运的是这个世界存在&6铁矿&r。这种多功能材料用途广泛，制作全套铁装大约需要&o四分之一组铁锭&r"]
+			hide: true
+			id: "407240969A006F83"
+			tasks: [{
+				count: 16L
+				id: "4078702D315209DC"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "冶金经典"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A0E576DC681A939"]
+			description: ["发现发光蛞蝓般的生物，命名为&o荧光虫&r。获取其&6粘液&r需要&6石铲&r"]
+			hide: true
+			icon: "undergarden:goo_ball"
+			id: "5D1A5217A000D25B"
+			tasks: [
+				{
+					id: "71C247E786A33FFC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/shovels"
+						}
+					}
+					title: "铲类工具"
+					type: "item"
+				}
+				{
+					id: "65DB2F41280CD91F"
+					item: "undergarden:goo_ball"
+					type: "item"
+				}
+			]
+			title: "粘液宝藏"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5D1A5217A000D25B"]
+			description: [
+				"没想到这个维度的动植物如此协同。粘液与植物糊混合可得&6岩浆球&r，替代稀缺的岩浆"
+				"&o如何获取岩浆？&r"
+			]
+			hide: true
+			id: "68D70ACFA014994C"
+			tasks: [{
+				id: "72E8DB618E902B04"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			title: "炽热核心"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E7DF98917498F93"]
+			description: [
+				"难以想象未来方向。虽努力求生但进展缓慢，需要动能机械推进发展"
+				"制作&6铁安山岩合金&r是关键，但安山岩无法直接获取，需通过&6手工冶炼&r制备"
+				"{@pagebreak}"
+				"这个世界的资源将助我完成目标"
+			]
+			hide: true
+			id: "552D58BB74591228"
+			tasks: [{
+				id: "071D0A1574649A1B"
+				item: "kubejs:fragile_handicraft_alloy"
+				type: "item"
+			}]
+			title: "尝试无妨"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"08004A23BFDB56AF"
+				"552D58BB74591228"
+			]
+			description: [
+				"初步合金强度不足，需用&6岩浆浸润&r增强结合"
+				"&o但愿有效&r"
+			]
+			hide: true
+			id: "64C7B55D1A6B430B"
+			tasks: [{
+				id: "3CD23EB19743EE84"
+				item: "kubejs:hardened_craft_alloy"
+				type: "item"
+			}]
+			title: "手工锻造"
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E7DF98917498F93"]
+			description: [
+				"频繁遭遇&6石裔&r——这些友善生物会抵御怪物并进行交易，使用&6皇金矿&r作为货币"
+				"{@pagebreak}"
+				"皇金矿可在地下城获取，但交易更便捷。这些矿物蕴含魔法能量，定有大用"
+			]
+			hide: true
+			id: "02268C57949C11E5"
+			tasks: [{
+				id: "2A97E10F6D78573F"
+				item: "undergarden:regalium_crystal"
+				type: "item"
+			}]
+			title: "矿物货币"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BB126C9D8C6FB9F"]
+			description: [
+				"本地矿石种类特殊：&6凝灰岩&r、&6寒铁&r、&6紫荧矿&r等未知矿物有待探索"
+				"{@pagebreak}"
+				"寒铁需在&6寒冷区域&r寻找，紫荧矿附着在怪物身上，&o看来需要战斗获取&r"
+			]
+			hide: true
+			id: "3E7DF98917498F93"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7438BDF2A9A32A38"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					count: 9L
+					id: "50B810B42DF87DC9"
+					item: "undergarden:raw_cloggrum"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "489C655206DCD97B"
+					item: "undergarden:froststeel_ingot"
+					type: "item"
+				}
+				{
+					id: "6C4B870A6EC42903"
+					item: "undergarden:utherium_crystal"
+					type: "item"
+				}
+			]
+			title: "新矿藏"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["407240969A006F83"]
+			description: ["&6石苔&r——生长在石裔背部的类苔藓植物。使用铁器可&6修剪&r获取，用途广泛"]
+			hide: true
+			icon: "undergarden:mogmoss"
+			id: "342BA89A3E8DA34F"
+			tasks: [
+				{
+					id: "487987D5D7DEE28E"
+					item: {
+						Count: 1b
+						id: "minecraft:shears"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B686308F2D7E2AA"
+					item: "undergarden:mogmoss"
+					type: "item"
+				}
+			]
+			title: "柔软外衣"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["64C7B55D1A6B430B"]
+			description: ["岩浆成功渗入合金缝隙，形成完整&6安山岩合金块&r。距离目标又近一步，&o终将重返家园&r"]
+			hide: true
+			id: "17FD1D4D4B7B87F6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3960CACA46038810"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "21E152D595496CDA"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "完美合金"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3687BB4EC51B93CB"]
+			description: ["动能装置依赖&6曲柄&r和&6齿轮&r手动供能，需储备食物应对体力消耗"]
+			hide: true
+			icon: "create:cogwheel"
+			id: "2040EC6BDB33D808"
+			tasks: [
+				{
+					id: "53194AAD424285C7"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "3E5CAC39256A20E7"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			title: "动能基础"
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2040EC6BDB33D808"]
+			description: ["&6磨石&r可粉碎资源获取新材料，在物资匮乏时&o至关重要&r"]
+			hide: true
+			id: "175FBF270ADD76A5"
+			tasks: [{
+				id: "53FA6E3EBF2C2007"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "粉碎工艺"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"342BA89A3E8DA34F"
+				"3BD502D40420C6AD"
+			]
+			description: [
+				"&o精疲力尽&r。制作羊毛床铺困难重重，但可开发&6替代品&r实现安全睡眠"
+				"{@pagebreak}"
+				"这个世界没有昼夜循环，&6能否无限恢复体力？&r &o机制待验证&r"
+			]
+			hide: true
+			id: "211B68D360365369"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "239B91BE18340CD0"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "458995EAA7325937"
+				item: "undergarden:depthrock_bed"
+				type: "item"
+			}]
+			title: "永恒沉睡？"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["175FBF270ADD76A5"]
+			description: [
+				"磨石粉碎效率有限，改造为&6筛矿装置&r或许更高效"
+				"&o定能成功&r"
+			]
+			hide: true
+			icon: "createsifter:sifter"
+			id: "01C29B9AC7390D73"
+			tasks: [{
+				id: "2E1E88E4B700EB37"
+				item: "createsifter:sifter"
+				type: "item"
+			}]
+			title: "磨石II型"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"342BA89A3E8DA34F"
+				"175FBF270ADD76A5"
+			]
+			description: ["&6线材&r重要性不亚于金属。在无蜘蛛和绵羊的世界，&o机械造线&r技术突破令人欣慰"]
+			hide: true
+			id: "3BD502D40420C6AD"
+			tasks: [{
+				id: "6F5F421AD6774925"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			title: "丝缕千金"
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3BD502D40420C6AD"]
+			description: [
+				"记忆逐渐复苏，想起&6通灵红杉&r——通过&6图腾仪式&r获取，需特制&6仪式匕首&r"
+				"{@pagebreak}"
+				"线材充足后即可制作匕首，&o发展带来更多记忆碎片&r"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "totemic:totem_whittling_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4752012D77DEBF05"
+			tasks: [{
+				id: "1D5FBAB4326E1948"
+				item: {
+					Count: 1b
+					id: "totemic:totem_whittling_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "图腾之道"
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2040EC6BDB33D808"]
+			description: ["&6鼓风机&r定向气流可处理特定资源，在物资受限时&o尤为重要&r"]
+			hide: true
+			id: "7678B4DC7A604761"
+			tasks: [{
+				id: "663C0C2667330836"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "气动之力"
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2040EC6BDB33D808"]
+			description: ["&6机械压机&r通过高压改变物质形态，制备特殊材料"]
+			hide: true
+			icon: "create:mechanical_press"
+			id: "44449A1CFBD0DA35"
+			tasks: [
+				{
+					id: "1322682E5439BB13"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "0D1CE818CC0BABC0"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "压缩工艺"
+			x: 16.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2040EC6BDB33D808"]
+			description: ["&6搅拌器&r的螺旋桨能完美混合物料，&o甚至处理液体&r"]
+			hide: true
+			icon: "create:mechanical_mixer"
+			id: "32F3B8D4B5EDE4D2"
+			tasks: [
+				{
+					id: "3F259C09C2EC9502"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "5CE542304A9C8C65"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "旋转运动"
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A0E576DC681A939"]
+			description: ["&6斧类工具&r不仅是伐木利器，或许能获取&o特殊材料&r"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:stone_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D3C822AEAB3D875"
+			tasks: [{
+				id: "40FC221BA1F20F19"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/axes"
+					}
+				}
+				title: "斧类工具"
+				type: "item"
+			}]
+			title: "伐木专家"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4D3C822AEAB3D875"
+				"2F17AB8356A97C10"
+			]
+			description: ["在&6砧板&r上处理原木可完整收集树皮，用于制作&6纸张&r"]
+			hide: true
+			icon: "farmersdelight:tree_bark"
+			id: "429852FA532C938E"
+			tasks: [{
+				count: 8L
+				id: "37FCA39B7D1E797E"
+				item: "farmersdelight:tree_bark"
+				type: "item"
+			}]
+			title: "树皮剥离"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"429852FA532C938E"
+				"4752012D77DEBF05"
+				"1F00C3B6F5E07C3E"
+			]
+			description: ["将日志转化为&6奥秘典籍&r，解锁仪式知识"]
+			hide: true
+			id: "29A585465D0A88A6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E8B3F856DBFDE52"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "116C8CDB50E305EA"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "totemic:totempedia"
+					}
+				}
+				type: "item"
+			}]
+			title: "仪式学识"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["29A585465D0A88A6"]
+			description: [
+				"仪式与&6音乐&r密切相关。使用&6长笛&r或&6战鼓&r演奏积蓄音能完成仪式"
+				"{@pagebreak}"
+				"当前可制作两种乐器："
+				"&6旋律长笛&r      &6节奏战鼓&r"
+			]
+			hide: true
+			icon: "totemic:flute"
+			id: "14A6FEF0E39477AE"
+			tasks: [
+				{
+					id: "13B2C547FB8FFCD8"
+					item: "totemic:flute"
+					type: "item"
+				}
+				{
+					id: "466A18DD53FAED80"
+					item: "totemic:drum"
+					type: "item"
+				}
+			]
+			title: "音律之力"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["14A6FEF0E39477AE"]
+			description: ["通过&6春之祭仪&r使树苗转化为&6通灵红杉&r，投喂食物促进动物繁殖"]
+			hide: true
+			id: "043F0F2248A740B3"
+			tasks: [{
+				id: "31981A2DA6B39283"
+				item: "totemic:cedar_sapling"
+				type: "item"
+			}]
+			title: "通灵红杉"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["43CAAE1E6EF0F380"]
+			description: ["这个世界&o缺乏弓弩&r，需制作&6弹弓&r进行远程防御"]
+			hide: true
+			id: "030B6BDCCEA87BB0"
+			tasks: [{
+				id: "7721A535DAC8DD24"
+				item: {
+					Count: 1b
+					id: "undergarden:slingshot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "瞄准射击"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["030B6BDCCEA87BB0"]
+			description: ["&6弹弓&r效果超预期，需寻找&o合适弹药&r——兼具杀伤力与空气动力学"]
+			hide: true
+			id: "5BF321CFA426ED1C"
+			tasks: [
+				{
+					id: "1F1BE4C235388FBC"
+					item: "undergarden:depthrock_pebble"
+					type: "item"
+				}
+				{
+					id: "7DAD2AFB4AF9A689"
+					item: "undergarden:goo_ball"
+					type: "item"
+				}
+				{
+					id: "6E3DDAD8E80D2DAE"
+					item: "undergarden:rotten_blisterberry"
+					type: "item"
+				}
+				{
+					id: "59E82894C88B02CB"
+					item: "undergarden:gronglet"
+					type: "item"
+				}
+			]
+			title: "弹药制备"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3BD502D40420C6AD"]
+			description: ["线材解锁&6奥秘典籍&r制作，配合不同材料生成&6专业指南&r"]
+			hide: true
+			id: "1F00C3B6F5E07C3E"
+			tasks: [{
+				id: "73FA5FD0FE5263B8"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:copper_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 4
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "魔法典籍"
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"32F3B8D4B5EDE4D2"
+				"1F00C3B6F5E07C3E"
+			]
+			description: ["多样化饮食增强体质，&6食物图鉴&r记录已尝试食材"]
+			hide: true
+			id: "46811996EA5BF62C"
+			shape: "rsquare"
+			tasks: [{
+				id: "67AC75A6C6F4249E"
+				item: "solcarrot:food_book"
+				type: "item"
+			}]
+			title: "美食探索"
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1F00C3B6F5E07C3E"]
+			description: ["纯靠地貌记忆&o风险极高&r，制作&6地图集&r标记路径，&o切记携带备用地图&r"]
+			hide: true
+			id: "6013535DC19975C1"
+			tasks: [{
+				id: "300F914A2DAB06B8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "trinkets:hand/atlas"
+					}
+				}
+				title: "地理图志"
+				type: "item"
+			}]
+			title: "方位指引"
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3BD502D40420C6AD"]
+			description: ["&o背包空间永远不足&r的真理在此验证。&6帆布背包&r提供15格存储，大幅延长探索时间"]
+			hide: true
+			id: "36B5ED21B70F31FB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2660F8239D2F2EF7"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "47AFF88FE395B58F"
+				item: "backpacked:backpack"
+				type: "item"
+			}]
+			title: "物资搬运"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"01C29B9AC7390D73"
+				"3BD502D40420C6AD"
+			]
+			description: ["筛矿需配合&6滤网&r分离物质，使用&6矿渣&r测试装置"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "createsifter:string_mesh"
+				tag: { }
+			}
+			id: "474539CBBA76E3DC"
+			tasks: [
+				{
+					id: "26CB9F63671011E4"
+					item: {
+						Count: 1b
+						id: "createsifter:string_mesh"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4DCE2E272E97C8BC"
+					item: "undergarden:sediment"
+					type: "item"
+				}
+			]
+			title: "筛矿优化"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"32F3B8D4B5EDE4D2"
+				"607A96CCCA0509D9"
+			]
+			description: ["制作&6镀金砖&r时发现其散发&o能量场&r，或为特殊设备所需"]
+			hide: true
+			id: "5C53FE504B9A5848"
+			tasks: [{
+				id: "1E69432BBE5B0972"
+				item: "dimdungeons:block_gilded_portal"
+				type: "item"
+			}]
+			title: "镀金砖块"
+			x: 15.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7678B4DC7A604761"]
+			description: ["利用鼓风机将&6岩浆球&r转化为黑曜石"]
+			hide: true
+			id: "45F7941A0581E16C"
+			tasks: [{
+				id: "2C932A1EF0FE7252"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			title: "黑曜石制备"
+			x: 17.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45F7941A0581E16C"]
+			description: ["设计&6卷轴熔铸台&r需解决墨水与羽毛来源，&o任重道远&r"]
+			hide: true
+			icon: "irons_spellbooks:scroll_forge"
+			id: "035AA611CF75AE91"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4940D84097B684C9"
+					item: "irons_spellbooks:scroll_forge"
+					type: "item"
+				}
+				{
+					id: "54FA3634B5832E82"
+					item: "irons_spellbooks:common_ink"
+					type: "item"
+				}
+				{
+					id: "5154C16C3E820D28"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			title: "咒法初探"
+			x: 18.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44449A1CFBD0DA35"]
+			description: ["&6金属板&r比锭更薄更柔韧，压铸工艺需谨慎操作"]
+			hide: true
+			id: "607A96CCCA0509D9"
+			tasks: [
+				{
+					id: "25F2C969E0927A78"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					id: "3F2614110E4F532C"
+					item: "create:golden_sheet"
+					type: "item"
+				}
+			]
+			title: "金属板材"
+			x: 17.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["030B6BDCCEA87BB0"]
+			description: ["短剑难御强敌，需系统学习&6战斗技巧&r"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0F3548695F55209A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3AB1F534808022A0"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "206DADB2902D5B91"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "simplyswords:swords"
+					}
+				}
+				title: "SimplySwords武器"
+				type: "item"
+			}]
+			title: "武装时刻"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F3548695F55209A"]
+			description: ["这个世界&o异常空旷&r。石裔的低语暗示存在&6庞大地下城&r，&o探索即将展开&r"]
+			hide: true
+			icon: "undergarden:chiseled_depthrock_bricks"
+			id: "7EF5A1C9AD64FEA7"
+			tasks: [{
+				icon: "supplementaries:cartographers_quill"
+				id: "1FD7485F95E8E48B"
+				structure: "undergarden:catacombs"
+				title: "寻找结构：地下城"
+				type: "structure"
+			}]
+			title: "暗庭地下城"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7EF5A1C9AD64FEA7"]
+			description: ["地下城实为&6古代兵工厂&r，击败&6遗忘守卫&r获取特殊材料"]
+			hide: true
+			icon: "undergarden:forgotten_ingot"
+			id: "7A98CA0942113BF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36FF06C8FD271C3A"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					entity: "undergarden:forgotten_guardian"
+					icon: {
+						Count: 1b
+						id: "undergarden:forgotten_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "041F9463B5AAABE3"
+					title: "击杀遗忘守卫"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "45DF49D2F5648686"
+					item: "undergarden:forgotten_ingot"
+					type: "item"
+				}
+			]
+			title: "遗忘馈赠"
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"7A98CA0942113BF0"
+				"6CAE632F84F4AEA4"
+				"5C53FE504B9A5848"
+			]
+			description: ["&6遗忘锭&r具变形特性，&6镀金砖&r能量场可赋予新属性，&6空白钥匙&r以通灵红杉制成——三者结合将打开跨次元门户"]
+			hide: true
+			icon: "dimdungeons:block_key_charger"
+			id: "4364260BD327FAED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5DD6188D345E6772"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "1FCFC6E9278DD81B"
+					item: "dimdungeons:block_key_charger"
+					type: "item"
+				}
+				{
+					id: "4A65F31FDAE7A66F"
+					item: "dimdungeons:block_portal_keyhole"
+					type: "item"
+				}
+			]
+			title: "三位一体"
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4364260BD327FAED"]
+			description: [
+				"为空白钥匙充能后插入&6传送门插槽&r即可开启异界之门。虽非故土，仍激动不已"
+				"{@pagebreak}"
+				"&a你好，我是&l西格玛&r&a。破例给予奖励——虽非实用物品，但礼包总是好的，&o对吧？&r"
+			]
+			hide: true
+			icon: "dimdungeons:block_portal_keyhole"
+			id: "20565BBF2E69DED3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B6F5B9B32CA4789"
+				table_id: 6166571196725792811L
+				title: "初始模板"
+				type: "loot"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "5789ADF410C810D7"
+				title: "继续征程"
+				type: "checkmark"
+			}]
+			title: "地下城之路"
+			x: 9.0d
+			y: 12.25d
+		}
+		{
+			dependencies: ["607A96CCCA0509D9"]
+			description: ["金箔用途广泛：&6工程护目镜&r查看机械参数，&6扳手&r调整设备方向"]
+			hide: true
+			icon: "create:goggles"
+			id: "5A228233B6383EB6"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "0AA580081A53002A"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "4ED9D25EFA35E34B"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			title: "工程装置"
+			x: 18.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["043F0F2248A740B3"]
+			description: ["发现&6空白传送钥匙&r，&o能否打开回家之路？&r"]
+			id: "6CAE632F84F4AEA4"
+			tasks: [{
+				id: "01D2F93C8535F584"
+				item: "dimdungeons:item_portal_key"
+				type: "item"
+			}]
+			title: "非锁之钥"
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["175FBF270ADD76A5"]
+			description: [
+				"&6紫荧矿&r特性类似&6红石&r，虽稀缺但制备方法已掌握"
+				"{@pagebreak}"
+				"该矿仅能通过特殊方式获取"
+			]
+			hide_dependent_lines: true
+			id: "2BB48B10E6F38755"
+			tasks: [{
+				id: "4477438041AF6586"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "红石科技"
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F3548695F55209A"]
+			description: [
+				"难以置信从&6碎颅者&r手中生还，获得珍贵胸甲"
+				"{@pagebreak}"
+				"&a恭喜！本章含12个彩蛋，集齐可解锁第13个特殊彩蛋&r"
+				"                               &o&f ——西格玛留斯&r"
+			]
+			id: "36958CA5D73BB59C"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "3A7163A0EA8AD48E"
+				item: {
+					Count: 1b
+					id: "undergarden:masticated_chestplate"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:thorns"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["68D70ACFA014994C"]
+			description: ["&6岩浆球&r加热可逆转为岩浆，需积累足够数量"]
+			id: "1D1918542AD0E484"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "013E8F455213994D"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3FE56BECC8280CDD"
+				item: "kubejs:magma_bucket"
+				type: "item"
+			}]
+			title: "岩浆桶"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1D1918542AD0E484"]
+			description: [
+				"常规熔炉无法熔炼岩浆球，需建造&6巨型熔炉&r扩大加热区域"
+				"{@pagebreak}"
+				"三倍尺寸的&6笨拙熔炉&r可安全制备岩浆，实现圆石无限供应"
+			]
+			id: "12E7191F4D69797E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B942C9B366F8126"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "jumbofurnace:assemble_jumbo_furnace"
+				criterion: ""
+				icon: "jumbofurnace:jumbo_furnace_jei"
+				id: "13E7174CC6F4A3F1"
+				title: "建造笨拙熔炉"
+				type: "advancement"
+			}]
+			title: "笨拙尺寸"
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12E7191F4D69797E"]
+			description: ["成功获取岩浆，应用于冶炼与建筑，&o开启无限可能&r"]
+			id: "08004A23BFDB56AF"
+			tasks: [{
+				id: "48ECB72ECB762076"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "渴望之焰"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["043F0F2248A740B3"]
+			description: ["&6通灵红杉&r蕴含自然能量，可制作&6自然罗盘&r定位生态群落"]
+			id: "52ED37EC72891B96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59A116C495354638"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1498A537DB83F434"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "自然导航"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A0E576DC681A939"]
+			description: ["&6石刀&r适合采集草本与肉类，需配合&6砧板&r使用"]
+			icon: {
+				Count: 1b
+				id: "farmersdelight:flint_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7489466878B2A0BC"
+			tasks: [{
+				id: "75406DE3CA3A8720"
+				item: {
+					Count: 1b
+					id: "farmersdelight:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "切割艺术"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7489466878B2A0BC"]
+			description: ["从坚韧的暗庭植物中提取&6纤维束&r，用途广泛"]
+			id: "2F17AB8356A97C10"
+			tasks: [{
+				id: "725669FD978D7D9B"
+				item: "farmersdelight:straw"
+				type: "item"
+			}]
+			title: "植物纤维"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2F17AB8356A97C10"
+				"5D1A5217A000D25B"
+			]
+			description: ["&6绳梯&r解决垂直移动难题，&o攀爬与降落更安全&r"]
+			icon: "sg_simple_utilities:throwable_rope"
+			id: "2ACA0A7A2C61E882"
+			tasks: [{
+				id: "574C5E40ECF1EF23"
+				item: "sg_simple_utilities:throwable_rope"
+				type: "item"
+			}]
+			title: "绳梯系统"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3ECF1FF299E6493D"]
+			description: ["升级&6工作台&r解锁高级合成，&o铁器储备立大功&r"]
+			hide: true
+			id: "43CAAE1E6EF0F380"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "149B7F59C86A57F6"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				icon: "minecraft:crafting_table"
+				id: "2A03A06F203CEA2F"
+				observe_type: 0
+				timer: 30L
+				title: "工作台升级"
+				to_observe: "minecraft:crafting_table"
+				type: "observation"
+			}]
+			title: "创造工坊"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D3E3255FF3743AB"]
+			description: ["标准木板简化制作，需设计&6合成台&r处理复杂结构"]
+			hide: true
+			id: "565FBF5D6F1C9ED7"
+			tasks: [{
+				id: "19496855B124F880"
+				item: "sg_simple_utilities:workbench"
+				type: "item"
+			}]
+			title: "工作空间"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B7D5CB0B924EA27"]
+			description: ["&o这就是我的计划&r——用树皮将&6尖石绑在木棍上&r制作原始工具。虽&o简陋&r，但能获取首批木材足矣"]
+			hide: true
+			id: "1D3E3255FF3743AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22B65644ECD90155"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1CC44C10515A81EB"
+				item: {
+					Count: 1b
+					id: "kubejs:depthrock_hatchet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "原始技术"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6DBA031D4B69B848"]
+			description: ["&o砂纸虽不坚固...&r但足够用来打磨&6深板岩碎石&r。处理几块应该够用"]
+			hide: true
+			id: "0B7D5CB0B924EA27"
+			tasks: [{
+				count: 2L
+				id: "0B7A70AC606EF6A9"
+				item: "kubejs:sharpened_depthrock_pebble"
+				type: "item"
+			}]
+			title: "锐利碎石"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D0F2792F48AAA27"]
+			description: ["用&6树皮&r尝试制作&o粗制纸张&r。虽粗糙但可用于&6砂纸&r制作。需寻找沙源——远处水域应有沉积层，&o切记远离水中威胁&r"]
+			hide: true
+			id: "6DBA031D4B69B848"
+			tasks: [{
+				id: "3AE507E3A3C37FC8"
+				item: {
+					Count: 1b
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "滴水穿石"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B91ED7437122300"]
+			description: ["&6砧板&r能有效去除木材外皮获取&6柔韧内层&r。工具简陋，&o需耐心操作&r"]
+			hide: true
+			id: "3D0F2792F48AAA27"
+			tasks: [{
+				id: "2EBF8F0C54CFC1D5"
+				item: "farmersdelight:tree_bark"
+				type: "item"
+			}]
+			title: "木纤维提取"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["10AF6E6BBCE2F931"]
+			description: ["徒手敲击难成大事。需要便携式&6工作台&r，既能创作又方便撤离"]
+			hide: true
+			id: "3B91ED7437122300"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45DFAAEE7A6E2D2B"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "51D19A0C4FA4C25C"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			title: "加工平台"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6E9537B534A5C542"]
+			description: ["&o过程痛苦但值得&r。拼凑出&6粗制木板&r，基础建材达成"]
+			hide: true
+			id: "10AF6E6BBCE2F931"
+			tasks: [{
+				id: "24190583283D92FB"
+				item: "kubejs:handicraft_planks"
+				type: "item"
+			}]
+			title: "手工坊"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["283E72FD11380EAC"]
+			description: [
+				"&6深板岩碎石&r坚硬异常，&o可惜我臂力孱弱&r。尝试直接&6刮取树干&r获取木材，顺带收集枝叶"
+				"&o预感双手要遭罪了&r"
+			]
+			hide: true
+			icon: "kubejs:wood_bast"
+			id: "6E9537B534A5C542"
+			tasks: [
+				{
+					count: 4L
+					id: "02EAA103ECA209D8"
+					item: "kubejs:wood_bast"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1501CC3836CA1D85"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
+			title: "原木刮取"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["33874D52253D62E9"]
+			description: ["验证成功！&6发光海带&r特性类似普通海带，&6烘干处理&r后可得坚韧材料"]
+			hide: true
+			id: "1F527B844F580BC5"
+			tasks: [{
+				id: "5191BB22851C3CF4"
+				item: "minecraft:dried_kelp"
+				type: "item"
+			}]
+			title: "烟熏草本"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5FB301F403C40575"]
+			description: ["海底&6荧光藻类&r如黄金般闪耀，干燥后或有大用"]
+			hide: true
+			id: "33874D52253D62E9"
+			tasks: [{
+				id: "0F3CF47510F900DF"
+				item: "undergarden:glitterkelp"
+				type: "item"
+			}]
+			title: "海底辉光"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["565FBF5D6F1C9ED7"]
+			description: ["阴森环境令人窒息。急需&6光源与热源&r维持理智"]
+			hide: true
+			id: "5FB301F403C40575"
+			tasks: [{
+				id: "3E65871BB1F09121"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			title: "唯一温暖"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64C7B55D1A6B430B"]
+			description: [
+				"&o陷入沉思&r——合金锭无法直接用于精密机械，需打造&6锻造锤&r加工板材"
+				"从&6锤头制作&r开始"
+			]
+			hide: true
+			id: "111D96959020F34D"
+			tasks: [{
+				id: "6893044AE1D54F1B"
+				item: "kubejs:depthrock_blacksmith_gavel_head"
+				type: "item"
+			}]
+			title: "锤首铸造"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"111D96959020F34D"
+				"12E7191F4D69797E"
+			]
+			description: ["深板岩粘性不足，&6笨拙熔炉&r高温烧结或成解决方案"]
+			hide: true
+			id: "195ADA755B880406"
+			tasks: [{
+				id: "6EB280CF93D0414F"
+				item: "forbidden_arcanus:blacksmith_gavel_head"
+				type: "item"
+			}]
+			title: "热力塑形"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["195ADA755B880406"]
+			description: ["意外成功！木质&6锻锤&r借助特殊锤头竟能锻打金属"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:stone_blacksmith_gavel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2371B64EA184EC95"
+			tasks: [{
+				id: "1F1205C5E701250E"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gavels"
+					}
+				}
+				title: "锻造锤"
+				type: "item"
+			}]
+			title: "金属延展"
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"17FD1D4D4B7B87F6"
+				"2371B64EA184EC95"
+			]
+			description: ["安山岩合金需进一步加工为&6金属板&r提升机械精度"]
+			hide: true
+			id: "19849A23828DC968"
+			tasks: [{
+				id: "33DD192861084C3D"
+				item: "kubejs:andesite_cladding_plate"
+				type: "item"
+			}]
+			title: "金属包覆"
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19849A23828DC968"]
+			description: ["合金板包裹木梁制成&6机械框架&r，为自动化奠定基础"]
+			hide: true
+			id: "3687BB4EC51B93CB"
+			tasks: [{
+				id: "668087D5E855F7A5"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "机械基座"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2040EC6BDB33D808"]
+			description: ["&6机械锯&r多功能惊人——石材切割、木材加工、特殊合成，&o节俭者挚友&r"]
+			hide: true
+			id: "39B4E7E462BB81C4"
+			tasks: [{
+				id: "0B5FBC2571B3407E"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "切割艺术"
+			x: 16.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["39B4E7E462BB81C4"]
+			description: ["锯木效率提升50%，&o期待动能自动化&r"]
+			hide: true
+			id: "5875D8EBC4E0F293"
+			tasks: [{
+				count: 6L
+				id: "720193590B07BB1C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "标准木板"
+				type: "item"
+			}]
+			title: "木材加工"
+			x: 17.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["39B4E7E462BB81C4"]
+			description: ["&6传动轴&r制作难题破解——单块合金经机械锯可产出6根轴体，&o效率惊人&r"]
+			hide: true
+			id: "7253DAA63C8E2F5E"
+			tasks: [{
+				count: 6L
+				id: "18E9BC8CBF2BABD1"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "轴体量产"
+			x: 17.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["39B4E7E462BB81C4"]
+			description: ["单一工作台制约发展，&6工具组&r制作耗材巨大，机械锯或成破局关键"]
+			hide: true
+			id: "3B3418363F24004D"
+			shape: "rsquare"
+			tasks: [{
+				count: 2L
+				id: "3886E93A115C80FF"
+				item: "sg_simple_utilities:toolkit"
+				type: "item"
+			}]
+			title: "工具革新"
+			x: 18.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["043F0F2248A740B3"]
+			description: ["&6通灵红杉&r将成为自主动能来源——轻盈坚固且无需润滑"]
+			hide: true
+			id: "54EBEE467F71E80B"
+			tasks: [{
+				id: "5C22AE17ED51CFD4"
+				item: "kubejs:kinetic_mechanism_frame"
+				type: "item"
+			}]
+			title: "动能时代"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["54EBEE467F71E80B"]
+			description: ["&6机械外壳&r完美成型，&o喜极而泣&r"]
+			hide: true
+			id: "7400558F19406130"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3798FEB684005A78"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0B4FAC9651D9DFA8"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			title: "自动化之力"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["565FBF5D6F1C9ED7"]
+			description: ["&6铁线&r库存意外成为&6精密工具组&r制作关键，&o天助我也&r"]
+			hide: true
+			id: "3ECF1FF299E6493D"
+			tasks: [{
+				id: "62B332E4664BE410"
+				item: "sg_simple_utilities:toolkit"
+				type: "item"
+			}]
+			title: "精细作业"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["误将&6地下入口&r认作小屋，&o昔日工匠今安在？&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "01DF4826B49DD7F9"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "minecraft:chipped_anvil"
+				id: "2B9C8F709516A37D"
+				structure: "sg_simple_utilities:abandoned_forge"
+				title: "寻找废弃锻造厂"
+				type: "structure"
+			}]
+			title: "废弃锻造厂"
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["&o诡异祭坛&r——血渍斑驳的紫荧晶石散布，&6不宜久留&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "36DF22E775BE3F23"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "undergarden:tremblecrust_utherium_ore"
+				id: "17661ACE66BA6FC6"
+				structure: "sg_simple_utilities:bloody_stones"
+				title: "寻找血祭石"
+				type: "structure"
+			}]
+			title: "血祭石"
+			x: 17.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["发现&6破碎传送门&r残骸，能量残留表明曾频繁使用，&o或通向他界&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0470F4DB4501AC36"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "alexsmobs:ender_residue"
+				id: "3CF9278A96866CAE"
+				structure: "sg_simple_utilities:dimdungeon_remnant"
+				title: "寻找地下城传送门遗迹"
+				type: "structure"
+			}]
+			title: "地下城传送门遗迹"
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["&6袖珍日式宅邸&r——单人居所暗藏玄机，&o建筑风格疑似「民家」&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1AEB5DCE67C8DC58"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "undergarden:depthrock_bed"
+				id: "6AFD56A1F1CF689D"
+				structure: "sg_simple_utilities:grongle_minka"
+				title: "寻找呢喃木民家"
+				type: "structure"
+			}]
+			title: "呢喃木民家"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["&6震颤庄园&r——滑石建筑内含炼金实验室，&o房主品味成谜&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "40A9635C43D2B1FD"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "fantasyfurniture:decorations/brewing_cauldron"
+					tag: {
+						DyeColor: "cyan"
+					}
+				}
+				id: "339BC9B00EE4A75F"
+				structure: "sg_simple_utilities:shivering_manor"
+				title: "寻找震颤庄园"
+				type: "structure"
+			}]
+			title: "震颤庄园"
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["迷你&6废弃农场&r——作物丛生却无照料痕迹，&o昔日规模或更宏大&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "5FFA7D570B3064CF"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "undergarden:gloomgourd"
+				id: "6C3A4AB348A65EC5"
+				structure: "sg_simple_utilities:small_farm"
+				title: "寻找小型农场"
+				type: "structure"
+			}]
+			title: "小型农场"
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["&6石裔雕像&r——双角巍峨，&o建造者身份成谜&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7BBB433E0B5C94EA"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "undergarden:chiseled_depthrock_bricks"
+				id: "45728133F66E830B"
+				structure: "sg_simple_utilities:stoneborn_statue"
+				title: "寻找石裔雕像"
+				type: "structure"
+			}]
+			title: "石裔雕像"
+			x: 13.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: [
+				"&6暗庭传送门&r遗迹——&o近在咫尺却遥不可及&r，自我救赎之路注定孤独"
+				"&o&m为何选中我...&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2EEE39E8008A6467"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "kubejs:sharpened_depthrock_pebble"
+				id: "0CC361E4AA72EEAB"
+				structure: "sg_simple_utilities:undergarden_portal_ruins"
+				title: "寻找暗庭传送门遗迹"
+				type: "structure"
+			}]
+			title: "暗庭传送门遗迹"
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04D4DFBFC863032D"]
+			description: ["&6摇曳树屋&r——植被覆盖的温馨居所，&o无畏怪物之谜待解&r"]
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7AD67906EA7E80A5"
+			invisible: true
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				icon: "fantasyfurniture:furniture_station"
+				id: "38044C94AA7AAFE0"
+				structure: "sg_simple_utilities:wigglewood_house"
+				title: "寻找摇曳树屋"
+				type: "structure"
+			}]
+			title: "摇曳树屋"
+			x: 15.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"2ACA0A7A2C61E882"
+				"2BB48B10E6F38755"
+			]
+			description: ["&6抓钩&r方案升级——红石驱动配合&6铁链&r，实现可重复攀爬"]
+			hide: true
+			id: "4BB042A5AA8950EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7AEC0A5FD42C2C1C"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3E6DC977F49DA523"
+				item: {
+					Count: 1b
+					id: "hookshot:hookshot"
+					tag: {
+						ShotHook: 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "飞虎爪"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3BD502D40420C6AD"]
+			description: ["掌握缝纫后改造&6苔藓床铺&r，尝试制作舒适&6羊毛家具&r"]
+			hide: true
+			hide_dependency_lines: true
+			id: "0EC15362C7E3BD3D"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "719DBF4B87DF6459"
+				item: "cakescosmetics:sewing_station"
+				type: "item"
+			}]
+			title: "裁缝技艺"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6013535DC19975C1"]
+			description: ["&6地图集&r潜力发掘——标记系统配合&6制图台&r实现区域拓展与复制"]
+			hide: true
+			hide_dependency_lines: true
+			id: "43E5E5C6CDB5BBFB"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "525FDD313CF5F5B4"
+				item: "minecraft:cartography_table"
+				type: "item"
+			}]
+			title: "疆域扩张"
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"175FBF270ADD76A5"
+				"474539CBBA76E3DC"
+			]
+			description: ["&6羽毛&r获取解锁&6箭矢制作&r，远程武器迎来突破"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:fletching_table"
+			id: "7EEDE903D90C135B"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "4E6BBC7327B31E6F"
+				item: "minecraft:arrow"
+				type: "item"
+			}]
+			title: "远程打击"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["407240969A006F83"]
+			description: ["提前打造&6锻造台&r为未来&6精密锻造&r做准备"]
+			hide: true
+			hide_dependency_lines: true
+			id: "4D483E453BC82762"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "6F14E73277D0FDA9"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			title: "铁匠工坊"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5FFA7D570B3064CF"
+				"1AEB5DCE67C8DC58"
+				"0470F4DB4501AC36"
+				"01DF4826B49DD7F9"
+				"2EEE39E8008A6467"
+				"40A9635C43D2B1FD"
+				"7BBB433E0B5C94EA"
+				"7AD67906EA7E80A5"
+				"36DF22E775BE3F23"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&a喂！这是辅助任务，你不该出现在这！快回去继续玩整合包"
+				"                                &a-西格玛留斯&r"
+			]
+			disable_toast: true
+			hide: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "5834046ABF5A551C"
+			invisible: true
+			size: 0.063d
+			tasks: [{
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				id: "0A0D15A0BFFF0226"
+				title: "辅助任务"
+				type: "advancement"
+			}]
+			x: 3.4019999999999997d
+			y: 6.048d
+		}
+	]
+	subtitle: ["&2袨褔褍褌懈胁褕懈褋褜 胁 薪懈谐写械..."]
+	title: "&2第一章·岩层花园"
+}

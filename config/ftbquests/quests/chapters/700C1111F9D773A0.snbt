@@ -1,0 +1,1001 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "700C1111F9D773A0"
+	group: "54DECDB6D89E76B0"
+	hide_quest_until_deps_visible: true
+	icon: "farmersdelight:horse_feed"
+	id: "700C1111F9D773A0"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0A0E576DC681A939"
+				"77BCD429A6F67917"
+			]
+			description: ["现在，既然我已经做了个炉子，我就可以&o做点好吃的食物了&f。&r 在这里的海洋里&f有很多&6小鱼。&f我想，我可以试试做这些。"]
+			id: "4398DCBD68A1997F"
+			shape: "diamond"
+			tasks: [{
+				id: "2C207A0994C47E16"
+				item: "undergarden:cooked_gwibling"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0A0E576DC681A939"
+				"77BCD429A6F67917"
+			]
+			description: ["在当地的森林里&f栖息着有趣的&6鼯鼠。&f它们的肉可以做成&6美味的牛排。"]
+			id: "3A83D3BC1AF55317"
+			shape: "diamond"
+			tasks: [{
+				id: "0B65126511D7349C"
+				item: "undergarden:dweller_steak"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["46811996EA5BF62C"]
+			description: ["这个世界看起来非常寒冷和残酷，但不应只关注动物。我注意到这里有许多&6蘑菇和浆果，&f这些可以用来做&6食物。"]
+			hide: true
+			id: "77BCD429A6F67917"
+			shape: "diamond"
+			tasks: [{
+				id: "4F3B0DD888E0643B"
+				title: "明了"
+				type: "checkmark"
+			}]
+			title: "地底花园中的食物"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0A0E576DC681A939"
+				"77BCD429A6F67917"
+			]
+			description: ["&6暗蛙-&r 类似青蛙的生物。它们跳得很高，且传播病毒。它们的肉相当美味，而且似乎&6有助于增强跳跃能力&r。&o我现在是青蛙了吗，哈哈？&r"]
+			id: "64D90E7FE75B240F"
+			shape: "diamond"
+			tasks: [{
+				id: "34291EE308E355E6"
+				item: "undergarden:gloomper_leg"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["77BCD429A6F67917"]
+			description: ["&6血蘑菇,&r 呃... 想起来就毛骨悚然。不过，食用这种液体能增加我的力量。&o也许这和血液流动的增强有关...&r 这样就能解释为什么我对痛感变得&6更加敏感&r。"]
+			id: "6BD53DF6CBD9099E"
+			shape: "diamond"
+			tasks: [{
+				id: "52C77AA6F7ABCD42"
+				item: "undergarden:bloody_stew"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["77BCD429A6F67917"]
+			description: ["&6蘑菇汤&f用的是一些&6墨水蘑菇做的。&f虽然这不是最好的食物，吃完后眼睛会模糊，但意外的是，我开始&o不那么感觉到痛苦了...&r"]
+			id: "2C05D5CB7B1072B3"
+			shape: "diamond"
+			tasks: [{
+				id: "09CC6A4A5BB3E0ED"
+				item: "undergarden:inky_stew"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["77BCD429A6F67917"]
+			description: ["另一个&6蘑菇汤&r，做的是&6蓝蘑菇。看起来它们帮助我在黑暗中更好地看清楚，但...它们热量很高，&o而且吃了之后行动有些笨重...&r"]
+			id: "1E4A1DDB533CABAB"
+			shape: "diamond"
+			tasks: [{
+				id: "1326FAD712F1774F"
+				item: "undergarden:indigo_stew"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77BCD429A6F67917"]
+			description: ["&6帘蘑菇&r比其他蘑菇要好吃些。吃完后，我更容易从悬崖上跳下，就像&6变得更轻盈了&r。&o有趣且有用&r。"]
+			id: "258A47F489FEC03A"
+			shape: "diamond"
+			tasks: [{
+				id: "49236B4B2B12814D"
+				item: "undergarden:veiled_stew"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77BCD429A6F67917"]
+			description: ["&6浆果&f似乎是水果。味道平淡，营养也不多...但至少它们很多，甜甜的，还能稍微&6照亮我的皮肤。&r &o这样走起来都感觉更舒服，哈哈...&r"]
+			id: "6F4C753468E6DD07"
+			shape: "diamond"
+			tasks: [{
+				id: "1A02F148A9EA1200"
+				item: "undergarden:droopvine_item"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["77BCD429A6F67917"]
+			description: ["我找到了一种很棒的&6浆果灌木，&f它看起来像是普通的甜浆果。它们生长得很繁盛，但常常会长出危险的腐烂品种。&o不过，也许它们也能用吗？&r"]
+			id: "4BCDFAA3C297EDA1"
+			shape: "diamond"
+			tasks: [{
+				id: "7D93010C9FDBBA18"
+				item: "undergarden:blisterberry"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"77BCD429A6F67917"
+				"0A0E576DC681A939"
+			]
+			description: ["在这里的草地上长着&f许多带&6豆荚的植物&r。看起来能吃，很快就能吃掉，而且&o味道也不错&r。"]
+			id: "5D27F7265E894C0A"
+			tasks: [{
+				id: "64FE31FE0922C210"
+				item: "undergarden:roasted_underbeans"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["在森林边缘，我遇到了几只&6小野猪。&f现在真想吃点猪肉。"]
+			id: "3CFBAC0CF57CC28F"
+			tasks: [{
+				id: "01FC43900921AD07"
+				item: "minecraft:cooked_porkchop"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["&6羊肉&r 他的肉做的&6牛排&r一定很好吃。现在只需要把它杀了就行。"]
+			id: "6B1B32348AA494FC"
+			tasks: [{
+				id: "7079A8D288581FD8"
+				item: "minecraft:cooked_mutton"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["最普通的&6鸡&r，&f它不就是最容易&6繁殖的动物吗？&f这可能会成为我在这个世界里的&6主要食物&r。"]
+			id: "03D0BEF0E21C9D94"
+			tasks: [{
+				id: "0A6CFF1C6046B665"
+				item: "minecraft:cooked_chicken"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["这些森林里的&6鹿&r不同于其他动物，它们更加群居。我很想&6尝尝它们的肉。&r &o它独特，还是像其他动物的肉？&r"]
+			id: "189FF143AD1D8645"
+			tasks: [{
+				id: "42561C01BE4595F1"
+				item: "twilightforest:cooked_venison"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["&o半人半牛&r 如果回想一下传说，那它肯定是&6弥诺陶洛斯&r。&f有趣的是，它的肉是什么味道呢？毕竟它还是&f半头牛。"]
+			id: "53A5439F4C2DDC89"
+			tasks: [{
+				id: "35FF26FC59959E20"
+				item: "twilightforest:cooked_meef"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			description: ["终于从地下迷宫里出来了。我看到了天空，这...真美...我已经注意到这个世界里的&6动物，&f它们的肉肯定能&6做成牛排&r。"]
+			id: "4CE9F9D2E51407BD"
+			tasks: [{
+				id: "450503094AE84DE3"
+				title: "暮色森林的食物"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["在暮色森林的水域中应该有更适合捕鱼的植物。也许可以试试&6在这里钓鱼？&r &o我不介意尝尝鳕鱼&r。"]
+			icon: "minecraft:tropical_fish"
+			id: "3023753DAFBF9D30"
+			tasks: [{
+				id: "42DB7410A310A9EE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:fishes"
+					}
+				}
+				title: "任何鱼类"
+				type: "item"
+			}]
+			title: "鱼"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["&6铸铁&r 是做烹饪工具的完美金属。例如&6煎锅&r，可以拿在手中烹饪。&o真是完美的野营工具&r。"]
+			id: "3BAA3C9F7E17771B"
+			tasks: [{
+				id: "5F96312B22A6F868"
+				item: {
+					Count: 1b
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.25d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["我记得曾尝试用铁器做饭，&o那时候并没有成功&r。于是我决定制造&6铸铁&r。这种坚固且不生锈的合金非常适合做&6厨房炖锅&r。"]
+			id: "38BD5BDEBAFA4BF7"
+			tasks: [{
+				id: "1543F21F7E26D486"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["既然我已经开始专注于烹饪，&o那就不能忘了&6刀具&r。用它们可以切草药、肉类...&o我确信它们以后还会用得上&r。"]
+			icon: {
+				Count: 1b
+				id: "farmersdelight:iron_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "786D66BC632DAAA4"
+			tasks: [{
+				id: "6BED424E2A61A78C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "farmersdelight:tools/knives"
+					}
+				}
+				title: "任何刀具"
+				type: "item"
+			}]
+			title: "刀具"
+			x: 3.25d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CE9F9D2E51407BD"]
+			description: ["看到&6喷火器&r之后，我脑海里浮现出一个记忆...&o有个人在用滚烫的油煎食物。既然我现在有了加热设备，我能否重现这种经历，制作一个&6油炸锅&r？&r"]
+			icon: "create_bic_bit:mechanical_fryer"
+			id: "3F44F39198A782A1"
+			tasks: [
+				{
+					id: "27E478195C175FB6"
+					item: "create_bic_bit:mechanical_fryer"
+					type: "item"
+				}
+				{
+					id: "5C46C80CA151409A"
+					item: "create_bic_bit:frying_oil_bucket"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3F44F39198A782A1"]
+			description: ["油炸锅的烹饪促使我尝试另一种&6烹调食物的方法&r，&o如果可以这样说的话...&r 如果&6加热牛奶&r，它应该会凝结吧？这样就能做成奶酪，如果我没记错的话？"]
+			id: "0E5C3B79E80D4405"
+			tasks: [{
+				id: "05484F008D62CA97"
+				item: "create_bic_bit:curdled_milk_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E5C3B79E80D4405"]
+			description: ["&o哈哈，我是对的&r。&6凝固的牛奶&r只需要搅拌，就能变成奶酪。然后只需要把它放到架子上，&6等它熟成&r。&o这会非常美味且有益健康&r。"]
+			id: "61908B51EB4EC889"
+			tasks: [{
+				id: "1357D5D4A17D6F4F"
+				item: "create_bic_bit:aged_cheese"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["74FB9AF549034A54"]
+			description: ["做出的食物&o有点淡&r。也许它们缺少&6酱汁&r？我记得番茄酱是一种番茄做的酱汁，蛋黄酱是用蛋白做的。&o也许可以试着做这样的酱汁...&r"]
+			icon: "create_bic_bit:ketchup_bottle"
+			id: "7169EFB03EBBE3DE"
+			tasks: [
+				{
+					id: "13B35A7E6FB1632D"
+					item: "create_bic_bit:mayonnaise_bottle"
+					type: "item"
+				}
+				{
+					id: "692DA0281EBFCE0D"
+					item: "create_bic_bit:ketchup_bottle"
+					type: "item"
+				}
+			]
+			title: "酱汁"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F44F39198A782A1"]
+			description: ["如果把某个蛋、肉或甚至蔬菜裹上面粉，&6就可以用油煎了&r。它会被覆盖上一层脆皮，味道非常浓郁。真好奇，&o我能想出多少种不同的食物呢？"]
+			icon: "create_bic_bit:bitterballen"
+			id: "0638DAAEA2912FD1"
+			tasks: [
+				{
+					id: "7411A4BEA31D9972"
+					item: "create_bic_bit:kroket"
+					type: "item"
+				}
+				{
+					id: "37685CAA10D304E5"
+					item: "create_bic_bit:frikandel"
+					type: "item"
+				}
+				{
+					id: "37BA74312A023B8B"
+					item: "create_bic_bit:cheese_souffle"
+					type: "item"
+				}
+				{
+					id: "3B46C825978ED2A5"
+					item: "create_bic_bit:churros"
+					type: "item"
+				}
+				{
+					id: "6C4BE81167DD1D5C"
+					item: "create_bic_bit:fries"
+					type: "item"
+				}
+				{
+					id: "6BF0364E0D21E795"
+					item: "create_bic_bit:bitterballen"
+					type: "item"
+				}
+				{
+					id: "4708997662F450F0"
+					item: "create_bic_bit:eggball"
+					type: "item"
+				}
+				{
+					id: "2A6923FCFBF7ADE0"
+					item: "create_bic_bit:oliebollen"
+					type: "item"
+				}
+			]
+			title: "煎炸与油腻"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0638DAAEA2912FD1"]
+			description: ["有些食物我挺喜欢味道，但... 那些切成片的土豆我该怎么吃呢，&o如果它们总是从手中掉下来？&r 我想到一个办法，为各种肉饼或者土豆做个地方，可以&6放下它们&r，然后吃得不弄脏手。"]
+			icon: "create_bic_bit:wrapped_fries"
+			id: "74FB9AF549034A54"
+			tasks: [
+				{
+					id: "4EDE2C4976A53D5F"
+					item: "create_bic_bit:frikandel_sandwich"
+					type: "item"
+				}
+				{
+					id: "74D0C477BA32F9F7"
+					item: "create_bic_bit:kroket_sandwich"
+					type: "item"
+				}
+				{
+					id: "6F02A9A584EBB142"
+					item: "create_bic_bit:wrapped_fries"
+					type: "item"
+				}
+			]
+			title: "裹上食物"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3F44F39198A782A1"]
+			description: ["原来这个东西不仅可以做各种油腻食物，&o还可以做烘焙食品&r。"]
+			icon: "create_bic_bit:speculaas"
+			id: "6E41558C4F4A8567"
+			tasks: [
+				{
+					id: "417AD80EA3029294"
+					item: "create_bic_bit:stroopwafel"
+					type: "item"
+				}
+				{
+					id: "5CC324FBF7E33771"
+					item: "create_bic_bit:speculaas"
+					type: "item"
+				}
+				{
+					id: "5919AF132EFDDCB6"
+					item: "create_bic_bit:kruidnoten"
+					type: "item"
+				}
+			]
+			title: "烘焙"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"38BD5BDEBAFA4BF7"
+				"5B2F1923F20A5A94"
+			]
+			description: ["我想，&o不妨从简单的食物做起&r，没必要一开始就做炖菜或煮菜。可以试试做&6米饭&r，或者用生菜做肉卷。对了，为什么不尝试做&6沙拉&r呢？&o这应该挺不错的&r。"]
+			icon: "farmersdelight:dumplings"
+			id: "00FA6423496EAB99"
+			tasks: [
+				{
+					id: "2F9FF87E8A78256F"
+					item: "farmersdelight:cooked_rice"
+					type: "item"
+				}
+				{
+					id: "31C28C65528DB385"
+					item: "farmersdelight:cabbage_rolls"
+					type: "item"
+				}
+				{
+					id: "6443123AE0B55ACE"
+					item: "farmersdelight:dumplings"
+					type: "item"
+				}
+				{
+					id: "292422352D7FC1F8"
+					item: "farmersdelight:mixed_salad"
+					type: "item"
+				}
+				{
+					id: "386DAEB67AADEA34"
+					item: "farmersdelight:fruit_salad"
+					type: "item"
+				}
+			]
+			title: "简单的菜肴"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"38BD5BDEBAFA4BF7"
+				"5B2F1923F20A5A94"
+			]
+			description: ["既然我有了锅，为什么不尝试做些&o液态食物&r呢？&o比如汤&r。可以做些简单的液态汤，比如甜菜汤，或者做些有厚重汤料的。盛在碗里，&o然后开吃&r。"]
+			icon: "farmersdelight:chicken_soup"
+			id: "6B8C7A946D54C21B"
+			tasks: [
+				{
+					id: "6DB25EBAD0513E76"
+					item: "farmersdelight:chicken_soup"
+					type: "item"
+				}
+				{
+					id: "70951BAC619E50EA"
+					item: "farmersdelight:pumpkin_soup"
+					type: "item"
+				}
+				{
+					id: "0342D9CA62AAA128"
+					item: "farmersdelight:noodle_soup"
+					type: "item"
+				}
+				{
+					id: "7DB89C2BDD8DA01E"
+					item: "farmersdelight:vegetable_soup"
+					type: "item"
+				}
+				{
+					id: "67563C66FDE7B52E"
+					item: "farmersdelight:bone_broth"
+					type: "item"
+				}
+				{
+					id: "3C80AD599C0709F6"
+					item: "minecraft:beetroot_soup"
+					type: "item"
+				}
+			]
+			title: "汤"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"38BD5BDEBAFA4BF7"
+				"5B2F1923F20A5A94"
+			]
+			description: ["在这种锅里，我终于能不仅仅是煎炸食物，&6还可以炖煮食物&r。可以炖兔肉、鱼肉，甚至蘑菇。&o这些菜肴非常美味&r。"]
+			icon: "minecraft:rabbit_stew"
+			id: "6F05AED125EAC3DE"
+			tasks: [
+				{
+					id: "227067AFE0BA1017"
+					item: "farmersdelight:fried_rice"
+					type: "item"
+				}
+				{
+					id: "1801984B08D24D3A"
+					item: "farmersdelight:baked_cod_stew"
+					type: "item"
+				}
+				{
+					id: "02F23ADED412258E"
+					item: "farmersdelight:beef_stew"
+					type: "item"
+				}
+				{
+					id: "33BCBD878C6E7E63"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+				{
+					id: "270125FF42E139B2"
+					item: "minecraft:rabbit_stew"
+					type: "item"
+				}
+				{
+					id: "1DA94F16A107D2F0"
+					item: "minecraft:mushroom_stew"
+					type: "item"
+				}
+			]
+			title: "炖菜"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6F05AED125EAC3DE"
+				"6B8C7A946D54C21B"
+				"00FA6423496EAB99"
+				"5B2F1923F20A5A94"
+			]
+			dependency_requirement: "one_completed"
+			description: ["我已经在炖锅里做过实验，可以尝试做更复杂的菜肴。做&6盘子上的菜肴&r吧！这会是各种食物的拼盘，吃起来非常美味且能量十足。&o我能想出多少种变化呢？&r"]
+			icon: "farmersdelight:pasta_with_meatballs"
+			id: "474E4C3049EB8138"
+			tasks: [
+				{
+					id: "467ACC30B3C0D47C"
+					item: "farmersdelight:roasted_mutton_chops"
+					type: "item"
+				}
+				{
+					id: "49906E06C3E047AC"
+					item: "farmersdelight:mushroom_rice"
+					type: "item"
+				}
+				{
+					id: "214450B145EA8E78"
+					item: "farmersdelight:bacon_and_eggs"
+					type: "item"
+				}
+				{
+					id: "127F2496A41C3291"
+					item: "farmersdelight:pasta_with_meatballs"
+					type: "item"
+				}
+				{
+					id: "56087AFF823FE5C8"
+					item: "farmersdelight:vegetable_noodles"
+					type: "item"
+				}
+				{
+					id: "46F4D6FAA069DA1D"
+					item: "farmersdelight:steak_and_potatoes"
+					type: "item"
+				}
+				{
+					id: "1A4AAF44D90A2C23"
+					item: "farmersdelight:grilled_salmon"
+					type: "item"
+				}
+				{
+					id: "0F5E54CC5AEF691B"
+					item: "farmersdelight:squid_ink_pasta"
+					type: "item"
+				}
+				{
+					id: "58A959D101F12FDC"
+					item: "farmersdelight:ratatouille"
+					type: "item"
+				}
+				{
+					id: "466BF250E077526D"
+					item: "farmersdelight:pasta_with_mutton_chop"
+					type: "item"
+				}
+			]
+			title: "盘子菜肴"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["474E4C3049EB8138"]
+			description: ["做完盘子菜肴后，我有了一个新想法，关于&o重复食物&r。这样一大份食物可以直接放到桌子上，&6吃上好几次&r。&o既能装饰家里，也能满足我的需求&r。"]
+			icon: "farmersdelight:honey_glazed_ham_block"
+			id: "6F58E13A51129E93"
+			tasks: [
+				{
+					id: "45C4EF37E7C66756"
+					item: "farmersdelight:roast_chicken_block"
+					type: "item"
+				}
+				{
+					id: "04F7C3D34F2D4E1F"
+					item: "farmersdelight:stuffed_pumpkin_block"
+					type: "item"
+				}
+				{
+					id: "2F75638177D972EE"
+					item: "farmersdelight:honey_glazed_ham_block"
+					type: "item"
+				}
+				{
+					id: "0DAC2F02AA61BFA1"
+					item: "farmersdelight:shepherds_pie_block"
+					type: "item"
+				}
+				{
+					id: "778B9979BCE15F3D"
+					item: "farmersdelight:rice_roll_medley_block"
+					type: "item"
+				}
+			]
+			title: "大份量"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"6F05AED125EAC3DE"
+				"6B8C7A946D54C21B"
+				"00FA6423496EAB99"
+				"5B2F1923F20A5A94"
+			]
+			dependency_requirement: "one_completed"
+			description: ["&o我怎么光顾自己做美食了？&r 是时候也为我的宠物做点食物了。&6狗粮&r能让它们变得更强壮，更耐久，而&6马饲料&r则能让它们变得更快、更灵活。"]
+			icon: "farmersdelight:dog_food"
+			id: "46FF18F53A865019"
+			tasks: [
+				{
+					id: "0EBAE01AE31BC5EA"
+					item: "farmersdelight:dog_food"
+					type: "item"
+				}
+				{
+					id: "040344F2721FDCED"
+					item: "farmersdelight:horse_feed"
+					type: "item"
+				}
+			]
+			title: "宠物食品"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B2F1923F20A5A94"]
+			description: ["我现在对烹饪有点痴迷了。&o也许该休息一下？&r 但我有些简单的食谱，可以&6轻松地用手做&r。比如三明治或者用海带包裹的鱼，既简单又能量满满。"]
+			icon: "farmersdelight:hamburger"
+			id: "1E8F0575A517F0DE"
+			tasks: [
+				{
+					id: "384CD50150CBC9FD"
+					item: "farmersdelight:bacon_sandwich"
+					type: "item"
+				}
+				{
+					id: "15132FF5EC5682E1"
+					item: "farmersdelight:mutton_wrap"
+					type: "item"
+				}
+				{
+					id: "6A71206005FFC4A7"
+					item: "farmersdelight:stuffed_potato"
+					type: "item"
+				}
+				{
+					id: "2CDE2BA9238ECDCC"
+					item: "farmersdelight:egg_sandwich"
+					type: "item"
+				}
+				{
+					id: "4A4DAF1B98FE3E2D"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+				{
+					id: "30DF0D39E81A7952"
+					item: "farmersdelight:hamburger"
+					type: "item"
+				}
+				{
+					id: "3CC858A9E9DA47AA"
+					item: "farmersdelight:salmon_roll"
+					type: "item"
+				}
+				{
+					id: "5D9DC507DEED0463"
+					item: "farmersdelight:cod_roll"
+					type: "item"
+				}
+				{
+					id: "5FA0D6B90149C94C"
+					item: "farmersdelight:kelp_roll"
+					type: "item"
+				}
+			]
+			title: "路边餐"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5B2F1923F20A5A94"]
+			description: ["我一直知道，&o糖对大脑有好处&r。也许做些甜食是个不错的主意...我想做些大块的&6派或者蛋糕&r。这样的食物能吃很久。"]
+			icon: "farmersdelight:chocolate_pie"
+			id: "0241C30756AFB67F"
+			tasks: [
+				{
+					id: "22697BAEE335BBB0"
+					item: "minecraft:pumpkin_pie"
+					type: "item"
+				}
+				{
+					id: "4FC6A177D939B2B4"
+					item: "farmersdelight:chocolate_pie"
+					type: "item"
+				}
+				{
+					id: "2E4C701DBE3AF135"
+					item: "farmersdelight:sweet_berry_cheesecake"
+					type: "item"
+				}
+				{
+					id: "0F24A378F5A27474"
+					item: "farmersdelight:apple_pie"
+					type: "item"
+				}
+				{
+					id: "7016350FFD1E5455"
+					item: "minecraft:cake"
+					type: "item"
+				}
+			]
+			title: "派"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5B2F1923F20A5A94"]
+			description: ["我一直知道，&o糖对大脑有好处&r。也许做些甜食是个不错的主意...我想做些简单的&6饼干或者焦糖糖果&r。它们准备和食用都很快，正适合家用。"]
+			icon: "supplementaries:candy"
+			id: "16535C95DFF188FE"
+			tasks: [
+				{
+					id: "0F1996D9A96A93A9"
+					item: "farmersdelight:melon_popsicle"
+					type: "item"
+				}
+				{
+					id: "398D439DC160CA21"
+					item: "farmersdelight:honey_cookie"
+					type: "item"
+				}
+				{
+					id: "2007EF7FC95A3E7B"
+					item: "farmersdelight:sweet_berry_cookie"
+					type: "item"
+				}
+				{
+					id: "0C9E1161A8DE92C7"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					id: "54DF54A8CD916967"
+					item: "supplementaries:pancake"
+					type: "item"
+				}
+				{
+					id: "13A887BE17F6C5D5"
+					item: "supplementaries:candy"
+					type: "item"
+				}
+			]
+			title: "简单甜点"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B2F1923F20A5A94"]
+			description: ["我一直知道，&o糖对大脑有好处&r。也许做些甜食是个不错的主意...我想做些与众不同的&6巧克力或者鸡尾酒&r。这样的食物既美味又有营养。"]
+			icon: "farmersdelight:glow_berry_custard"
+			id: "403E0C13E63ED494"
+			tasks: [
+				{
+					id: "43590D79322A9D75"
+					item: "create:bar_of_chocolate"
+					type: "item"
+				}
+				{
+					id: "34615ADC1A946DB8"
+					item: "create:sweet_roll"
+					type: "item"
+				}
+				{
+					id: "2A68141D9076A8C3"
+					item: "create:chocolate_glazed_berries"
+					type: "item"
+				}
+				{
+					id: "497BF0A44C41D004"
+					item: "create:honeyed_apple"
+					type: "item"
+				}
+				{
+					id: "100F37CD3D876E33"
+					item: "create:builders_tea"
+					type: "item"
+				}
+				{
+					id: "4C9B53718FD147CD"
+					item: "farmersdelight:glow_berry_custard"
+					type: "item"
+				}
+			]
+			title: "复杂甜点"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"786D66BC632DAAA4"
+				"3BAA3C9F7E17771B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["原来，使用&6刀具&r可以更精细地处理动物。这样可以得到更多的皮革和肉类...比如，似乎我能从猪身上&6切出火腿&r。&o值得一试&r。"]
+			id: "67C5D61322914C58"
+			tasks: [{
+				id: "58BEA18955D5D4C4"
+				item: "farmersdelight:ham"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"786D66BC632DAAA4"
+				"3BAA3C9F7E17771B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["我没有错，刀具真的能&6处理肉类&r。可以是普通牲畜的肉，也可以是鱼片。我还想试试之后把它们煎炸。&o它们味道会如何呢？&r"]
+			icon: "farmersdelight:cooked_mutton_chops"
+			id: "332A86A9A1CE080C"
+			tasks: [
+				{
+					id: "416AAD696CC29986"
+					item: "farmersdelight:cooked_salmon_slice"
+					type: "item"
+				}
+				{
+					id: "570A97B3C2FAC199"
+					item: "farmersdelight:cooked_mutton_chops"
+					type: "item"
+				}
+				{
+					id: "7D05DEF07CA2C8E9"
+					item: "farmersdelight:cooked_chicken_cuts"
+					type: "item"
+				}
+				{
+					id: "120AB4F6BFCE5101"
+					item: "farmersdelight:cooked_cod_slice"
+					type: "item"
+				}
+				{
+					id: "364A1604F390BE60"
+					item: "farmersdelight:beef_patty"
+					type: "item"
+				}
+				{
+					id: "0215DEEFCA1212AD"
+					item: "farmersdelight:cooked_bacon"
+					type: "item"
+				}
+			]
+			title: "切肉"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3BAA3C9F7E17771B"]
+			description: [
+				"呃...这真是...美味佳肴。烤龙蛋，谁能想到竟然可能做到..."
+				"{@pagebreak}"
+				"&a恭喜！这里总共有12个彩蛋，每一章都有。解锁完全部，你就能获得第13个特殊彩蛋&r"
+				" &o&f -希格玛瑞斯&r"
+			]
+			hide_text_until_complete: false
+			id: "060DEDB8828CBE89"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			tasks: [{
+				id: "77BC2D218E0BF794"
+				item: "kubejs:fried_ender_dragon_egg"
+				type: "item"
+			}]
+			title: "美味如其名"
+			x: -1.0d
+			y: 0.5d
+		}
+	]
+	title: "烹饪"
+}

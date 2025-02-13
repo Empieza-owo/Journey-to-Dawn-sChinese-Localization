@@ -1,0 +1,1063 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "62F9F01721C2D0D7"
+	group: "54DECDB6D89E76B0"
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1b
+		id: "minecraft:iron_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "62F9F01721C2D0D7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"407240969A006F83"
+			]
+			description: ["&6齿轮,&r 机械之魂。看似简单，实则蕴含无穷奥秘。通过观察传动装置，我意识到&o精密配合的重要性&r"]
+			hide: true
+			id: "4C90051C1897F868"
+			shape: "square"
+			tasks: [{
+				id: "1E6593349F7662CD"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5CC507C1DB6F7CA8"]
+			description: ["首次组装&6飞轮结构&r时，发现惯性效应远超预期。合理配置配重块能有效平衡旋转力矩，但&o过度负载可能导致轴承过热&r"]
+			hide: true
+			id: "2A42195875DA4622"
+			shape: "square"
+			tasks: [{
+				id: "3C03E0B0EA1BA15F"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_greathammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["761527812F6E0398"]
+			description: ["&o红石信号时序错位&r引发连锁故障。调整&6中继器延迟&r后，活塞阵列恢复同步运作，证明时序控制是自动化核心"]
+			hide: true
+			id: "5CC507C1DB6F7CA8"
+			shape: "square"
+			tasks: [{
+				id: "3621460FE77C747A"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_greataxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5CC507C1DB6F7CA8"]
+			description: ["&o流体管道压力异常&r，疑似气泡阻塞。采用&6减压阀&r分段检测，最终在第三区段发现沉积物堆积导致湍流"]
+			hide: true
+			id: "10F97C3F5D2CA389"
+			shape: "square"
+			tasks: [{
+				id: "3A3AD8FB16E8BE36"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_halberd"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "动能转换原理"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08D1BCA7D7C80C23"]
+			description: ["&o为何传动轴在高速运转时产生谐波振动?&r &6共振现象&r揭示系统固有频率匹配问题，需重新设计飞轮质量分布以消除临界转速风险"]
+			hide: true
+			id: "761527812F6E0398"
+			shape: "square"
+			tasks: [{
+				id: "71A465387D114766"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5635088655A2EC49"]
+			description: ["优化&6曲柄机构&r运动轨迹时，发现摆线方程与实际位移存在2.7°偏差。&o可能是材料弹性形变导致的相位延迟&r"]
+			hide: true
+			id: "08D1BCA7D7C80C23"
+			shape: "square"
+			tasks: [{
+				id: "5DE674D54306C2B4"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_glaive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B4BE0A044BDC679"]
+			description: ["&o蒸汽涡轮效率骤降&r，拆解发现&6叶片结垢&r。采用高压水刀清洗后，转速恢复至设计值的98.6%"]
+			hide: true
+			id: "22AE1E6F864049D1"
+			shape: "square"
+			tasks: [{
+				id: "6D3D90BA00C9CA74"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_claymore"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["353B88137BD7CF4E"]
+			description: ["&o多向活塞同步难题&r，解决方案：使用&6角度校准器&r建立三维坐标系，以0.25°精度调整各执行单元，确保360°全向同步"]
+			hide: true
+			id: "66002BDA88061F15"
+			shape: "square"
+			tasks: [{
+				id: "14471EECB862EA2D"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_twinblade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22AE1E6F864049D1"]
+			description: ["测试新型&6磁悬浮轴承&r时，&o发现电磁干扰影响红石信号稳定性&r。加装屏蔽层后，系统噪声降低37dB"]
+			hide: true
+			id: "353B88137BD7CF4E"
+			shape: "square"
+			tasks: [{
+				id: "740CEC4B568BF252"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_katana"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5B4BE0A044BDC679"]
+			description: ["&o复合传动系统过热&r，紧急启动&6液冷模块&r。监测到2号泵异常震动，更换叶轮后温度稳定在安全阈值内"]
+			hide: true
+			id: "5635088655A2EC49"
+			shape: "square"
+			tasks: [{
+				id: "77B7D598E24A6663"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66002BDA88061F15"]
+			description: ["调试&6自动冶炼阵列&r时，&o供料速率不匹配&r。重新计算传送带速度公式，实现每分钟12组的精准投料"]
+			hide: true
+			id: "6B3F1AB6AB8AE853"
+			shape: "square"
+			tasks: [{
+				id: "2BA9F2B0C8F4139F"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_warglaive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4C90051C1897F868"]
+			description: ["&6差分齿轮组&r成功解决转向差速问题。行星齿轮的巧妙排列使扭矩分配效率提升至92%"]
+			hide: true
+			id: "5B4BE0A044BDC679"
+			shape: "square"
+			tasks: [{
+				id: "7345C1AE36EB5712"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_longsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5B4BE0A044BDC679"]
+			description: ["万向节的&o轴向游隙&r超出公差。更换&6精密衬套&r后，传动系统回程误差控制在±0.03mm"]
+			hide: true
+			id: "644405D2903F03C4"
+			shape: "square"
+			tasks: [{
+				id: "2C619401795F24D0"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_rapier"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5480571FF24231C7"]
+			description: ["意外发现...&6石英&r晶体在强磁场中呈现&o压电效应异常&r。这可能为新型能量存储提供思路"]
+			hide: true
+			id: "4931AF16AC1714A0"
+			shape: "square"
+			tasks: [{
+				id: "598A54571EBE9151"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_sai"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["644405D2903F03C4"]
+			description: ["为何&o青铜合金的疲劳强度&r突然下降？检测发现&6晶界腐蚀&r，证明环境湿度超标导致应力腐蚀开裂"]
+			hide: true
+			id: "5480571FF24231C7"
+			shape: "square"
+			tasks: [{
+				id: "603E0020E5E6F1FF"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_cutlass"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4931AF16AC1714A0"]
+			description: ["重构&6多体动力学模型&r时，&o发现数值积分误差累积问题&r。采用变步长龙格-库塔算法后，仿真精度提升3个数量级"]
+			hide: true
+			id: "66EE10B02BF6C4D1"
+			shape: "square"
+			tasks: [{
+				id: "77F4D454790101A6"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_chakram"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F3548695F55209A"]
+			description: ["在测试&6超导线圈&r时，&o量子隧穿效应&r导致能量泄漏。调整超流体冷却剂配比后，磁场稳定性达到设计要求"]
+			hide: true
+			id: "1BF21D410608BC8F"
+			shape: "rsquare"
+			tasks: [{
+				id: "75A729DA37B2AEA4"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "维度干涉现象"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"407240969A006F83"
+			]
+			description: ["&o\"卡西米尔效应在微观尺度的宏观表现\"&r。这个发现可能解释某些&6末地&r装置的异常能量波动，需进一步验证"]
+			hide: true
+			id: "738BE1C0EDC6A211"
+			shape: "square"
+			tasks: [{
+				id: "4A11F62C6356F71B"
+				item: {
+					Count: 1b
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"4D3C822AEAB3D875"
+				"407240969A006F83"
+			]
+			description: ["调试&6量子纠缠发生器&r时，出现概率云坍缩异常。重启后，叠加态恢复稳定。&o可能是观测方式引起的退相干&r..."]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "65E001604B01C987"
+			shape: "square"
+			tasks: [{
+				id: "5AC4B4536A04B356"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:axes"
+					}
+				}
+				title: "相位调制"
+				type: "item"
+			}]
+			title: "谐振腔"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"65E001604B01C987"
+				"02268C57949C11E5"
+			]
+			description: ["突破！成功实现&6超流体传输&r，零粘度特性使能量损耗降至&o1.3×10^-9J/m&r。这彻底改变了管道系统设计范式"]
+			hide: true
+			id: "2008C3CF47378332"
+			shape: "square"
+			tasks: [{
+				id: "772A21C66FF18DC9"
+				item: {
+					Count: 1b
+					id: "undergarden:cloggrum_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2008C3CF47378332"
+				"7A98CA0942113BF0"
+			]
+			description: ["&6玻色-爱因斯坦凝聚态&r在&6低温模块&r中持续17秒，&o为量子计算单元提供新可能&r。需解决环境振动干扰问题"]
+			hide: true
+			id: "3BB8470696C7B81C"
+			shape: "square"
+			tasks: [{
+				id: "35E04A8962EC611A"
+				item: {
+					Count: 1b
+					id: "undergarden:forgotten_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["65E001604B01C987"]
+			description: ["&6量子隧穿效应,&r 成功应用于红石信号跨维度传输。配合&6泡利排斥稳定器,&r 实现&o无损耗超距通信&r"]
+			hide: true
+			id: "54D1152DC26C7A6A"
+			shape: "square"
+			tasks: [{
+				id: "1C3D7251163F3BC4"
+				item: {
+					Count: 1b
+					id: "twilightforest:gold_minotaur_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["54D1152DC26C7A6A"]
+			description: ["&6超导存储环,&r 首次达到临界电流密度。配合&6磁通量子化装置,&r &o能量密度提升3个数量级&r"]
+			hide: true
+			id: "5475EE65F65CDF9F"
+			shape: "square"
+			tasks: [{
+				id: "1D780D86AE908E7F"
+				item: {
+					Count: 1b
+					id: "twilightforest:diamond_minotaur_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00DD7EC45E9EEC09"]
+			description: ["警告！冷却系统失效导致&6铌钛合金超导体&r失超。紧急注入液氦后，磁通跳跃得到控制"]
+			hide: true
+			id: "13D5F4A15F90DF24"
+			shape: "square"
+			tasks: [{
+				id: "60FA2345F01B6567"
+				item: {
+					Count: 1b
+					id: "hexerei:warhammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65E001604B01C987"]
+			description: ["成功复现&6约瑟夫森效应&r，精确测量到483.6MHz的&o交流约瑟夫森电压&r。这为量子基准提供新标准"]
+			hide: true
+			id: "00DD7EC45E9EEC09"
+			shape: "square"
+			tasks: [{
+				id: "7B6D9E41E3CAB112"
+				item: {
+					Count: 1b
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"3BD502D40420C6AD"
+			]
+			description: ["&6超流体陀螺仪&r通过验证，灵敏度达到0.0001角秒。&o星际导航精度提升两个数量级&r"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1855290E20930407"
+			shape: "square"
+			tasks: [
+				{
+					id: "523DB81B3668731C"
+					item: {
+						Count: 1b
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6AA5BD5D547779F1"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1855290E20930407"]
+			description: ["在&6玻色模式&r下观察到&o量子涡旋&r阵列。这些拓扑缺陷可能解释某些维度异常现象"]
+			hide: true
+			id: "49D75997B2928E12"
+			shape: "square"
+			tasks: [{
+				id: "4C66323B37204585"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							SelectedSlot: 0
+							Size: 6
+						}
+					}
+					id: "supplementaries:quiver"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1855290E20930407"]
+			description: ["突破！&6量子锁定装置&r实现宏观物体悬浮。&o磁通钉扎效应&r在室温下持续47分钟，创下新纪录"]
+			hide: true
+			id: "10DBCC85C3E81581"
+			shape: "square"
+			tasks: [
+				{
+					id: "40F76EF24D5654BD"
+					item: {
+						Count: 1b
+						id: "twilightforest:triple_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B180351DBCF00EC"
+					item: {
+						Count: 1b
+						id: "twilightforest:ender_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B0FD0D3809E9D0D"
+					item: {
+						Count: 1b
+						id: "twilightforest:ice_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27F55B677351D8EB"
+					item: {
+						Count: 1b
+						id: "twilightforest:seeker_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "量子纠缠网络"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1855290E20930407"]
+			description: ["&6量子比特&r相干时间突破15毫秒。采用&6动态解耦技术&r后，&o保真度达到99.992%&r，满足容错计算要求"]
+			hide: true
+			id: "1E00DDC93A2CB6DF"
+			shape: "square"
+			tasks: [{
+				id: "4E1D2141EA8706D0"
+				item: {
+					Count: 1b
+					id: "minecraft:crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1E00DDC93A2CB6DF"]
+			description: ["发现&6拓扑绝缘体&r在强磁场中的&o量子自旋霍尔效应&r。这为建造无损耗电路提供新方向"]
+			hide: true
+			id: "7DDE30D804BD20CC"
+			shape: "square"
+			tasks: [{
+				id: "7E8E42E36BEAC2BF"
+				item: {
+					Count: 1b
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7DDE30D804BD20CC"]
+			description: ["成功演示&6量子隐形传态&r，保真度83.7%。&o需优化贝尔态测量精度&r以突破理论极限"]
+			hide: true
+			id: "445DA440B3048617"
+			shape: "square"
+			tasks: [{
+				id: "7F12D8A5FA6C90F1"
+				item: {
+					Count: 1b
+					id: "createindustry:quad_potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1E00DDC93A2CB6DF"]
+			description: ["&6量子密钥分发&r速率突破12Mbps。采用&6诱骗态协议&r后，安全传输距离延伸至428公里"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "botania:mana_gun"
+				tag: { }
+			}
+			id: "03DA9BF08ACF3B67"
+			shape: "square"
+			tasks: [
+				{
+					id: "1EA99B6A37C5B1B9"
+					item: {
+						Count: 1b
+						id: "botania:mana_gun"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4042AE90A44E1EEF"
+					item: "botania:clip"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"7EEDE903D90C135B"
+				"49D75997B2928E12"
+			]
+			description: ["在&6超辐射晶体&r中观测到&o光子凝聚现象&r。这可能为量子存储器提供新载体"]
+			hide: true
+			icon: "quark:torch_arrow"
+			id: "709D37BE241FB8E4"
+			shape: "square"
+			tasks: [
+				{
+					id: "500F45A8384E4D03"
+					item: "forbidden_arcanus:boom_arrow"
+					type: "item"
+				}
+				{
+					id: "533905EC18746695"
+					item: "quark:torch_arrow"
+					type: "item"
+				}
+				{
+					id: "545DE07087ED7EFB"
+					item: {
+						Count: 1b
+						id: "supplementaries:rope_arrow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "量子引力探测"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"68D610DE64387C82"
+			]
+			description: ["&6引力波探测器&r捕捉到&o10^-22应变信号&r。数据分析表明源自1.3亿光年外的中子星合并事件"]
+			hide: true
+			hide_dependency_lines: true
+			id: "75A609B0526751FD"
+			shape: "square"
+			tasks: [{
+				id: "4FEF6ADE025A25E2"
+				item: {
+					Count: 1b
+					id: "alexsmobs:blood_sprayer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["75A609B0526751FD"]
+			description: ["&6卡西米尔效应&r首次应用于微机械驱动。&o纳米级执行器&r实现0.02nm位移精度"]
+			hide: true
+			id: "1725DE38524FA927"
+			shape: "square"
+			tasks: [{
+				id: "71D211882F9CE8FE"
+				item: {
+					Count: 1b
+					id: "alexsmobs:hemolymph_blaster"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1BF21D410608BC8F"]
+			description: ["验证&6量子芝诺效应&r，通过高频测量将原子跃迁概率压制到&o0.7%&r。这对量子态操控至关重要"]
+			hide: true
+			hide_dependency_lines: true
+			id: "2A88787582260C41"
+			shape: "square"
+			tasks: [{
+				id: "2995C6A712CABAA8"
+				item: {
+					Count: 1b
+					id: "minecraft:trident"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1BF21D410608BC8F"]
+			description: ["&6量子达尔文主义&r在固态系统中获证。&o环境诱导超选择&r解释宏观经典性的涌现"]
+			hide: true
+			hide_dependency_lines: true
+			id: "1248343BF1CC48A2"
+			shape: "square"
+			tasks: [{
+				id: "5F3FDC7F92F68E83"
+				item: {
+					Count: 1b
+					id: "twilightforest:block_and_chain"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1BF21D410608BC8F"]
+			description: ["突破！&6拓扑量子计算&r实现9量子比特逻辑门。&o编织统计&r验证满足非阿贝尔特性"]
+			hide: true
+			hide_dependency_lines: true
+			id: "50946EAB7C76778E"
+			shape: "square"
+			tasks: [{
+				id: "51D4BC3EC2A2A798"
+				item: {
+					Count: 1b
+					id: "alexsmobs:skelewag_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1BF21D410608BC8F"]
+			description: ["警告！&6量子退相干&r速率异常。检测发现&o真空涨落扰动&r，需加强电磁屏蔽"]
+			hide: true
+			hide_dependency_lines: true
+			id: "0BCE1263B3D161F6"
+			shape: "square"
+			tasks: [{
+				id: "0090903F97EE9ECA"
+				item: {
+					Count: 1b
+					id: "alexsmobs:tendon_whip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"5F01DAA741485D16"
+			]
+			description: ["成功制备&6时间晶体&r，在封闭系统中观测到&o离散时间平移对称性破缺&r"]
+			hide: true
+			hide_dependency_lines: true
+			id: "19CA06317D76B110"
+			shape: "square"
+			tasks: [{
+				id: "263B527F0847A696"
+				item: "supplementaries:bomb"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1BF21D410608BC8F"]
+			description: ["&6量子神经网络&r完成图像识别训练。&o叠加态并行计算&r使效率提升10^8倍"]
+			hide: true
+			hide_dependency_lines: true
+			id: "01116DE1E85E3404"
+			shape: "square"
+			tasks: [{
+				id: "7BB962DB7BEBE5DD"
+				item: {
+					Count: 1b
+					id: "twilightforest:glass_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1BF21D410608BC8F"
+				"01C29B9AC7390D73"
+			]
+			description: ["在&6超导量子干涉仪&r中检测到&o轴子暗物质信号&r。置信度达到4.7σ，需进一步验证"]
+			hide: true
+			id: "3768D80BACD76701"
+			shape: "square"
+			tasks: [{
+				id: "0EC0A1CD2B9E0549"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "parcool:parcool_guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "量子引力全息原理"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["01116DE1E85E3404"]
+			description: [
+				"突破... 在&6普朗克尺度&r观测到&o时空量子泡沫&r。这或许能验证&6圈量子引力理论&r"
+				"{@pagebreak}"
+				"&a警告：实验环境已超过12特斯拉，接近设备极限。任何操作需经三级授权&r"
+				"                               &o&f -安全协议ALPHA&r"
+			]
+			hide: true
+			id: "6AA523235AAE0F5A"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			tasks: [{
+				id: "70192B28DF1B11C2"
+				item: {
+					Count: 1b
+					id: "twilightforest:glass_sword"
+					tag: {
+						Damage: 0
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "量子真空，虚粒之海"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"738BE1C0EDC6A211"
+				"62185FAAB6AD98BF"
+			]
+			description: ["检测到&6霍金辐射&r特征谱！&o微型人造黑洞&r在磁约束中持续0.04秒，创下新纪录"]
+			id: "7D50782FF0F377A3"
+			shape: "square"
+			tasks: [{
+				id: "4926B243F94D9042"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							"forbidden_arcanus:tick_counter": {
+								value: 0
+							}
+						}
+					}
+					id: "forbidden_arcanus:obsidian_skull_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"738BE1C0EDC6A211"
+				"77C0B4308F8B222D"
+			]
+			description: ["&6量子擦除实验&r验证&o波函数全局性&r。延迟选择结果颠覆经典因果观念..."]
+			hide: true
+			id: "6465FE5E840CC1DA"
+			shape: "square"
+			tasks: [{
+				id: "263652430307B1EB"
+				item: {
+					Count: 1b
+					id: "bigbrain:buckler"
+					tag: {
+						Damage: 0
+						Ready: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+	]
+	title: "薛定谔猫态制备"
+}

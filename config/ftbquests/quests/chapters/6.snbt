@@ -1,0 +1,2052 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "forbidden_arcanus:aurum_sapling"
+	id: "49DF5E67DBDC92F1"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"草叶沙沙，鸟鸣啾啾，树冠随风摇曳。&6阳光...&r终于重见天日。漫长的旅程...我做到了。&o我...回家了...&r"
+				""
+				"{@pagebreak}"
+				"不仅如此，我似乎...&6想起了所有事&r。记忆如潮水般涌入脑海。我曾是首都的普通居民，在艺术博物馆工作，偶尔在街头演奏馆藏乐器。那天我站在中央广场，诡异的绿光笼罩一切，随后坠入虚空...&6醒来&r时已在暗庭。能重返故土真是太好了...&o但这还是家吗？..&r"
+				""
+				"{@pagebreak}"
+				"草木虽好，但...&o我并非随机传送&r。此地应是首都北部的&6萨尔托甘镇&r。然而周围毫无文明痕迹，这意味着&6我穿越到了未来&r。遥远的未来。那绿光究竟是什么...&o看来冒险尚未结束&r"
+			]
+			hide: true
+			icon: "minecraft:grass_block"
+			id: "66D554CF50F18D2D"
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "dimdungeons:block_gold_portal"
+					id: "5B25D47E0EB65DA1"
+					title: "重返主世界"
+					type: "dimension"
+				}
+				{
+					id: "608107011899A5AE"
+					title: "归乡"
+					type: "checkmark"
+				}
+			]
+			title: "主世界"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66D554CF50F18D2D"]
+			description: ["或许有些跑题，但我意识到自己消耗了&o世界上最珍贵的资源&r。不确定能否&6再造催化剂&r，因其具有自愈特性，&6破碎后&r会自行重组"]
+			hide: true
+			id: "18DF01EE5A26945A"
+			tasks: [{
+				id: "3C12FAF7C19D4B93"
+				item: "kubejs:fractured_catalyst"
+				type: "item"
+			}]
+			title: "破碎重生"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18DF01EE5A26945A"]
+			description: ["&o我稍有失误&r。&6催化剂修复&r仍需部分资源，但获取并不困难。只需&o保留一个完整催化剂&r，便可无限复制。&6笨拙熔炉&r可轻松破除外壳"]
+			hide: true
+			id: "5FAC12FC98340D07"
+			tasks: [{
+				count: 2L
+				id: "40F4BCDE21597194"
+				item: "kubejs:catalytic_essence"
+				type: "item"
+			}]
+			title: "精华增殖"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+			description: ["在暗庭醒来时口袋里的护身符有&6两个特性&r：提供小幅增益，并在死亡时将物品保存在特殊镜像中。&o所幸我尚未死亡，未曾目睹此景&r。我想用&6催化精华&r制作更强大的护身符"]
+			hide: true
+			id: "33DE7B4F040D040B"
+			tasks: [{
+				id: "6988B028E9391122"
+				item: {
+					Count: 1b
+					id: "enigmaticlegacy:ascension_amulet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "虚空之力"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+			description: ["&6本源魔法&r有个恼人的特点——需绘制符文。&o仿佛不画符文就无法施展法术&r。我想用&6催化精华&r改造魔法书，&o消除这一限制&r"]
+			hide: true
+			id: "7C95CA3AEFC8E233"
+			tasks: [{
+				id: "75631D33EF781686"
+				item: "ars_nouveau:creative_spell_book"
+				type: "item"
+			}]
+			title: "本源知识"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+			description: ["&6烈焰火花&r有时真令人头疼。普通燃料还好，但&6超验精华&r或蒸汽引擎需要&6超高温&r。是时候认真解决这个问题了。&6催化精华&r将提供无尽燃料"]
+			hide: true
+			id: "6FBB161D6BFD5C69"
+			tasks: [{
+				id: "61006B4046CA67E8"
+				item: "create:creative_blaze_cake"
+				type: "item"
+			}]
+			title: "现实燃料"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+			description: ["抵御疯狂的&6药片&r效果欠佳。若能制作&6一次性完全治愈&r的药片就好了。用龙鳞强化或可实现，&o值得尝试&r"]
+			hide: true
+			id: "14FE7D6998AF7493"
+			tasks: [{
+				id: "76A3CF45CB49BD77"
+				item: "kubejs:oversanity_pill"
+				type: "item"
+			}]
+			title: "净化心智"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5FAC12FC98340D07"]
+			description: ["&o箱子空间终有极限&r。即使经过五次升级，存储空间仍可能不足。我想开发&6无限存储升级&r，想象一下——一个方块内存储无限圆石或矿石"]
+			hide: true
+			id: "330719C9F03EBD5A"
+			tasks: [{
+				id: "0E7AB91F3AD8D03B"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			title: "永恒存储"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["66D554CF50F18D2D"]
+			description: ["虽已归乡，但不可忘记旧日计划。&o我差点忘了&r。&6钢锭&r自下界以来一直闲置，是时候充分利用了。先制作&6钢制机械框架&r，为后续设备奠定基础"]
+			hide: true
+			id: "5AC45B279D196084"
+			tasks: [{
+				id: "293950D98BD9B3FD"
+				item: "createindustry:steel_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AC45B279D196084"]
+			description: ["重返主世界后，&o资源更加丰富&r。其中之一便是&6石油&r。据我所知，灾难前15年才被发现，但已广泛使用。&o用钢制机械&r制作&6石油探测器&r，或许可行"]
+			hide: true
+			icon: "createindustry:surface_scanner"
+			id: "18C10B78B36ED133"
+			tasks: [
+				{
+					id: "6ED3E76FC9047FBB"
+					item: "createindustry:surface_scanner"
+					type: "item"
+				}
+				{
+					icon: "create:goggles"
+					id: "016BC397A5C8B1B0"
+					observe_type: 0
+					timer: 0L
+					title: "寻找油田"
+					to_observe: "createindustry:oil_deposit"
+					type: "observation"
+				}
+			]
+			title: "石油勘探"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18C10B78B36ED133"]
+			description: ["成功找到&6油井&r，接下来需铺设管道并启动&6抽油泵&r。这种形似锤子的设备，&o现在明白其原理了&r。需大量储备钢材"]
+			hide: true
+			icon: "createindustry:pumpjack_base"
+			id: "4C5AD6038C3042B3"
+			tasks: [
+				{
+					count: 16L
+					id: "66F5A2AEC4326D2E"
+					item: "createindustry:industrial_pipe"
+					type: "item"
+				}
+				{
+					id: "63D8FC9B760646B5"
+					item: "createindustry:pumpjack_base"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "10DA8FD5C1FF8DDE"
+					item: "createindustry:steel_truss"
+					type: "item"
+				}
+				{
+					id: "6A633D23A44C338D"
+					item: "createindustry:machine_input"
+					type: "item"
+				}
+				{
+					id: "0251460239A69117"
+					item: "createindustry:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "0EB29F3EAED2A5DB"
+					item: "createindustry:pumpjack_hammer_holder"
+					type: "item"
+				}
+			]
+			title: "石油开采"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C5AD6038C3042B3"]
+			description: ["&o关键时刻...&r漆黑如墨的液体将成为新的宝藏"]
+			hide: true
+			id: "5D4C728536C3D869"
+			tasks: [{
+				id: "63400767BFB298BF"
+				item: "createindustry:crude_oil_fluid_bucket"
+				type: "item"
+			}]
+			title: "黑金"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D4C728536C3D869"]
+			description: ["&o即将进入复杂科学领域...&r石油本质上是腐烂植被，即&6不同成分的碳氢化合物&r。通过&6蒸馏&r将其分离成不同组分"]
+			hide: true
+			icon: "createindustry:steel_distillation_controller"
+			id: "10BF24A35790635A"
+			tasks: [
+				{
+					id: "2A20C9AA3EAA2E76"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "74C270A723C75359"
+					item: "createindustry:steel_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "11865E9DAA31D454"
+					item: "createindustry:steel_distillation_controller"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "34AEFE4034662143"
+					item: "createindustry:steel_distillation_output"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4F429B10FBAE8113"
+					item: "createindustry:industrial_pipe"
+					type: "item"
+				}
+			]
+			title: "蒸馏工艺"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["10BF24A35790635A"]
+			description: ["原油可分离为&6五类组分&r：液化石油气、汽油、石脑油、煤油、柴油和重油。其中液化石油气、汽油、石脑油和柴油可作为燃料，但&o目前无法制造相应发动机&r"]
+			hide: true
+			id: "0FAAD9117D5B4486"
+			tasks: [
+				{
+					id: "2FAFB4252C7B0512"
+					item: "createindustry:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "700016FD3ACFA776"
+					item: "createindustry:kerosene_bucket"
+					type: "item"
+				}
+				{
+					id: "10EAB22347A6B02A"
+					item: "createindustry:diesel_bucket"
+					type: "item"
+				}
+			]
+			title: "多元燃料"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10BF24A35790635A"]
+			description: ["原油分离出的&6石脑油&r因其粘性独特，或可转化为更有价值的材料"]
+			hide: true
+			id: "5E5F403FB1914924"
+			tasks: [{
+				id: "211AE5C9E4056976"
+				item: "createindustry:heavy_oil_bucket"
+				type: "item"
+			}]
+			title: "重油"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["10BF24A35790635A"]
+			description: ["&6石脑油&r可制成最轻最硬的塑料"]
+			hide: true
+			id: "1680DB328145F245"
+			tasks: [{
+				id: "1BF517A87E955330"
+				item: "createindustry:naphtha_bucket"
+				type: "item"
+			}]
+			title: "石脑油"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["371387601E9C69C8"]
+			description: ["&6润滑油&r对发动机至关重要，&6净化重油&r可得优质润滑油"]
+			hide: true
+			id: "67F2B3EBA9FFC04E"
+			tasks: [{
+				id: "35D2EB71F5732FD8"
+				item: "createindustry:lubrication_oil_bucket"
+				type: "item"
+			}]
+			title: "润滑剂"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["67F2B3EBA9FFC04E"]
+			description: ["任何设备都需要&6基础框架&r。发动机也不例外"]
+			hide: true
+			id: "6E9390213D6AFFC5"
+			tasks: [{
+				id: "1BC1E09E3C64EF1A"
+				item: "createindustry:engine_base"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6E9390213D6AFFC5"
+				"0FAAD9117D5B4486"
+			]
+			description: ["&o发动机时代来临&r。每台发动机都能&6产生巨大能量&r，配合&6下界合金技术&r，工厂建设将不再受限"]
+			hide: true
+			icon: "createindustry:gasoline_engine"
+			id: "69DE2B756AD8F445"
+			tasks: [
+				{
+					id: "5B1475E8FFEEB729"
+					item: "createindustry:lpg_engine"
+					type: "item"
+				}
+				{
+					id: "52B9BE046800154A"
+					item: "createindustry:gasoline_engine"
+					type: "item"
+				}
+				{
+					id: "08326D4697201578"
+					item: "createindustry:turbine_engine"
+					type: "item"
+				}
+				{
+					id: "47FD3EFD996DBABE"
+					item: "createindustry:diesel_engine"
+					type: "item"
+				}
+			]
+			title: "引擎轰鸣"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1680DB328145F245"
+				"5E5F403FB1914924"
+			]
+			dependency_requirement: "one_completed"
+			description: ["用大型钢制蒸馏塔进行&6二次精炼&r效率低下，改用&6小型铸铁装置&r更经济"]
+			hide: true
+			icon: "createindustry:cast_iron_distillation_controller"
+			id: "371387601E9C69C8"
+			tasks: [
+				{
+					id: "4B8C93FB1C1C6B77"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "055D75B6144E3127"
+					item: "createindustry:cast_iron_distillation_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6CF0041133A0109E"
+					item: "createindustry:cast_iron_distillation_output"
+					type: "item"
+				}
+			]
+			title: "小型蒸馏塔"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["371387601E9C69C8"]
+			description: ["&6乙烯与丙烯&r可混合制成液态塑料，&6压制成板材&r易如反掌。这种轻质高强材料将大有用处"]
+			hide: true
+			id: "54C269DA5BC84114"
+			tasks: [{
+				id: "3745D12921A0D466"
+				item: "createindustry:plastic_sheet"
+				type: "item"
+			}]
+			title: "塑料制品"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["66D554CF50F18D2D"]
+			description: ["归乡后解锁的新领域——&6奥术魔法&r。这种比本源更复杂的魔法以神秘晶体、神金和&6黑石&r为基础。晶体已有，是时候寻找黑石了"]
+			hide: true
+			id: "053EC878E2EAD3DA"
+			tasks: [{
+				id: "38F2C97370B9BE4C"
+				item: "forbidden_arcanus:darkstone"
+				type: "item"
+			}]
+			title: "地心深处"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["053EC878E2EAD3DA"]
+			description: ["记忆恢复带来诸多便利。制作&6奥术祭坛&r需大量资源。以&6锻造台&r为基底，搭建圆形黑石祭坛"]
+			hide: true
+			icon: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+			id: "793E5CF80DB3BE8E"
+			tasks: [
+				{
+					count: 48L
+					id: "0A185FFB6CC1AF36"
+					item: "forbidden_arcanus:polished_darkstone"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4D22E7640096BAAB"
+					item: "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "56FAC0ECDDFEBC8A"
+					item: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "4811D657F5ADEFD6"
+					item: "forbidden_arcanus:hephaestus_forge"
+					type: "item"
+				}
+			]
+			title: "祭坛准备"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["793E5CF80DB3BE8E"]
+			description: ["&6祭坛&r搭建完成，需摆放&6四大支柱&r：奥能、经验、灵魂与血液。经验已有，奥能与灵魂稍显复杂，&6血液&r获取则相对简单"]
+			hide: true
+			icon: "forbidden_arcanus:hephaestus_forge"
+			id: "1E885E171E4F151F"
+			tasks: [
+				{
+					count: 8L
+					id: "710EDE63C06CAB8C"
+					item: "forbidden_arcanus:darkstone_pedestal"
+					type: "item"
+				}
+				{
+					id: "1401B315A720E03C"
+					item: {
+						Count: 1b
+						id: "forbidden_arcanus:mystical_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7EE8B06E6644F0DC"
+					item: "forbidden_arcanus:test_tube"
+					type: "item"
+				}
+			]
+			title: "赫菲斯托斯熔炉"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["053EC878E2EAD3DA"]
+			description: ["探索洞穴时想起另一种珍宝——&6星辉石&r。这种能还原物质原始状态的矿石，比下界合金更强大"]
+			hide: true
+			icon: "forbidden_arcanus:stella_arcanum"
+			id: "3303249CD7361126"
+			tasks: [{
+				icon: "create:goggles"
+				id: "727B27307307C7A9"
+				observe_type: 0
+				timer: 0L
+				title: "寻找星辉石"
+				to_observe: "forbidden_arcanus:stella_arcanum"
+				type: "observation"
+			}]
+			title: "洞穴遗珍"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3303249CD7361126"]
+			description: ["&o终于找到&r真正的&6远古矿物...&r穿越到遥远的未来或许是件好事，毕竟星辉石形成需要漫长岁月。需小心开采，&o据说易爆&r"]
+			hide: true
+			id: "13C8769805BF7BD8"
+			shape: "circle"
+			tasks: [{
+				id: "694ECB8D9B1F9EB3"
+				item: "forbidden_arcanus:stellarite_piece"
+				type: "item"
+			}]
+			title: "星辉石"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["793E5CF80DB3BE8E"]
+			description: ["想起街头法师的&6经验球&r制作技巧——用&6腐化粉末&r与&6暗物质&r制造&6黑洞&r，将经验瓶转化为晶体"]
+			hide: true
+			icon: "forbidden_arcanus:dark_matter"
+			id: "727C72CC27A7AAAA"
+			tasks: [
+				{
+					id: "4AFBFCEA1BBBDA57"
+					item: "forbidden_arcanus:dark_matter"
+					type: "item"
+				}
+				{
+					id: "172B5D6A82A918AC"
+					item: "forbidden_arcanus:corrupti_dust"
+					type: "item"
+				}
+				{
+					icon: "create:goggles"
+					id: "086E364E0B9A6681"
+					observe_type: 0
+					timer: 0L
+					title: "黑洞"
+					to_observe: "forbidden_arcanus:black_hole"
+					type: "observation"
+				}
+			]
+			title: "经验结晶"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["727C72CC27A7AAAA"]
+			hide: true
+			id: "6846A877E1FFFADD"
+			tasks: [{
+				id: "10124A57AD1D04DF"
+				item: "forbidden_arcanus:xpetrified_orb"
+				type: "item"
+			}]
+			title: "结晶经验"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"13C8769805BF7BD8"
+				"6846A877E1FFFADD"
+				"1E885E171E4F151F"
+			]
+			description: ["&6永恒星辉&r——修复装备并赋予&6不可破坏&r特性，但&o我另有用途...&r"]
+			hide: true
+			id: "087A7B8E488DCB0A"
+			tasks: [{
+				id: "49C71B7795CFD1C1"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+			description: ["&6大地崩裂棱镜&r——大幅扩展工具作用范围，但&o我另有用途...&r"]
+			hide: true
+			id: "034E8B05906B20F1"
+			tasks: [{
+				id: "64E076DCC6CF83CC"
+				item: "forbidden_arcanus:terrastomp_prism"
+				type: "item"
+			}]
+			title: "大地之力"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+			description: ["&6熔炼棱镜&r——直接熔炼采集的资源，但&o我另有用途...&r"]
+			hide: true
+			id: "3763D3FEBA1AF202"
+			tasks: [{
+				id: "7AEC03E31AFAEE5E"
+				item: "forbidden_arcanus:smelter_prism"
+				type: "item"
+			}]
+			title: "炽热之焰"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+			description: ["&6磁力混合物&r——吸引附近物品，但&o我另有用途...&r"]
+			hide: true
+			id: "62411C5F188A83BF"
+			tasks: [{
+				id: "1845DE0C5ABF436B"
+				item: "forbidden_arcanus:ferrognetic_mixture"
+				type: "item"
+			}]
+			title: "不可抗拒的引力"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+			description: ["&6奥能&r可在新文明遗迹中找到，但&o人工制备更佳&r。用&6神秘晶体柱&r收集奥能，希望可行"]
+			hide: true
+			icon: "forbidden_arcanus:arcane_crystal_obelisk"
+			id: "1A7A36F95D08F976"
+			tasks: [
+				{
+					id: "372926645D708E1C"
+					item: "forbidden_arcanus:arcane_polished_darkstone"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0F1BAFA416525E5F"
+					item: "forbidden_arcanus:arcane_crystal_block"
+					type: "item"
+				}
+				{
+					id: "5AFCF5F3EB6B7EE6"
+					item: "forbidden_arcanus:mundabitur_dust"
+					type: "item"
+				}
+			]
+			title: "奥能充能"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1E885E171E4F151F"
+				"54C269DA5BC84114"
+			]
+			description: ["最初发明的&6纸符咒术&r虽经多次改良，但&o我忽略了关键&r——一种能与咒术协同的&6魔法金属&r"]
+			hide: true
+			id: "49DF92E69F1C64C1"
+			tasks: [{
+				id: "00C4E64FE27B3A5D"
+				item: "irons_spellbooks:arcane_ingot"
+				type: "item"
+			}]
+			title: "魔法金属"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3303249CD7361126"]
+			description: ["寻找星辉石时，&o洞穴深处常传来&6\"咯-咯-咯\"&r的怪声。或许地下存在&6废弃城市&r？"]
+			hide: true
+			hide_dependency_lines: true
+			id: "28ACFA895DC20E4A"
+			tasks: [{
+				icon: "minecraft:reinforced_deepslate"
+				id: "0D7D0B810E9135EF"
+				structure: "minecraft:ancient_city"
+				title: "寻找远古城市"
+				type: "structure"
+			}]
+			title: "远古都市"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EACFF704945F1F7"]
+			description: ["&o终于找到&r。&6回响碎片&r——蕴含声音之力的晶体，但周围弥漫着&o陌生果香&r。或许该寻找源头"]
+			hide: true
+			icon: "quark:ancient_fruit"
+			id: "1B898089AF8FC245"
+			tasks: [
+				{
+					id: "1B5352D5B1DC836F"
+					item: "quark:ancient_sapling"
+					type: "item"
+				}
+				{
+					id: "7CCBDC67CF1CA615"
+					item: "quark:ancient_fruit"
+					type: "item"
+				}
+			]
+			title: "远古美味"
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["28ACFA895DC20E4A"]
+			description: [
+				"&o天啊...&r这座远古城市的废墟中，&6游荡着不明生物&r。遍布城市的植物&6捕捉声音&r，吸引守卫者前来"
+				"{@pagebreak}"
+				"与其战斗毫无意义，&o因为它并非真正生命&r。植物能召唤它，就能再次召唤。它如此强大...但既然在此游荡，说明城市并非完全废弃？或许它&6守护着珍贵资源&r？"
+			]
+			hide: true
+			id: "3EACFF704945F1F7"
+			tasks: [{
+				id: "25656EF23FD8FAEC"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			title: "往昔回响"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B898089AF8FC245"]
+			description: ["新主世界的自然奇观令人惊叹。&o与经验魔法相连的树木？&r前所未见"]
+			hide: true
+			id: "7DD9F11124834E4B"
+			tasks: [{
+				id: "4EB333603885E662"
+				item: "irons_spellbooks:ancient_knowledge_fragment"
+				type: "item"
+			}]
+			title: "天才碎片"
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"3EACFF704945F1F7"
+				"1EC6D76079A83A07"
+			]
+			description: [
+				"&6琥珀石&r——马埃马尔时期创造的晶体，能&6融合意识并永恒封存&r。但直接寻找难度极大"
+				""
+				"{@pagebreak}"
+				"琥珀石镶嵌于特殊鞋履中，授予&o最伟大的学者、法师或将领&r。穿着者能&6通过大地共享知识&r。只要琥珀石存在，这些知识就不会消失。或许能借此&6查明那道光芒的真相&r"
+			]
+			hide: true
+			id: "0AB2BC579AD8DBE2"
+			tasks: [{
+				id: "0B2B9690F4B33CDD"
+				item: "kubejs:unawakened_compass_blank"
+				type: "item"
+			}]
+			title: "琥珀雏形"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0AB2BC579AD8DBE2"]
+			description: ["&6指南针&r制作接近尾声，需&6激活雏形&r。这是寻找琥珀石的&o唯一希望&r。虽然琥珀石所在建筑可能保存完好，但&6可获取的地点极少&r。没有指南针，&o在广阔世界中搜寻将不可能&r"]
+			hide: true
+			id: "2EE713A41EDACE1B"
+			tasks: [{
+				id: "2493EF9F989F3793"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "探索者之友"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A7A36F95D08F976"]
+			description: ["&o我并非完全错误&r。奥能不能直接装入瓶中，需在熔炉中&6用方尖碑替代支柱&r收集。制作瓶装奥能需额外消耗&6神秘粉末&r"]
+			hide: true
+			icon: "forbidden_arcanus:aureal_bottle"
+			id: "0A62D02F9CCF2B75"
+			tasks: [
+				{
+					id: "149712E81FBA71EB"
+					item: "forbidden_arcanus:arcane_crystal_obelisk"
+					type: "item"
+				}
+				{
+					id: "146EA2AB97EE17B0"
+					item: "forbidden_arcanus:aureal_bottle"
+					type: "item"
+				}
+			]
+			title: "奥能瓶"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0A62D02F9CCF2B75"
+				"54C269DA5BC84114"
+			]
+			description: [
+				"第三项材料是&o灵魂&r。虽随处可见，但需用特殊&6提取器&r捕获。普通灵魂在&6灵魂沙谷&r飘荡，附魔灵魂则需&6瓶装奥能&r"
+				"{@pagebreak}"
+				"在下界探索时遇到的&6空心鸟&r，其&6心脏&r或能提升提取器效率"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:soul_extractor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "61F9D1B817F27B08"
+			tasks: [
+				{
+					id: "4A77A3BE0A408BCE"
+					item: "forbidden_arcanus:splash_aureal_bottle"
+					type: "item"
+				}
+				{
+					id: "7C0B98C1162008BF"
+					item: {
+						Count: 1b
+						id: "forbidden_arcanus:soul_extractor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "捉鬼特工队"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["61F9D1B817F27B08"]
+			description: ["获取附魔灵魂的第一步是&6普通灵魂&r。虽在灵魂沙谷偶有发现，但更常见的是&6幻象&r。用&6变异粉末&r或可将幻象转化为灵魂"]
+			hide: true
+			icon: "quark:soul_bead"
+			id: "14A47E9839858710"
+			tasks: [
+				{
+					icon: "create:goggles"
+					id: "116796EF2067407B"
+					observe_type: 5
+					timer: 0L
+					title: "幻象"
+					to_observe: "quark:wraith"
+					type: "observation"
+				}
+				{
+					id: "4C5CE57BE84092A9"
+					item: "twilightforest:transformation_powder"
+					type: "item"
+				}
+			]
+			title: "失落之魂"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["14A47E9839858710"]
+			description: ["将&6奥能瓶&r投入灵魂即可附魔。&o虽为私利，但至少解放了这些被困的灵魂&r"]
+			hide: true
+			id: "1FCDC29D3E04BCE5"
+			tasks: [{
+				id: "418A776ABA26BF53"
+				item: "forbidden_arcanus:enchanted_soul"
+				type: "item"
+			}]
+			title: "奥能附魔"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["290DE1D0DEE89585"]
+			description: ["&6暗庭传送门&r——没想到这个维度在&o现代已被研究&r。一个保存完好的传送门内有&6琥珀石碎片&r，另一个几乎坍塌，但...它不该完全分解吗？&o难道暗庭能抵御时间腐蚀？&r"]
+			hide: true
+			id: "11BF792756BBB0BB"
+			invisible: true
+			tasks: [{
+				id: "1EAD042F0CB473DE"
+				item: "kubejs:amberia_shard_1"
+				type: "item"
+			}]
+			title: "第一碎片"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B5836F1022F5145"]
+			description: ["&o我的两个理论都部分正确&r。这不是传送门，而是&6次元裂隙&r——被框架限制的空间渗透。曾有位法师研究其&6对附魔的影响&r，但已离开。&o人类无法承受这种辐射&r"]
+			hide: true
+			id: "7A8FF619DDB461FE"
+			invisible: true
+			tasks: [{
+				id: "2BF295AFA287C369"
+				item: "kubejs:amberia_shard_2"
+				type: "item"
+			}]
+			title: "第二碎片"
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71514A1AA4531F81"]
+			description: ["&o不，完全不是城堡&r。可惜飞艇已损坏，无法飞行"]
+			hide: true
+			id: "2F3AF280CE850B9B"
+			invisible: true
+			tasks: [{
+				id: "59DE6C833738C22C"
+				item: "kubejs:amberia_shard_3"
+				type: "item"
+			}]
+			title: "第三碎片"
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A5599FE929FF606"]
+			description: ["&6灵魂沙&r中的&6凋灵神殿&r——他们试图唤醒或恢复凋灵的真正力量。&o\"让风暴降临\"？..&r"]
+			hide: true
+			id: "513097EB5847B44D"
+			invisible: true
+			tasks: [{
+				id: "7D6245980E288934"
+				item: "kubejs:amberia_shard_4"
+				type: "item"
+			}]
+			title: "第四碎片"
+			x: -12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["026D3C11E246E166"]
+			description: ["&o马埃马尔试图建立&6直达精灵界的传送门&r。这真的可能吗？精灵&6刻意与世隔绝&r。幸好项目未完成"]
+			hide: true
+			id: "6056CFBF11662CC1"
+			invisible: true
+			tasks: [{
+				id: "649B1DEB6C693C7C"
+				item: "kubejs:amberia_shard_5"
+				type: "item"
+			}]
+			title: "第五碎片"
+			x: -11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5CE208604D926104"]
+			description: ["&6熊&r——因琥珀石而停止生命活动，永恒存在。&o但为何是熊？&r那里显然住着科学家。他在&6研究什么？&r"]
+			hide: true
+			id: "3765089A3C34CE72"
+			invisible: true
+			tasks: [{
+				id: "194BEFEB106B913D"
+				item: "kubejs:amberia_shard_6"
+				type: "item"
+			}]
+			title: "第六碎片"
+			x: -10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["753C8BA6E42B620F"]
+			description: ["&o这不仅是仓库...&r这是&6武器工坊&r。当地铁匠研究各种武器，试图打造最强兵器。&o他拥有玄辉矿、遗忘金属、神金...&r但最终得出结论：&6玻璃剑&r仍是最强冷兵器"]
+			hide: true
+			id: "0FC1A2E20FC69566"
+			invisible: true
+			tasks: [{
+				id: "447B4F261413456F"
+				item: "kubejs:amberia_shard_7"
+				type: "item"
+			}]
+			title: "第七碎片"
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["23E3DD3863D36B40"]
+			description: ["&6歌剧院&r——即使半毁，其高雅氛围仍令人印象深刻。但&6琥珀石为何在此？&r难道有贵族在此工作？"]
+			hide: true
+			id: "53DAAA86FC054173"
+			invisible: true
+			tasks: [{
+				id: "023E3E2F1B6CDFDD"
+				item: "kubejs:amberia_shard_8"
+				type: "item"
+			}]
+			title: "第八碎片"
+			x: -7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["432247863A29359C"]
+			description: ["&6女巫居所&r——塔楼、房间、楼梯，还有有趣的名字：&6\"洞穴\"&r。这位女巫无疑是大师。&o看看她的扫帚&r，一切都堪称完美。&o或许是宫廷女巫&r"]
+			hide: true
+			id: "38D03774B36F708F"
+			invisible: true
+			tasks: [{
+				id: "56A2ED06D9134C26"
+				item: "kubejs:amberia_shard_9"
+				type: "item"
+			}]
+			title: "第九碎片"
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7C08D1CFB9335063"]
+			description: ["&6全自动化工厂&r——收集原料，加工成可用材料，组装各种机械。&o相当现代化&r，因为它使用了当时新发现的石油。难怪工厂主获赠琥珀石鞋履"]
+			hide: true
+			id: "00B892D2A296245C"
+			invisible: true
+			tasks: [{
+				id: "59BE7351FEE14488"
+				item: "kubejs:amberia_shard_10"
+				type: "item"
+			}]
+			title: "第十碎片"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2996BD2D30BDE99C"]
+			description: ["&o明白了&r。希望&m这琥珀石不属于...&r&6算了，不提也罢&r"]
+			hide: true
+			id: "4801CA3B8BD1666B"
+			invisible: true
+			tasks: [{
+				id: "61A7121393FE3C9A"
+				item: "kubejs:amberia_shard_11"
+				type: "item"
+			}]
+			title: "第十一碎片"
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F5353D742A26B4B"]
+			description: ["不，这也不是城堡。这是&6尝试建立两个物种&6原始合作&r的村庄。&o从未听过如此疯狂的想法&r"]
+			hide: true
+			id: "5F99C50A6009CCD7"
+			invisible: true
+			tasks: [{
+				id: "3813087981D202C2"
+				item: "kubejs:amberia_shard_12"
+				type: "item"
+			}]
+			title: "第十二碎片"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0FC1A2E20FC69566"
+				"7A8FF619DDB461FE"
+				"00B892D2A296245C"
+				"2F3AF280CE850B9B"
+				"2F3AF280CE850B9B"
+				"53DAAA86FC054173"
+				"4801CA3B8BD1666B"
+				"5F99C50A6009CCD7"
+				"38D03774B36F708F"
+				"11BF792756BBB0BB"
+				"6056CFBF11662CC1"
+				"513097EB5847B44D"
+				"3765089A3C34CE72"
+			]
+			description: [
+				"&o碎片集齐&r，足以重铸&6完整琥珀石&r。虽然还能继续寻找，但目标已达成。&o我已想出复制琥珀石的方法&r，无需重复这场马拉松。是时候复兴&6马埃马尔的传统&r了"
+				"{@pagebreak}"
+				"每年&6国王&r都会选择&o一位伟大人物&r，授予镶嵌琥珀石的鞋履，使其知识与大地相连，永存于世。因其细长柔软的外形，被称为&6\"潜行靴\"&r。特别杰出者会获赠&o四种特殊变体&r"
+				"{@pagebreak}"
+				"我虽不喜自夸，但凭我的成就，&o我的国王&r，我不仅能获得，更能&6亲手制作这双潜行靴&r"
+			]
+			hide: true
+			id: "38E87B554783F08C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "072A5749D7D40F72"
+				item: "kubejs:cluster_of_amberia"
+				type: "item"
+			}]
+			title: "马埃马尔的至高珍宝"
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2EE713A41EDACE1B"]
+			description: ["指南针似乎&o不如想象中强大&r。目前仅能&6探测琥珀石信号&r，需预热。根据分析，存在&6两个类似传送门的信号&r。&o探索哪个？&r找到琥珀石的几率各占一半"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "undergarden:depthrock"
+			id: "290DE1D0DEE89585"
+			tasks: [
+				{
+					icon: "undergarden:depthrock"
+					id: "2DF7577D3F8CD582"
+					structure: "sg_simple_utilities:undergarden_portal_one"
+					title: "寻找第一个暗庭传送门"
+					type: "structure"
+				}
+				{
+					icon: "undergarden:depthrock"
+					id: "1D860F8704C8E127"
+					structure: "sg_simple_utilities:undergarden_portal_two"
+					title: "寻找第二个暗庭传送门"
+					type: "structure"
+				}
+			]
+			title: "暗庭之旅"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11BF792756BBB0BB"]
+			description: ["找到&6琥珀石&r后，指南针又探测到一处&6类似拱门的结构&r。又一个传送门？&o通向何处？&r信号特征与&6附魔台&r相似"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:feather_falling"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "3B5836F1022F5145"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "quark:ancient_tome"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:feather_falling"
+							lvl: 4s
+						}]
+					}
+				}
+				id: "1229463CA7AB8113"
+				structure: "sg_simple_utilities:domain_entrance"
+				title: "寻找领地入口"
+				type: "structure"
+			}]
+			title: "虚空之门"
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38D03774B36F708F"]
+			description: ["&o继续探索&r"]
+			hide: true
+			icon: "create:mechanical_arm"
+			id: "7C08D1CFB9335063"
+			tasks: [{
+				icon: "create:mechanical_arm"
+				id: "1BE2C456111285DE"
+				structure: "sg_simple_utilities:create_factory"
+				title: "寻找机械工厂"
+				type: "structure"
+			}]
+			title: "齿轮低语"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2F3AF280CE850B9B"]
+			description: ["指南针指向一座&6方形建筑&r。周围干扰强烈，类似...&6灵魂？&r天啊...&o那里究竟是什么地方...&r"]
+			hide: true
+			icon: "minecraft:wither_skeleton_skull"
+			id: "5A5599FE929FF606"
+			tasks: [{
+				icon: "minecraft:wither_skeleton_skull"
+				id: "1DA1ABE4B577710C"
+				structure: "sg_simple_utilities:withering_pantheon"
+				title: "寻找凋零神殿"
+				type: "structure"
+			}]
+			title: "亡者哀嚎"
+			x: -13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["513097EB5847B44D"]
+			description: ["&o再次踏上旅程&r"]
+			hide: true
+			icon: "botania:natura_pylon"
+			id: "026D3C11E246E166"
+			tasks: [{
+				icon: "botania:natura_pylon"
+				id: "3BE7E100870F5FE2"
+				structure: "sg_simple_utilities:elf_temple"
+				title: "寻找精灵神殿"
+				type: "structure"
+			}]
+			title: "自然之光"
+			x: -12.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5CE208604D926104"]
+			description: [
+				"原来那位科学家在谷仓里研究的是..."
+				""
+				"{@pagebreak}"
+				"&a恭喜！本章含12个彩蛋，集齐可解锁第13个特殊彩蛋&r"
+				"                               &o&f ——西格玛留斯&r"
+			]
+			hide_dependency_lines: true
+			id: "4FC51D982AB7C92A"
+			invisible: true
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "0110C89A84A5ABA5"
+				item: "alexsmobs:bear_dust"
+				type: "item"
+			}]
+			title: "啊啊啊"
+			x: 0.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["0FC1A2E20FC69566"]
+			description: ["又一道&o奇特信号&r。它&6规律和谐&r，不像能量，更像...&6声音&r。那里究竟藏着什么如此悦耳，以至于信号&6由谐波组成&r？.."]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "immersive_melodies:piano"
+				tag: { }
+			}
+			id: "23E3DD3863D36B40"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "immersive_melodies:piano"
+					tag: { }
+				}
+				id: "14CC34DF02877D6C"
+				structure: "sg_simple_utilities:opera_theatre"
+				title: "寻找歌剧院"
+				type: "structure"
+			}]
+			title: "美妙旋律"
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3765089A3C34CE72"]
+			description: ["又是一座&6小型建筑&r。指南针似乎急于&o摆脱微弱信号&r。但不可小觑，干扰如此强烈，究竟藏了多少&6强大物品&r？"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:reinforced_deorum_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "753C8BA6E42B620F"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "forbidden_arcanus:reinforced_deorum_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5BCBDE78CD619F6E"
+				structure: "sg_simple_utilities:swordsmith_workshop"
+				title: "寻找武器工坊"
+				type: "structure"
+			}]
+			title: "金属回响"
+			x: -9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["53DAAA86FC054173"]
+			description: ["&o冒险仍在继续&r，主要是因为我需要至少 11-12 个&6碎片&r来修复琥珀... &o但旅行本身也很有趣&r。接下来，指南针选中了一个新目标，然而那个地方的形状非常&6不寻常&r。那么，谁会住在那里这么古怪的房子呢？"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "hexerei:mushroom_witch_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "432247863A29359C"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "hexerei:mushroom_witch_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6C229687B7631246"
+				structure: "sg_simple_utilities:witch_mansion"
+				title: "找到女巫的豪宅"
+				type: "structure"
+			}]
+			title: "致命臭味"
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4801CA3B8BD1666B"]
+			description: ["&o嗯，我想就到此为止了。&r 上次的碎片不够，这次在 &6第十二次，我就打算结束了。&r 好在，没到第十三次，哈哈... 这次信号挺强，虽然有些破损，感觉像是有很多建筑。它又在 &6某个天空里。&r 也许，&o这次是飞行城堡呢？&r"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "cloudstorage:balloon"
+				tag: {
+					HideFlags: 64
+					LootBalloon: 1b
+					display: {
+						color: -1
+					}
+				}
+			}
+			id: "2F5353D742A26B4B"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "cloudstorage:balloon"
+					tag: {
+						HideFlags: 64
+						LootBalloon: 1b
+						display: {
+							color: -1
+						}
+					}
+				}
+				id: "4704259C94B67D3A"
+				structure: "sg_simple_utilities:cloud_village"
+				title: "找到云村"
+				type: "structure"
+			}]
+			title: "风的呼啸"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7A8FF619DDB461FE"]
+			description: ["罗盘 &o慢慢适应了琥珀的信号。&r 只可惜，即使琥珀的时间保护也没能拯救它，&6只剩下碎片了...&r 好在，现在信号指向&6天际。&r 那里是飞行城堡吗？"]
+			hide: true
+			icon: "quark:cloud"
+			id: "71514A1AA4531F81"
+			tasks: [{
+				icon: "quark:cloud"
+				id: "424D1D5E065590DE"
+				structure: "sg_simple_utilities:cargo_aircraft"
+				title: "找到货运飞艇"
+				type: "structure"
+			}]
+			title: "云端之上"
+			x: -12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00B892D2A296245C"]
+			description: ["只差一点点，如果幸运的话，再加上一个大块琥珀，&o我的东奔西跑就能结束了。&r 现在罗盘指向一个&6延展的建筑。&r 应该是某个纪念碑吧？不过&o怎么会有琥珀晶体在那呢？&r"]
+			hide: true
+			icon: "irons_spellbooks:dragonskin"
+			id: "2996BD2D30BDE99C"
+			tasks: [{
+				icon: "irons_spellbooks:dragonskin"
+				id: "09B6B9FC22ACCCA5"
+				structure: "sg_simple_utilities:ender_dragon_statue"
+				title: "找到末影龙雕像"
+				type: "structure"
+			}]
+			title: "神秘的咆哮"
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6056CFBF11662CC1"]
+			description: ["看来，&6探险者的罗盘&r 总算学会了专门寻找琥珀信号，因为现在它指向一个较小的建筑。它 &6像是个房子，&r 其他的说不清。&o那里有活人吗？&r 难道所有的生物都在琥珀辐射区死去了吗？..."]
+			hide: true
+			icon: "alexsmobs:bear_fur"
+			id: "5CE208604D926104"
+			tasks: [{
+				icon: "alexsmobs:bear_fur"
+				id: "1CBAFBAE2A76D2DD"
+				structure: "sg_simple_utilities:bear_barn"
+				title: "找到熊仓库"
+				type: "structure"
+			}]
+			title: "毛皮的气息"
+			x: -11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"034E8B05906B20F1"
+				"3763D3FEBA1AF202"
+				"62411C5F188A83BF"
+				"087A7B8E488DCB0A"
+				"14A47E9839858710"
+			]
+			description: ["那个目标就是&6克里巴诺：&r 一座黑石魔法炉，利用阿卡那的力量。在正常情况下，它只比普通的炉子稍强，&o因为它能一次熔炼两种资源，&r 但如果使用不同的&6灵魂...&r 熔炼的资源会翻倍，还能创造一些特殊的资源，&o比荒诞炉子还要有趣，哈哈...&r"]
+			hide: true
+			icon: "forbidden_arcanus:clibano_core"
+			id: "2A52F58C1AA0D571"
+			tasks: [
+				{
+					count: 17L
+					id: "3974588296024C0B"
+					item: "forbidden_arcanus:polished_darkstone_bricks"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "444C1F294BE97FA9"
+					item: "forbidden_arcanus:polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "085E84B09A24D52F"
+					item: "forbidden_arcanus:clibano_core"
+					type: "item"
+				}
+			]
+			title: "克里巴诺炉"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7DD9F11124834E4B"]
+			description: ["最终，&o普通的水果不足以完成这样的目标。&r 毕竟，需要巨大的力量才能获得&6知识手稿。&r 还需要某种东西来唤醒它们... 奇怪，找到的&6回声碎片会不会有用？&r"]
+			hide: true
+			id: "02616ED01F9D9BA0"
+			tasks: [{
+				id: "310A685BF0960258"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+			title: "手稿"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"1FCDC29D3E04BCE5"
+				"02616ED01F9D9BA0"
+				"2A52F58C1AA0D571"
+			]
+			description: ["&6古代魔法的知识我已经获得，&r 多亏了手稿。现在，&o我还需要其他一些知识...&r 作为一位艺术鉴赏家，我清楚地记得那关于&6和谐卷轴的传说，&r 据说它能够唤醒声音的完美。传说归传说，但尝试制作这样的卷轴也不失为一项好事。&o说不定能成功呢？&r"]
+			hide: true
+			id: "280D2E879130E586"
+			tasks: [{
+				id: "5F1176C804EAA6B9"
+				item: "kubejs:scroll_of_harmony"
+				type: "item"
+			}]
+			title: "存在的和谐"
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"54C269DA5BC84114"
+				"38E87B554783F08C"
+				"62CB629101D9DD61"
+				"5FAC12FC98340D07"
+			]
+			description: [
+				"&l是的..&r 想想看，&o一个普通的音乐家-艺术学者，&r 竟然能够再现最伟大的马马尔创作。简直不敢相信我竟然走到了这一步，甚至还有一种&6不真实的感觉&r… 但现在，重要的根本不是这个"
+				"{@pagebreak}"
+				"现在，我的目标应该是发明&6"
+				"无"
+				"所"
+				"不"
+				"知"
+				"的神器。&r 光靠自己从窃取的知识中获得的东西是不够的，我需要把它们转化为领域知识，四个领域：&o探索，发明，战斗与魔法。&r 希望我收集了足够的知识，开始创造它们"
+			]
+			hide: true
+			hide_dependent_lines: true
+			id: "1B9639F30329ABA1"
+			tasks: [{
+				id: "11A7E3D7A689E5BE"
+				item: {
+					Count: 1b
+					id: "unusual_meme_shoes:uncommon_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "国王的鞋"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1E885E171E4F151F"]
+			description: ["我脑中突然浮现的一个想法，&o在探险末地时，我遇到过一些奇怪的&6粉黄色晶体。&r 虽然与紫水晶相似，但它们的结构非常奇怪。&o好像是果冻&r - 它们的状态无论是完整的晶体还是粉末，硬度都不变。我想到，如果用它们&6覆盖布料会怎么样？&r 它会变得异常坚韧，应该能完美适用...&o用来做什么呢？&r"]
+			hide: true
+			id: "62CB629101D9DD61"
+			tasks: [{
+				id: "467F4C469C2A12D3"
+				item: "kubejs:ametrine_fabric"
+				type: "item"
+			}]
+			title: "紫黄晶"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7EC5B036638700AC"
+				"1B9639F30329ABA1"
+			]
+			description: ["最为狂热的旅行者，比如那些探索新世界的人，会获得&6巴尔萨特之锚。&r 它们赋予佩戴者更高的速度，&o不仅能帮助逃脱怪物，还能更好地探索地形。&r 我想，在那个&6通往黑暗花园的传送门前，&r 站着的应该就是这样一个探险家。哈哈，为什么我觉得，世界上没有比我更酷的旅行者了呢？"]
+			hide: true
+			id: "27FCBA13D6DAF236"
+			tasks: [{
+				id: "09382DB77E84043B"
+				item: {
+					Count: 1b
+					id: "unusual_meme_shoes:rare_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "跑啊，森林，跑"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"47805D9581CDB6BC"
+				"1B9639F30329ABA1"
+			]
+			description: ["因为那位法师，我想起了&o童年时曾经历过的那场恐怖事件...&r 那时我们的小镇被&6滴普索夫持有者袭击。&r 它们赋予持有者强大的力量，因此那天有很多人死去。我敢肯定，那个&6雕像前为杀死龙而战的人，&r 也很可能拥有这些锚点。&o想想就让我觉得害怕...&r 嗯"]
+			hide: true
+			id: "21367E4354F4C78A"
+			tasks: [{
+				id: "759EE58142F3D027"
+				item: {
+					Count: 1b
+					id: "unusual_meme_shoes:drip_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "锋利的边缘"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"07245F6BBDE078D3"
+				"1B9639F30329ABA1"
+			]
+			description: ["对工程师来说，最重要的是什么？&o对，基础设施。&r 为了确保一切尽可能高效和符合人体工学，工厂及其工人，&6鼠类&r 也成了发明家们的代名词。比如，&o那座工厂&r 很可能是由拥有&6鼠类工程锚点的人建造的。&r 它们赋予持有者生命力，让他们在任何艰难困境中也不知疲倦"]
+			hide: true
+			id: "75482C22AB896EA0"
+			tasks: [{
+				id: "7E741EFF48A05E90"
+				item: {
+					Count: 1b
+					id: "unusual_meme_shoes:squeakers_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "瑞米，是你吗？"
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"49479F24B63D6C9C"
+				"1B9639F30329ABA1"
+			]
+			description: [
+				"&o"
+				"一"
+				"切"
+				"源"
+				"自"
+				"海"
+				"洋"
+				"，&r 是吗？魔法师们曾经相信这一点。他们佩戴着特殊的&6克罗克斯，&r 这将他们与大海连接。只有最伟大的巫师才能获得这样的能力。比如，&o那位干旱文化的领袖...&r 无论如何，我从沙漠中挖出的&6海之心&r 将是制作这个物品的主要原料"
+			]
+			hide: true
+			id: "17E3722C9C9768C7"
+			tasks: [{
+				id: "1CAAD719D49CA415"
+				item: {
+					Count: 1b
+					id: "unusual_meme_shoes:crocs_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "小鲨鱼"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5F31CD8088C81010"
+				"30BED2C372E4A3C7"
+				"79E830590471A321"
+				"27FCBA13D6DAF236"
+				"21367E4354F4C78A"
+				"75482C22AB896EA0"
+				"17E3722C9C9768C7"
+				"05B5093679F4BEF9"
+			]
+			description: [
+				"出乎意料的是，&6琥珀鞋&r 和我自己的&6和谐工具&r 配合得相当好... 至少&o它们彼此没有排斥&r，这已经是最重要的了。我打算将它们结合在一起，&o让工具的无所不在和不朽的记忆锚点结合，创造出最强的魔力，并将多元宇宙的记忆汇聚在一起&r"
+				"{@pagebreak}"
+				"&o记忆...&r 我失去了一切，来到这片花园后。我了解了马马尔的故事，重现了它们在昏暗森林中的历程。恢复了记忆，回到了上界。&o但即便如此还不够。&r 我要了解发生了什么，不论代价如何，&6我将复活马马尔&r"
+				"{@pagebreak}"
+				"&o&6...无论付出什么代价...&r"
+			]
+			hide: true
+			id: "45D4685A5D6C7F49"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "498C8BA9AB70E94B"
+				item: "kubejs:elegy_of_memories"
+				type: "item"
+			}]
+			title: "故事，长如世界"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5EBD7C477C63DBBF"]
+			description: [
+				"选择&6生命树&r是明智的，它的跨维度特性将赋予工具独特的音质。&o这么古老的木材不适合什么太尖锐响亮的声音，&r 所以我要做一个柔和的乐器，像竖琴或里拉那样。它的名字是...&l&6"
+				"古"
+				"老"
+				"的"
+				"竖"
+				"琴"
+				"&r"
+			]
+			hide: true
+			id: "30BED2C372E4A3C7"
+			tasks: [{
+				id: "0C469975E7F45F32"
+				item: "genshinstrument:vintage_lyre"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40F46DC3910FBA2C"]
+			description: [
+				"选择&6古老的树木，&r 我觉得自己没有错。它正是我想赋予工具的那些特性。我一开始就打算做一个柔和而高贵的东西...&o像竖琴。&r 弦发出的声音&o会随风飘扬，传遍世界的每一个角落，&r 照亮每个角落... 我叫它&6&l"
+				"风"
+				"之"
+				"竖"
+				"琴"
+				"&r"
+			]
+			hide: true
+			id: "5F31CD8088C81010"
+			tasks: [{
+				id: "2F0B29326AA90246"
+				item: "genshinstrument:windsong_lyre"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65DBF93D12347014"]
+			description: [
+				"&6时间之树&r 真的是一种完美的材料，&o但是它还是缺乏灵活性。&r 最好的办法是做成鼓，&6因为这种时间的力量会使击打的声音更响、更低沉。我会称它为...&l&6"
+				"阿"
+				"拉"
+				"特"
+				"基"
+				"的"
+				"宏"
+				"伟"
+				"鼓"
+				"&r"
+			]
+			hide: true
+			id: "79E830590471A321"
+			tasks: [{
+				id: "5A86019272BCA28F"
+				item: "genshinstrument:glorious_drum"
+				type: "item"
+			}]
+			title: "击打震动岩石"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["729321B29F9F2B35"]
+			description: [
+				"我并没有白找&6欧雷树。&r 它的声音&o清脆响亮，&r 很适合做类似吉他的东西，但吉他又太复杂、现代。&o也许可以试试制作一种柑橘？&r 对了，我给它取个名字，&l&6"
+				"花"
+				"之"
+				"柑"
+				"橘"
+				"&r"
+			]
+			hide: true
+			id: "05B5093679F4BEF9"
+			tasks: [{
+				id: "3797B383D61178FA"
+				item: "genshinstrument:floral_zither"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+			description: ["如果我要做最棒的工具，&o那么我需要最好的材料。&r 我想到了&6时间之树。&r 既然它只能在暮光森林找到，而且它拥有强大的&6加速时间&r的力量，那这个材料将使工具更加强大"]
+			hide: true
+			hide_dependency_lines: true
+			id: "65DBF93D12347014"
+			tasks: [{
+				id: "3EE80C88A53890CB"
+				item: "twilightforest:time_log"
+				type: "item"
+			}]
+			title: "时间之力"
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+			description: ["如果我要做最棒的工具，&o那么我需要最好的材料。&r 我想到的是&6欧雷树。&r 以前没见过它，但它应该生长在这个世界的某个地方。传闻说，它被欧雷能量完全浸透，能够&6在树叶上长出黄金&r，&o这样珍贵的东西不容错过&r"]
+			hide: true
+			hide_dependency_lines: true
+			id: "729321B29F9F2B35"
+			tasks: [{
+				id: "3BFE084714490B28"
+				item: "forbidden_arcanus:aurum_log"
+				type: "item"
+			}]
+			title: "欧雷之力"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+			description: ["如果我要做最棒的工具，&o那么我需要最好的材料。&r 我想到了&6生命树。&r 与梦之木不同，生命树&6既属于我们的世界，也属于精灵的世界，&r 所以它更适合做工具的基础"]
+			hide: true
+			hide_dependency_lines: true
+			id: "5EBD7C477C63DBBF"
+			tasks: [{
+				id: "2AC51F6F3EBB84AE"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			title: "生命之力"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"280D2E879130E586"
+			]
+			description: ["如果我要做最棒的工具，&o那么我需要最好的材料。&r 我想到了&6古老的树木。&r 它隐藏在古老城市中这么多年，&o使得它的木材充满了经验&r，帮助工具完全展开"]
+			hide: true
+			hide_dependency_lines: true
+			id: "40F46DC3910FBA2C"
+			tasks: [{
+				id: "79B30D3CA738FC5E"
+				item: "quark:ancient_log"
+				type: "item"
+			}]
+			title: "古老之力"
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"18C10B78B36ED133"
+			]
+			description: ["&o当我在海滩寻找石油时，&r 地面扫描器的信号经常中断。我感觉它们可能隐藏着某种强大的东西，&6但是究竟是什么呢？&r 哈哈，&o这引起了我的兴趣，&r 难道这里有藏宝吗？如果有&6地图就好了...&r"]
+			hide: true
+			hide_dependency_lines: true
+			id: "49479F24B63D6C9C"
+			tasks: [{
+				id: "0124C7E7B1D4F081"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+			title: "海底的声音"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"053EC878E2EAD3DA"
+			]
+			description: ["往下走，在黑色岩石后，&o洞窟中不断传来小脚步的回声。&r 靠近时什么也看不见，但远处看像是&6小人。&r 他们害怕我吗？&6他们手中&r 拿着各种物品，其中有一个像钻石齿轮。&o我得把它拿到手&r"]
+			hide: true
+			hide_dependency_lines: true
+			id: "07245F6BBDE078D3"
+			tasks: [{
+				id: "5726C5AD96DE0AEF"
+				item: "quark:diamond_heart"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"1EC6D76079A83A07"
+			]
+			description: ["&6我做的疯狂罗盘&r 这次不再指向多个地方，而是指向一个地方。我还不清楚那里有什么，但从罗盘强烈的死亡能量来看，&6我猜那应该是充满亡灵的地下墓穴。&r 那股施法力量是从谁那里来的，&o让罗盘只指向它呢？...&r"]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:blood_staff"
+				tag: {
+					ISB_spellbook: {
+						activeSpellIndex: 0
+						spellSlots: 5
+						spells: [
+							{
+								level: 6
+								sid: "irons_spellbooks:wither_skull"
+								slot: 0
+							}
+							{
+								level: 6
+								sid: "irons_spellbooks:ray_of_siphoning"
+								slot: 1
+							}
+							{
+								level: 3
+								sid: "irons_spellbooks:blood_step"
+								slot: 2
+							}
+							{
+								level: 6
+								sid: "irons_spellbooks:blood_slash"
+								slot: 3
+							}
+							{
+								level: 6
+								sid: "irons_spellbooks:blaze_storm"
+								slot: 4
+							}
+						]
+					}
+				}
+			}
+			id: "47805D9581CDB6BC"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "irons_spellbooks:blood_staff"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: 0
+							spellSlots: 5
+							spells: [
+								{
+									level: 6
+									sid: "irons_spellbooks:wither_skull"
+									slot: 0
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:ray_of_siphoning"
+									slot: 1
+								}
+								{
+									level: 3
+									sid: "irons_spellbooks:blood_step"
+									slot: 2
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blood_slash"
+									slot: 3
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blaze_storm"
+									slot: 4
+								}
+							]
+						}
+					}
+				}
+				id: "63F3553544B894F7"
+				structure: "irons_spellbooks:catacombs"
+				title: "找到地下墓穴"
+				type: "structure"
+			}]
+			title: "魔法地下墓穴"
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"66D554CF50F18D2D"
+				"3EACFF704945F1F7"
+			]
+			description: ["&o在寻找回声碎片时，&r 我突然想起了那些更加复杂，虽然不那么黑暗的地下迷宫。&6地下世界&r 我依然没能消除那与&6地下藏宝&r 有关的未解心结。&o这些强大的神器还会发挥它们的作用&r"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "dimdungeons:item_homeward_pearl"
+			id: "7EC5B036638700AC"
+			tasks: [{
+				advancement: "dimdungeons:dungeons/all_trophies"
+				criterion: ""
+				icon: "twilightforest:filled_magic_map"
+				id: "62DC61BD36E8D964"
+				title: "找到8个独特的战利品"
+				type: "advancement"
+			}]
+			title: "隐藏的战利品"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["49DF92E69F1C64C1"]
+			description: ["看起来，这金属不仅适用于魔法强化，&o希望它确实能按我想的方式工作...&r"]
+			hide: true
+			id: "1EC6D76079A83A07"
+			tasks: [{
+				id: "48AF504D1531101A"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:wayward_compass"
+					tag: {
+						isInInventory: 1b
+					}
+				}
+				type: "item"
+			}]
+			title: "恶作剧成功"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45D4685A5D6C7F49"]
+			description: [
+				"&a这次你可别只是拿个普通评论糊弄过去& o 这一切已经完全是另外一个故事了。&r &a感谢你参与游戏，记住：当一个故事结束时，另一个故事会随之而来...&r"
+				"{@pagebreak}"
+				"&6...谁说您的故事就此结束了？也许还有谜团，尚未解开...&r"
+			]
+			hide: true
+			icon: "minecraft:writable_book"
+			id: "0283BA1900F62DFB"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "4CD12817029985A4"
+				title: "再见"
+				type: "checkmark"
+			}]
+			title: "冒险未结束"
+			x: 6.5d
+			y: 4.5d
+		}
+	]
+	subtitle: ["&9...он стремится вперёд."]
+	title: "&9第六章：黄昏与黎明"
+}

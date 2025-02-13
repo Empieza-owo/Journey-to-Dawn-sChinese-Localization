@@ -1,0 +1,749 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5_5"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:dragon_egg"
+	id: "6627B5D8CE7E6D4F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0A452E355CD976EC"]
+description: ["&6末地之旅&r危机四伏，需做好万全准备。除了&o末影人&r，&6缺氧&r是最大威胁。末地位于近地轨道，氧气稀薄。需设计类似&6潜水服&r的装备"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "create:copper_diving_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "104CE7A8DEBA98B4"
+			tasks: [
+				{
+					id: "5B38114F4888400B"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B3DA444BB8F6551"
+					item: {
+						Count: 1b
+						id: "create:copper_backtank"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+title: "供氧系统"
+			x: 0.25d
+			y: 0.5d
+		}
+		{
+			dependencies: ["104CE7A8DEBA98B4"]
+description: ["&6氧气瓶与头盔&r准备就绪，必要时可用下界合金&6强化&r。带上最强装备，&o一失足将永坠虚空&r，&6出发时刻已至&r"]
+			hide: true
+			icon: "minecraft:end_crystal"
+			id: "1CE4416F7C212E0D"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "28C63DBC99804544"
+title: "造访末地"
+				type: "dimension"
+			}]
+title: "终焉之地"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1CE4416F7C212E0D"]
+description: ["&o终于抵达&r。主岛中央矗立着&6末地城&r与十根黑曜石柱。&7缺氧&r与&6低重力&r已开始显现。是时候唤醒&6末影龙&r了。据古籍记载，&o战斗并不复杂...&r"]
+			hide: true
+			id: "036DD41B8662CF01"
+			tasks: [{
+				icon: "irons_spellbooks:ender_upgrade_orb"
+				id: "7CD7A83422021FD3"
+				observe_type: 5
+				timer: 0L
+title: "直面末影龙"
+				to_observe: "minecraft:ender_dragon"
+				type: "observation"
+			}]
+title: "终焉守护者"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["036DD41B8662CF01"]
+description: ["&o什么情况？&r它不该只有一颗头吗？九头蛇都比它强。&o准备战斗&r"]
+			hide: true
+			id: "517F0A8E23AC82D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08E401DE12F84786"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "4DBB7D31F19C2F59"
+title: "解放末地"
+				type: "advancement"
+			}]
+title: "强于九头蛇"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["517F0A8E23AC82D4"]
+description: ["艰难取胜后，&6末地折跃门&r开启。在前往&6外岛&r前，我决定带走&6龙蛋&r。这种珍贵资源不容错过。&o必要时可复活末影龙&r获取更多龙蛋"]
+			hide: true
+			id: "7077D656AA9371A3"
+			tasks: [{
+				id: "02795565104F63EE"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+title: "终焉遗产"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7077D656AA9371A3"]
+description: ["&o时机已至&r。&6外岛&r上应已生成&6折跃门&r。投掷末影珍珠即可传送，&o但搭建桥梁更为稳妥&r"]
+			hide: true
+			id: "34E646AAEFE1D0F2"
+			tasks: [{
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+				id: "160FC9B8E7EC46DA"
+title: "进入外岛"
+				type: "advancement"
+			}]
+title: "千里之外"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["34E646AAEFE1D0F2"]
+description: ["&6紫颂果&r——蕴含末影之力的神奇植物。食用可&o随机传送&r，但更可作为&6强力炼金材料&r"]
+			hide: true
+			id: "4E488848DAA508BF"
+			tasks: [{
+				id: "427F766E205DF317"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+title: "紫颂果"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E488848DAA508BF"]
+description: ["既然&6紫颂果&r能产生传送能量，为何不直接提取？听说&6龙息&r可收集，&o末地空气是否也能如此？&r"]
+			hide: true
+			id: "4EDC0922B04352A6"
+			tasks: [{
+				id: "2B6462B4D33F6A48"
+				item: "botania:ender_air_bottle"
+				type: "item"
+			}]
+title: "末地空气"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4EDC0922B04352A6"]
+description: ["&6末地空气&r应用探索——&6咒术&r已有末影珍珠，&6工具&r传送敌人意义不大，&6机械&r领域或大有可为。&o无线传输系统&r构想浮现"]
+			hide: true
+			id: "0A2893AE5F497349"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00C0DDA97BA00FDF"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1AF7BCC994BBB080"
+				item: "createutilities:void_steel_ingot"
+				type: "item"
+			}]
+title: "虚空钢"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["34E646AAEFE1D0F2"]
+description: [
+"末地生物群系独特——&6末影螨&r如&o活体病毒&r般扩散，所幸&6紫颂果&r可治愈感染"
+"{@pagebreak}"
+"其&6外壳&r更具价值：不仅可实现&6物品传输&r，还能&6转化&r特定资源，&o新型配方体系？&r"
+]
+			hide: true
+			id: "1CCA65F2B2D8C6A0"
+			tasks: [{
+				id: "52A58909A009E16B"
+				item: "alexsmobs:capsid"
+				type: "item"
+			}]
+title: "保持距离"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"717E94C69BCC38F3"
+				"1CCA65F2B2D8C6A0"
+			]
+description: ["尝试用&6赤红蚊幼虫&r制作诱饵，发现仅包裹&6以太精华&r效果不佳。加入&6外壳粒子&r后，&o不知会吸引何种生物&r"]
+			hide: true
+			id: "4E0C01A25FD5E109"
+			tasks: [{
+				id: "11AA50276A110332"
+				item: "alexsmobs:mysterious_worm"
+				type: "item"
+			}]
+title: "跨维度诱饵"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4E488848DAA508BF"]
+description: ["&6紫颂果&r可抑制&6净化粉末&r的过量能量，生成纯净合金——古籍记载的&6神金&r"]
+			hide: true
+			id: "55CE418DA6D29479"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DB65031E88CF425"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5397F00B7E281C0C"
+				item: "forbidden_arcanus:deorum_ingot"
+				type: "item"
+			}]
+title: "神金"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["34E646AAEFE1D0F2"]
+description: ["末地不应空无一物。既然下界与暮色森林都有遗迹，&o这里也定有&6城市&r存在"]
+			hide: true
+			id: "1510FACE84226A94"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4246AA1FE366D725"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				icon: "supplementaries:end_stone_lamp"
+				id: "2D4BFAD61B9F7F50"
+				structure: "#minecraft:end_city"
+title: "寻找末地城"
+				type: "structure"
+			}]
+title: "终焉之城"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1510FACE84226A94"]
+description: ["&6末地城&r规模惊人！高耸如紫颂植物般的建筑群由潜影贝守护。我注意到&6末地船&r悬浮在侧，&o其中必有珍宝&r"]
+			hide: true
+			id: "3EF26C0A7195FEFF"
+			tasks: [{
+				id: "196F8609C1BA4552"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "展翅高飞"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3EF26C0A7195FEFF"]
+description: ["&6末地船&r日志揭示其曾运输&6以太矿石&r。虽不知矿源所在，但&6末地城&r中或存有大量矿石"]
+			hide: true
+			id: "6FD34B7BAF8D7070"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D70FDDC6D36C6FD"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3FAEC3E69DC2E6E4"
+				item: "enigmaticlegacy:etherium_ore"
+				type: "item"
+			}]
+title: "以太矿"
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0A2893AE5F497349"
+				"1DB07CC7DCD5B60D"
+				"6FD34B7BAF8D7070"
+				"15C150272D58479B"
+				"4066DA74D4BEB2EC"
+			]
+description: [
+"&6终点&r。获取新资源、神器、材料的途径&o已尽&r。唯一要做的就是整合所有资源，&6熔铸成跨越维度的终极催化剂&r"
+"{@pagebreak}"
+"&l&6催化精华&r"
+]
+			hide: true
+			hide_dependency_lines: true
+			id: "578E6E05A8D2838E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F3F1035928478C1"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1AFBFAAD0E92EC05"
+				item: "kubejs:catalytic_essence"
+				type: "item"
+			}]
+title: "至强物质"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["578E6E05A8D2838E"]
+			dependency_requirement: "all_started"
+description: ["&6催化精华&r需&6超级压缩圆石&r作为基底。这种由数吨圆石熔铸而成的材料将提供必要的稳定性"]
+			hide: true
+			id: "13A2B2870363EA9F"
+			shape: "circle"
+			tasks: [{
+				id: "72844B41AB347B17"
+				item: "kubejs:overcompressed_stone_chunk"
+				type: "item"
+			}]
+title: "至坚基底"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["13A2B2870363EA9F"]
+description: ["&o基底与催化剂就位&r。先用&6强酸&r蚀刻石基，注入&6暗物质&r增加不稳定性，最后用&6混凝土&r加固"]
+			hide: true
+			id: "3F6B24D4A92EA08A"
+			tasks: [{
+				id: "61BE15200550BC70"
+				item: "kubejs:empty_catalyst"
+				type: "item"
+			}]
+title: "融合工艺"
+			x: 0.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F6B24D4A92EA08A"]
+description: ["&6铁块&r将提供必要的结构支撑，确保装置不会解体"]
+			hide: true
+			id: "23099AF5C3C8CB9A"
+			tasks: [{
+				id: "6876CD972C90B561"
+				item: "kubejs:inactive_catalyst"
+				type: "item"
+			}]
+title: "结构强化"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["23099AF5C3C8CB9A"]
+description: ["替换部分铁块为&6特制金块&r，为魔法能量提供循环通道"]
+			hide: true
+			id: "2E2BED5F93535C74"
+			tasks: [{
+				id: "4BED356DB306E819"
+				item: "kubejs:unawakened_catalyst"
+				type: "item"
+			}]
+title: "能量激活"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2E2BED5F93535C74"
+				"578E6E05A8D2838E"
+			]
+description: ["最后一步：&6魔法钻石&r制成的核心。注入&6催化精华&r，用&6超验精华&r唤醒整个装置"]
+			hide: true
+			id: "0004AD7A98F56934"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F68014DF4452A8D"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "76E7C5E30D83B15E"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+title: "终极觉醒"
+			x: 0.25d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0004AD7A98F56934"]
+description: [
+"&6大功告成&r。&o难以置信我做到了&r。但&6主世界&r真是我的家吗？失忆前的我究竟是谁？这场灾难将我带到了未来还是过去？&6我必须查明真相&r"
+"{@pagebreak}"
+"回到&6暮色森林&r，用&6石砖&r搭建传送门框架，&6催化剂&r激活后，&6&l踏入&r新篇章"
+"{@pagebreak}"
+"&a恭喜！你的旅程令人惊叹！新的冒险即将展开，我，西格玛，将与你同行"
+" &a——您忠实的"
+" &a&l西格玛&r"
+]
+				"                                        &a&lСигма&r"
+			]
+			hide: true
+			icon: "byg:byg_logo"
+			id: "3E8DB5EDA1483C85"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71DCCB6BA293BF9C"
+				table_id: 6273760658231886355L
+title: "第五模板"
+				type: "loot"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 10L
+				id: "2662CB64003DA753"
+				item: "minecraft:stone_bricks"
+				type: "item"
+			}]
+title: "归乡之路"
+			x: 0.25d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1510FACE84226A94"]
+description: ["&6末地城&r蕴藏&o强大装备与飞行核心&r，其力量源泉何在？"]
+			hide: true
+			id: "53503794117E2B66"
+			tasks: [{
+				id: "44F01A21B9C9D079"
+				item: "enigmaticlegacy:astral_dust"
+				type: "item"
+			}]
+title: "星尘精华"
+			x: 0.25d
+			y: 3.5d
+		}
+		{
+			dependencies: ["53503794117E2B66"]
+description: ["&6星尘&r能量超乎想象，需转化为&6晶体&r方能充分利用"]
+			hide: true
+			id: "3A820084F2E0F8AA"
+			tasks: [{
+				id: "42FE816614E54AE9"
+				item: "forbidden_arcanus:rune"
+				type: "item"
+			}]
+title: "星尘结晶"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3A820084F2E0F8AA"]
+description: ["&6龙鳞&r获取方案——需用&6魔法木材&r制作工具手柄"]
+			hide: true
+			id: "1B8DC6E2CC8E5013"
+			tasks: [{
+				id: "0D5949C616B67858"
+				item: "forbidden_arcanus:edelwood_log"
+				type: "item"
+			}]
+title: "魔法木材"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1B8DC6E2CC8E5013"]
+description: ["光明魔法制品具有&o类意识&r，需用&6腐化粉末&r改变其性质"]
+			hide: true
+			icon: "forbidden_arcanus:dark_matter"
+			id: "309C67FEBA9B9165"
+			tasks: [
+				{
+					id: "1664A3CF8EBFA34F"
+					item: "forbidden_arcanus:dark_rune"
+					type: "item"
+				}
+				{
+					id: "74A6644DB8850219"
+					item: "forbidden_arcanus:dark_matter"
+					type: "item"
+				}
+			]
+title: "暗影之力"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["309C67FEBA9B9165"]
+description: ["&6暗影符文&r与&6暗物质&r准备就绪，需制作&6仪式匕首&r采集龙鳞"]
+			hide: true
+			id: "21FAA40238CBC8DC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14B7AC0E762E6CAA"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5F07B623F15C7C56"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:mystical_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "暗影工艺"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21FAA40238CBC8DC"]
+description: ["&6仪式匕首&r完美成型，&o从收割稻草到采集龙鳞，成长令人感慨&r"]
+			hide: true
+			id: "4CEC23F33D60DE54"
+			tasks: [{
+				id: "6B0A6447C333A65A"
+				item: "forbidden_arcanus:dragon_scale"
+				type: "item"
+			}]
+title: "至坚龙鳞"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4CEC23F33D60DE54"
+				"55CE418DA6D29479"
+			]
+description: ["&6神金&r与&6龙鳞&r结合，或将创造&6终极龙蛋&r"]
+			hide: true
+			id: "1DB07CC7DCD5B60D"
+			tasks: [{
+				id: "2BF39D018D75922B"
+				item: "forbidden_arcanus:arcane_dragon_egg"
+				type: "item"
+			}]
+title: "神金龙鳞"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4E0C01A25FD5E109"]
+description: ["&6虚空蠕虫&r——比末影龙更神秘的存在。&o但连真盖亚与堕落之王都败于我手&r"]
+			hide: true
+			id: "0A675C2D03C416A9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70796FEDBCF1853F"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/void_worm_kill"
+				criterion: ""
+				id: "0DA6AA4ACA80D620"
+title: "击败虚空蠕虫"
+				type: "advancement"
+			}]
+title: "虚空咆哮"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0A675C2D03C416A9"]
+description: ["&6虚空蠕虫&r终被击败。&o从恐惧黑暗到征服维度，末地也不例外&r。其残骸或可开启&6空间裂隙&r"]
+			hide: true
+			id: "33AE92EE2DAE84DD"
+			tasks: [{
+				id: "3A294056FCA88442"
+				item: {
+					Count: 1b
+					id: "alexsmobs:dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "撕裂空间"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33AE92EE2DAE84DD"]
+description: ["&6空间切割器&r原理与&6回归护符&r相似，需用&6外壳&r提升精度"]
+			hide: true
+			id: "15C150272D58479B"
+			tasks: [{
+				id: "6E09CB9BDB728BD0"
+				item: {
+					Count: 1b
+					id: "alexsmobs:shattered_dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "坐标裂隙"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6FD34B7BAF8D7070"]
+description: ["&6以太矿&r源自虚空，&o其中或存在比末影龙更强大的存在&r"]
+			hide: true
+			id: "717E94C69BCC38F3"
+			tasks: [{
+				id: "4C30471F661D869B"
+				item: "kubejs:etheric_larva"
+				type: "item"
+			}]
+title: "活体以太"
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1B8DC6E2CC8E5013"
+				"53503794117E2B66"
+				"12D4ACE399D88A0E"
+			]
+description: ["&6元素之石&r或蕴含飞行之力"]
+			hide: true
+			id: "07A13A913AB57359"
+			tasks: [{
+				id: "0A7CB426A686C0CD"
+				item: "enigmaticlegacy:angel_blessing"
+				type: "item"
+			}]
+title: "飞行碎片"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3EF26C0A7195FEFF"
+				"53503794117E2B66"
+				"07A13A913AB57359"
+			]
+description: ["&6元素之石&r提供&6冲刺&r能力，或可开发&6飞行装置&r"]
+			hide: true
+			id: "18594F1F1BA3BE98"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "066BE8901A938CE8"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5D99AF9FA7971DDE"
+				item: "enigmaticlegacy:fabulous_scroll"
+				type: "item"
+			}]
+title: "飞行卷轴"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"18594F1F1BA3BE98"
+				"07A13A913AB57359"
+			]
+description: ["&6飞行卷轴&r效果有限，&o不如直接使用飞行仪式&r"]
+			hide: true
+			id: "4066DA74D4BEB2EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25CE5A55D034AB78"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "circle"
+			size: 1.25d
+			tasks: [{
+				id: "789258FEACFFA514"
+				item: {
+					Count: 1b
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				type: "item"
+			}]
+title: "真翼降临"
+			x: 0.25d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4066DA74D4BEB2EC"]
+description: [
+"这翅膀...既像科技又似魔法，令人着迷"
+"{@pagebreak}"
+"&a恭喜！本章含12个彩蛋，集齐可解锁第13个特殊彩蛋&r"
+" &o&f ——西格玛留斯&r"
+]
+			hide: true
+			id: "627924042AEBF0AD"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			tasks: [{
+				id: "493305E52447BE42"
+				item: {
+					Count: 1b
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 9
+					}
+				}
+				type: "item"
+			}]
+title: "选择你的命运"
+			x: 0.25d
+			y: 5.0d
+		}
+	]
+	subtitle: ["&5...даже на краю света..."]
+title: "&5第五章·终极冲刺"
+}

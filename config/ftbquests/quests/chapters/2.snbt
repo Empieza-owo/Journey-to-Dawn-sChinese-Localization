@@ -1,0 +1,1072 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "dimdungeons:block_portal_keyhole"
+	id: "3FD994140A2D5914"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["20565BBF2E69DED3"]
+			description: [
+				"好吧，开始吧。虽然不确定具体原理，但逻辑上应该需要建造一个&6传送门框架&r来容纳门户。既然金砖由石砖制成，那就用它们来搭建。需要制作一个&6符合我身高&r的开口框架，并在顶部用&6钥匙插槽砖&r替代普通砖块。"
+				""
+				"{@pagebreak}"
+				"框架完成后，真正的挑战才开始。单纯的门户无法稳定存在，&o必须进行某种稳定处理&r。我猜如果在框架两侧建造&6砖柱&r并在顶部放置&6金砖&r，应该能激活整个结构。"
+				"根据计算，所需资源不算太多。&o现在就去收集吧&r"
+			]
+			hide: true
+			icon: "minecraft:ender_eye"
+			id: "5F01DAA741485D16"
+			size: 1.5d
+			tasks: [
+				{
+					id: "501305A891B97A6C"
+					item: "dimdungeons:block_portal_keyhole"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1522686580BBCCFB"
+					item: "dimdungeons:block_gilded_portal"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "40DECBD418D9B862"
+					item: "minecraft:chiseled_stone_bricks"
+					type: "item"
+				}
+			]
+			title: "通往异界的门扉"
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5F01DAA741485D16"]
+			description: [
+				"虽然已能开启传送门，但前方等待的究竟是什么仍让我忐忑。战斗、谜题、试炼都在所难免，但关键是这个维度如何帮助我&6重返故土？&r"
+				""
+				"{@pagebreak}"
+				"或许答案和食物问题一样——通过&6激活&r指南书中的知识。可惜书中文字虽能辨识，却非母语。&o好在重要内容我都记录在日志里了&r"
+			]
+			hide: true
+			id: "3B4DD3A6FB2DED6A"
+			size: 1.5d
+			tasks: [{
+				id: "7CDAF3753BDF3302"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "dimdungeons:guide_book"
+					}
+				}
+				type: "item"
+			}]
+			title: "知识即力量"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B4DD3A6FB2DED6A"]
+			description: [
+				"原来这些地下城迷宫&o并非唯一存在&r。还有更高级的&6进阶难度&r，要进入需要升级传送门并获取新钥匙。"
+				"{@pagebreak}"
+				"某些地下城宝箱中存放着特殊的&6皇冠传送门方块&r。将其安装在传送门插槽两侧后，就能开启&6进阶难度&r。指南书提到这些方块也可购买。&o难道这个维度还有商人存在？&r"
+			]
+			hide: true
+			id: "3F921001ED6007DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7DB1809D7CFE9B27"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "58DA053F12C90FAD"
+				item: "dimdungeons:block_portal_crown"
+				type: "item"
+			}]
+			title: "非王者之冠"
+			x: -1.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"3F921001ED6007DD"
+				"6B8D116D97BAF2AA"
+			]
+			description: [
+				"逐渐摸清了地下城维度的运作机制。进阶难度规模是普通的两倍，怪物更强奖励更丰厚，最重要的是这里有&6专属奖励&r。直觉告诉我&o这些正是逃离此地的关键&r"
+				"{@pagebreak}"
+				"要进入更高层级需要：首先在插槽两侧安装2个皇冠方块&o（左右各一）&r；其次在稳定柱上放置&6旗帜&r。颜色方面参考见过的房间设计，应该是&6白紫双色&r。最后用进阶钥匙激活——准备就绪！"
+			]
+			hide: true
+			icon: "dimdungeons:block_gold_portal"
+			id: "5198594B490338C9"
+			size: 1.5d
+			tasks: [{
+				id: "0E196ECF840DBD5B"
+				title: "豁然开朗"
+				type: "checkmark"
+			}]
+			title: "追寻目标"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5198594B490338C9"]
+			description: [
+				"由于进阶地下城的庞大规模，它们与其它空间产生交织，形成了蕴含特殊&6战利品&r的异常物品。这些战利品正是建造跨世界传送门的关键材料。"
+				"{@pagebreak}"
+				"奇怪的是，当我凝视这些战利品图鉴时，脑海中浮现出...&o似曾相识&r的感觉。是疯癫前兆？还是记忆复苏？"
+			]
+			hide: true
+			icon: "dimdungeons:item_trophy_1"
+			id: "7A0E963EFE425B24"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49D7C0878067E008"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: "dimdungeons:item_trophy_1"
+				id: "23BC470EC40F5960"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dimdungeon_artifacts"
+					}
+				}
+				title: "万物皆可为器"
+				type: "item"
+			}]
+			title: "地城战利品"
+			x: -1.5d
+			y: -8.25d
+		}
+		{
+			dependencies: [
+				"3B4DD3A6FB2DED6A"
+				"0559443EE1B0AC93"
+				"62185FAAB6AD98BF"
+			]
+			description: ["这些为资源探索的迷宫...即便有&o地图集&r也常令人困惑。需要发明某种能随时&6返回出口&r的装置。或许这种装置还能在关键时刻&o救命&r"]
+			id: "634FD2EF14474A98"
+			size: 1.5d
+			tasks: [{
+				id: "1A27DD474A554F79"
+				item: "dimdungeons:item_homeward_pearl"
+				type: "item"
+			}]
+			title: "归途指引"
+			x: -2.25d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3B4DD3A6FB2DED6A"]
+			description: ["最初以为这个维度只需战斗获取奖励，没想到充斥着&o谜题机关&r，有时连宝箱位置都成谜。书中记载可用&6铃铛&r通过声响定位宝箱"]
+			id: "73045D6D220352B4"
+			size: 1.5d
+			tasks: [{
+				id: "5C38DAB4B5A20557"
+				item: "dimdungeons:item_secret_bell"
+				type: "item"
+			}]
+			title: "隐秘现形"
+			x: 2.25d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7A0E963EFE425B24"
+				"39B792B001D4D4D4"
+				"3B9DBD4EC6258D0B"
+				"1D8572A75D35CE9B"
+			]
+			description: [
+				"此刻比任何时候都接近目标。整合关于&6奥术&r的知识、现有&6科技&r手段以及地城维度特有的&6珍宝&r，就能打造出足以撕裂次元的强大法器。"
+				"{@pagebreak}"
+				"仍怀抱回到原世界的希望，但考虑到需要将魔力注入&6暗庭之花&r，新世界恐怕不会太光明——但至少比现在的"
+				"家"
+				"更有生机"
+			]
+			hide: true
+			id: "789904717F4A86BA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DBCA9ECBB68EA6B"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "437535A7BE937D8A"
+				item: "kubejs:twilight_edelweiss"
+				type: "item"
+			}]
+			title: "救赎之花"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5F01DAA741485D16"]
+			description: ["有趣...原以为黑曜石无法加工，但结合铁粒和月光石竟能制成&6黑曜石锭&r。这种材质不仅坚固，应该还具备&o魔法特性&r"]
+			hide: true
+			hide_dependency_lines: true
+			id: "62185FAAB6AD98BF"
+			size: 1.25d
+			tasks: [{
+				id: "1D869E6A61CD49E7"
+				item: "forbidden_arcanus:obsidian_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["62185FAAB6AD98BF"]
+			description: ["验证成功！使用&o黑曜石锭&r与特殊&o仪式火把&r可制作&6女巫大锅&r。只需&6注水&r并添加材料，相信能极大扩展炼金可能性"]
+			hide: true
+			id: "5B056C6572474FF8"
+			size: 1.25d
+			tasks: [{
+				id: "2AF3C730EB92CAC7"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "巫术工艺"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B056C6572474FF8"]
+			description: ["本想另编巫术指南，却发现&l暗影之书&r必须置于&l女巫木桌&r上方显知识。希望可以用现有木材&o替代&r这种特殊材质..."]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "hexerei:book_of_shadows"
+				tag: {
+					bookmarks: { }
+					chapter: 4
+					opened: 0b
+					page: 24
+				}
+			}
+			id: "3AD85C42F48DF638"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5ADA8BB8BDB750EB"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					id: "372F7ED69A14A723"
+					item: "hexerei:willow_altar"
+					type: "item"
+				}
+				{
+					id: "287FAC878EE2C3F6"
+					item: {
+						Count: 1b
+						id: "hexerei:book_of_shadows"
+						tag: {
+							bookmarks: { }
+							chapter: 4
+							opened: 0b
+							page: 24
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "巫术入门"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F01DAA741485D16"
+				"474539CBBA76E3DC"
+			]
+			description: [
+				"发现矿渣中&o隐藏资源&r比筛网所得更丰富，但普通&6线筛&r无法分离混杂微粒。需要强化筛网——相比安山岩，&6锌&r是更好的加固材料"
+				"&o有趣的是锌本身也能从矿渣获取...&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "createsifter:zinc_mesh"
+				tag: { }
+			}
+			id: "26441D5A1A592B39"
+			tasks: [
+				{
+					id: "4B4A0B62C46BB0C5"
+					item: {
+						Count: 1b
+						id: "createsifter:zinc_mesh"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "43A5AD0ACDC32C1E"
+					item: "undergarden:sediment"
+					type: "item"
+				}
+			]
+			title: "潜藏资源"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5F01DAA741485D16"
+				"474539CBBA76E3DC"
+			]
+			description: [
+				"&6深层土壤&r蕴含多种植物种子，但徒手难以提取。需要专业设备——也就是&6筛矿系统&r"
+				"{@pagebreak}"
+				"考虑用&6安山岩&r加固线筛来处理坚硬土壤，但过度加固可能&o损伤种子&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "createsifter:andesite_mesh"
+				tag: { }
+			}
+			id: "7CAC6CF1E4B43422"
+			size: 1.25d
+			tasks: [
+				{
+					id: "5BB93FC6A26AE804"
+					item: {
+						Count: 1b
+						id: "createsifter:andesite_mesh"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "798696FAD094A796"
+					item: "undergarden:deepsoil"
+					type: "item"
+				}
+			]
+			title: "古种寻踪"
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CAC6CF1E4B43422"]
+			description: [
+				"筛取&6深层土壤&r果然获得新植物。虽称&o女巫花&r，但它们为何出现在暗庭？&o难道原世界的这些植物源于此处？&r"
+				"当务之急是培育它们，避免反复筛土"
+			]
+			hide: true
+			id: "1ABF5EA930AE5571"
+			tasks: [
+				{
+					id: "44D480CD9137FDBB"
+					item: "hexerei:sage"
+					type: "item"
+				}
+				{
+					id: "1635966AD827E4AF"
+					item: "hexerei:belladonna_flowers"
+					type: "item"
+				}
+				{
+					id: "798E66EAF0D62083"
+					item: "hexerei:mandrake_flowers"
+					type: "item"
+				}
+				{
+					id: "6D06E7235CD86F3A"
+					item: "hexerei:mugwort_flowers"
+					type: "item"
+				}
+				{
+					id: "506A0B601F244A0A"
+					item: "hexerei:yellow_dock_flowers"
+					type: "item"
+				}
+			]
+			title: "植物残迹"
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"38F13F54B57A76DE"
+				"5B056C6572474FF8"
+			]
+			description: ["&6秘法粉末&r的能量始终难以实体化。需要将其浓缩成真正的&6魔法精华&r——这种形态的魔力将带来质变"]
+			hide: true
+			id: "3B9DBD4EC6258D0B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F2BEE71364BBDFC"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7BA16C06B68B4316"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["26441D5A1A592B39"]
+			description: [
+				"矿渣中的晶体碎片并非错觉——正是&o紫水晶与月光石&r"
+				"&6月光石&rr与其他物质兼容性极佳且易加工，&6紫水晶&r则是优质魔力载体与共振器"
+			]
+			hide: true
+			id: "39A02E420981BA95"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "270D501EDC65F12D"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "4509A0CDE1DF73BE"
+					item: "hexerei:selenite_shard"
+					type: "item"
+				}
+				{
+					id: "71B6415CDDCE6036"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			title: "矿物碎片"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26441D5A1A592B39"]
+			description: [
+				"筛矿不仅获得晶体，还有&o砂砾与尘埃&r。&6砂砾&r可通过粉碎圆石获取，但&6沙子&r确是首次得见"
+				"{@pagebreak}"
+				"进一步筛炼这些方块可获得&6经验碎片&r——这是长年封存于岩层中的结晶化经验"
+				"&o不杀生获取经验的最佳方案&r"
+			]
+			hide: true
+			id: "274DC296AA2B64E0"
+			tasks: [{
+				id: "762FA5CE9C25F676"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			title: "结晶经验"
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["274DC296AA2B64E0"]
+			description: ["原来&o绿宝石与经验&r存在深层关联。净化&6经验碎片&r的魔法沉积后，可获得&o翡翠岩&r——这种层状结构最终能合成完整&6绿宝石&r"]
+			hide: true
+			id: "277ABBD07CCC6A5E"
+			tasks: [{
+				id: "6D14D06B96760980"
+				item: "byg:emeraldite_shards"
+				type: "item"
+			}]
+			title: "翡翠岩"
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"277ABBD07CCC6A5E"
+				"38F13F54B57A76DE"
+			]
+			description: ["&6翡翠岩&r确实非凡&r无论是进阶配方还是地城探险都将大有用处"]
+			hide: true
+			id: "0559443EE1B0AC93"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4691697C688BC75C"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "52A01B8AD2CC9117"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			title: "末地珍珠"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"26441D5A1A592B39"
+				"02268C57949C11E5"
+			]
+			description: [
+				"筛矿所得不限于晶体，还有&o砂砾与尘埃&r。&6砂砾&r可粉碎圆石获取，但&6沙子&r确是首见"
+				"{@pagebreak}"
+				"沙子可像矿渣一样制作&6砂纸&r。这种工具能轻松处理&6皇金矿&r，提取其中&o隐藏魔力&r"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "08A3E23E8C3CBE1D"
+			size: 1.25d
+			tasks: [
+				{
+					id: "6206092DF78A69E4"
+					item: {
+						Count: 1b
+						id: "create:sand_paper"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6555229AB770A433"
+					item: "undergarden:regalium_crystal"
+					type: "item"
+				}
+			]
+			title: "研磨工艺"
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1ABF5EA930AE5571"
+				"7CAC6CF1E4B43422"
+			]
+			description: ["&6尼帕草&r——古老稀有的魔法植物。为避免魔力过载，它会释放&6魔力尘&r。&o这些尘埃对我大有裨益&r"]
+			hide: true
+			id: "1B97FAB2861A3D72"
+			size: 1.25d
+			tasks: [{
+				id: "6183DE465BE00B89"
+				item: "forbidden_arcanus:nipa"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"08A3E23E8C3CBE1D"
+				"1B97FAB2861A3D72"
+			]
+			dependency_requirement: "one_completed"
+			description: ["如今拥有&6魔晶尘&r虽只是庞大魔力的小部分，但能获取这种资源本身&o就令人振奋&r"]
+			hide: true
+			id: "2F17AD338921AE09"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EFFF1078E8FBBAD"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "249B4CA1C9458939"
+				item: "forbidden_arcanus:arcane_crystal_dust_speck"
+				type: "item"
+			}]
+			title: "魔力微尘"
+			x: 6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"554960DF3D141121"
+				"3AD85C42F48DF638"
+			]
+			description: ["阅读&6暗影之书&r已属不易（非母语撰写），伏案阅读更添困难。改造&6望远镜&r制成&6阅读镜片&r或许能&o提升辨识度&r"]
+			hide: true
+			id: "4F416C22D00136B4"
+			size: 1.25d
+			tasks: [{
+				id: "608EB2FF7159FD82"
+				item: "hexerei:reading_glasses"
+				type: "item"
+			}]
+			title: "辅助视界"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B056C6572474FF8"
+				"6744FAD6F154AF3F"
+				"6B8D116D97BAF2AA"
+			]
+			description: ["寻找进阶传送钥匙&o困难重重&r。应该能自制钥匙——用现有&6空白进阶钥匙&r为基底，配合&6遗忘锭&r进行复制"]
+			hide: true
+			id: "499E1667231C1F51"
+			tasks: [{
+				id: "20B3F4659F271AE2"
+				item: "kubejs:raw_extended_portal_key"
+				type: "item"
+			}]
+			title: "钥匙复制"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F01DAA741485D16"]
+			description: ["所有魔法都与&o黑暗&r存在关联，&6黑曜岩&r便是明证。此物无法自然生成，需通过&o\"黑化\"&r深板岩制备"]
+			hide: true
+			hide_dependency_lines: true
+			id: "156D3D05F3E923DB"
+			size: 1.25d
+			tasks: [{
+				id: "0821810FE6295792"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			title: "人工墨染"
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"156D3D05F3E923DB"
+				"5B056C6572474FF8"
+			]
+			description: ["验证成功！唯有&o黑曜岩&r能强化女巫大锅。将&6血印石&r置入锅底可获得&6血源&r——某些仪式必需品。或许能&o使用自身血液&r...虽然很不情愿"]
+			hide: true
+			id: "39B792B001D4D4D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30CB5EDBBB5C5F60"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "2F79D3BAD838A99F"
+				item: "hexerei:blood_sigil"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"39A02E420981BA95"
+				"2F17AD338921AE09"
+			]
+			description: ["黄金与紫水晶竟有完美协同效应！结合二者可制&6神圣珍珠&r——强大的施法媒介，或许可用于&o咒语创作&r"]
+			hide: true
+			id: "6744FAD6F154AF3F"
+			size: 1.25d
+			tasks: [{
+				id: "19C0D8D69093360F"
+				item: "irons_spellbooks:divine_pearl"
+				type: "item"
+			}]
+			title: "神赐之物"
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["73045D6D220352B4"]
+			description: [
+				"果然如此！这本巫术典籍能与&6奥秘之钟&r联动，将消耗型卷轴法术转化为&o无限施法&r模式——简直像哈利波特！"
+				"{@pagebreak}"
+				"&o等等...哈利波特是谁？&r"
+			]
+			hide: true
+			id: "4C248718F563B165"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F7FEDF2257A8DDD"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "421FA463A8BDAC31"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			title: "魔道笔记"
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6744FAD6F154AF3F"
+				"4C248718F563B165"
+			]
+			description: ["&6神圣珍珠&r确系咒术媒介——否则怎会用于制作&6巫术典籍？&r虽不知内容价值，但其&o\"魔法本质\"&r定有妙用"]
+			hide: true
+			id: "7D6AA5E91DB0E2FB"
+			tasks: [{
+				id: "7DC93C1768372AE1"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "irons_spellbooks:iss_guide_book"
+					}
+				}
+				type: "item"
+			}]
+			title: "巫术指南"
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5198594B490338C9"]
+			description: ["书中记载进阶地城宝箱藏有&6传送枢纽钥匙&r——可通往跨次元中转站。但新建传送门成本高昂，&o暂时搁置计划&r。不过钥匙本身的功能确实惊人"]
+			hide: true
+			id: "1D8572A75D35CE9B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DBA42FE0357C06F"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "76B362B4564A7730"
+				item: "dimdungeons:item_blank_teleporter_key"
+				type: "item"
+			}]
+			title: "界中界"
+			x: 1.5d
+			y: -8.25d
+		}
+		{
+			dependencies: ["3B4DD3A6FB2DED6A"]
+			description: [
+				"颤抖探索的地城&o并非全部&r。要进入&6进阶难度&r需升级传送门并获取新钥匙"
+				"{@pagebreak}"
+				"某些地城中存在与我传送门相同的&6钥匙插槽&r，内置对应层级的&6空白钥匙&r。虽稀有但值得追寻"
+			]
+			hide: true
+			id: "6B8D116D97BAF2AA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7874AE4E68C23993"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "4CE0414C1FC6F2EF"
+				item: "dimdungeons:item_blank_advanced_key"
+				type: "item"
+			}]
+			title: "更上层楼"
+			x: 1.5d
+			y: -3.75d
+		}
+		{
+			dependencies: ["789904717F4A86BA"]
+			description: [
+				"暮光薄雪草准备就绪。最后步骤：挖掘&62x2x1&r坑洞，环绕各类花卉稳定能量。注&6水&r后投入薄雪草，它将绽放并&o撕裂次元壁障&r。虽不知新世界景象，但&o此路必通&r"
+				"{@pagebreak}"
+				"&a祝贺你坚持至今。继续前进必有惊喜&o祝好运&r&r"
+			]
+			hide: true
+			icon: "twilightforest:firefly"
+			id: "68F713A8BEC46D97"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3892CCDB784C5DC7"
+				table_id: 3920845525819041435L
+				title: "第二模板"
+				type: "loot"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "63A017C910291002"
+				title: "勇往直前"
+				type: "checkmark"
+			}]
+			title: "暮色将临"
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"5B056C6572474FF8"
+				"3AD85C42F48DF638"
+			]
+			description: ["借助大锅可重现&6女巫法袍&r。穿着时&6魔法伤害&r对自身&o减免&r，对敌人&o增幅&r，且女巫会视我为&6同类&r。&o实用至极&r"]
+			hide: true
+			id: "43857A24C2F14D7D"
+			tasks: [
+				{
+					id: "3E689C2F7BCB93AE"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09816C1F696D2CE6"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49051F0C037DFD39"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "巫术法衣"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2F17AD338921AE09"
+				"39A02E420981BA95"
+			]
+			description: [
+				"&6月光石&r的协同效应超乎想象！成功将零散尘埃融合成&6秘法粉末&r，魔力效能呈指数增长"
+				"&o迫不及待要试验了&r"
+			]
+			hide: true
+			id: "38F13F54B57A76DE"
+			size: 1.25d
+			tasks: [{
+				id: "34BBE2C728616355"
+				item: "forbidden_arcanus:arcane_crystal_dust"
+				type: "item"
+			}]
+			title: "秘法精粹"
+			x: 4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7C67347363239FEC"]
+			description: ["&o验证成功 &o绝佳的家园防护&r"]
+			icon: "hexerei:sage_burning_plate"
+			id: "5DDE5AEEB398C9F0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FC7EF357FA5E5D3"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "6412F0D52DC296AA"
+					item: "hexerei:sage_burning_plate"
+					type: "item"
+				}
+				{
+					id: "117F54C85BB9A570"
+					item: {
+						Count: 1b
+						id: "hexerei:dried_sage_bundle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45C8225E68F7B601"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1ABF5EA930AE5571"]
+			description: [
+				"原始草药&o应用有限&r——水分影响效果。需要建造&6草药烘干架&r解决此问题"
+				"另外尝试&o捆制鼠尾草&r——干燥形态更具效用"
+			]
+			icon: "hexerei:herb_drying_rack"
+			id: "7C67347363239FEC"
+			tasks: [
+				{
+					id: "58DF98CDDF6C7074"
+					item: "hexerei:herb_drying_rack"
+					type: "item"
+				}
+				{
+					id: "6C876C6DCA820974"
+					item: "hexerei:sage_bundle"
+					type: "item"
+				}
+			]
+			title: "草药处理"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"39B792B001D4D4D4"
+				"3B9DBD4EC6258D0B"
+			]
+			description: ["&6血源&r与植物结合产生奇异反应。通过&o大锅&r可制造魔法腐殖块，进一步处理获得&6特殊作物&r。用自身血液培育胡萝卜虽诡异，但&o生存面前别无选择&r"]
+			id: "5B2F1923F20A5A94"
+			tasks: [{
+				id: "71EA3AAA88025A6C"
+				item: "kubejs:humus"
+				type: "item"
+			}]
+			title: "人造粮仓"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"39A02E420981BA95"
+				"08A3E23E8C3CBE1D"
+			]
+			description: ["视力问题始料未及。在这个危机四伏的世界，&o视野受限&r极为致命。若将通透的&6紫水晶&r精磨成&o棱镜&r，就能制作&6望远镜&r大幅提升侦察能力"]
+			id: "554960DF3D141121"
+			size: 1.25d
+			tasks: [{
+				id: "2289763389BD5F24"
+				item: "minecraft:spyglass"
+				type: "item"
+			}]
+			title: "鹰眼装置"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"39A02E420981BA95"
+				"43857A24C2F14D7D"
+			]
+			description: ["工具性能始终受&o材质限制&r。现有魔法水平虽无法&o灌注魔力&r，但附魔仍可行——能否重现传说中的&6附魔台？&r"]
+			id: "33B1A77F683DA3D7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "086D2B48401EB2B8"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "230DF806155A0597"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "魔纹刻录"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["33B1A77F683DA3D7"]
+			description: [
+				"这...我怎会附魔出泡泡效果？更重要的是这如何运作？哈哈，有趣...肥皂竟能附魔..."
+				"{@pagebreak}"
+				"&a恭喜 本章共12个彩蛋，集齐可解锁第13个特殊彩蛋&r"
+				"                               &o&f ——西格玛留斯&r"
+			]
+			hide_text_until_complete: false
+			id: "192ACAFCD6AFB9F6"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			tasks: [{
+				id: "36D3070685F28750"
+				item: {
+					Count: 1b
+					id: "supplementaries:bubble_blower"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "supplementaries:stasis"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "超级泡泡"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"634FD2EF14474A98"
+				"3B9DBD4EC6258D0B"
+			]
+			description: ["&o嗯...&r尝试&6改良抓钩&r时，伸缩性问题突出。增加链条反而&o导致机构失效&r"]
+			id: "696B39C3818C1045"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "66E0132DBBCBBB4B"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2CC89BF25FFCA861"
+				item: {
+					Count: 1b
+					id: "hookshot:longshot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.5d
+		}
+	]
+	subtitle: ["&e...исследовав вечность... "]
+	title: "&e第二章·迷城寻踪"
+}

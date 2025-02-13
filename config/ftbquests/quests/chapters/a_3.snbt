@@ -1,0 +1,2850 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_3"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "2E18991B091411A6"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["68F713A8BEC46D97"]
+description: [
+"高大的树木... 萤火虫的嗡嗡声... 乌鸦的呱呱声... &6光明&r。时隔如此久，我终于看到的是&6星星点点的天空，而非天花板。&o我想哭了&r。好了，现在不是哭的时候。是时候探索这个未知的世界了，我相信会有许多有趣的东西等待着我。"]
+"{@pagebreak}"
+"&o附言：&r 有件事让我有些困惑。当我抬头看向天空时，我立刻想起了&6在进入黑暗花园之前看到的景象，&r我记得那时有高楼、人类，还有奇怪的交通工具，最重要的是，那个词——"&6Маэмар.&r" 这是什么意思？&o难道这是我的名字吗？&r"
+]
+			hide: true
+			icon: "twilightforest:twilight_oak_sapling"
+			id: "3E60B5618C549EB5"
+			tasks: [{
+				id: "0A7919F9B7D42D05"
+				type: "checkmark"
+			}]
+title: "森林"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3E60B5618C549EB5"]
+description: ["这个世界到处都是萤火虫。它们非常顺从，我甚至可以把它们带着走，但这并不是最重要的。&o肯定有什么东西赋予了它们光芒，&r对吧？&o如果我用弓箭射伤它们，也许能得到那种&6发光的反应物&r。"]
+			hide: true
+			id: "5DFC80BB840DE8C0"
+			tasks: [{
+				id: "56C013D0695568A6"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3E60B5618C549EB5"]
+description: ["当我进入矿井时，我发现了一些奇怪的发光藤蔓。它们的光芒非常像&o火把&r。那就让它们叫做&6火把藤&r吧。很有趣的是，我能不能用它们做成火把呢？不管怎样，它们看起来前景不错。"]
+			hide: true
+			id: "1D9810FD1C4E14AD"
+			tasks: [{
+				id: "321DB93665677A05"
+				item: "twilightforest:torchberries"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3E60B5618C549EB5"]
+description: ["我听到的这种呱呱声，肯定只可能是某只鸟的声音。&6乌鸦&r。它们似乎总是与&o魔法相关&r，我想，这只鸟的羽毛应该会很有用。"]
+			hide: true
+			id: "5BA5600F00AD239E"
+			tasks: [{
+				id: "60FF5467D706A4ED"
+				item: "twilightforest:raven_feather"
+				type: "item"
+			}]
+title: "乌鸦羽毛"
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5BA5600F00AD239E"
+				"1D9810FD1C4E14AD"
+				"5DFC80BB840DE8C0"
+			]
+description: ["看来，&o我没有白研究这个世界&r。&6乌鸦羽毛&r确实与某些金属反应物具有良好的协同作用。值得一试的是，将它与之前找到的&6火把藤&r和&6光石&r一起使用。"]
+			hide: true
+			id: "6D890E903DAE00C3"
+			tasks: [{
+				id: "71417FE6040E8DDD"
+				item: "twilightforest:magic_map_focus"
+				type: "item"
+			}]
+title: "黑暗森林的力量"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6D890E903DAE00C3"]
+description: ["原来，这个羽毛不仅与当地的反应物协同作用，&o它还与这个世界直接相关&r。将它用来替代&6墨水&r制作&6地图&r，它竟然能够显示出这个世界中所有的特殊结构。&o可以说，这是这个世界的导航器&r。"]
+			hide: true
+			id: "3AC382AB4295BF49"
+			tasks: [{
+				id: "29FD0855E2AE3FE7"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+title: "冒险的焦点"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1D9810FD1C4E14AD"]
+description: [
+"这有点混乱，但这个世界从地面到基岩的高度&o并不是很大&r，所以下来时，我要么碰到地下的底部，要么碰到&6树木&r。对了，说到树。"
+"有些树的&6根部&r看起来与其他的完全不同。&o它们似乎在散发能量&r。我想，或许我应该收集这些根部。"
+]
+			hide: true
+			id: "416AEC04D7C626D6"
+			tasks: [{
+				id: "6CBC8A8548CDBE27"
+				item: "twilightforest:liveroot"
+				type: "item"
+			}]
+title: "特殊的根"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["416AEC04D7C626D6"]
+description: ["果然，这根&6根部&r具有神秘的能量。它的能量甚至可以&o连接不同的金属&r。"]
+			hide: true
+			id: "0DB6CE7B0AC7A763"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "287A6D1933B0AFB8"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1C5C859717D8A8AA"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+title: "铁木合金"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3AC382AB4295BF49"
+				"210A40E7062C5EC8"
+			]
+description: ["我在地图上发现了一个奇怪的森林，决定去那里。结果发现，这是一个&6魔法树林&r，中心住着一只魔法山羊，地图上称它为&6Ram&r。虽然它是山羊，但&o它没有毛发&r。我想，我得给它带点毛发。或者是&6所有16种毛发&r。"]
+			hide: true
+			id: "796B46A35E726EEC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59C55D9B71D6E61C"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3A9DC2DBCDFB90A5"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+title: "无毛的山羊"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5BA5600F00AD239E"]
+description: ["这个森林不仅仅是被叫做森林。这里显然栖息着&6动物，&o我要出发寻找毛发&r。"]
+			hide: true
+			icon: "minecraft:white_wool"
+			id: "210A40E7062C5EC8"
+			tasks: [{
+				icon: "create:goggles"
+				id: "3A185FF89B0F0143"
+				observe_type: 5
+				timer: 0L
+title: "看见山羊"
+				to_observe: "twilightforest:bighorn_sheep"
+				type: "observation"
+			}]
+title: "动物"
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3AC382AB4295BF49"]
+description: ["&o这很有趣&r。&o有些地方我无法进入&r，甚至可以说，&o我不能进入任何地方&r。唯一可以进去的地方是巨大的&6迷宫花园&r。地图上画着一只蛇头形状的标记。难道这里真的有&6巨型蛇&r吗？"]
+			hide: true
+			id: "32DD4E931C9C990A"
+			tasks: [{
+				id: "1C4EE5B71629224A"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+title: "巨蛇"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["32DD4E931C9C990A"]
+description: ["当我杀掉那只蛇后，&6娜迦&r，我注意到当我靠近&o那座高大的石城堡&r时，那种奇怪的物质不再覆盖我，让我无法破坏方块。现在，我可以进入城堡了。地图显示，城堡的位置有一个&o骷髅头图标&r。很可能，这座城堡的统治者是&6骷髅&r。"]
+			hide: true
+			id: "75F828BEF05FF9B0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75212442D5D39907"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5476001F84DC9A7F"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+title: "死去的公爵"
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["75F828BEF05FF9B0"]
+description: [
+"在我之前无法进入的沼泽地里，显然有什么有趣的东西。根据地图上的图片，这是一个&o迷宫&r，我应该去看看。尤其是现在，我已经可以进入了，因为我打败了&6巫妖&r——那个来自城堡的骷髅，&o现在没有暴雨了&r。"
+"{@pagebreak}"
+"当我走到地图上的那个标记时，我看见了一个&6洞口&r，通向迷宫深处。除了坚固的墙壁和昏暗的光线，我遇到了一些...人。嗯，应该更准确的说是&o混合体&r。它们看起来像人类和牛的结合体。我想，这个地方的看守者也应该是这样的&6"半人半牛"&r。"]
+]
+			hide: true
+			id: "5E4888A725557178"
+			tasks: [{
+				id: "1A21E5BDFB0FE837"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+title: "半人半牛"
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4DA611CC789BD433"]
+description: [
+"吃了&6蘑菇汤&r并走出迷宫后，我注意到从沼泽的红色区域散发出来的热量不再影响我了。&o我想，我现在可以进入这个血腥的地方，并寻找这个地方的看守者。远远地，我就看见了一个&6高丘&r，打算朝那里走去。"
+"{@pagebreak}"
+"果然，地图也指引着我走向了这个高丘。丘陵顶部描绘着另一只&o爬行动物&r的头部。我猜这应该比&6娜迦&r更大，还能掌控这里的火焰，否则在这个炙热的地方，它也无法生存。"
+]
+			hide: true
+			id: "318F1EA744D19FE2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BA2D225E0E42DB7"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5DDA212ABE45F9F9"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+title: "沼泽之主的山丘"
+			x: 0.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["75F828BEF05FF9B0"]
+description: [
+"那个充满阴暗的森林一直让我眼睛发酸，直到我击败了&6巫妖&r，才得以进入。进入森林后，我在其中发现了一些奇怪的&o地下墓穴&r。下去后，我立刻遭遇了穿着奇怪盔甲的各种生物，它们用的金属被称为&6骑士金属&r。"
+"{@pagebreak}"
+"看来这种金属可以很好地防御攻击，或者反过来，能很有效地穿透盔甲。我要去收集一些这些东西，但现在还不是时候。中心位置应该有当地的&o守卫&r，看来他们是&6骑士&r，装备着这种金属的弹药。必须做好准备。"
+]
+			hide: true
+			id: "6A5E31712B36E99E"
+			tasks: [{
+				id: "726A1BB7C2A01793"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+title: "黑森林的骑士"
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["75F828BEF05FF9B0"]
+description: [
+"巨大的雪覆盖的森林看起来真是壮观。可惜，之前我一直无法进入这个地方。至少，在我击败了&6巫妖&r之后，我现在可以全身心地&o探索这个冰雪的王国&r了。"
+"{@pagebreak}"
+"在这片森林中漫步，我查看地图时，发现第一个标记的是一座&o山丘&r。我不确定那里会有什么，但通过周围的踪迹和毛发碎片，还有吼声，我猜那可能是&6雪人&r。或许，那里的看守者就是这些雪人的&o"领袖"&r。"
+]
+			hide: true
+			id: "5901800DBEAB9027"
+			tasks: [{
+				id: "5E4A747AB7BCFB9C"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+title: "雪人的首领"
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5901800DBEAB9027"]
+description: [
+"击败了&6阿尔法雪人&r并获得了它的毛皮后，寒冷的冰川对我来说不再是问题。现在，我可以爬到山顶，&o从那里轻松找到下一目标&r。"
+"{@pagebreak}"
+"果然，我看到目标了。可是那地方比冰川还高，那里是&6闪光的宫殿&r... 我不知道为什么，但它看起来非常梦幻。而且有种预感，像童话故事一样，在它的顶端，应该有&o公主&r在等我。"
+]
+			hide: true
+			id: "1BE4ED73D6A03A78"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7573641709093320"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "18137CF901865C8F"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+title: "极光圣殿"
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6A5E31712B36E99E"]
+description: ["在击败了那些&6幽灵骑士&r之后，我终于进入了&o红色森林&r，它被黑森林包围着。还有一段长路要走，但我已经看到了一个巨大的橙色&6城堡&r。它的顶部冒着烟雾... 难道这个地方在燃烧吗？如果是的话，&o究竟是谁把它点燃的？&r"]
+			hide: true
+			id: "0DA9441CF8FB1C6D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EE3B0E7E9767331"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2B3E816846086BA2"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+title: "直插云霄的塔楼"
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"318F1EA744D19FE2"
+				"1BE4ED73D6A03A78"
+				"0DA9441CF8FB1C6D"
+			]
+description: ["果然发生了。&o我击败了三位主要守卫&r后，&6高山王国&r的暴雨停了下来。我现在可以进入那里了。是的，虽然表面上很有趣，但我现在更想&o深入地下洞窟&r。我在巫妖的图书馆里读到，这里栖息着&6巨人&r，他们收集着魔法植物的古老豆类。这些&6豆类&r到底是什么？"]
+			hide: true
+			id: "738C4086A8E3DD36"
+			tasks: [{
+				id: "10A5B02578E0CB2E"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+title: "高山的宝藏"
+			x: 0.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["738C4086A8E3DD36"]
+description: ["我明白这些&6豆类&r是什么了。它们本身是静止的，但可以通过特殊的&l魔豆土壤&r激活它们的力量，这种土壤就在巨大云层之下。就像其他植物一样。可能会发生什么，但我有预感，它们将&o帮助我飞上云端&r。现在我能从下面看到&6巨人们&r，他们手里拿着巨大的镐和剑...&o他们看起来怎么像我？&r"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "twilightforest:giant_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "43D6226DD9160416"
+			tasks: [
+				{
+					id: "5BED219776802A3B"
+					item: {
+						Count: 1b
+						id: "twilightforest:giant_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "129EB2FE4E89BF12"
+					item: {
+						Count: 1b
+						id: "twilightforest:giant_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+title: "云中的巨人"
+			x: 0.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["43D6226DD9160416"]
+description: ["得到那&6巨型镐&r并非无用。我想起了在巨人洞窟里，除了那些小小的黑曜石箱子&6装着豆类&r，还有一些巨大的箱子。不管我怎么砸，它始终打不开。&o也许这把巨型镐能够破开它&r。可是，箱子里到底有什么在等待我呢？"]
+			hide: true
+			id: "328FA9D7E195D680"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57AC0B16FC91A84F"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "63DEE0FDCAC29249"
+				item: {
+					Count: 1b
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "巨人们的真正宝藏"
+			x: 0.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["328FA9D7E195D680"]
+description: ["在那个箱子里，居然是&6火焰之灯&r。根据名字，它应该能烧毁某些物品。我敢肯定，这些&6藤蔓&r会是其中的一部分，它们曾环绕&o高山城堡&r。是时候去探访这个白色的巨大建筑了。或许我会在里面遇到&o这里的国王&r。"]
+			hide: true
+			icon: "kubejs:warped_crown"
+			id: "3848990394164976"
+			tasks: [
+				{
+					icon: "twilightforest:bold_castle_brick_tile"
+					id: "308B05CDA65938B6"
+					structure: "twilightforest:final_castle"
+title: "寻找高山城堡"
+					type: "structure"
+				}
+				{
+					id: "33D1901214700222"
+					item: "kubejs:warped_crown"
+					type: "item"
+				}
+			]
+title: "星辰之路"
+			x: 0.5d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"56E187EC3050D8D7"
+				"17F7E009ACEDB99A"
+				"5E44600B9B85006E"
+				"0E9D3AEBB89CFF5F"
+				"48DAFF40D0CE3AAD"
+				"25E7E9E15F68F03E"
+			]
+description: [
+"呼... 巫妖城堡里充满了画作，这可不是巧合，因为&6这些画作&r将指引我进入一个世界，那个世界曾经属于马埃玛尔的人民，直到他们失去了国王。&o现在是时候去下地狱了&r。"
+"{@pagebreak}"
+"&a恭喜你！你走过了漫长的旅程，值得庆祝。你已经打败了11个boss，解锁了5个mod，还没算上你自己创造的部分&r。"
+" &a-你的忠实仆人，&a&l希格玛&r"
+" &a&l"
+]
+			hide: true
+			id: "29B642BF5C50D58B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41340F7434BB0FF1"
+				table_id: 753821764253499230L
+title: "第三个原型"
+				type: "loot"
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				id: "2E1EBC1526870DD4"
+				item: "dimpaintings:nether_painting"
+				type: "item"
+			}]
+title: "进入另一个世界的画作"
+			x: 0.5d
+			y: -19.0d
+		}
+		{
+			dependencies: ["3848990394164976"]
+description: [
+"走在这些废弃的房间里，我不断看到各种记录。它们讲述着不同的事情，但总包含一个共同的信息：&5"阿尔戈莫，黑森林的统治者，为了寻找一个比这个世界更好的世界，开始变得疯狂。我们未能救他，只能将他连同其他属下囚禁起来——乌尔教授，研究过火鬼的；巫妖，曾与娜迦一起守卫森林的；国王的妻子，女王奥罗拉；甚至海德拉，国王的最佳魔法创造物。我们为此感到遗憾。我们将继续寻找那个世界，为了让马埃玛尔的光辉永不熄灭。"&r"
+"{@pagebreak}"
+"所以，&6马埃玛尔&r并不是我的名字。那是曾经存在于黑森林的一个王国的名字。看起来，他们真的成功转移到我的世界了吗？如果是这样，那我只需要获取那位统治者的力量。&o前国王马埃玛尔的力量&r。"
+"{@pagebreak}"
+"这个存在比我遇到过的任何一个都强大，这一点可以感受到，&o当我靠近这个城堡时&r。它的栖息地简直无法承受，终将崩裂，留下残骸。但通过我&6扭曲的王冠&r，我依然有机会唤醒它。&o至少，这是我最后的希望...&r"
+]
+			hide: true
+			id: "56E187EC3050D8D7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4684D271F2F3A456"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5661B1AE68450940"
+				item: "twilightforest:keepsake_casket"
+				type: "item"
+			}]
+title: "国王的宝藏"
+			x: 0.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["3AC382AB4295BF49"]
+description: ["在这个世界漫步，我越来越常看到这些&6巨大的树木&r。它们内部是空的，什么也没有，但从树顶往下看...感觉就像从树冠透出了一些光芒。我会在那里遇到什么呢？"]
+			hide: true
+			id: "4B6695B5AC29045B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17BC4895565DDC14"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "619749D55C78D119"
+				item: "twilightforest:transformation_powder"
+				type: "item"
+			}]
+title: "树冠中的宝藏"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4B6695B5AC29045B"]
+description: ["我在树木中找到的&6变异粉&r，不仅能改变动物，甚至还能改变植物。如果我将这种粉末混入&o骨粉&r，它创造花朵的力量将成倍增长。或者，这些花朵将变得&o不同寻常&r。值得一试。"]
+			hide: true
+			id: "6F6985E5D6559843"
+			tasks: [{
+				id: "73F94A7BF629E5C3"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+title: "骨粉与魔法粉末"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6F6985E5D6559843"]
+description: ["第二种方法更接近真相。这个&6肥料&r可以创造出&o魔法花&r，尽管它们只能这样生长，但接下来我可以用它们的&6花瓣&r通过普通的&o骨粉&r继续繁殖这些花朵。我现在还不清楚这些花朵有什么用途，但我想多收集一些花瓣。"]
+			hide: true
+			icon: "botania:orange_petal"
+			id: "2C54978AA04AA594"
+			tasks: [{
+				count: 16L
+				id: "3CB5879C88E40EE1"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:petals"
+					}
+				}
+title: "16种花瓣"
+				type: "item"
+			}]
+title: "神秘植物"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2C54978AA04AA594"]
+description: ["这些&6花瓣&r确实蕴含魔法，而这种力量可能对我有用，所以将它们随便放在箱子里肯定不行。我得做个&o小袋子&r，最好用一些柔软的材料，比如&o羊毛&r，这样花朵就不会被压坏。虽然是小事，但我以后一定会为此感激自己。"]
+			hide: true
+			id: "547CE312B1693573"
+			tasks: [{
+				id: "57A4AEFAF78116AD"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+title: "花瓣的储存袋"
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["547CE312B1693573"]
+description: ["这些&6花朵&r似乎通向某种更大、更宏伟的东西。看来，单靠普通的研究无法解决所有问题。必须制造另一个&6指引器&r，来引导我探索这个神秘的魔法花朵世界。"]
+			hide: true
+			id: "21231A80537B12DC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "58271E34A9A05B1F"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3A3438BB98F88B81"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+title: "植物学家"
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"21231A80537B12DC"
+				"62AD27C62DD4EC95"
+			]
+description: ["利用&6娜迦鳞片&r作为催化剂，我可以使用水来混合魔法反应物，创造出完整的植物。作为原料，我认为&6花瓣&r和&o种子&r会是不错的选择，魔法会改变它们。"]
+			hide: true
+			id: "1F65701B5B41A6DE"
+			tasks: [{
+				id: "6373DF785938F7C6"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+title: "魔法药剂师"
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1F65701B5B41A6DE"]
+description: ["在翻阅&6魔法百科&r时，我找到了我现在需要的东西。&6纯白雏菊&r，某种由&o花瓣药剂师&r创造的花朵。它由四个&6白色花瓣&r和&o小麦种子&r做成。看起来不难。"]
+			hide: true
+			id: "1C103009FA400BAB"
+			tasks: [{
+				id: "2922BBF0E6027CCB"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1C103009FA400BAB"]
+description: ["制作雏菊并不难。现在，我需要做的就是找到一个稳定的&6石头和木材&r来源，因为这个花朵能让它周围的木材和石头&r，吸收&o生命能量&r。我想，值得尝试。新材料总是带来新的发展方向。"]
+			hide: true
+			id: "3C0BD7F612087567"
+			tasks: [
+				{
+					count: 16L
+					id: "53F943E3D4DC5A3B"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					count: 16L
+					icon: "botania:livingwood"
+					id: "3D5D7B12F9492BBE"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "botania:livingwood_logs"
+						}
+					}
+title: "生命之树"
+					type: "item"
+				}
+			]
+title: "生命魔法"
+			x: -7.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3C0BD7F612087567"]
+description: ["所以，借助新的材料，我获得了一整套&o新的可能性&r。至少从&6魔法百科&r来看，首先，在创造任何东西之前，我必须学会控制它。&6森林法杖&r，书里提到的，将帮助我调节这些...花朵？"]
+			hide: true
+			id: "704E200AA9F26765"
+			tasks: [{
+				id: "0A8C1AB57699CF51"
+				item: "botania:twig_wand"
+				type: "item"
+			}]
+title: "神秘的扳手"
+			x: -7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["722D45A56DAFB214"]
+description: ["&6法力&r需要某种来源，而唯一可以稳定产生法力的普通花朵是&6水莲花&r。它&o吸收水分并释放少量法力&r。若有了源源不断的供应，应该是一个理想的解决方案，如果这些花朵不是&o随着时间枯萎&r的话。可能得找找其他的选择..."]
+			hide: true
+			id: "5F22AB670E0545F2"
+			tasks: [{
+				id: "558AE65CB593B491"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+title: "水魔力轮"
+			x: -8.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["704E200AA9F26765"]
+description: ["之前所有的花朵都依赖于&o自然魔法&r，像图腾一样，但现在我需要&o法力&r。魔法能量可以储存在&6法力池&r中，通过&6法力传播器&r传输，并用作&o特殊花朵&r的燃料。这是我从&6魔法百科&r中学到的。"]
+			hide: true
+			icon: "botania:mana_pool"
+			id: "722D45A56DAFB214"
+			tasks: [
+				{
+					id: "38CD3F2206D290A7"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "363E3CDB577EBDE5"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+			]
+title: "法力"
+			x: -7.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"722D45A56DAFB214"
+				"054F37D68CBBC240"
+			]
+description: ["&o将物品填充法力&r的过程现在可能很快，但如果这个过程可以更慢些呢？我想提前找到一种方法，来加速&6法力注入&r。我想，这个过程应该和炉子的工作原理相似，所以我需要&6机械装置&r来加速法力流动，&6法力机械&r。" ]
+			hide: true
+			id: "010E984210B91B26"
+			tasks: [{
+				id: "4C103FD47F9B430A"
+				item: "botania:bellows"
+				type: "item"
+			}]
+title: "法力流入"
+			x: -8.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["722D45A56DAFB214"]
+description: ["现在是时候&6使用法力&r了。令人惊讶的是，即使没有外部干预，单纯把物品投进法力池中，法力也会&o覆盖&r合适的物品，并赋予它们&o魔法特性&r。我想在一些简单且有用的物品上试试... 比如&6铁、钻石和珍珠&r。"]
+			hide: true
+			icon: "botania:mana_diamond"
+			id: "054F37D68CBBC240"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18D32D674D6BDBEA"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6FE86576203B265F"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					id: "41A0C6958659B3B2"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					id: "60E79A86680CBB79"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+			]
+title: "法力填充"
+			x: -7.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["054F37D68CBBC240"]
+description: ["我想到了一个不错的主意。吸收了法力的材料会与法力形成某种&6亲和力&r，从而获得&o使用法力的加成&r。那如果把这个原理应用到自己身上，穿上&o完整的法力铠甲&r呢？阿尔玛和珍珠不适合，但我可以用&6法力钢&r。"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "botania:manasteel_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "28E8B01641CEBB18"
+			tasks: [
+				{
+					id: "7264537D3361003C"
+					item: {
+						Count: 1b
+						id: "botania:manasteel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31E169B17B51D163"
+					item: {
+						Count: 1b
+						id: "botania:manasteel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0024404207973BB6"
+					item: {
+						Count: 1b
+						id: "botania:manasteel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05B58E83D7E05702"
+					item: {
+						Count: 1b
+						id: "botania:manasteel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+title: "法力护盾"
+			x: -5.5d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"7F7DF86408AA8FD9"
+				"28E8B01641CEBB18"
+			]
+description: ["&6法力布料&r完全超出了我的预期。它的法力特性甚至&o超过了所有其他材料&r。看来如果我用这种材料制作&6衣物&r，虽然防御可能较弱，但&6法力使用加成&r将极其强大。"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "botania:manaweave_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "73D98EDD25488877"
+			tasks: [
+				{
+					id: "7D45CF9CDB2DF96F"
+					item: {
+						Count: 1b
+						id: "botania:manaweave_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75C3051F8CD0CD37"
+					item: {
+						Count: 1b
+						id: "botania:manaweave_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "348707273A1BF55A"
+					item: {
+						Count: 1b
+						id: "botania:manaweave_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D5F552EE122033E"
+					item: {
+						Count: 1b
+						id: "botania:manaweave_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+title: "神奇服装"
+			x: -4.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["66E5E3CEE6E798AA"]
+description: ["最终，&6圆形工作台&r并非只是为了方便。我可以将它的创作能量引导到新的领域。实际上，单纯依赖法力并不足够。魔法百科里提到了一种浓缩的自然魔法，&o"大地魔法"&r。我将朝着这个方向努力，但首先我需要学会如何把&o其他形式的魔法聚集到一起&r。学习制作&6符文&r。"]
+			hide: true
+			id: "7A5F07F6D0AA0207"
+			tasks: [{
+				id: "6F3E20B6C3A5AB9B"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+title: "符文"
+			x: -8.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["7A5F07F6D0AA0207"]
+description: ["原来，&6符文祭坛&r不仅能制作符文，我还发现它可以作为&6法力板&r，借此我可以开始制作&o需要法力的神器&r。"]
+			hide: true
+			id: "688DC273D54CAD66"
+			tasks: [{
+				id: "316727B5C3E9224E"
+				item: "botania:mana_tablet"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["7A5F07F6D0AA0207"]
+description: ["这就是我需要&6符文祭坛&r的原因。通过它，我可以制作&o符文&r，之后用这些符文来创造一个融合&o火、水、土、空气与法力&r的装置。这个装置将能够利用各种魔法，制造出&6完全不可能的物品&r。"]
+			hide: true
+			id: "33E4EEF24DEA2283"
+			tasks: [{
+				id: "2FBE57B9551CA47D"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+title: "融合"
+			x: -7.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["33E4EEF24DEA2283"]
+description: ["充满&6法力&r的金属非常有用。&o但这并不是植物学家的理想材料&r。现在我能做的最好的事情，就是让金属不仅充满法力，而是充满最纯粹的自然能量。这个金属叫做&6大地钢&r，属于自然本身的金属。&o确实是强大的物质&r。"]
+			hide: true
+			id: "777927E9476647E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21C346850B902449"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5C624336CD6D9641"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+title: "大地钢"
+			x: -7.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["054F37D68CBBC240"]
+description: ["&o法力&r不仅仅是覆盖物品... 它渗透其中，改变它们，&6填充&r它们。如果&o将这种填充集中&r，就能使其结晶，最终指引所有力量。&6法力柱&r正是按这个原理工作。它们是法力控制的本质，连&o咒语&r都会听从它们。"]
+			hide: true
+			id: "1D5EBFBC92B2BF94"
+			tasks: [{
+				id: "618D9185E46E17DE"
+				item: "botania:mana_pylon"
+				type: "item"
+			}]
+title: "法力柱"
+			x: -5.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["054F37D68CBBC240"]
+description: ["&6工作台&r确实是非常...&o静止的&r。每次在旅行中，我总得搬来搬去。够了&r！魔法&6圆形工作台&r。这个发明对未来的探索将非常有帮助。"]
+			hide: true
+			id: "66E5E3CEE6E798AA"
+			tasks: [{
+				id: "1507CADE159AE88B"
+				item: {
+					Count: 1b
+					id: "botania:crafting_halo"
+					tag: {
+						rotationBase: 445.2885f
+					}
+				}
+				type: "item"
+			}]
+title: "魔法创作"
+			x: -7.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["777927E9476647E4"]
+description: [
+"理所当然，我想尝试将&6大地钢&r不仅用于法力装置，也应用于日常生活。可惜，&6大地钢盔甲&r目前对我来说还不可用，似乎&o太复杂&r。但工具... 应该没问题。"
+"{@pagebreak}"
+"而且&o每个工具&r都有自己的特点。&6斧头&r可以整体砍树，&6大地刃&r可以引导法力射出激光，&6镐头&r甚至是艺术品。它内部的法力越多，它的挖掘速度就越快。至少，魔法百科是这么说的。"
+]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "botania:terra_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0FB4E9A3696BC502"
+			tasks: [
+				{
+					id: "0F5DE51E40EF76F8"
+					item: {
+						Count: 1b
+						id: "botania:terra_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4BD11B7D7D6D7B7F"
+					item: {
+						Count: 1b
+						id: "botania:terra_pick"
+						tag: {
+							Damage: 0
+							mana: 9999
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1AFA873243B272F5"
+					item: {
+						Count: 1b
+						id: "botania:terra_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+title: "使用大地钢"
+			x: -7.0d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"688DC273D54CAD66"
+				"777927E9476647E4"
+			]
+description: ["我拿着&6大地钢&r，只是想增加&o法力板&r的存储量，但显然我有些过头了。按道理，这个&6镜子&r可以直接与法力池相连，从而为我的神器提供&o持续不断的法力供应&r。"]
+			hide: true
+			id: "46483A9A0409376B"
+			tasks: [{
+				id: "3D585D4BB18E4A21"
+				item: {
+					Count: 1b
+					id: "botania:mana_mirror"
+					tag: { }
+				}
+				type: "item"
+			}]
+title: "无线传输"
+			x: -8.5d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"1D5EBFBC92B2BF94"
+				"777927E9476647E4"
+				"6A5E31712B36E99E"
+			]
+description: ["什么是&6法力柱&r？&o结晶化的填充物&r，稳定它们的能量流动。那么&6自然法力柱&r又是什么？&o浓缩的自然力量&r，可以传导到空间、时间、现实中的每个角落，任何地方，只要有一丝"大地"的存在。"]
+			hide: true
+			id: "5C995DA673B1BE60"
+			tasks: [{
+				id: "74015C32F52E96CD"
+				item: "botania:natura_pylon"
+				type: "item"
+			}]
+title: "自然法力柱"
+			x: -5.5d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"5C995DA673B1BE60"
+				"3A7BA8C74EE98535"
+				"44BBC979205B3ACB"
+			]
+description: [
+"在我作为植物学家的旅程一开始，我就发现了一章关于精灵的篇章。一个无法进入的世界，另一种生命形态——这使我&o思绪万千&r。尽管我无法与他们见面，但即使是简单的交易，也让我感到无比兴奋。"
+"{@pagebreak}"
+"看似我将无法创建&6精灵之门&r，但现在，我研究了&o科技、魔法和黑森林&r，我已经打开了&6通向精灵世界的门户&r。真是一个具有重大意义的时刻。"
+]
+			hide: true
+			id: "16F396155F851655"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30177189B73CD2DA"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0D4F5F6AE8AF1199"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+title: "精灵之门"
+			x: -5.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["16F396155F851655"]
+description: ["我现在手中的&6魔法百科&r似乎并不是&o最完整的&r。甚至书中的某些章节在某一时刻突然中断。如果我把这本书交给&6精灵&r，他们一定会&o填补它，并带来新的发现&r。"]
+			hide: true
+			id: "5758D9A6C68FCC04"
+			tasks: [{
+				id: "2358D63E115BC5C7"
+				item: {
+					Count: 1b
+					id: "botania:lexicon"
+					tag: {
+						"botania:elven_unlock": 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+title: "魔法百科的提升"
+			x: -4.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["16F396155F851655"]
+description: ["原来，交易并不是交易，更像是&6以物易物&r。我提供我的物品，他们提供他们的。这就是交易。最有价值的资源来自&6大地钢、魔法钻石和法力珍珠&r，借此我能够继续&o提升我的神器&r。"]
+			hide: true
+			icon: "botania:pixie_dust"
+			id: "034D6795D60D3308"
+			tasks: [
+				{
+					id: "5D7DB69DFF3E72B4"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+				{
+					id: "432094A41931E49D"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "794743423414095A"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+			]
+title: "精灵资源"
+			x: -4.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["034D6795D60D3308"]
+description: ["在我解锁了&6大地刃&r后，我一直在尝试重现那个激光束。如果我能在&o弓箭&r上使用它，那就能制造出永恒、强大且快速的箭矢了。而现在，&o精灵&r给了我制作这些神器的资源，我成功地制作了&6水晶弓&r。"]
+			hide: true
+			id: "0C6576AB43FD94D2"
+			tasks: [{
+				id: "6B88D7AFD3D2920C"
+				item: {
+					Count: 1b
+					id: "botania:crystal_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "纯法力之箭"
+			x: -4.0d
+			y: -20.5d
+		}
+		{
+			dependencies: [
+				"034D6795D60D3308"
+				"5758D9A6C68FCC04"
+			]
+description: ["当这本书&o充满了精灵的知识&r时，我获得了关于&6盖亚&r的知识。&6盖亚&r是精灵们通过特殊仪式召唤的精灵。书中对盖亚的描述很少，但仪式却非常详细。我将从&64个盖亚法力柱&r开始，这样我可以与她的精神建立联系，并使她能够踏上这片土地。"]
+			hide: true
+			id: "576B2622D0C6FC52"
+			tasks: [{
+				id: "1BE5478D8983063D"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+title: "盖亚"
+			x: -4.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["097E9EFE1DA94978"]
+description: ["&o所有准备工作已完成&r，仪式准备好了。书中写道，&6盖亚&r非常强大，必须为她做好准备。但显然她不知道，我已经与许多敌人作战过。&6海德拉、乌尔-火鬼、冰雪女王&r... 盖亚不过是另一个我&o准备打败的敌人&r。"]
+			hide: true
+			id: "17F7E009ACEDB99A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16BAC2A74F0891E8"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7A09EE1397E0AA6F"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+title: "神之灵魂"
+			x: -1.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["576B2622D0C6FC52"]
+description: ["盖亚仪式的第二部分是&6灯塔&r，然而这里我面临一个难题。为了创建灯塔，我需要&o地狱之星&r，而进入地狱的唯一方法是通过盖亚。看来我得找到足够强大的反应物，&6模拟”地狱之星&r。"]
+			hide: true
+			id: "097E9EFE1DA94978"
+			tasks: [{
+				id: "252E69C5730F6BE4"
+				item: "minecraft:beacon"
+				type: "item"
+			}]
+title: "光向天际"
+			x: -2.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["4B6695B5AC29045B"]
+description: ["在我研究&6图腾魔法&r时，所有的进展都被&o动物的缺失&r所阻碍。尽管黑森林里仍然没有动物，但通过刚刚发现的&6变异粉&r，我可以把当地的动物转变为它们&o普通的模样&r。图腾魔法，小心点，我来了。"]
+			hide: true
+			icon: "minecraft:leather"
+			id: "389B0AD0C1CE6C70"
+			tasks: [{
+				icon: "create:goggles"
+				id: "491AB5AF5710AA3E"
+				observe_type: 5
+				timer: 0L
+title: "见到牛"
+				to_observe: "minecraft:cow"
+				type: "observation"
+			}]
+title: "普通动物"
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["389B0AD0C1CE6C70"]
+description: ["回到图腾研究时，我又翻阅了一遍&6图腾百科&r。在那里我找到了&o"野牛之舞"&r的仪式，奇怪的是，它竟然能把牛变成&6野牛&r。以后再也不会遇到这些动物了，它们的&o皮毛和牙齿&r在图腾学中有着特殊的意义。"]
+			hide: true
+			icon: "totemic:buffalo_hide"
+			id: "47359A2C0110C02B"
+			tasks: [
+				{
+					id: "53689B3AD20DB6C0"
+					item: "totemic:buffalo_hide"
+					type: "item"
+				}
+				{
+					id: "1CFAE9426C8C1F7D"
+					item: "totemic:buffalo_tooth"
+					type: "item"
+				}
+			]
+title: "野牛"
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"47359A2C0110C02B"
+				"704E200AA9F26765"
+			]
+description: ["奇怪的是，&6野牛的牙齿&r并没有直接用于魔法。它们非常轻且多孔，但依然坚固。它们非常适合用来制作&6响尾蛇&r，且具有比其他图腾工具更大的&o魔法潜力&r。"]
+			hide: true
+			id: "7B4B2CBCC2698541"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19774202A18064CC"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5DAFCCC81AF0E055"
+				item: "totemic:rattle"
+				type: "item"
+			}]
+title: "新的声音"
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7682D0F262E927E1"]
+description: ["现在，我有了&6鹦鹉&r，我可以安然无恙地进行&o"鹰之舞"&r仪式。通过这种方式得到的&6鹰&r，像野牛一样，能够很好地与自然的力量沟通，因此它们的&o羽毛和骨头&r将在以后有所用途。"]
+			hide: true
+			icon: "totemic:eagle_feather"
+			id: "04753E5F39AC9DC4"
+			tasks: [
+				{
+					id: "4D7318C9F575B116"
+					item: "totemic:eagle_bone"
+					type: "item"
+				}
+				{
+					id: "2F088761496CEC81"
+					item: "totemic:eagle_feather"
+					type: "item"
+				}
+			]
+title: "鹰"
+			x: -2.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["04753E5F39AC9DC4"]
+description: ["利用&l鹰&r的魔法力量，我创造了另一个工具。虽然它看起来像是长笛，但其实是个口哨。&l鹰骨口哨&r，它的声音有种...伟大的感觉？我想，&o正是我一直缺少的东西&r。"]
+			hide: true
+			id: "3B5D5737ABFD0BB6"
+			tasks: [{
+				id: "25C61D8C408A8B85"
+				item: "totemic:eagle_bone_whistle"
+				type: "item"
+			}]
+title: "鹰鸣口哨"
+			x: -2.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["7B4B2CBCC2698541"]
+description: ["&6响尾蛇&r的魔法力量足够让我进行一个图腾仪式。&o"潘的恋歌"&r。我不确定潘是谁，但这个仪式将&o为长笛赋予魔法力量&r。它的声音会&6迷惑&r动物，它们将会被这支长笛引导。甚至&o村民&r也无法抵挡这股魔法。嗯，也许这样我能从地下世界把那些可怜的家伙带出来。"]
+			hide: true
+			id: "3B6FB489992018F9"
+			tasks: [{
+				id: "4A2F86C3E7B2C4B8"
+				item: "totemic:infused_flute"
+				type: "item"
+			}]
+title: "不是蛇的召唤者"
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["47359A2C0110C02B"]
+description: ["&6野牛皮&r特别适合图腾魔法。甚至它能够&o吸收&r魔法。我想出了一个主意，制作一个&6袋子&r，把图腾的效果储存起来，可以在其他地方使用。&o可以说是移动的图腾&r。"]
+			hide: true
+			id: "756B4F92CB377051"
+			tasks: [{
+				id: "25F55478F9425A60"
+				item: "totemic:medicine_bag"
+				type: "item"
+			}]
+title: "袋中的信仰"
+			x: -2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3B5D5737ABFD0BB6"]
+description: ["我猜对了。图腾百科确认了，这个&o口哨&r正是进行&6"图腾之舞"&r仪式所必需的。这个仪式能够召唤&6巴伊科克&r——一个保护弓箭手的精灵。它会快速用看不见的箭矢射击，但击败它后，这把弓也会归我所有，且比普通弓更强大。这是一个&o强大的神器&r，难怪它被这个精灵保护。"]
+			hide: true
+			id: "5E44600B9B85006E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FAE0A629CCBECAA"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "71F0AE4A4C2690A7"
+				item: {
+					Count: 1b
+					id: "totemic:baykok_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+title: "巴伊科克"
+			x: -2.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7B4B2CBCC2698541"]
+description: ["无论如何，我得到了&o新的乐器&r。图腾百科里说，使用它可以进行一个仪式，把&o鹦鹉&r变成&6鹰&r。它们以后会有什么用，我们再慢慢研究，现在的任务是找出如何获得&6鹦鹉&r。估计还是通过&o变异粉&r，可能我需要将它撒在那些&6小鸟&r身上，它们生活在黑暗森林中。"]
+			hide: true
+			icon: "quark:egg_parrot_red_blue"
+			id: "7682D0F262E927E1"
+			tasks: [{
+				icon: "create:goggles"
+				id: "2B209E5EF88733FA"
+				observe_type: 5
+				timer: 0L
+title: "见到鹦鹉"
+				to_observe: "minecraft:parrot"
+				type: "observation"
+			}]
+title: "会说话的鸟"
+			x: -2.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["1F65701B5B41A6DE"]
+description: ["看来，&6药剂师&r不仅能创造&6紫丁香、红木和金缕梅&r等花卉。"]
+			hide: true
+			id: "76F23EA325A55ABB"
+			tasks: [
+				{
+					id: "53C7237CD20C7F2E"
+					item: "hexerei:willow_sapling"
+					type: "item"
+				}
+				{
+					id: "6B1F764A13CC8813"
+					item: "hexerei:mahogany_sapling"
+					type: "item"
+				}
+				{
+					id: "47A968E3AD9706AE"
+					item: "hexerei:witch_hazel_sapling"
+					type: "item"
+				}
+			]
+title: "巫术树木"
+			x: -8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["76F23EA325A55ABB"]
+description: ["我找到了另一种&o资源转移&r的方法。这种&6木箱&r由&6红木&r和黄金制作，空间很大，最重要的是它可以轻松携带。我还注意到它似乎有某种与&o乌鸦&r有关的功能... 这会是什么呢？"]
+			hide: true
+			id: "2F4A84AB42FEBC61"
+			tasks: [{
+				id: "4F250F4CA0826E6F"
+				item: {
+					Count: 1b
+					id: "hexerei:coffer"
+					tag: { }
+				}
+				type: "item"
+			}]
+title: "便携袋"
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["76F23EA325A55ABB"]
+description: [
+"终于，我迈出了&o征服天空&r的第一步。速度不错，但转弯时有点笨重。"
+"{@pagebreak}"
+"我没有成功制作出&6红木扫帚&r。看来它的基础材料我还没有发现。估计我得等到某个阶段才会遇到。"]
+]
+			hide: true
+			id: "1709790368737ECB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40E3BFA10E715BA1"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "4861BB5DB5CDE773"
+					item: {
+						Count: 1b
+						id: "hexerei:willow_broom"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "326D9B0C289460D2"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_hazel_broom"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+title: "扫帚"
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0DA9441CF8FB1C6D"]
+description: ["显然，&6乌尔·火鬼的城堡&r曾经是一个&o实验室&r。机械门、傀儡... 还有&6净化石&r。这个石头不可能只是随便出现在这里的。"]
+			hide: true
+			id: "4015E27E4F12A9B8"
+			tasks: [{
+				id: "101C888682A301F1"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+title: "实验的残余"
+			x: 3.5d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"485F20F49B421D7F"
+				"683498538BA967AD"
+			]
+description: ["现在，我有了&6精灵的火花&r，脑海中出现了一个新的想法。我会把小动物放入&o笼子&r里，那为什么不改造这个笼子，&o把火花放进去&r呢？这个"宠物"凭借它的火焰能够为&6合金的生产&r提供温度，这是我以前无法做到的。"]
+			hide: true
+			id: "20135B92693D6D36"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E2F802F9754E96B"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "028DF7F3D993FDA5"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+title: "加热器-火焰"
+			x: 3.5d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"20135B92693D6D36"
+				"416AEC04D7C626D6"
+			]
+description: ["通过&6火焰火花&r，我得到了另一种材料——&6铸铁&r。它坚固、耐高温，但相对脆弱。目前我&o完全没有用它&r——我在忙于研究&6黄铜&r。此材料虽然暂时用不上，但如果我在某个技术瓶颈中遇到困难，可以考虑使用它。"]
+			hide: true
+			id: "0D8792DC2FAF3E36"
+			tasks: [{
+				id: "7C164A73279B1FDB"
+				item: "createindustry:cast_iron_ingot"
+				type: "item"
+			}]
+title: "铸铁"
+			x: 2.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["20135B92693D6D36"]
+description: ["看来，我猜对了。"]
+			hide: true
+			id: "170D42E0FED756D3"
+			tasks: [{
+				count: 16L
+				id: "5C48BD195121C9C7"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+title: "黄铜"
+			x: 3.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["738C4086A8E3DD36"]
+description: ["在&6高山王国&r下的矿井中，我发现了一种奇怪的石头。它的颜色不同于普通石头，而且对光线有反应——&o周围越暗，它越亮&r。当我尝试采集它时，它的质感更像土壤，而非石头。我想，如果我筛选这个&6巨人石&r，我应该能得到那些发光矿石。"]
+			hide: true
+			id: "5D21DFD70D68551D"
+			tasks: [{
+				id: "588F0F39E76A4047"
+				item: "twilightforest:trollsteinn"
+				type: "item"
+			}]
+title: "巨人石"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["5D21DFD70D68551D"]
+description: ["&6不可思议&r。我所知道的是，铝矿石在自然状态下是不可能被找到的，对吧？它似乎是从各种石头中通过能量提取的...然而，现在我手中拥有的&6铝矿&r，却是真正的矿石。果然，黑森林的魔法是如此强大。"]
+			hide: true
+			id: "5908BCE4B1227801"
+			tasks: [{
+				id: "300B209971310859"
+				item: "create:crushed_raw_aluminum"
+				type: "item"
+			}]
+title: "不可得矿"
+			x: -1.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5908BCE4B1227801"]
+description: ["能说什么呢？&o太好了&r。又得到了一个新金属。虽然现在&6铝金属&r暂时不大用得上，但它那种不可思议的&6轻盈&r，结合它的强度，可能会对将来的机械设计有很大帮助。我要考虑一下&o它在未来能如何应用&r。"]
+			hide: true
+			id: "5AC662AB00157557"
+			tasks: [{
+				id: "67BC8AEBBA4149E0"
+				item: "createindustry:aluminum_ingot"
+				type: "item"
+			}]
+title: "铝金属"
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5908BCE4B1227801"]
+description: ["原来，&6巨人石&r并不只含有铝金属。它里面还含有&6石英晶体&r。虽然我迟早会进入地狱，但这个材料现在就出现在我的面前，让我感到非常高兴，因为我的发展路径变得更加&o多元化&r。"]
+			hide: true
+			id: "691278DA1A3DCFF8"
+			tasks: [{
+				id: "1F66D7447F1948B1"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+title: "新的闪亮物"
+			x: -1.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["691278DA1A3DCFF8"]
+description: ["正如我所说，&6石英和红石&r结合，我得到了一个足够&o"智能"&r的晶体，能够接收并发送信号。这个特点将让我同时提高魔法和科技的能力。"]
+			hide: true
+			id: "3A7BA8C74EE98535"
+			tasks: [{
+				id: "4F92BF9FDFEBD7DF"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+title: "粉红闪光"
+			x: -1.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"3A7BA8C74EE98535"
+				"4B7FB20813118CCC"
+			]
+description: ["&6粉红石英&r的特性使得它不能直接用于处理信号。在机械装置中，晶体的形状和杂质会造成干扰。我需要&o磨光它&r，然后将其整合进&6红石系统&r，把它从一块晶体变成&6电子灯泡&r。"]
+			hide: true
+			id: "07FEF171F4793F0B"
+			tasks: [{
+				id: "3E506FFE6755DF81"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+title: "抛光的大脑"
+			x: 2.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["07FEF171F4793F0B"]
+description: ["终于，我也开始自动化物品的制作了。利用&6电子灯泡&r，我可以创建一个机制，能够自动制作物品，像我在工作台上做的一样。我把它叫做...&6自动制造器&r。"]
+			hide: true
+			id: "183460FFD88FECF8"
+			tasks: [{
+				id: "0FE6479C4D1E5DEE"
+				item: "craftingautomat:autocrafter"
+				type: "item"
+			}]
+title: "自动化"
+			x: 3.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["4015E27E4F12A9B8"]
+description: ["&6烈焰魔鬼&r，或火花，通常只在地狱中出现。以前我还没怎么注意它们——&o因为我当时在救命&r——但现在... 火花是个极好的资源，特别是它们的&6火焰棒&r。想找更多的火花。"]
+			hide: true
+			id: "485F20F49B421D7F"
+			tasks: [{
+				icon: "minecraft:blaze_rod"
+				id: "4B6D3B517DB0A0C9"
+				observe_type: 5
+				timer: 0L
+title: "寻找火焰魔鬼"
+				to_observe: "minecraft:blaze"
+				type: "observation"
+			}]
+title: "火花"
+			x: 3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["7A5F07F6D0AA0207"]
+description: ["&o有意思&r。在每种魔法中，都有一点"大地"的成分。&6符文&r也不例外，它们与自然相互作用得很好。当我制造&o巫术树木&r时，我做了类似的事情，但这一次，效果甚至&6更强大&r。我迫不及待想看看它会产生什么样的效果。"]
+			hide: true
+			id: "78274737632F1BD1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E5C348F3AE10992"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "05DD4D34EE137167"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "40E9D9F448EEBED8"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "6612E55B37FD2F15"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "714FCBFAA7128497"
+					item: "ars_nouveau:red_archwood_sapling"
+					type: "item"
+				}
+			]
+title: "神木"
+			x: -8.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["78274737632F1BD1"]
+description: ["是的... 当我以为我已经揭开了这个维度的&o所有魔法&r时，它却抛给我又一个谜题。&6神木板&r中蕴藏着一种奇怪的魔法领域。感觉就像是...&o本源的&r。我迫不及待地想尝试一下。"]
+			hide: true
+			id: "006B7774F9560C1A"
+			tasks: [{
+				id: "46F1B424ED02F589"
+				item: "ars_nouveau:archwood_planks"
+				type: "item"
+			}]
+title: "新魔法"
+			x: -10.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["006B7774F9560C1A"]
+description: ["我的感觉是对的。看来这是一种&o新类型的魔法&r，我决定把它称为&6本源魔法&r，因为它更普遍、更无处不在。没有另一个&6引导器&r，绝对无法理解这个魔法。那么，图腾百科和魔法百科将拥有新的伙伴。"]
+			hide: true
+			id: "0D9F44E67F39D830"
+			tasks: [{
+				id: "7A0A58436D9C18C7"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+title: "本源"
+			x: -10.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["0D9F44E67F39D830"]
+description: ["本源并不像那样容易获得，它不像自然魔法那样存在于大气中。目前，唯一能从中获取本源的地方就是&6神木&r。我将建立一个设备，在其中物品可以&6吸收&r本源。"]
+			hide: true
+			id: "739014AF6D4185AD"
+			tasks: [{
+				id: "6C421B0342A3AFFC"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+title: "获取本源"
+			x: -10.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["739014AF6D4185AD"]
+description: ["显然，&o本源并非随便能灌注&r。只有少数矿物可以接收它，其中包括&6青金石和紫水晶&r。我不能完全确认这一点，但在&6吸收室&r中，本源随着时间积累，尽管手册上写着我只有在学会如何产生本源后，才能真正开始提取它。"]
+			hide: true
+			id: "4B00B240CB8ED0A4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "658ADBDF116C77A1"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "531B7723626911FB"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+title: "初步结晶"
+			x: -8.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: ["现在，拥有&6源石宝石&r，我可以创建&o"源力生成器"&r。我想尝试创造一个利用&o食物的能量&r来产生源力的装置。我认为它的数量将取决于食物的饱和度。我要把它叫做&6蘑菇结合&r。"]
+			hide: true
+			id: "659012E0970A1517"
+			shape: "diamond"
+			tasks: [{
+				id: "053B08AA8BC4ED46"
+				item: "ars_nouveau:mycelial_sourcelink"
+				type: "item"
+			}]
+			x: -9.25d
+			y: -23.0d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: ["现在，拥有&6源石宝石&r，我可以创建&o"源力生成器"&r。我想尝试创造一个利用&o热能&r来产生源力的装置。我认为，物品在燃烧时释放的热量越多，产生的魔法能量就越多。我要把它叫做&6火山结合&r。"]
+			hide: true
+			id: "4F2D7F975F504B25"
+			shape: "diamond"
+			tasks: [{
+				id: "6B63B77BB7A5194B"
+				item: "ars_nouveau:volcanic_sourcelink"
+				type: "item"
+			}]
+			x: -7.75d
+			y: -23.0d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: ["现在，拥有&6源石宝石&r，我可以创建&o"源力生成器"&r。我想尝试创造一个利用&o生命能量&r来产生源力的装置。我认为，无论生物是死亡还是出生，源力的量都不会受影响。我要把它叫做&6生命结合&r。"]
+			hide: true
+			id: "359FC8DE8EE40B7F"
+			shape: "diamond"
+			tasks: [{
+				id: "614F22864D6D5AE8"
+				item: "ars_nouveau:vitalic_sourcelink"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: ["现在，拥有&6源石宝石&r，我可以创建&o"源力生成器"&r。我想尝试创造一个利用&o药水能量&r来产生源力的装置。我认为，药水的复杂度越高，产生的源力越多，尽管它本身就已经很多。我要把它叫做&6炼金结合&r。"]
+			hide: true
+			id: "4C0B0BB788D83368"
+			shape: "diamond"
+			tasks: [{
+				id: "40EB4E04DF7CD24D"
+				item: "ars_nouveau:alchemical_sourcelink"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: ["现在，拥有&6源石宝石&r，我可以创建&o"源力生成器"&r。我想尝试创造一个利用&o生长能量&r来产生源力的装置。我认为，只有天然生长的植物才适合，骨粉在这里没有用处。我要把它叫做&6农业结合&r。"]
+			hide: true
+			id: "09A2F8725A463E3D"
+			shape: "diamond"
+			tasks: [{
+				id: "24B8DDE25B2CEC17"
+				item: "ars_nouveau:agronomic_sourcelink"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: ["显然，魔法和源力有些相似。魔法直接注入水池，而源力则需要放入&6合适的容器&r。目前它只是&o收集周围产生的所有源力&r，同时也可以反向收集。希望不久后，我能学会如何&o传输源力&r。"]
+			hide: true
+			id: "556F28E6A1CDF854"
+			tasks: [{
+				id: "59457A1951C08FCA"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+title: "巫师腌制"
+			x: -8.5d
+			y: -20.5d
+		}
+		{
+			dependencies: [
+				"4B00B240CB8ED0A4"
+				"44BBC979205B3ACB"
+			]
+description: ["正如我所说，使用&6继电器&r，我可以通过空气传输源力，它们通过&6权杖&r进行调节。简直就是&o森林法杖的传播器&r的类比。"]
+			hide: true
+			icon: "ars_nouveau:relay"
+			id: "0DCF571703FEC40D"
+			tasks: [
+				{
+					id: "742464376CD92D9E"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					id: "69ADC839E3EC8249"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:dominion_wand"
+						tag: {
+							an_dominion_wand: {
+								entityID: -1
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+title: "继电器"
+			x: -7.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["4B00B240CB8ED0A4"]
+description: [
+"在&6发霉的笔记本&r里，我找到了一个装置，通过它我可以进行&o仪式&r。不幸的是，光有一个装置是不够的。需要&6祭坛&r来承载反应物，还有&6源核&r来支持源力的流动。我得先做这些东西。"]
+"{@pagebreak}"
+"原来，这些&6祭坛和源核&r不仅仅是为了我的新“项目”准备的。&6吸收室&r也能很好地与它们配合。事实上，使用这些东西，它可以让物品不仅吸收源力，还能吸收&o反应物&r。真有趣，看看会发生什么吧。"]
+] 
+			hide: true
+			icon: "ars_nouveau:arcane_core"
+			id: "47DE1879F762DB06"
+			tasks: [
+				{
+					id: "2E4CCE9C925E7430"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "3FD802C64C7E53B2"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+title: "仪式准备"
+			x: -7.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["47DE1879F762DB06"]
+description: ["那个装置就是&6魔法器具&r。它利用类似魔法台的力量&o将物品结合&r成新的物品。这样的酷装置，我怎么可能错过？我敢打赌，&6未来&r没有它我可做不成什么。"]
+			hide: true
+			id: "44BBC979205B3ACB"
+			tasks: [{
+				id: "60B77D1443783DF9"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+title: "魔法"
+			x: -5.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["44BBC979205B3ACB"]
+description: ["&6魔法器具&r让我大吃一惊。我原以为它只是通过魔法将反应物混合。难道它真的能创造&o生命体&r吗？无论如何，我得试着制作&6魔法花&r。虽然我还没做出来，但看起来它真的很厉害。"]
+			hide: true
+			id: "4C5B991A98398C23"
+			tasks: [{
+				id: "073F3477EDAD09F7"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+title: "魔法花"
+			x: -4.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["4C5B991A98398C23"]
+description: ["我明白了&6魔法花&r的价值。它生长出的茎可以转化成特殊的&6纤维&r。它们充满了源力，因此成为一种有价值且易得的材料。未来，我甚至可以用这些纤维&6制作装备&r。"]
+			hide: true
+			id: "2A26416C9561C2B1"
+			tasks: [{
+				id: "2E60C4790053FE86"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+title: "魔法纤维"
+			x: -2.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["47DE1879F762DB06"]
+description: ["&6吸收室&r简直令人难以置信。事实上，它比&o符文祭坛&r还要强大，因为它可以将魔法&o直接注入&r这个世界，甚至不需要符文这样的传输器。我先尝试制作&6基本元素&r。比如&o火、土、水、风&r，它们一定会在很多地方用到。"]
+			hide: true
+			id: "2570E506D714D4E1"
+			tasks: [
+				{
+					id: "23DD07124D82BBBE"
+					item: "ars_nouveau:fire_essence"
+					type: "item"
+				}
+				{
+					id: "4305FFB70130D9D0"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+				{
+					id: "7B86E6A8ECEA4344"
+					item: "ars_nouveau:air_essence"
+					type: "item"
+				}
+				{
+					id: "53D48AAE4439EA92"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+			]
+title: "基本精华"
+			x: -5.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["2570E506D714D4E1"]
+description: ["我猜对了。元素精华的应用&6相当广泛&r，但正如所发现的，额外的精华比符文要少。具体来说，有三种：&6操作精华&r，用于改变物品；&6否定精华&r，一种类似反魔法的物质；&6巫术精华&r，纯粹的魔法。"]
+			hide: true
+			id: "27F509FAA2083132"
+			tasks: [
+				{
+					id: "6D24D6FFFA769102"
+					item: "ars_nouveau:conjuration_essence"
+					type: "item"
+				}
+				{
+					id: "17461FF475B5EE2C"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					id: "4D80EC297CFF28B6"
+					item: "ars_nouveau:manipulation_essence"
+					type: "item"
+				}
+			]
+title: "特殊精华"
+			x: -5.5d
+			y: -23.5d
+		}
+		{
+			dependencies: [
+				"2A26416C9561C2B1"
+				"27F509FAA2083132"
+			]
+description: [
+"终于找到了&r。它们赋予了咒语书源力，并改变了它的属性。就像源力是纯粹魔法的单位一样，新的&6咒语书&r没有形态的限制，这意味着&o我在创造咒语时完全自由&r。"
+"目前，我还不知道该如何获得新的&6咒语形态&r，但我确信这个时刻不会太远。"
+]
+			hide: true
+			id: "5E50F93E19D7C5EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6001DECFF3A7F16E"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "401A7C79E2BD4432"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:novice_spell_book"
+					tag: {
+						"ars_nouveau:caster": {
+							current_slot: 0
+							flavor: ""
+							hidden_recipe: ""
+							is_hidden: 0b
+							spell_count: 10
+							spells: {
+								spell0: {
+									name: ""
+									recipe: {
+										part0: "ars_nouveau:glyph_touch"
+										part1: "ars_nouveau:glyph_break"
+										size: 2
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell1: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell2: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell3: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell4: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell5: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell6: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell7: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell8: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+								spell9: {
+									name: ""
+									recipe: {
+										size: 0
+									}
+									sound: {
+										pitch: 1.0f
+										soundTag: {
+											id: "ars_nouveau:fire_family"
+										}
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
+										type: "ars_nouveau:constant"
+									}
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+title: "咒语"
+			x: -4.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["7F7DF86408AA8FD9"]
+description: ["&6魔法纺织&r确实不错，但对于我的目的来说有些不足。我需要一种能够利用&6所有魔法谱&r的材料。我打算尝试制作&o这种布料&r，将魔法、巫术、自然结合起来。这样一种多功能材料会非常有用。"]
+			hide: true
+			id: "48DAFF40D0CE3AAD"
+			tasks: [{
+				id: "099FEA01CD71D028"
+				item: "irons_spellbooks:magic_cloth"
+				type: "item"
+			}]
+title: "新层次"
+			x: -4.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["5E4888A725557178"]
+description: ["在我击败了&6蘑菇米诺陶&r并环顾四周时，我注意到墙上有一些奇怪的铭文。几乎不可能看到它们，但根据这些铭文，我知道迷宫里有一个&o秘密房间&r，里面有&l一把镐&r，它的力量足以打破这座迷宫的墙。我记不太清楚，但在二层有一面&6墙&r，撞上去的声音很沉闷。&o那是不是就是墙？&r"]
+			hide: true
+			id: "4DA611CC789BD433"
+			tasks: [{
+				id: "05338BB1F30FE0E0"
+				item: {
+					Count: 1b
+					id: "twilightforest:mazebreaker_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:efficiency"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fortune"
+								lvl: 2s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.25d
+		}
+		{
+			dependencies: ["32DD4E931C9C990A"]
+description: ["虽然&6娜迦&r是我第一个击败的&o守护者&r，但她依然很强。她身上的&6鳞片&r恐怕只适合用来防御，但这确实是它们的作用。想必它们一定能提供&6良好的保护&r。"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "twilightforest:naga_chestplate"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:fire_protection"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "5D412CE741AB57A7"
+			tasks: [
+				{
+					id: "19AA6B4D470AE56B"
+					item: {
+						Count: 1b
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CF3F84D15D81D65"
+					item: {
+						Count: 1b
+						id: "twilightforest:naga_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+title: "鳞甲"
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5D412CE741AB57A7"]
+description: ["&o我错了&r。可惜我发现得太晚。&6娜迦鳞片&r能做的事不止防御那么简单。这些鳞片与&o自然魔法&r结合，它们能与使用自然力量的物品产生协同作用。"]
+			hide: true
+			id: "62AD27C62DD4EC95"
+			tasks: [{
+				id: "4DA1ED6910425378"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+title: "自然之力"
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["210A40E7062C5EC8"]
+description: ["关于迁移的想法依然没有从我的脑海中消失。我的&6深岩床&r床垫，这个世界&o拒绝接纳&r，我试过了。该尝试一下普通的床。既然这里有羊毛，为什么不做&6羊毛床&r呢？"]
+			hide: true
+			id: "2A837BA15807741F"
+			tasks: [{
+				id: "3E1777943874887C"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+title: "异世界之眠"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["722D45A56DAFB214"]
+description: ["累了，真是让人头疼...我将寻找一种方法来&o重新创造&r这个粉末。它的颜色和光泽与&6魔法&r十分相似...我将尝试用它制作粉末。"]
+			hide: true
+			id: "12A12A93AF856CB6"
+			tasks: [{
+				count: 8L
+				id: "27B4B2E2AD365FE3"
+				item: "twilightforest:transformation_powder"
+				type: "item"
+			}]
+title: "无限转化"
+			x: -8.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2F4A84AB42FEBC61"]
+description: ["无论我怎么尝试，生活在黑暗森林中的&6乌鸦&r似乎对这个木箱毫无反应。可以说这些根本&o不是这些乌鸦&r。应该尝试一下老办法，用&6变异粉&r。或许这样我能得到&o特殊的乌鸦&r。"]
+			hide: true
+			id: "747D0B54DCD93C91"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3862398E3E986016"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				icon: "twilightforest:raven_feather"
+				id: "4A84CB243109A333"
+				observe_type: 5
+				timer: 0L
+title: "获得巫师乌鸦"
+				to_observe: "hexerei:crow"
+				type: "observation"
+			}]
+title: "巫师伙伴"
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["747D0B54DCD93C91"]
+description: ["我成功了。&6乌鸦&r的确发生了变化，感觉它变得...&o更聪明&r了？无论如何，我现在得驯服它。我不确定它喜欢什么样的种子，所以我会准备一些&6种子混合物&r，尽量多一点。这样的聪明乌鸦将是一个绝佳的&o伙伴&r。"]
+			hide: true
+			id: "55F3884859DB77B5"
+			tasks: [{
+				count: 16L
+				id: "0685EF6C3E767678"
+				item: "hexerei:seed_mixture"
+				type: "item"
+			}]
+title: "鸟儿的食物"
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55F3884859DB77B5"]
+description: ["我成功地用这些种子混合物驯服了&6乌鸦&r。结果它能做很多事。我得考虑如何&o增加它们的数量&r，但那我需要一个用来控制它们的物品。&o《暗影书》&r上写，&6红木长笛&r能控制这些鸟。"]
+			hide: true
+			id: "77DC926747ABD187"
+			tasks: [{
+				id: "59DCB4D3CABD6799"
+				item: {
+					Count: 1b
+					id: "hexerei:crow_flute"
+					tag: {
+						commandMode: 0b
+						commandSelected: 0
+						crowList: { }
+						dyeColor1: -1
+						dyeColor2: -1
+						helpCommandSelected: 0
+					}
+				}
+				type: "item"
+			}]
+title: "控制群体"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0DA9441CF8FB1C6D"
+				"318F1EA744D19FE2"
+			]
+			dependency_requirement: "one_completed"
+description: ["&6火焰锭&r真的是非同凡响。有了它们，连通常不易操作的泪石都可以与地下城的钥匙顺利结合。按照&o指南&r，我将能创建一个通向&6个人世界&r的通道。听起来很诱人。"]
+			hide: true
+			id: "728C3E2815BFBA8F"
+			shape: "hexagon"
+			tasks: [{
+				id: "1E86397D3287361D"
+				item: "dimdungeons:item_blank_build_key"
+				type: "item"
+			}]
+title: "个人世界"
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2A26416C9561C2B1"]
+description: [
+"&6魔法花&r找到了新的用途。将其他一些材料加在它上面，我就能改变它的属性。根据计划，纤维应当变得&o有弹性且坚韧&r，几乎就像..."
+"&6橡胶&r。我记得有些模糊，但我一定要继续这些研究，也许我会记起更多的东西。"
+]
+			hide: true
+			id: "3D03FFD0DA80F8E0"
+			tasks: [{
+				id: "6C5AD291448CE5F4"
+				item: "twilightforest:red_thread"
+				type: "item"
+			}]
+title: "奇怪的线"
+			x: -1.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["3D03FFD0DA80F8E0"]
+description: ["我越想越记得&o橡胶&r。那些圆形的轮子，奇怪的衣服，还有&6气球&r。做出来的线条结构更像是气球橡胶的那种质感。我只需将它们&6固定&r成一个整体。"]
+			hide: true
+			id: "25E7E9E15F68F03E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1BB4D8B4FEBE7C75"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "354ECB0747D88572"
+				item: "cloudstorage:balloon_bit"
+				type: "item"
+			}]
+title: "结合成一体"
+			x: 0.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["25E7E9E15F68F03E"]
+description: ["是的，&o我终于记得了&r。那些&6气球&r，它们...曾是幸福的象征。是欢乐和庆祝的象征。每个节日里它们都不可或缺。是时候给我这个危险而孤单的生活带来一些欢乐了。&o而且这种飞行的东西可能也会有用&r。"]
+			hide: true
+			id: "3EFDD5E7A83BCB58"
+			tasks: [{
+				id: "3A3AA19C16997120"
+				item: "cloudstorage:balloon"
+				type: "item"
+			}]
+title: "气球"
+			x: -1.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["43D6226DD9160416"]
+description: ["&6云&r，住在那些巨人上的&6云&r...它们似乎是为了魔法自然而存在的。这些云分为两层：更有弹性的上层和更坚硬的下层。&o如果能将它们混合&r成一个均匀的质地...那么我可以在很多地方使用它们。"]
+			hide: true
+			id: "6C62DF620CC37015"
+			tasks: [{
+				id: "4EC3C08DC5222199"
+				item: "cloudstorage:cloud"
+				type: "item"
+			}]
+title: "云雾"
+			x: 2.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["054F37D68CBBC240"]
+description: ["通过与&o铁&r的实验，我发现资源确实能吸收魔法，进而改变它们的属性。理应&6线材&r也能起作用。那样的话，我会得到一块真正的&6魔法纺织品&r：坚固、有弹性、轻便且具有魔力。"]
+			hide: true
+			id: "7F7DF86408AA8FD9"
+			tasks: [{
+				id: "381AE829F3A76048"
+				item: "botania:manaweave_cloth"
+				type: "item"
+			}]
+title: "编织魔法"
+			x: -5.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"16F396155F851655"
+				"485F20F49B421D7F"
+			]
+description: [ 
+"在遇到烈焰人之后，我想到了如何&6利用他们的火焰&r。例如，我可以制作出连荒谬的炉子都无法制造的酷炫合金。"
+"嗯，&o如果用这台机器做核心&r行吗？有了新的精灵资源，我可以试着&6将这台炉子压缩&r成一个方块。"
+] 
+			hide: true
+			id: "2629EB7F1103A837"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D11965C7AECE774"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "03059DC4A45BCE63"
+				item: "jumbofurnace:jumbo_furnace"
+				type: "item"
+			}]
+title: "压缩的荒谬"
+			x: -2.5d
+			y: -19.0d
+		}
+		{
+			dependencies: ["2629EB7F1103A837"]
+description: [ 
+"结果证明，即使是压缩后的荒谬炉，它仍然&o极其不整齐&r。作为基础，它不适用。"
+"...但它会不会&6作为交换的元素&r合适？说不定精灵们有类似的东西？我敢肯定，&o他们会很高兴接受这个炉子&r。"
+] 
+			hide: true
+			id: "683498538BA967AD"
+			tasks: [{
+				id: "0C7631F11FEBC47A"
+				item: "kubejs:elven_flare"
+				type: "item"
+			}]
+title: "火焰冰块"
+			x: -1.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["2629EB7F1103A837"]
+description: [ 
+"我当然知道压缩炉可以加速荒谬炉，但我有点过头了。这里有多少卵石啊..."
+"{@pagebreak}" 
+"&a恭喜！这里总共有12个彩蛋，每个章节一个。找到所有彩蛋，你将获得第13个特别彩蛋&r"
+"                               &o&f - 斯格玛瑞乌斯&r"
+] 
+			id: "743BCE29ED03F877"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				count: 64L
+				id: "0B7FB5CE2D2C39AA"
+				item: "jumbofurnace:jumbo_furnace"
+				type: "item"
+			}]
+title: "荒谬的数量"
+			x: -2.5d
+			y: -20.625d
+		}
+		{
+			dependencies: ["170D42E0FED756D3"]
+description: ["用手工操作，在这种发展阶段不仅不方便，而且&o对产品的质量和自主性有害&r。是时候发明机械手臂来组装机制了，完整的&6自主激活器&r，能够&o模拟冲击和使用&r。"]
+			id: "4B7FB20813118CCC"
+			tasks: [{
+				id: "117E8C4F510B4EF2"
+				item: "create:deployer"
+				type: "item"
+			}]
+title: "击掌"
+			x: 2.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["183460FFD88FECF8"]
+description: ["&6自动合成&r当然不错，但有个问题困扰我...&o为什么所有的配方都必须放在3x3的网格里？&r难道世界的潜力就只能用9个格子来限制？做5x5或9x9的新工作台毫无意义。需要一个完整的&6系统&r，能够通过将每个元素与其他元素组合，创造出&o任何所需的制作模式&r。真正的&6机械组装器&r"]
+			id: "0E9D3AEBB89CFF5F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A60323AC1B1AAE6"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				count: 8L
+				id: "71F9427E2D9B9CF3"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+title: "无限工作台"
+			x: 2.0d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"796B46A35E726EEC"
+				"5D21DFD70D68551D"
+			]
+description: ["&6公鹿角&r-一个相当独特的神器。它&o可以击打周围的一些方块&r，转化为其他方块。我很好奇，如果用它敲击&6巨魔石&r会发生什么？这是一种非常神秘的材料，也许其中隐藏着什么。"]
+			hide: true
+			id: "2645EEDD34AA1E34"
+			tasks: [{
+				id: "2C7DD08E13D034A8"
+				item: "whatareyouvotingfor:sniffer_egg"
+				type: "item"
+			}]
+title: "角的力量"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2645EEDD34AA1E34"]
+description: ["哇...&o我没有猜错&r"]
+			hide: true
+			icon: "whatareyouvotingfor:sniffer_spawn_egg"
+			id: "3C7CEE1731FC6CDA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "78C1BAEAD77F20DE"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				icon: "create:goggles"
+				id: "10128CB062D72FB0"
+				observe_type: 5
+				timer: 0L
+title: "看到嗅灵"
+				to_observe: "whatareyouvotingfor:sniffer"
+				type: "observation"
+			}]
+title: "嗅灵"
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2363987B3B5F4657"]
+description: ["&o成功了&r 意外的是，出现了一个&6半矮人，半巨魔&r。它是谁？它叫我&o玩捉迷藏&r。我不明白它为什么要这样做，但它背后有个奇怪的袋子。也许，它会给我&6奖励&r？&o票上好像写了类似的东西...&r"]
+			hide: true
+			icon: "enigmaticlegacy:angel_blessing"
+			id: "12D4ACE399D88A0E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49314386F66F8550"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6D037B3CDE10228F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "curios:spellstone"
+						}
+					}
+title: "任何元素石"
+					type: "item"
+				}
+				{
+					id: "12886120CF56C061"
+					item: "genshinstrument:nightwind_horn"
+					type: "item"
+				}
+			]
+title: "儿童游戏"
+			x: -5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7B4B2CBCC2698541"]
+description: ["我有点...&o懒惰&r了。懒得总是去查图腾百科，懒得砍掉错误选择的&6仪式&r。需要考虑制作一个&6图腾控制工具&r...现在，有了拨浪鼓，&o做这样的工具轻而易举&r"]
+			id: "6677B4D3AD083152"
+			tasks: [{
+				id: "6D9C2ADC4AEA7945"
+				item: "totemic:totemic_staff"
+				type: "item"
+			}]
+title: "图腾匠扳手"
+			x: -4.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["3C7CEE1731FC6CDA"]
+description: ["&6嗅灵&r，孵化出来的蛋，真的是古老的生物。它拥有一个非常有趣的能力：&o找到植物的种子并将其挖掘出来&r。即使我也无法从土壤中找到它们，但它却找到了。也许，它体内也隐藏着魔法？"]
+			hide: true
+			icon: "botania:cell_block"
+			id: "148FA44183F1C431"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "12316D9D59AB053B"
+					item: "farmersdelight:cabbage_seeds"
+					type: "item"
+				}
+				{
+					id: "4A8A2E213D17E5A3"
+					item: "farmersdelight:tomato_seeds"
+					type: "item"
+				}
+				{
+					id: "7F788CD0F3E52059"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "0042696C7279C4A9"
+					item: "minecraft:cocoa_beans"
+					type: "item"
+				}
+				{
+					id: "293B7FC975B93410"
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+				{
+					id: "5F58FB8742F65CAA"
+					item: "supplementaries:flax_seeds"
+					type: "item"
+				}
+				{
+					id: "73EE0A14657CD0B6"
+					item: "farmersdelight:rice_panicle"
+					type: "item"
+				}
+				{
+					id: "11C49965153D10ED"
+					item: "ars_nouveau:source_berry"
+					type: "item"
+				}
+				{
+					id: "4201783FEAA9031E"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "17CCC2C538F30604"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+			]
+title: "不寻常的发现"
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6F2B686747846716"]
+description: ["我无法理解...&o这是什么票？&r无论我怎么做，怎么扔，它都不会改变。背面写着一些关于&6地下城和捉迷藏&r的东西...看来，单凭它自己是无法启动的。好奇，如果我把它扔进&6米诺陶斯迷宫&r，会发生什么？"]
+			hide: true
+			icon: "minecraft:bundle"
+			id: "2363987B3B5F4657"
+			tasks: [{
+				icon: "create:goggles"
+				id: "260E0F6C93A91346"
+				observe_type: 5
+				timer: 0L
+title: "看到坏蛋"
+				to_observe: "whatareyouvotingfor:rascal"
+				type: "observation"
+			}]
+title: "该去哪儿？"
+			x: -5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3C7CEE1731FC6CDA"]
+description: ["这很奇怪...&6嗅灵&r看起来对某事很担忧。感觉它&o嗅到了什么异常的东西&r。通过嗅灵对我的不同物品的反应，我猜这可能是某些非常古老的东西。&6不过是什么呢？&r"]
+			hide: true
+			id: "6F2B686747846716"
+			tasks: [{
+				id: "0AFB73B1F4734BD6"
+				item: "kubejs:hide_and_seek_ticket"
+				type: "item"
+			}]
+title: "游戏券"
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["722D45A56DAFB214"]
+description: ["在这个世界里，终于有了&o更适合旅行的景观&r。这个世界的动物也更加友好。看来，我能在这里找到&6骑乘动物&r，是吧？我想是的。为了提前做好准备，我可以为所有骑乘动物准备一个&6\"仓库\"&r。&o多么完美的计划&r！"]
+			id: "1E4B3D449E59F790"
+			tasks: [{
+				id: "3CBD244D52759B8F"
+				item: {
+					Count: 1b
+					id: "baublemounts:mount_bauble"
+					tag: { }
+				}
+				type: "item"
+			}]
+title: "便携马匹"
+			x: -8.5d
+			y: -8.5d
+		}
+	]
+	subtitle: ["&a……战胜过去……"]
+title: "&a第三章. 永恒的暮光"
+}

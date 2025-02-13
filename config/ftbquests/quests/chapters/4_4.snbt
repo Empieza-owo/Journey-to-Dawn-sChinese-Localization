@@ -1,0 +1,873 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4_4"
+	group: "15153EEB24465CEA"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:music_disc_pigstep"
+	id: "13E251DCCE0DB070"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["127CCCF2B1A21696"]
+			description: ["万事俱备。即便透过画框，我仍能感受到&6下界&r的炽热与刺骨严寒。等待我的绝非热情拥抱，&o做好准备吧，凋灵&r"]
+			hide: true
+			icon: "byg:overgrown_netherrack"
+			id: "68D610DE64387C82"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "7196984BC7B11CB3"
+				title: "造访下界"
+				type: "dimension"
+			}]
+			title: "灼热之地"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68D610DE64387C82"]
+			description: ["早说过&6铸铁&r必有大用...目睹地狱烈焰，我想起&6焦煤&r——这种工业级燃料可用于制造超级合金。需要建造带&6进煤口、出焦口和焦油管&r的焦炉，&o尝试设计看看&r"]
+			hide: true
+			id: "3C9EF213421A9930"
+			tasks: [{
+				count: 9L
+				id: "0EC18CEC44AB6162"
+				item: "createindustry:coke_oven"
+				type: "item"
+			}]
+			title: "焦炭工艺"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C9EF213421A9930"]
+			description: ["&6焦炭&r制备完成，接下来需&6粉碎并与熔融物混合&r。比例暂定2:1，&o实践出真知&r"]
+			hide: true
+			id: "28B5AE6D735E9CAC"
+			tasks: [
+				{
+					count: 2L
+					id: "4982E5B4AA5B31B0"
+					item: "createindustry:coal_coke_dust"
+					type: "item"
+				}
+				{
+					id: "2DF5130F291DA303"
+					item: "createindustry:blasting_mixture"
+					type: "item"
+				}
+			]
+			title: "熔炼准备"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["661ADCDDB6EF04BB"]
+			description: ["远古残骸不仅坚硬，更具&6绝热特性&r。即便投入岩浆也毫发无损。利用&6吸收室&r可将其转化为更易加工的高耐热材料"]
+			hide: true
+			id: "7FAE94CD9DE11043"
+			tasks: [{
+				id: "43C551391070BAB8"
+				item: "createindustry:fireclay"
+				type: "item"
+			}]
+			title: "耐火特性"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FAE94CD9DE11043"]
+			description: ["成功研制&6耐火粘土&r！这种可塑性强、耐高温的材料经烧制可成砖，&o工业应用前景广阔&r"]
+			hide: true
+			id: "0C0AF207EE11EAB8"
+			tasks: [{
+				id: "3ADC1E51C714E493"
+				item: "createindustry:fireproof_brick"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7BBC3EAB635EA2BE"
+				"482A3BF8E1F6AF23"
+			]
+			description: ["尝试用&6钢&r制作外壳失败后顿悟——不同于其他合金，&6钢制外壳&r需要&6硬化木材&r作为基底"]
+			hide: true
+			id: "586131D5399992FE"
+			tasks: [{
+				id: "6D8D94C38E284F88"
+				item: "createindustry:steel_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1A0C636C87B82E61"]
+			description: ["最初想通过&6分配器与浇铸盆&r直接浇注，后发现需用铸铁&6强化装置&r方能奏效"]
+			hide: true
+			icon: "createindustry:casting_spout"
+			id: "3CAF641930F105C3"
+			tasks: [
+				{
+					id: "54A84BDDA9D5B425"
+					item: "createindustry:casting_spout"
+					type: "item"
+				}
+				{
+					id: "5449B831CDBF5BDC"
+					item: "createindustry:casting_basin"
+					type: "item"
+				}
+			]
+			title: "浇铸工艺"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3CAF641930F105C3"]
+			description: ["第二步准备&6铸模材料&r。选择防火且易塑形的&6粘土&r制作铸型"]
+			hide: true
+			id: "2884087307328373"
+			tasks: [
+				{
+					id: "37F809FA2C650947"
+					item: "createindustry:ingot_mold"
+					type: "item"
+				}
+				{
+					id: "398BF0D3558253D3"
+					item: "createindustry:block_mold"
+					type: "item"
+				}
+			]
+			title: "铸模制备"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2884087307328373"]
+			description: ["&6钢锭&r终于到手！这种兼具强度、多用途和&6反魔法特性&r的材料，实用性甚至超越某些奇幻金属"]
+			hide: true
+			id: "482A3BF8E1F6AF23"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B0FD5F168B41655"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "258A8B5E6244A763"
+				item: "createindustry:steel_ingot"
+				type: "item"
+			}]
+			title: "永恒合金"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0C0AF207EE11EAB8"
+				"28B5AE6D735E9CAC"
+			]
+			description: ["&6高炉&r建造时刻来临！理论上是采用&6耐火材料&r构筑的巨型烟囱，底部设&6出料口&r。先建造最小型号，&o后续可扩展&r"]
+			hide: true
+			icon: "createindustry:blast_furnace_output"
+			id: "4EE255E1EA99B710"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7474473BA43301F0"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "7298DB18819089B3"
+					item: "createindustry:fireproof_bricks"
+					type: "item"
+				}
+				{
+					id: "1BA484F6C33E55BD"
+					item: "createindustry:blast_furnace_output"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4825867CAA85EF49"
+					item: "createindustry:fireproof_brick_reinforcement"
+					type: "item"
+				}
+			]
+			title: "工业高炉"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C9EF213421A9930"]
+			description: ["&6木焦油&r应用探索——浸泡木板可增强强度与功能性"]
+			hide: true
+			id: "7BBC3EAB635EA2BE"
+			tasks: [{
+				id: "59E445F8D5BC8D0C"
+				item: "createindustry:hardened_planks"
+				type: "item"
+			}]
+			title: "焦油浸渍木板"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4EE255E1EA99B710"]
+			description: ["意外获得&6熔融矿渣&r，这种副产品或许另有用途"]
+			hide: true
+			id: "712196779F09265E"
+			tasks: [{
+				id: "526457EA16EB1712"
+				item: "createindustry:molten_slag_bucket"
+				type: "item"
+			}]
+			title: "工业废料"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["712196779F09265E"]
+			description: ["液态矿渣处理方案——通过&6混合器&r冷却沉淀为粉末"]
+			hide: true
+			id: "69B54FAD1067E7BC"
+			tasks: [{
+				id: "6F5A8707D6704D4E"
+				item: "createindustry:slag"
+				type: "item"
+			}]
+			title: "矿渣粉"
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4EE255E1EA99B710"]
+			description: ["成功冶炼&6钢水&r，接下来需解决&6铸锭成型&r问题"]
+			hide: true
+			id: "1A0C636C87B82E61"
+			tasks: [{
+				id: "0DFB97A26A0A27CA"
+				item: "createindustry:molten_steel_bucket"
+				type: "item"
+			}]
+			title: "液态坚钢"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2F24F4EA07099BF6"]
+			description: ["下界石英与黄金之外，可能存在&6远古稀有矿藏&r，&o展开勘探&r"]
+			hide: true
+			id: "661ADCDDB6EF04BB"
+			tasks: [{
+				id: "7D78C3569C879E65"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "远古遗珍"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["661ADCDDB6EF04BB"]
+			description: ["&6下界合金碎片&r获取关键——大量收集后通过&6笨拙熔炉&r熔炼可提高产出"]
+			hide: true
+			id: "324102AE9FB3702E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42C1BC14689A3941"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				count: 5L
+				id: "24FE7DAD95C0379C"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			title: "合金采集"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["324102AE9FB3702E"]
+			description: ["&6玄武岩三角洲&r的&6炽足兽&r掉落特殊金属，利用&6吸收室&r配合下界合金可增殖该资源"]
+			hide: true
+			id: "60C86627C6678A8C"
+			tasks: [{
+				id: "02C005CCB39098A7"
+				item: "alexsmobs:straddlite"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["324102AE9FB3702E"]
+			description: ["下界矿藏远不止下界合金"]
+			hide: true
+			id: "0173867563EC8790"
+			tasks: [{
+				id: "4F38B144C6622F65"
+				item: "byg:pendorite_scraps"
+				type: "item"
+			}]
+			title: "玄辉矿"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68D610DE64387C82"]
+			description: ["&6灵魂沙&r——蕴含灵魂之力的神奇物质，可赋予材料新生，&o自动化潜力巨大&r"]
+			hide: true
+			id: "33237034A9EDC23A"
+			tasks: [{
+				id: "1E102DE2ECA1724E"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "失落之魂"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["33237034A9EDC23A"]
+			description: ["&6灵魂火焰&r配合&6灵魂玻璃&r可将&6荧石&r转化为&6魂灵粉末&r"]
+			hide: true
+			id: "52BB0C21655C4E90"
+			tasks: [{
+				id: "05F7C063CDD20E85"
+				item: "spirit:soul_powder"
+				type: "item"
+			}]
+			title: "魂光粉末"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["52BB0C21655C4E90"]
+			description: ["以魂灵粉末为媒介，通过&6灵魂熔炉&r精炼出&6魂钢&r"]
+			hide: true
+			id: "52959C5178F9BD09"
+			tasks: [{
+				id: "2350AFF721D650E9"
+				item: "spirit:soul_powder_block"
+				type: "item"
+			}]
+			title: "魂能熔铸"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["52959C5178F9BD09"]
+			description: ["验证成功！选用&6精灵钢&r为基底制造的&6魂钢&r，与灵魂能量完美共鸣"]
+			hide: true
+			id: "10D669268D092932"
+			tasks: [{
+				id: "2E9FB4F89E11CA36"
+				item: "spirit:soul_steel_ingot"
+				type: "item"
+			}]
+			title: "魂钢"
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"52959C5178F9BD09"
+				"0959E2A5DB5C114D"
+			]
+			description: ["启动&6魂能核心&r需先制作囚禁原始灵魂的&6魂晶&r"]
+			hide: true
+			id: "0E8AEDB61401FEF8"
+			tasks: [{
+				id: "29EE290E393529E9"
+				item: "spirit:soul_crystal_shard"
+				type: "item"
+			}]
+			title: "灵魂棱镜"
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0E8AEDB61401FEF8"]
+			description: ["小型&6魂晶碎片&r能量不足，通过&6灵魂岩层&r培养并用&6灵魂玻璃&r提纯可获得完整魂晶"]
+			hide: true
+			id: "513B00C119C1AB91"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7402809D2C6269A6"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "57A5B264DB88B1A8"
+				item: "spirit:soul_crystal"
+				type: "item"
+			}]
+			title: "纯净棱镜"
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"324102AE9FB3702E"
+				"52959C5178F9BD09"
+			]
+			description: ["运用魂能将&6下界合金碎片&r转化为更具魔法亲和力的材料"]
+			hide: true
+			id: "18CE48BD76CD63D9"
+			tasks: [{
+				id: "69A36E1B6FFA374D"
+				item: "irons_spellbooks:arcane_salvage"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["10D669268D092932"]
+			description: ["&6魂钢&r制成的&6魂笼&r可生成自定义生物，性能超越普通刷怪笼，&o启动方法待破解&r"]
+			hide: true
+			id: "0959E2A5DB5C114D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2EEEF6AFC48504BB"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3A36C9B6C0F40226"
+				item: "spirit:soul_cage"
+				type: "item"
+			}]
+			title: "人工刷怪装置"
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7E4FC0AAFB90194E"]
+			description: ["猪灵情报属实——&6凋灵骷髅&r盘踞于下界要塞，其&6头颅&r似曾相识"]
+			hide: true
+			id: "17521AF3E5246252"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "301C5383E2002300"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "20E36BF6F3288687"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			title: "幽冥骨卫"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["17521AF3E5246252"]
+			description: ["&6远古壁画&r揭示三颅献祭可召唤&6凋灵&r，&o重现古老仪式&r"]
+			hide: true
+			icon: "minecraft:wither_rose"
+			id: "4C079C0389888ACE"
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: "minecraft:wither_rose"
+				id: "079F9C8837DE7B25"
+				title: "击杀凋灵"
+				type: "kill"
+				value: 1L
+			}]
+			title: "魂骨献祭"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C079C0389888ACE"]
+			description: ["&6下界之星&r虽强，但需用魂钢&6强化&r才能打开终极传送门"]
+			hide: true
+			id: "72210B2715D5E0AB"
+			tasks: [{
+				id: "7E71AA6B08B27CA9"
+				item: "forbidden_arcanus:dark_nether_star"
+				type: "item"
+			}]
+			title: "掌中星辰"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"72210B2715D5E0AB"
+				"10D669268D092932"
+			]
+			description: ["终局目标&6末地&r——需用魂钢强化的下界之星撕裂虚空"]
+			hide: true
+			id: "7B63593B72C5DB97"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4FE300122820809F"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "15E7EB0F3481ECA4"
+				item: "portablehole:portable_hole"
+				type: "item"
+			}]
+			title: "次元裂隙"
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["60C86627C6678A8C"]
+			description: ["古籍记载召唤&6盖亚II型&r需融合四魂与&6玄辉矿&r，&o冒险尝试&r"]
+			hide: true
+			id: "5E96CDCAD253DA87"
+			tasks: [{
+				id: "555D63C15D8AED9F"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "盖亚合金"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5E96CDCAD253DA87"]
+			description: ["&6命运之骨&r——击败盖亚II型的奖励，开启&6本源魔法&r的钥匙"]
+			hide: true
+			id: "310BD7BF17B33F91"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "527BEEA74D4556C0"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "235440592B178AF7"
+				item: {
+					Count: 1b
+					id: "botania:dice"
+					tag: {
+						soulbindUUID: "b4f6b784-1fc4-4a33-8a5c-4ae10abe49bb"
+					}
+				}
+				type: "item"
+			}]
+			title: "命运掌控"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0173867563EC8790"
+				"18CE48BD76CD63D9"
+			]
+			description: ["&6魔法合金&r与&6玄辉矿&r结合可构建&6本源仪式系统&r"]
+			hide: true
+			id: "57F355AD015070AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F567D2AEB5D05DC"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2A98CF8E93B9562F"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "仪式魔法"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"57F355AD015070AF"
+				"4872F8B48F24D179"
+			]
+			description: ["首个仪式尝试&6使魔契约&r，需制备&6契约石碑&r"]
+			hide: true
+			id: "45293EC5670A1ECD"
+			tasks: [{
+				id: "5038D5666100E044"
+				item: "ars_nouveau:ritual_binding"
+				type: "item"
+			}]
+			title: "使魔召唤"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["45293EC5670A1ECD"]
+			description: ["进阶石碑可召唤&6本源兽&r——融合&6追猎者、守卫者、潜行者&r之力的至高存在"]
+			hide: true
+			id: "63DA0DD3B38E9A9B"
+			tasks: [{
+				id: "64913319028CE91C"
+				item: "ars_nouveau:ritual_wilden_summon"
+				type: "item"
+			}]
+			title: "野性呼唤"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63DA0DD3B38E9A9B"]
+			description: ["&6混沌兽&r镇守本源，击败可获得&6本源印记&r，掌握终极魔法"]
+			hide: true
+			id: "0594AEF60391585D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0EFEC50DA2E34EA7"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "07CC0B365AF8642C"
+				item: "ars_nouveau:wilden_tribute"
+				type: "item"
+			}]
+			title: "混沌兽"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"69B54FAD1067E7BC"
+				"482A3BF8E1F6AF23"
+			]
+			description: ["&6混沌臼&r可将材料转化为&6净化/腐化粉末&r，开启元素炼金新纪元"]
+			hide: true
+			id: "4872F8B48F24D179"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47094DE40ECE788D"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "5F2042994174B840"
+					item: "forbidden_arcanus:corrupti_dust"
+					type: "item"
+				}
+				{
+					id: "73ACAFC69E7D8A7D"
+					item: "forbidden_arcanus:mundabitur_dust"
+					type: "item"
+				}
+			]
+			title: "元素粉末"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["17521AF3E5246252"]
+			description: [
+				"呵...呵呵...哈哈哈 哈哈哈哈"
+				"{@pagebreak}"
+				"&a恭喜！本章含12个彩蛋，集齐可解锁第13个特殊彩蛋&r"
+				" &o&f ——西格玛留斯&r"
+			]
+			hide: true
+			hide_text_until_complete: false
+			icon: "botania:pinkinator"
+			id: "733ECF3BCE2D2B5C"
+			invisible: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				icon: "create:goggles"
+				id: "62541789C759AA13"
+				observe_type: 5
+				timer: 0L
+				title: "查看粉红恶魂"
+				to_observe: "botania:pink_wither"
+				type: "observation"
+			}]
+			title: "粉红幻影"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["68D610DE64387C82"]
+			description: ["初入下界便遇&6智能猪灵&r——这些金甲战士或许能通过&6黄金外交&r获取情报"]
+			hide: true
+			icon: "quark:golden_apple_crate"
+			id: "77C0B4308F8B222D"
+			tasks: [{
+				icon: "create:goggles"
+				id: "3ECF42A09B2FB3C2"
+				observe_type: 5
+				timer: 0L
+				title: "观察猪灵"
+				to_observe: "minecraft:piglin"
+				type: "observation"
+			}]
+			title: "黄金部族"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["77C0B4308F8B222D"]
+			description: ["猪灵透露&6下界要塞&r存在&6凋灵骷髅&r，&o进军探索&r"]
+			hide: true
+			icon: "minecraft:nether_bricks"
+			id: "7E4FC0AAFB90194E"
+			tasks: [{
+				icon: "minecraft:nether_bricks"
+				id: "578873E991081854"
+				structure: "minecraft:fortress"
+				title: "寻找要塞"
+				type: "structure"
+			}]
+			title: "幽冥要塞"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7B63593B72C5DB97"
+				"513B00C119C1AB91"
+				"0959E2A5DB5C114D"
+				"586131D5399992FE"
+				"310BD7BF17B33F91"
+				"0594AEF60391585D"
+				"4872F8B48F24D179"
+			]
+			description: [
+				"最终关卡&6末地&r——虚空中漂浮着终极答案。借助&6强化下界之星&r，&o最后冲刺&r"
+				"{@pagebreak}"
+				"&a嗨嗨！你总是让我惊喜！穿越地狱、连战三王、兼修魔法与工业，这份毅力值得称赞！"
+				" &a——您忠实的"
+				" &a&l西格玛&r"
+			]
+			hide: true
+			id: "0A452E355CD976EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A5CA69842F6F75A"
+				table_id: 3643454894007705977L
+				title: "第四模板"
+				type: "loot"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4DBF4085BF82A745"
+				item: "dimpaintings:end_painting"
+				type: "item"
+			}]
+			title: "世界尽头"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["68D610DE64387C82"]
+			description: ["&6下界岩&r——地狱基础建材，&6卡米尼特宫殿&r亦有少量分布，&o大量采集备用&r"]
+			hide: true
+			icon: "minecraft:netherrack"
+			id: "2F24F4EA07099BF6"
+			tasks: [{
+				count: 64L
+				id: "364B12BC5EF827AE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:netherrack"
+					}
+				}
+				title: "任意下界岩"
+				type: "item"
+			}]
+			title: "下界岩"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5570B015ABEAF6EE"]
+			description: ["传送画框单程票问题解决方案——制作&6回归护符&r确保退路"]
+			hide: true
+			id: "127CCCF2B1A21696"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0520D4A4EE06E48A"
+				table_id: 3623618798618471248L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2ABAB5CCE40F6374"
+				item: {
+					Count: 1b
+					id: "recall:item_recall"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "返程票"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			description: ["&o等等！装备检查！物资清点！&r&6万事俱备？&r"]
+			hide: true
+			icon: "create:red_toolbox"
+			id: "5570B015ABEAF6EE"
+			tasks: [{
+				id: "7A067A6C0191E816"
+				title: "准备就绪"
+				type: "checkmark"
+			}]
+			title: "最终整备"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"513B00C119C1AB91"
+				"10D669268D092932"
+			]
+			description: ["&6魂能核心&r需64个灵魂启动，&6魂钢工具&r配合&6灵魂火&r修复可提升灵魂获取效率"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "spirit:soul_steel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "39E078E28FFFCE07"
+			tasks: [{
+				id: "42CE10AE42BB4E36"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "spirit:soul_steel_mainhand"
+					}
+				}
+				title: "任意魂钢制品"
+				type: "item"
+			}]
+			title: "灵魂收割"
+			x: -1.5d
+			y: 9.0d
+		}
+	]
+	subtitle: ["&4...сквозь льды и пламя..."]
+	title: "&4第四章·炼狱核心"
+}

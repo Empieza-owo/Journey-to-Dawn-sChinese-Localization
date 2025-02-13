@@ -1,0 +1,842 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "59C24FCEA20BC4F8"
+	group: "54DECDB6D89E76B0"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:barrel"
+	id: "59C24FCEA20BC4F8"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"607A96CCCA0509D9"
+				"4F2B001503F28676"
+			]
+			description: ["&o老实说,&r 被齿轮和轴塞满的口袋真的很烦人，最让人烦的是，不管你做什么，总是觉得不够。理论上，&6工具箱&r 应该会让我轻松一些。虽然它只有8个格子，但每个格子能容纳的东西比我多得多。"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "create:brown_toolbox"
+				tag: { }
+			}
+			id: "12A1800FC71FE9C3"
+			tasks: [{
+				id: "785FBE7D4111D14C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+				title: "任何工具箱"
+				type: "item"
+			}]
+			title: "工程师的小箱子"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["36B5ED21B70F31FB"]
+			description: ["&o呵呵...&r 既然谈到存储我的物品，这个话题值得继续展开。没有&6好的存储&r，在我的情况下是走不远的，正如俗话说的，&o没有空间就没有资源&r。"]
+			hide: true
+			icon: "fantasyfurniture:nordic/drawer"
+			id: "4F2B001503F28676"
+			tasks: [{
+				id: "4C60D27A408D7BC2"
+				title: "明了"
+				type: "checkmark"
+			}]
+			title: "存储"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F2B001503F28676"]
+			description: ["最简单的想法就是&6箱子&r。简单的容器，可以用来丢放我的物品。很方便的是它们&o可以组合成更大的箱子&r，但有时它们未填满的大小可能会带来一些麻烦。"]
+			hide: true
+			icon: "minecraft:chest"
+			id: "64E24FA2A9F37917"
+			tasks: [{
+				id: "3FC0CEE06026100D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+				title: "任何箱子"
+				type: "item"
+			}]
+			title: "箱子"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["64E24FA2A9F37917"]
+			description: ["我有个主意。能不能&6将红石机制和箱子结合&r？如果我能通过打开箱子来激活炉子，那该有多酷啊！另外，这种箱子还非常适合做陷阱...&o只可惜，没有人会掉进这些陷阱&r。"]
+			hide: true
+			icon: "minecraft:trapped_chest"
+			id: "370BFCED98E87B6E"
+			tasks: [{
+				id: "7422E88B5012BD4D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests/trapped"
+					}
+				}
+				title: "任何陷阱箱"
+				type: "item"
+			}]
+			title: "陷阱箱"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64E24FA2A9F37917"]
+			description: ["&6桶&r，按我看，是一种更“经济”的箱子。&o它所需的木材较少&r，它正好适合放进一个方块里，但遗憾的是，几个桶不能合并在一起。"]
+			hide: true
+			icon: "minecraft:barrel"
+			id: "335F274E5DF74EAF"
+			tasks: [{
+				id: "6032DEDAA4AD22DD"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64E24FA2A9F37917"]
+			description: ["有了新的木材种类，我在创造中又自由了更多，虽然它们与方块大小完全匹配，不能合并，但每个桶都有自己适合的木材种类。&o它会非常适合在厨房里使用&r。"]
+			hide: true
+			icon: "farmersdelight:oak_cabinet"
+			id: "5EE42EF06AFF2EFA"
+			tasks: [{
+				id: "1591EF10461A8AB7"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "farmersdelight:cabinets"
+					}
+				}
+				title: "任何储物柜"
+				type: "item"
+			}]
+			title: "储物柜"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64E24FA2A9F37917"]
+			description: ["&6沙尔克箱&r——真是有趣的生物... 它们简直就是装在箱子里的生物。它们掉落它们的外壳。有趣的是，&o我能否复刻这些箱子呢？&r 理论上，跟箱子不同，&6沙尔克箱&r不会掉落资源。"]
+			hide: true
+			icon: "minecraft:shulker_box"
+			id: "6CD4FE1FDE21C4E4"
+			tasks: [{
+				id: "3DAD026E454CA1C2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:shulker_boxes"
+					}
+				}
+				title: "任何沙尔克箱"
+				type: "item"
+			}]
+			title: "沙尔克"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12A1800FC71FE9C3"]
+			description: ["无论是箱子还是桶，由于它们的形状，&o在容纳物品上都会有局限&r。那么，为什么不制作一个&6能够合并成巨型容器的储存系统呢？&r 里面空间巨大，可以储存很多东西，例如&o石头&r，看到它也不觉得麻烦。"]
+			hide: true
+			id: "43AB726D2A966AB1"
+			tasks: [{
+				id: "46E1EDFA8F5DC3F3"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64E24FA2A9F37917"]
+			description: ["最近在黑暗花园里，我看到了一棵&6像是...雪松的树&r。虽然我记不清它到底是什么了，但似乎有个节日是和雪松有关的，人们会把&6礼物&r放在雪松下。&o我能不能做出这些纸盒呢？&r"]
+			hide: true
+			icon: "supplementaries:present"
+			id: "34987D081E8EF93F"
+			tasks: [{
+				id: "11265AFB21C872DB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "supplementaries:presents"
+					}
+				}
+				title: "任何礼物"
+				type: "item"
+			}]
+			title: "礼物"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"34987D081E8EF93F"
+				"370BFCED98E87B6E"
+			]
+			description: ["哈哈...&o这个计划真是既天才又狡猾&r。制造一个&6激活红石陷阱的礼物&r... 哈哈...&o我多想找个人来试试&r。"]
+			hide: true
+			icon: "supplementaries:trapped_present"
+			id: "66FC3324B4DE26F4"
+			tasks: [{
+				id: "1487E9B5E1C19B6B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "supplementaries:trapped_presents"
+					}
+				}
+				title: "任何礼物陷阱"
+				type: "item"
+			}]
+			title: "礼物陷阱"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F2B001503F28676"]
+			description: ["我做的这些云真的很特别... 可以说，&o它们和真实的天空直接相关&r，只是我现在还不太明白如何使用它们... 那么，能不能制作一个&6为资源服务的云网络呢？&r 让我们从&6云箱&r开始吧。"]
+			hide: true
+			id: "63AF9AE7AB669C65"
+			tasks: [{
+				id: "2D3BA4F8B75EC888"
+				item: "cloudstorage:cloud_chest"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["63AF9AE7AB669C65"]
+			description: ["嗯，虽然我大致弄明白了它是如何工作的。通过&6气球&r，&o箱子飞上了天并连接成一个系统&r。接着，&6云箱&r，连接着与普通箱子颜色相同的&6气球&r，可以访问天空中所有的箱子。&o这样我就得到了一个超级巨型箱子&r。"]
+			hide: true
+			icon: "cloudstorage:balloon"
+			id: "1D36DDF12B3FC03F"
+			tasks: [
+				{
+					id: "57A23BB62D2DB3CD"
+					item: "cloudstorage:balloon"
+					type: "item"
+				}
+				{
+					id: "71E2FE0B2B639895"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "...在气球上..."
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"1C565BB79D25837B"
+				"1D36DDF12B3FC03F"
+			]
+			description: ["哈哈，这就是奖励。我要试着&6把它和气球结合起来&r。理论上，云会抓住气球，把它变成真正的&o伙伴&r，另外&o根据云的种类，气球也会有不同的行为&r。"]
+			hide: true
+			id: "430F190591310FD9"
+			tasks: [{
+				id: "3A5CEC0671C1EAFA"
+				item: "cloudstorage:balloon_buddy_inventory"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["63AF9AE7AB669C65"]
+			description: ["云在自然界中是水汽的集合体，通常会下雨。但在雷暴时，&o它们还会带电&r。能不能在我的云上做类似的事情，制造一个&6带电的云&r？"]
+			hide: true
+			id: "7AE656370FAB6A17"
+			tasks: [{
+				id: "4ADD660D1EFB1A35"
+				item: "cloudstorage:static_cloud"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7AE656370FAB6A17"]
+			description: ["我的理论得到了验证。根据我的计算，&o普通的云箱有1024格的限制&r，而&6静态云箱&r的格数则超过了这个限制，达到了&6四倍&r。这个优点不容忽视。"]
+			hide: true
+			id: "0CB9201130E300A7"
+			tasks: [{
+				id: "73B0EF8692CDAB12"
+				item: "cloudstorage:static_cloud_chest"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"0CB9201130E300A7"
+				"1D36DDF12B3FC03F"
+			]
+			description: ["哦，情况没那么简单。&o普通气球无法连接到静态云箱&r——它们根本承受不了。必须给气球&6充电&r。最简单的方式是让它们在静态云箱上&6滑动&r，这样电量会顺利转移到气球上。"]
+			hide: true
+			id: "0BC9EC254BD0323F"
+			tasks: [{
+				id: "5A0FED908F8ACEE1"
+				item: {
+					Count: 1b
+					id: "cloudstorage:balloon"
+					tag: {
+						static: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"63AF9AE7AB669C65"
+				"33237034A9EDC23A"
+			]
+			description: ["在高山城堡，我看到过一些记载，讲述了曾经生活在云中的&6布洛维亚特人&r——一种活云种族。我不能复生它们，但我是否能够&6用瓶装空气中的幽灵填充来复刻它们的一部分&r呢？"]
+			hide: true
+			id: "3D6C43337A485A1D"
+			tasks: [{
+				id: "68BE7816B2E4607A"
+				item: "cloudstorage:angry_cloud_in_a_bottle"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D6C43337A485A1D"]
+			description: ["&o布洛维亚特人灭绝是有原因的...&r 我第一次见到这么“邪恶”的物品。我不知道它为何如此凶恶，但得解决这个问题，因为&6邪恶的云&r还能轻易摧毁一切。我打算用&6源泉&r填充它，也许这样能让它安静下来？"]
+			hide: true
+			id: "1C565BB79D25837B"
+			tasks: [{
+				id: "4887821ADC3973C5"
+				item: "cloudstorage:happy_cloud_in_a_bottle"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1D36DDF12B3FC03F"]
+			description: ["气球的上色、查看它们与天空的连接、重新设计它们——这一切我都是凭手感做的。如果能做一个像&6制图桌&r一样的设备来专门操作气球就好了。同时，我也会尝试&o延长它们的线&r。"]
+			hide: true
+			id: "201C73DBF6E906C5"
+			tasks: [{
+				id: "69B91FB851BD937D"
+				item: "cloudstorage:balloon_stand"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["201C73DBF6E906C5"]
+			description: [
+				"嗯，我没想到村民们对气球有研究。一个村民给了我这个&6有趣的帽子&r。怎么能拒绝呢？"
+				"{@pagebreak}"
+				"&a恭喜！这里总共有12个彩蛋，每一章都有。解锁完全部，你就能获得第13个特殊彩蛋&r"
+				" &o&f -希格玛瑞斯&r"
+			]
+			hide: true
+			id: "66A42FBD67BA92F6"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "794F17F34301A847"
+				item: {
+					Count: 1b
+					id: "cloudstorage:propeller_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "冷静 只需冷静"
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"1C565BB79D25837B"
+				"482A3BF8E1F6AF23"
+			]
+			description: ["哈哈，终于得到了奖励。我觉得&o云的风魔法能力将会很有用&r。我要为它制造一个&6风扇&r，让它能够吸入或吹出空气，&6吸引或推开目标&r。"]
+			hide: true
+			id: "7CF38A3E66AAC0AC"
+			tasks: [{
+				id: "1317C94F4AFAB682"
+				item: "cloudstorage:cloud_blower"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5058EA2601B8BE14"]
+			description: ["&o这很简单.&r 限制箱子的格子数量，同时不改变其结构，&6单类型物品箱&r就完成了，尽管&o它的格子比普通箱子少&r。"]
+			hide: true
+			id: "481E7ED3FFD95F9D"
+			tasks: [{
+				id: "159555946BE61A54"
+				item: "storagedrawers:oak_full_drawers_1"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["481E7ED3FFD95F9D"]
+			description: ["有时候，正如我所理解的，为每种物品单独制作一个箱子有点不合理。我想，为什么不试试&o把箱子分成两部分&r，允许在里面存储&6两种物品&r呢？"]
+			hide: true
+			id: "07A54781A7197C73"
+			tasks: [{
+				id: "3D234D60157CA569"
+				item: "storagedrawers:oak_full_drawers_2"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07A54781A7197C73"]
+			description: ["&o继续分割的想法&r 做更多的分割，我觉得没有必要，但这挺有趣的。"]
+			hide: true
+			id: "1511DF35DC99726B"
+			tasks: [{
+				id: "2A5BF5148EAAFF2D"
+				item: "storagedrawers:oak_full_drawers_4"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07F4D6224535A4BE"]
+			description: ["我解决了不堆叠物品的问题，但另一个问题仍然存在... &6同一类型物品的过剩&r。比如，石头。以前我不能为物品类型制作专门的存储，但现在，当&o普通木材类型&r对我开放后，这个任务变得轻而易举。"]
+			hide: true
+			icon: "storagedrawers:spruce_trim"
+			id: "5058EA2601B8BE14"
+			tasks: [{
+				id: "7D8B32B278CB23B7"
+				title: "明了"
+				type: "checkmark"
+			}]
+			title: "单一物品堆积"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5058EA2601B8BE14"
+				"1511DF35DC99726B"
+			]
+			description: ["这个箱子是我在分割想法后想到的。它将&o对于金属非常方便&r，因为如果把物品放进去，&6它会显示出最接近的分割和组合&r，例如，如果放入铁，它将显示为：&o碎片-锭-方块&r。"]
+			hide: true
+			id: "0C04AFB0C672C471"
+			tasks: [{
+				id: "019934652E33D5FE"
+				item: "storagedrawers:compacting_drawers_3"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5058EA2601B8BE14"
+				"7AA7B40D9E72C9B3"
+			]
+			description: ["&o它来了&r 未来系统的核心，&6存储控制器&r，直接与其他箱子或装饰接触时，它将&6将它们合并成一个网络&r，能够轻松地分配或提取所有箱子中的资源。遗憾的是，&o没有直接接口&r。"]
+			hide: true
+			icon: "storagedrawers:controller"
+			id: "3479751787E7DFC7"
+			tasks: [{
+				id: "5AEB06E942D2B982"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5058EA2601B8BE14"]
+			description: ["即使这样，&o一个箱子最多能容纳1024个物品&r。这是16个堆叠，甚至比箱子还少。我想，如果为存储制作一些&6小的升级&r，生活会变得更加简单。"]
+			hide: true
+			id: "269AD37F4130C8B6"
+			tasks: [{
+				id: "35114C0C88AF482D"
+				item: "storagedrawers:upgrade_template"
+				type: "item"
+			}]
+			title: "升级"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["269AD37F4130C8B6"]
+			description: ["&6基础升级&r，似乎... 但实际上，它需要的不是基础的铸铁。令人高兴的是，我现在可以采集它，&o而且存储大小&r终于会增加，&6是2倍&r。"]
+			hide: true
+			id: "02F4B3596ACF6157"
+			tasks: [{
+				id: "0D4A29DF33BB06F8"
+				item: "storagedrawers:obsidian_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["02F4B3596ACF6157"]
+			description: ["下一步，&6铝&r，也不是最简单的金属。直到我找到铝土矿，而在没有上层世界的情况下这是不可能的，&o必须去高山地带采集那些巨大的石头&r。它使存储的大小增加了&64倍&r。"]
+			hide: true
+			id: "649BEC740A297C8B"
+			tasks: [{
+				id: "5C3953895BD9A4DC"
+				item: "storagedrawers:iron_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["649BEC740A297C8B"]
+			description: ["&6存储提升x8&r，奇怪的是，比第一次的还容易获得。只需&6将火焰弹的粉末和魔花纤维混合&r，它们是可以种植的。&o简直不敢相信&r。"]
+			hide: true
+			id: "2E128E01FAC6067C"
+			tasks: [{
+				id: "3D4DFDF2C8C0D28A"
+				item: "storagedrawers:gold_storage_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"2E128E01FAC6067C"
+				"10D669268D092932"
+			]
+			description: ["&6阶段4，16倍提升&r 它需要&6灵魂钢&r——这是一种相当便宜的材料，只需要灵魂沙、2个铁和一点魔法。"]
+			hide: true
+			id: "058E97F9B9A13FE2"
+			tasks: [{
+				id: "72C8E84CCB17850E"
+				item: "storagedrawers:diamond_storage_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["058E97F9B9A13FE2"]
+			description: ["&65级升级&r，我认为这是最后一步。它将存储容量提升到&632倍&r，但它需要特殊的经验水晶。我还不完全知道如何获得它们，但肯定需要&6源泉魔法&r。&o得好好考虑一下...&r"]
+			hide: true
+			id: "2501D07AA51EEBDD"
+			tasks: [{
+				id: "72D0E41BEB578B4E"
+				item: "storagedrawers:emerald_storage_upgrade"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["269AD37F4130C8B6"]
+			description: ["我意识到，箱子不仅可以用来存储大量资源，还可以用作&6缓冲器&r。例如，在普通情况下，这个缓冲器&o太大了&r，所以&6将存储容量减少到64&r会很有用。"]
+			hide: true
+			id: "42F6BA210EFE00A7"
+			tasks: [{
+				id: "5700DBD27D5B98C7"
+				item: "storagedrawers:one_stack_upgrade"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["42F6BA210EFE00A7"]
+			description: ["嗯... 至今为止，这对我来说是&o最难理解的发明&r，但理论上应该是这样的：如果我有例如从不同来源获得的钢铁，那么这个升级可以&6在箱子里将一种钢铁转变为另一种&r。"]
+			hide: true
+			id: "454B1FFD03EA08A6"
+			tasks: [{
+				id: "6FDE6BF353BE1031"
+				item: "storagedrawers:conversion_upgrade"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"42F6BA210EFE00A7"
+				"68D610DE64387C82"
+			]
+			description: ["真奇怪，老实说&r。"]
+			hide: true
+			id: "081DF9885E0CE99D"
+			tasks: [{
+				id: "721FCABFCB83BBCC"
+				item: "storagedrawers:illumination_upgrade"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["058A9A69DB98FCAA"]
+			description: ["我曾考虑过为箱子加装&6填充传感器&r，用于灯光和红石机制，但那会非常笨重。那是否可以直接在箱子的升级中加装这样的填充传感器呢？&r"]
+			hide: true
+			id: "65318AE7FCED98A1"
+			tasks: [{
+				id: "036BF266E51A0FAC"
+				item: "storagedrawers:fill_level_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["269AD37F4130C8B6"]
+			description: ["有趣的是，&o我能不能将箱子与红石连接起来&r？根据我的计划，如果一个箱子有这样的升级，且完全填满，那么&6每次信号强度会增加&r。"]
+			hide: true
+			id: "058A9A69DB98FCAA"
+			tasks: [{
+				id: "413E43D2E8245699"
+				item: "storagedrawers:redstone_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["058A9A69DB98FCAA"]
+			description: ["当我设计标准的红石升级时，我完全没有考虑到&6双重和四重箱子&r。&6这个问题必须解决&r。这个升级将模仿原始的工作原理，只与&6最满的槽位互动&r。"]
+			hide: true
+			id: "2F0A46F3004CD862"
+			tasks: [{
+				id: "4D0896055EC9AAFD"
+				item: "storagedrawers:max_redstone_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["058A9A69DB98FCAA"]
+			description: ["当我设计标准的红石升级时，我完全没有考虑到&6双重和四重箱子&r。&6这个问题必须解决&r。这个升级将模仿原始的工作原理，只与&6最空的槽位互动&r。"]
+			hide: true
+			id: "0E551194686296F2"
+			tasks: [{
+				id: "32E75EF5B9B9C7E6"
+				item: "storagedrawers:min_redstone_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"42F6BA210EFE00A7"
+				"43857A24C2F14D7D"
+			]
+			description: ["当我认为这种存储将是&o生成卵石的完美选择&r时，我错了。&o它还是会轻易溢出&r。我们需要引入&6限制&r。一种机制，&6它将&6销毁多余的方块&r，任何无法放入箱子的方块。"]
+			hide: true
+			id: "7DBFA708EC207A67"
+			tasks: [{
+				id: "294A7896E75B94E6"
+				item: "storagedrawers:void_upgrade"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4F2B001503F28676"]
+			description: ["&o魔法能传递自己和资源吧？&r 它能&6在存储之间传输内容吗？&r 理论上，如果重新设计普通的&6火花&r，我就能在我的箱子和桶之间建立网络。"]
+			hide: true
+			id: "6C43C28D26D1E05E"
+			tasks: [
+				{
+					id: "506A3CA5D7563737"
+					item: "botania:corporea_spark"
+					type: "item"
+				}
+				{
+					id: "0F33F37689C28982"
+					item: "botania:corporea_spark_master"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C43C28D26D1E05E"]
+			description: ["我创建了网络，但&o如何与之互动&r——这是另一个问题。在字典中，我找到了一个有趣的装置，叫做&6存储索引器&r。理论上，&o主火花就是安装在这个设备上&r，正是它从网络中请求物品。你只需要&6走到它面前并告诉它你需要什么&r，&o这就是魔法&r。"]
+			hide: true
+			id: "457C9A175B10C18A"
+			tasks: [{
+				id: "08CAEB250180F0F4"
+				item: "botania:corporea_index"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["457C9A175B10C18A"]
+			description: ["然而，这个网络有一个缺点，缺乏&6资源的可视化查看&r。比如说，我怎么&o知道我有没有铁&r？&o我得做一些资源可视化工具，而这些&6晶体立方体&r正好适用。"]
+			hide: true
+			id: "56F03FAA3B2EFE51"
+			tasks: [{
+				id: "4FF38FE229B28441"
+				item: "botania:corporea_crystal_cube"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6C43C28D26D1E05E"
+				"12A1800FC71FE9C3"
+			]
+			description: ["既然我可以创建存储网络，第一个要做的就是&6自动化&r。我需要设计一些红石机制：&6漏斗&r，用来丢弃资源；&6拦截器&r，来发出操作失败信号；&6提取器&r，恰恰相反，发出操作成功信号。&o我想，相关细节应该在字典里有写&r。"]
+			hide: true
+			id: "4F69A3634D7E0826"
+			tasks: [
+				{
+					id: "6BFE04FF5DFE6EC3"
+					item: "botania:corporea_funnel"
+					type: "item"
+				}
+				{
+					id: "6A7EADE4562A20D6"
+					item: "botania:corporea_interceptor"
+					type: "item"
+				}
+				{
+					id: "4D85563C2183AF59"
+					item: "botania:corporea_retainer"
+					type: "item"
+				}
+			]
+			title: "与网络的互动"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["481E7ED3FFD95F9D"]
+			description: ["我想到创建&6一个由所有箱子组成的网络&r，这样，比如&o可以只用一个方块来整理所有物品&r。但&6没有电缆的网络&r能算什么？理论上，这种装饰正合适。"]
+			id: "7AA7B40D9E72C9B3"
+			tasks: [{
+				id: "66CB41788292252D"
+				item: "storagedrawers:oak_trim"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4F2B001503F28676"
+				"335F274E5DF74EAF"
+				"19849A23828DC968"
+			]
+			description: ["我注意到&o一个不愉快的悖论...&r 如果你空间不多，你的物品类型就五花八门。如果空间多了，所有的物品都被占据了，其中一边是10个堆叠，另一边则是&o12个双箱工具箱&r。"]
+			id: "07F4D6224535A4BE"
+			tasks: [{
+				id: "07EEC1C1F93FB007"
+				item: "quark:crate"
+				type: "item"
+			}]
+			title: "箱子"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"68D610DE64387C82"
+				"12A1800FC71FE9C3"
+			]
+			description: ["&6我以前的背包&r还不错，但...&o不算最方便&r。空间太小了，而且还不能直接与它互动。幸运的是，现在我不仅可以升级它，而且可以&6彻底改造&r它。它看起来就像是我的一部分，&o可以直接与资源互动&r。理论上，它会非常棒。"]
+			hide: true
+			id: "405636F8FA3F7FCB"
+			tasks: [{
+				id: "24B393BADF774399"
+				item: {
+					Count: 1b
+					id: "quark:backpack"
+					tag: {
+						Inventory: [
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "把整个世界装进口袋"
+			x: -4.0d
+			y: -0.5d
+		}
+	]
+	title: "资源存储"
+}
