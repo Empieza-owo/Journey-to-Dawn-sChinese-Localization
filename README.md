@@ -1,5 +1,5 @@
 # Journey-to-Dawn-sChinese-Localization
-模组整合包 Journey to Dawn 的简体中文化
+模组整合包 黎明之旅 - Journey to Dawn 的简体中文化
 
 适用版本: Journey to Dawn 1.1.1
 
