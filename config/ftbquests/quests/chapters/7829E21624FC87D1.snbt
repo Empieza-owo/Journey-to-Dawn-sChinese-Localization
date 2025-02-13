@@ -1,0 +1,463 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7829E21624FC87D1"
+	group: ""
+	icon: "undergarden:catalyst"
+	id: "7829E21624FC87D1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&6黎明之旅&r 是一款结合了硬核元素与自动化机制的魔法冒险整合包。核心设定是您将&6诞生于异次元世界&r，唯有通过重重考验方能抵达上层界域。建造资源工厂、击败超高难度首领、成就大法师之道，最终&o重返家园&r"]
+			icon: "kubejs:catalytic_essence"
+			id: "211D7653D361E9DF"
+			rewards: [{
+				auto: "invisible"
+				command: "/reload"
+				id: "28359E129E268A8B"
+				type: "command"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "&6未知疆域, 古奥术法, 致命威胁, 而您不过是渴望得见天日的弱小凡人..."
+			tasks: [{
+				id: "6794282C309E7A41"
+				title: "Начнём"
+				type: "checkmark"
+			}]
+			title: "Journey to Dawn"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"&5七咒之戒&r 是件魔法装备，佩戴后将同时获得7种强力诅咒与7项增益效果。核心问题在于&4&l无法卸除&r&4,&r 请谨慎使用"
+				"&o注: 创造模式下可取下&r"
+				"{@pagebreak}"
+				"唯受七咒加身者，方可体悟此世至痛"
+			]
+			hide: true
+			icon: "enigmaticlegacy:cursed_ring"
+			id: "03B168E74C95F54B"
+			optional: true
+			rewards: [{
+				id: "39F29C8B8A5765F9"
+				item: "enigmaticlegacy:cursed_ring"
+				type: "item"
+			}]
+			subtitle: "Лишь тот, кто Семью проклятьями обременён, сможет испытать всю боль мира сего"
+			tasks: [{
+				id: "190D7AC5A46B6765"
+				title: "Рискнёшь?"
+				type: "checkmark"
+			}]
+			title: "Настоящий Hardcore"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"整合包的设计理念是：随着游戏进程推进，您将逐步沉浸于世界剧情与主角&o(即您操控的角色)&r 的故事线，因此特别将任务手册重构为&6日志,&r 任务则转为&6记录&r"
+				"{@pagebreak}"
+				"此外，为增强代入感，新记录将&6依序解锁,&r 若您认为任务已尽却仍有空缺，请继续推进其他任务线&o——或许只是尚未触及关键探索阶段&r"
+			]
+			hide: true
+			icon: "ftbquests:book"
+			id: "1A305A4AA28A15E1"
+			rewards: [{
+				id: "3C52A7B57CB0D563"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Отныне это не квестбук, а журнал"
+			tasks: [{
+				id: "310BA01E8AFA48F9"
+				title: "Ясно"
+				type: "checkmark"
+			}]
+			title: "Что по квестам?"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"整合包由 &9Saudade Studio 团队倾力打造:&r"
+				""
+				"&aSigmaRius:&r 首席开发者，负责整合包核心架构与机制设计"
+				""
+				"&1LateTeam:&r 主界面与加载界面视觉设计，邀您沉浸式体验"
+				""
+				"&eKuragane, Deflecta:&r 主导模组俄文本地化，助您无障碍探索"
+				""
+				"&5TranklER, IEnumerable, 8sixis:&r 定制内容开发组，匠心打造工作台升级系统与物理绳索等特色模块"
+				""
+				"&cSamuelchik, riki_lotiev:&r 材质与模型设计师，令定制物品呈现神级质感"
+				""
+				"&6Faorum, Hrumer, Techno_717, CrimsonDora:&r 原声作曲团队，缔造主界面史诗配乐与黑胶唱片收藏级曲目"
+				""
+				""
+				"{@pagebreak}"
+				"官方网站- &o&bhttps://saudade-studio.ru/&r"
+				"VK社群- &o&bhttps://vk.com/saudade_mine&r"
+				"Discord频道- &o&bhttps://discord.com/invite/HSCMrqCNpD&r"
+				"Boosty赞助- &o&bhttps://boosty.to/saudade_studio&r"
+				""
+				"主菜单导航栏亦可快速访问上述平台"
+			]
+			hide: true
+			hide_dependency_lines: false
+			icon: "supplementaries:antique_ink"
+			id: "012DD6B322850662"
+			rewards: [{
+				id: "45740C5C2E3F34E1"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Меня зовут Сигмариус, приятно познакомиться"
+			tasks: [{
+				id: "68BE9E39204B24B4"
+				title: "欢迎启程"
+				type: "checkmark"
+			}]
+			title: "关于作者"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"本整合包相较原版及其他整合包有&6独特机制&r 包含自定义界面/材质/命名等 甚至游戏设置也经过专门调试 擅自修改可能导致&o未知错误&r"
+				"&o已尽告知义务&r"
+			]
+			hide: true
+			icon: "create:cogwheel"
+			id: "0E3C133DABFBDA52"
+			rewards: [{
+				id: "4097B029A210F1E8"
+				item: "undergarden:cooked_gwibling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F9B9417576727E2"
+				title: "明白"
+				type: "checkmark"
+			}]
+			title: "设置"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"肆意妄为的时代已逝 身处黑暗/受伤/杀戮都将逐渐&4侵蚀理智&r 幻觉/精神分裂/耳语乃至致命暗影-&o理智崩坏后果严重&r"
+				"{@pagebreak}"
+				"&a恢复方式&r包括: 光照处停留/篝火旁/宠物陪伴/钓鱼/畜牧/睡眠 &o更多方法待后续探索&r"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "enigmaticlegacy:extradimensional_eye"
+				tag: { }
+			}
+			id: "40B3F0412A7128C8"
+			rewards: [{
+				id: "54A5C886DE7FB689"
+				item: "undergarden:cooked_gwibling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CA96D3C2268171F"
+				title: "明白"
+				type: "checkmark"
+			}]
+			title: "理智系统"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"新增右下角&9耐力条&r 奔跑消耗耐力 &o无限冲刺已成历史&r"
+				"{@pagebreak}"
+				"基础生命降至&c5心&r 但机动性提升 结合冲刺与特殊键位&o(请查看键位设置)&r 可施展&o跑酷技巧&r助力探索"
+				"{@pagebreak}"
+				"&oPS: CTRL+P可关闭跑酷系统&r"
+			]
+			hide: true
+			icon: "minecraft:feather"
+			id: "05A62762F3C11D6C"
+			rewards: [{
+				id: "3AC5167096A3D348"
+				item: "undergarden:cooked_gwibling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E5422DAA3988665"
+				title: "明白"
+				type: "checkmark"
+			}]
+			title: "跑酷系统"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["211D7653D361E9DF"]
+			description: [
+				"每章节任务线隐藏&4彩&r&6蛋&r&e任&r&2务&r&b（共12个）&r 集齐可解锁&o第13终极彩蛋&r"
+				"{@pagebreak}"
+				"彩蛋常含模组秘密物品或特殊合成配方 &6非必做内容&r 旨在增添探索乐趣"
+			]
+			hide: true
+			icon: "alexsmobs:mimicream"
+			id: "3197B943222EA75A"
+			rewards: [{
+				id: "6E68B3A388222973"
+				item: "undergarden:cooked_gwibling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A19C0CD585E10DC"
+				title: "明白"
+				type: "checkmark"
+			}]
+			title: "彩蛋系统"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["20565BBF2E69DED3"]
+			description: [
+				"&a这里是西格玛 空白模具用法：放入雕刻台 顶部加载唱针 随机生成唱片 模具等级决定&r"
+				"{@pagebreak}"
+				"&a建议保留部分模具 复制功能需完成支线章节 具体方法自行探索&r"
+				"{@pagebreak}"
+				"初级模具- &l15&r张唱片"
+				"中级模具- &l13&r张唱片"
+				"高级模具- &l34&r张唱片"
+				"专家模具- &l48&r张唱片"
+				"大师模具- &l24&r张唱片"
+				"传奇模具- &l9&r张唱片"
+			]
+			hide: true
+			icon: "engravingtable:engraving_table"
+			id: "4901179130233DE9"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "3CC9E252669AAFAD"
+					item: "engravingtable:engraving_table"
+					type: "item"
+				}
+				{
+					id: "2AFC0CBD8CA960CC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "engravingtable:needle"
+						}
+					}
+					title: "任意唱针"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["62F9F01721C2D0D7"]
+			description: ["恭喜完成「战斗艺术」支线 钟意何种武器？近战抑或远程？此结晶可复制任意模具 祝君武运昌隆"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "58FE704C1C81C5B1"
+			rewards: [{
+				id: "7D40B052A2A19E77"
+				item: "kubejs:resonating_crystall"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "78C1207DD5A2E375"
+				title: "成就达成"
+				type: "checkmark"
+			}]
+			title: "完成「战斗艺术」"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1ECE0B09610DE491"]
+			description: ["恭喜完成「休闲时光」支线 望居所更添温馨 此结晶可复制任意模具 祝建设愉快"]
+			hide: true
+			icon: "twilightforest:thorn_rose"
+			id: "1BEFC7E6C55B5B07"
+			rewards: [{
+				id: "393B337657A54A43"
+				item: "kubejs:resonating_crystall"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "7B3A8F4798086291"
+				title: "成就达成"
+				type: "checkmark"
+			}]
+			title: "完成「休闲时光」"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: ["恭喜完成「奥法工艺」支线 此结晶可复制任意模具 愿魔力与你同在"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "hexerei:mushroom_witch_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2CCD548DDAD46999"
+			rewards: [{
+				id: "693B34B2F9569A7D"
+				item: "kubejs:resonating_crystall"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "5D36B22463D6ECF9"
+				title: "成就达成"
+				type: "checkmark"
+			}]
+			title: "完成「奥法工艺」"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100C477F4E63F20A"]
+			description: ["恭喜完成「动能科学」支线 机械转速难题应已迎刃而解 此结晶可复制任意模具 祝研究顺利"]
+			hide: true
+			icon: "create:precision_mechanism"
+			id: "44B9B90A16B95C02"
+			rewards: [{
+				id: "56F335759AB9B0C4"
+				item: "kubejs:resonating_crystall"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "7F5E9997FD744BAE"
+				title: "成就达成"
+				type: "checkmark"
+			}]
+			title: "完成「动能科学」"
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["700C1111F9D773A0"]
+			description: ["恭喜完成「美食烹饪」支线 当前生命值几何？此结晶可复制任意模具 祝胃口常开"]
+			hide: true
+			icon: "farmersdelight:horse_feed"
+			id: "52DF51B8B3602089"
+			rewards: [{
+				id: "6CB599DB050BDC69"
+				item: "kubejs:resonating_crystall"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "4C519D1A4D2255F1"
+				title: "成就达成"
+				type: "checkmark"
+			}]
+			title: "完成「美食烹饪」"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59C24FCEA20BC4F8"]
+			description: ["恭喜完成「仓储管理」支线 虽无标准ME系统 此结晶可复制任意模具 祝收纳顺心"]
+			hide: true
+			icon: "minecraft:barrel"
+			id: "6128B174F6750B05"
+			rewards: [{
+				id: "01AFBD0A70549F90"
+				item: "kubejs:resonating_crystall"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "2A4D6E737A51073E"
+				title: "成就达成"
+				type: "checkmark"
+			}]
+			title: "完成「仓储管理」"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"36958CA5D73BB59C"
+				"192ACAFCD6AFB9F6"
+				"733ECF3BCE2D2B5C"
+				"4FC51D982AB7C92A"
+				"6AA523235AAE0F5A"
+				"6AD169058B0672D1"
+				"74CA7D94A250CA2F"
+				"060DEDB8828CBE89"
+				"66A42FBD67BA92F6"
+			]
+			description: [
+				"&a不可思议！阁下若非模组大师 便是攻略熟客 现已解锁第十三终极彩蛋 隐藏结局静候...&o"
+				"{@pagebreak}"
+				"&a获得第七共鸣结晶 内含5张特殊唱片 提示：&o雕刻即是答案&r"
+				""
+				"&o&a——西格玛留&r"
+			]
+			hide: true
+			icon: "kubejs:hallowed_idol"
+			id: "1EA8FDAF8E7418AB"
+			rewards: [
+				{
+					id: "40069FB39AD188EE"
+					item: "kubejs:resonating_crystall"
+					type: "item"
+				}
+				{
+					id: "777BFCBC582400EA"
+					item: "kubejs:blank4"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "70A23F3CE2345FDC"
+				title: "终极成就"
+				type: "checkmark"
+			}]
+			title: "全彩蛋收集"
+			x: 0.0d
+			y: 5.0d
+		}
+	]
+	subtitle: ["&fДа начнётся история"]
+	title: "&f欢迎体验"
+}
